@@ -4,8 +4,8 @@ import react from "@astrojs/react";
 import path from "path";
 
 export default defineConfig({
-  site: "https://avinoc.github.io",
-  base: "/avinoc-games/",
+  site: "https://projectavinoc.com",
+  base: "/",
   output: "static",
   integrations: [
     mdx(),
