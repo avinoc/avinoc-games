@@ -1,0 +1,6003 @@
+[
+  {
+    "name": "Annah",
+    "slug": "annah",
+    "role": "Self-sustain Tank",
+    "modes": [
+      "PvE",
+      "PvP"
+    ],
+    "image": "/assets/starsavior/tychara/69947d4d2c0b21248dd7e23a8f79c03e969f8743.png",
+    "updatedAt": "2026-03-30",
+    "sourceTabs": [
+      "Tychara character guide",
+      "Fallback build profile"
+    ],
+    "sourceContext": {
+      "url": "https://tychara.com/StarSavior/characters/annah",
+      "lead": "Fallback build profile based on Tychara's character guide.",
+      "citationText": "Source page: Annah Guide - Star Savior | Tychara.",
+      "permissionNote": "Tychara does not currently publish a dedicated build section for this unit, so this build uses the Tychara stat line and skill kit as its source."
+    },
+    "recommendedSets": [
+      {
+        "label": "Core",
+        "sets": [
+          "HP (4pc)",
+          "Barrier (2pc)"
+        ],
+        "neckMain": "SPD",
+        "ringMain": "HP%"
+      },
+      {
+        "label": "Durability",
+        "sets": [
+          "HP (4pc)",
+          "DEF (2pc)"
+        ],
+        "neckMain": "SPD",
+        "ringMain": "HP%"
+      },
+      {
+        "label": "Fast utility",
+        "sets": [
+          "Speed (4pc)",
+          "Barrier (2pc)"
+        ],
+        "neckMain": "SPD",
+        "ringMain": "HP%"
+      }
+    ],
+    "subStats": [
+      "SPD",
+      "HP%",
+      "DEF%",
+      "Effect Res",
+      "Flat HP"
+    ],
+    "skillLevels": {
+      "budget": "3 / 3 / 3",
+      "endgame": "4 / 7 / 7",
+      "progression": [
+        "3 / 3 / 3",
+        "4 / 6 / 6",
+        "4 / 7 / 7"
+      ]
+    },
+    "arcana": [
+      "A Knight's Oath",
+      "Under the Glass Moon"
+    ],
+    "notes": [
+      "Annah does not have a published build section on Tychara yet, so this page uses her Tychara stat line and kit details as a fallback build profile.",
+      "Her self-healing special and Max HP scaling point cleanly toward a speed-first HP tank shell.",
+      "ATK Down on the ultimate makes faster cycling more valuable than forcing extra damage stats."
+    ]
+  },
+  {
+    "name": "Asherah",
+    "slug": "asherah",
+    "role": "Single-target DPS",
+    "modes": [
+      "PvE",
+      "PvP"
+    ],
+    "image": "/assets/starsavior/sheet/6319edbe734417d33855a4c6633913a8cc2c26c1.png",
+    "setIcons": {
+      "budget": [
+        "/assets/starsavior/sheet/b413c56e8429fc358939010b6155036c43af1820.png",
+        "/assets/starsavior/sheet/efec4b74fa3b43df579bfa0f9c9a7003905758a9.png"
+      ],
+      "endgame": [
+        "/assets/starsavior/sheet/b41733d67d33ac888f0393e951dd1d7b582086a0.png",
+        "/assets/starsavior/sheet/efec4b74fa3b43df579bfa0f9c9a7003905758a9.png"
+      ],
+      "alternate": [
+        "/assets/starsavior/sheet/9dc8554a55fa3ee6136f181cf977f0a3cf5c4f68.png",
+        "/assets/starsavior/sheet/efec4b74fa3b43df579bfa0f9c9a7003905758a9.png"
+      ]
+    },
+    "updatedAt": "2026-03-30",
+    "sourceTabs": [
+      "All Character Build Guide",
+      "Tychara character guide"
+    ],
+    "sourceContext": null,
+    "recommendedSets": [
+      {
+        "label": "Budget",
+        "sets": [
+          "Insight (4pc)",
+          "Valor (2pc)"
+        ],
+        "neckMain": "SPD",
+        "ringMain": "ATK%"
+      },
+      {
+        "label": "Endgame",
+        "sets": [
+          "Destruction (4pc)",
+          "Valor (2pc)"
+        ],
+        "neckMain": "SPD",
+        "ringMain": "ATK%"
+      }
+    ],
+    "subStats": [
+      "SPD",
+      "Crit Rate",
+      "Crit DMG",
+      "ATK%"
+    ],
+    "skillLevels": {
+      "budget": "3 / 3 / 3",
+      "endgame": "7 / 7 / 7",
+      "progression": [
+        "3 / 3 / 3",
+        "3 / 3 / 6",
+        "3 / 6 / 6",
+        "7 / 7 / 7"
+      ]
+    },
+    "arcana": [
+      "Crit-rate Strength Arcana",
+      "ATK Strength Arcana"
+    ],
+    "journeyNormal": {
+      "cards": [
+        {
+          "name": "Lacy",
+          "image": "/assets/starsavior/sheet/bcf95c09e54cf26ecf3d33dd620a0113ac5f336d.png"
+        },
+        {
+          "name": "BG Frey",
+          "image": "/assets/starsavior/sheet/de78e666bfe8a1df69ef4501ebf662dc4f9beb4f.png"
+        },
+        {
+          "name": "Charlotte",
+          "image": "/assets/starsavior/sheet/f9acd84fc597be5fa366d9e5cb18d5432c20885b.png"
+        },
+        {
+          "name": "BG Claire",
+          "image": "/assets/starsavior/sheet/948699f0fd251e717871c7c52acf43d59d2fd0d3.png"
+        },
+        {
+          "name": "Petra",
+          "image": "/assets/starsavior/sheet/dab409310606273d68c1ef55b82e9c35fe21ad35.png"
+        }
+      ],
+      "training": {
+        "name": "Asherah",
+        "image": "/assets/starsavior/sheet/e6dd41978797c0f70870d930ae6e4b0541d21a2d.png"
+      }
+    },
+    "journeyHard": {
+      "talisman": {
+        "label": "DPS - AX5",
+        "owner": "Asherah",
+        "guideIcon": "/assets/starsavior/sheet/6319edbe734417d33855a4c6633913a8cc2c26c1.png",
+        "pieces": [
+          {
+            "name": "Gloves",
+            "image": "/assets/starsavior/sheet/102e5bf6a8fe38db24642ab7da06e48ee5a31185.png"
+          },
+          {
+            "name": "Hat",
+            "image": "/assets/starsavior/sheet/0789a1df0ab7c771452089e630ccc521c7aa8f3c.png"
+          }
+        ]
+      },
+      "cards": [
+        {
+          "name": "Lacy",
+          "image": "/assets/starsavior/sheet/bcf95c09e54cf26ecf3d33dd620a0113ac5f336d.png"
+        },
+        {
+          "name": "BG Frey",
+          "image": "/assets/starsavior/sheet/de78e666bfe8a1df69ef4501ebf662dc4f9beb4f.png"
+        },
+        {
+          "name": "Lyn or BG Claire",
+          "image": "/assets/starsavior/sheet/c381ad05202c655936b55e33f9686edcee53dcf7.png"
+        },
+        {
+          "name": "Charlotte",
+          "image": "/assets/starsavior/sheet/f9acd84fc597be5fa366d9e5cb18d5432c20885b.png"
+        },
+        {
+          "name": "Petra or Naru",
+          "image": "/assets/starsavior/sheet/dab409310606273d68c1ef55b82e9c35fe21ad35.png"
+        }
+      ],
+      "alternate": null
+    },
+    "talismans": {
+      "journeyNormal": "Asherah",
+      "journeyHard": "DPS - AX5"
+    },
+    "notes": [
+      "Asherah follows a straightforward speed-plus-attack structure in the source build tab.",
+      "The intermediate 3/3/6 and 3/6/6 stops are preserved because they are explicitly shown in the sheet."
+    ]
+  },
+  {
+    "name": "Asherah Waltz of Starlight",
+    "slug": "waltz-asherah",
+    "role": "Build Guide",
+    "modes": [
+      "PvE",
+      "PvP"
+    ],
+    "image": "/assets/starsavior/sheet/6916a29bd468e8ecac94edc2fe28b1cdb43499c2.png",
+    "setIcons": {
+      "budget": [
+        "/assets/starsavior/sheet/044e06d4cf81bcaf65709cb735e2f334988d77d6.png",
+        "/assets/starsavior/sheet/f185b864bb5d24221e81d13cb8b761d357d763ae.png"
+      ],
+      "endgame": [
+        "/assets/starsavior/sheet/b413c56e8429fc358939010b6155036c43af1820.png",
+        "/assets/starsavior/sheet/f185b864bb5d24221e81d13cb8b761d357d763ae.png"
+      ],
+      "alternate": [
+        "/assets/starsavior/sheet/6a30ee6d70a7c919289a33883852244a6140010f.png",
+        "/assets/starsavior/sheet/f185b864bb5d24221e81d13cb8b761d357d763ae.png"
+      ]
+    },
+    "updatedAt": "2026-03-30",
+    "sourceTabs": [
+      "All Character Build Guide"
+    ],
+    "sourceContext": null,
+    "recommendedSets": [
+      {
+        "label": "PvE / PvP",
+        "sets": [
+          "HP (4pc)",
+          "Barrier (2pc)"
+        ],
+        "neckMain": "SPD",
+        "ringMain": "HP%"
+      },
+      {
+        "label": "High-end",
+        "sets": [
+          "Insight (4pc)",
+          "Barrier (2pc)"
+        ],
+        "neckMain": "SPD",
+        "ringMain": "HP%"
+      },
+      {
+        "label": "PvP",
+        "sets": [
+          "Speed (4pc)",
+          "Barrier (2pc)"
+        ],
+        "neckMain": "SPD",
+        "ringMain": "HP%"
+      }
+    ],
+    "subStats": [
+      "SPD",
+      "HP%",
+      "DEF%",
+      "Effect Res",
+      "Flat HP"
+    ],
+    "skillLevels": {
+      "budget": "3 / 3 / 3",
+      "endgame": "10 / 10 / 7",
+      "progression": [
+        "3 / 3 / 3",
+        "3 / 3 / 6",
+        "7 / 7 / 7",
+        "10 / 10 / 7"
+      ]
+    },
+    "arcana": [
+      "Lacy",
+      "Charlotte",
+      "BG Claire",
+      "Frey or BG Frey",
+      "Petra"
+    ],
+    "journeyNormal": {
+      "cards": [
+        {
+          "name": "Lacy",
+          "image": "/assets/starsavior/sheet/bcf95c09e54cf26ecf3d33dd620a0113ac5f336d.png"
+        },
+        {
+          "name": "Charlotte",
+          "image": "/assets/starsavior/sheet/f9acd84fc597be5fa366d9e5cb18d5432c20885b.png"
+        },
+        {
+          "name": "BG Claire",
+          "image": "/assets/starsavior/sheet/948699f0fd251e717871c7c52acf43d59d2fd0d3.png"
+        },
+        {
+          "name": "Frey or BG Frey",
+          "image": "/assets/starsavior/sheet/ca1d2bf7b21ace62f2c55d02ed3aeb9d24f0cbea.png"
+        },
+        {
+          "name": "Petra",
+          "image": "/assets/starsavior/sheet/dab409310606273d68c1ef55b82e9c35fe21ad35.png"
+        }
+      ],
+      "training": {
+        "name": "Asherah Waltz",
+        "image": "/assets/starsavior/sheet/a5c2e86f714220c50da54c520d74766d2a17be61.png"
+      }
+    },
+    "journeyHard": {
+      "talisman": {
+        "label": "DPS - AX5",
+        "owner": "Asherah Waltz",
+        "guideIcon": "/assets/starsavior/sheet/6916a29bd468e8ecac94edc2fe28b1cdb43499c2.png",
+        "pieces": [
+          {
+            "name": "Tank - BX2",
+            "image": "/assets/starsavior/sheet/102e5bf6a8fe38db24642ab7da06e48ee5a31185.png"
+          }
+        ]
+      },
+      "cards": [
+        {
+          "name": "Charlotte",
+          "image": "/assets/starsavior/sheet/f9acd84fc597be5fa366d9e5cb18d5432c20885b.png"
+        },
+        {
+          "name": "Asherah Waltz",
+          "image": "/assets/starsavior/sheet/d47bc451d1a8e5871b8e54f8d6936fc4d47fb2b1.png"
+        },
+        {
+          "name": "Frey or Lacy",
+          "image": "/assets/starsavior/sheet/ca1d2bf7b21ace62f2c55d02ed3aeb9d24f0cbea.png"
+        },
+        {
+          "name": "BG Claire",
+          "image": "/assets/starsavior/sheet/948699f0fd251e717871c7c52acf43d59d2fd0d3.png"
+        },
+        {
+          "name": "Petra or Naru",
+          "image": "/assets/starsavior/sheet/dab409310606273d68c1ef55b82e9c35fe21ad35.png"
+        }
+      ],
+      "alternate": null
+    },
+    "talismans": {
+      "journeyNormal": "Asherah Waltz",
+      "journeyHard": "DPS - AX5"
+    },
+    "notes": [
+      "Asherah Waltz of Starlight keeps a SPD necklace and HP% ring in the published build sheet, with HP (4pc) + Barrier (2pc) as the first stop.",
+      "The source sheet highlights ATK% as the standout roll target on top of the usual SPD and HP% shell.",
+      "Journey Hard routing in the sheet points toward DPS - AX5."
+    ]
+  },
+  {
+    "name": "Bell Rhys",
+    "slug": "bell-rhys",
+    "role": "Build Guide",
+    "modes": [
+      "PvE",
+      "PvP"
+    ],
+    "image": "/assets/starsavior/sheet/03ea382b33d48f4a773cbaa7f1b2093196904ffa.png",
+    "setIcons": {
+      "budget": [
+        "/assets/starsavior/sheet/b413c56e8429fc358939010b6155036c43af1820.png",
+        "/assets/starsavior/sheet/95bb620610231a6272439e099ae070b8d70171eb.png"
+      ],
+      "endgame": [
+        "/assets/starsavior/sheet/b413c56e8429fc358939010b6155036c43af1820.png",
+        "/assets/starsavior/sheet/efec4b74fa3b43df579bfa0f9c9a7003905758a9.png"
+      ],
+      "alternate": [
+        "/assets/starsavior/sheet/6a30ee6d70a7c919289a33883852244a6140010f.png",
+        "/assets/starsavior/sheet/95bb620610231a6272439e099ae070b8d70171eb.png"
+      ]
+    },
+    "updatedAt": "2026-03-30",
+    "sourceTabs": [
+      "All Character Build Guide"
+    ],
+    "sourceContext": null,
+    "recommendedSets": [
+      {
+        "label": "PvE / PvP",
+        "sets": [
+          "Insight (4pc)",
+          "Hit (2pc)"
+        ],
+        "neckMain": "SPD",
+        "ringMain": "ATK%"
+      },
+      {
+        "label": "High-end",
+        "sets": [
+          "Insight (4pc)",
+          "Valor (2pc)"
+        ],
+        "neckMain": "SPD",
+        "ringMain": "ATK%"
+      },
+      {
+        "label": "PvP",
+        "sets": [
+          "Speed (4pc)",
+          "Hit (2pc)"
+        ],
+        "neckMain": "SPD",
+        "ringMain": "ATK%"
+      }
+    ],
+    "subStats": [
+      "SPD",
+      "Effect Hit%",
+      "Crit Rate",
+      "Crit DMG",
+      "ATK%"
+    ],
+    "skillLevels": {
+      "budget": "3 / 3 / 3",
+      "endgame": "3 / 6 / 8 or 3 / 8 / 6",
+      "progression": [
+        "3 / 3 / 3",
+        "3 / 6 / 3",
+        "3 / 6 / 6",
+        "3 / 6 / 8 or 3 / 8 / 6"
+      ]
+    },
+    "arcana": [
+      "Lacy",
+      "BG Frey",
+      "Charlotte",
+      "BG Claire",
+      "Petra or Naru"
+    ],
+    "journeyNormal": {
+      "cards": [
+        {
+          "name": "Lacy",
+          "image": "/assets/starsavior/sheet/bcf95c09e54cf26ecf3d33dd620a0113ac5f336d.png"
+        },
+        {
+          "name": "BG Frey",
+          "image": "/assets/starsavior/sheet/de78e666bfe8a1df69ef4501ebf662dc4f9beb4f.png"
+        },
+        {
+          "name": "Charlotte",
+          "image": "/assets/starsavior/sheet/f9acd84fc597be5fa366d9e5cb18d5432c20885b.png"
+        },
+        {
+          "name": "BG Claire",
+          "image": "/assets/starsavior/sheet/948699f0fd251e717871c7c52acf43d59d2fd0d3.png"
+        },
+        {
+          "name": "Petra or Naru",
+          "image": "/assets/starsavior/sheet/dab409310606273d68c1ef55b82e9c35fe21ad35.png"
+        }
+      ],
+      "training": {
+        "name": "Bell Rhys",
+        "image": "/assets/starsavior/sheet/e6dd41978797c0f70870d930ae6e4b0541d21a2d.png"
+      }
+    },
+    "journeyHard": {
+      "talisman": {
+        "label": "DPS - AX5",
+        "owner": "Bell Rhys",
+        "guideIcon": "/assets/starsavior/sheet/03ea382b33d48f4a773cbaa7f1b2093196904ffa.png",
+        "pieces": [
+          {
+            "name": "Gloves",
+            "image": "/assets/starsavior/sheet/102e5bf6a8fe38db24642ab7da06e48ee5a31185.png"
+          },
+          {
+            "name": "Hat",
+            "image": "/assets/starsavior/sheet/0789a1df0ab7c771452089e630ccc521c7aa8f3c.png"
+          }
+        ]
+      },
+      "cards": [
+        {
+          "name": "Lacy",
+          "image": "/assets/starsavior/sheet/bcf95c09e54cf26ecf3d33dd620a0113ac5f336d.png"
+        },
+        {
+          "name": "BG Frey",
+          "image": "/assets/starsavior/sheet/de78e666bfe8a1df69ef4501ebf662dc4f9beb4f.png"
+        },
+        {
+          "name": "Lyn or BG Claire",
+          "image": "/assets/starsavior/sheet/c381ad05202c655936b55e33f9686edcee53dcf7.png"
+        },
+        {
+          "name": "Charlotte",
+          "image": "/assets/starsavior/sheet/f9acd84fc597be5fa366d9e5cb18d5432c20885b.png"
+        },
+        {
+          "name": "Petra or Naru",
+          "image": "/assets/starsavior/sheet/dab409310606273d68c1ef55b82e9c35fe21ad35.png"
+        }
+      ],
+      "alternate": null
+    },
+    "talismans": {
+      "journeyNormal": "Bell Rhys",
+      "journeyHard": "DPS - AX5"
+    },
+    "notes": [
+      "Bell Rhys keeps a SPD necklace and ATK% ring in the published build sheet, with Insight (4pc) + Hit (2pc) as the first stop.",
+      "The source sheet highlights Effect Hit% as the standout roll target on top of the usual SPD and Effect Hit% shell.",
+      "Journey Hard routing in the sheet points toward DPS - AX5."
+    ]
+  },
+  {
+    "name": "Besta",
+    "slug": "besta",
+    "role": "HP-scaling Tank",
+    "modes": [
+      "PvE",
+      "PvP"
+    ],
+    "image": "/assets/starsavior/tychara/972a42523cd7095228d9b0ac3eb35bfa97a1aca7.webp",
+    "updatedAt": "2026-03-30",
+    "sourceTabs": [
+      "Tychara character guide",
+      "Fallback build profile"
+    ],
+    "sourceContext": {
+      "url": "https://tychara.com/StarSavior/characters/besta",
+      "lead": "Fallback build profile based on Tychara's character guide.",
+      "citationText": "Source page: Besta Guide - Star Savior | Tychara.",
+      "permissionNote": "Tychara does not currently publish a dedicated build section for this unit, so this build uses the Tychara stat line and skill kit as its source."
+    },
+    "recommendedSets": [
+      {
+        "label": "Core",
+        "sets": [
+          "HP (4pc)",
+          "Barrier (2pc)"
+        ],
+        "neckMain": "SPD",
+        "ringMain": "HP%"
+      },
+      {
+        "label": "Bruiser tank",
+        "sets": [
+          "HP (4pc)",
+          "DEF (2pc)"
+        ],
+        "neckMain": "SPD",
+        "ringMain": "HP%"
+      },
+      {
+        "label": "Fast utility",
+        "sets": [
+          "Speed (4pc)",
+          "Barrier (2pc)"
+        ],
+        "neckMain": "SPD",
+        "ringMain": "HP%"
+      }
+    ],
+    "subStats": [
+      "SPD",
+      "HP%",
+      "DEF%",
+      "Effect Res",
+      "Flat HP"
+    ],
+    "skillLevels": {
+      "budget": "3 / 3 / 3",
+      "endgame": "4 / 7 / 7",
+      "progression": [
+        "3 / 3 / 3",
+        "4 / 6 / 6",
+        "4 / 7 / 7"
+      ]
+    },
+    "arcana": [
+      "A Knight's Oath",
+      "Under the Glass Moon"
+    ],
+    "notes": [
+      "Besta does not have a published build section on Tychara yet, so this page uses her Tychara stat line and kit details as a fallback build profile.",
+      "Both the basic and special scale from Max HP, which keeps HP sets ahead of pure defense stacking.",
+      "DEF Up on the ultimate and ATK Down on the special make her a straightforward frontline lane anchor."
+    ]
+  },
+  {
+    "name": "Bunnygirl Charlotte",
+    "slug": "bg-charlotte",
+    "role": "Build Guide",
+    "modes": [
+      "PvE",
+      "PvP"
+    ],
+    "image": "/assets/starsavior/sheet/32f9f0eb6442b3e3a3456315f42c57e737f5c3bc.png",
+    "setIcons": {
+      "budget": [
+        "/assets/starsavior/sheet/b413c56e8429fc358939010b6155036c43af1820.png",
+        "/assets/starsavior/sheet/efec4b74fa3b43df579bfa0f9c9a7003905758a9.png"
+      ],
+      "endgame": [
+        "/assets/starsavior/sheet/b41733d67d33ac888f0393e951dd1d7b582086a0.png",
+        "/assets/starsavior/sheet/efec4b74fa3b43df579bfa0f9c9a7003905758a9.png"
+      ],
+      "alternate": [
+        "/assets/starsavior/sheet/6a30ee6d70a7c919289a33883852244a6140010f.png",
+        "/assets/starsavior/sheet/efec4b74fa3b43df579bfa0f9c9a7003905758a9.png"
+      ]
+    },
+    "updatedAt": "2026-03-30",
+    "sourceTabs": [
+      "All Character Build Guide"
+    ],
+    "sourceContext": null,
+    "recommendedSets": [
+      {
+        "label": "PvE / PvP",
+        "sets": [
+          "Insight (4pc)",
+          "Valor (2pc)"
+        ],
+        "neckMain": "SPD",
+        "ringMain": "ATK%"
+      },
+      {
+        "label": "High-end",
+        "sets": [
+          "Destruction (4pc)",
+          "Valor (2pc)"
+        ],
+        "neckMain": "SPD",
+        "ringMain": "ATK%"
+      },
+      {
+        "label": "PvP",
+        "sets": [
+          "Speed (4pc)",
+          "Valor (2pc)"
+        ],
+        "neckMain": "SPD",
+        "ringMain": "ATK%"
+      }
+    ],
+    "subStats": [
+      "SPD",
+      "Crit Rate",
+      "Crit DMG",
+      "ATK%",
+      "Effect Hit%"
+    ],
+    "skillLevels": {
+      "budget": "3 / 3 / 3",
+      "endgame": "7 / 10 / 7",
+      "progression": [
+        "3 / 3 / 3",
+        "3 / 6 / 3",
+        "3 / 6 / 6",
+        "7 / 7 / 7",
+        "7 / 10 / 7"
+      ]
+    },
+    "arcana": [
+      "Lacy",
+      "Kyra",
+      "Charlotte",
+      "BG Claire",
+      "Petra"
+    ],
+    "journeyNormal": {
+      "cards": [
+        {
+          "name": "Lacy",
+          "image": "/assets/starsavior/sheet/bcf95c09e54cf26ecf3d33dd620a0113ac5f336d.png"
+        },
+        {
+          "name": "Kyra",
+          "image": "/assets/starsavior/sheet/e605bd33f2bca763bc382ff6888342405b850afa.png"
+        },
+        {
+          "name": "Charlotte",
+          "image": "/assets/starsavior/sheet/f9acd84fc597be5fa366d9e5cb18d5432c20885b.png"
+        },
+        {
+          "name": "BG Claire",
+          "image": "/assets/starsavior/sheet/948699f0fd251e717871c7c52acf43d59d2fd0d3.png"
+        },
+        {
+          "name": "Petra",
+          "image": "/assets/starsavior/sheet/dab409310606273d68c1ef55b82e9c35fe21ad35.png"
+        }
+      ],
+      "training": {
+        "name": "Bunnygirl Charlotte",
+        "image": "/assets/starsavior/sheet/e6dd41978797c0f70870d930ae6e4b0541d21a2d.png"
+      }
+    },
+    "journeyHard": {
+      "talisman": {
+        "label": "DPS - AX5",
+        "owner": "Bunnygirl Charlotte",
+        "guideIcon": "/assets/starsavior/sheet/32f9f0eb6442b3e3a3456315f42c57e737f5c3bc.png",
+        "pieces": [
+          {
+            "name": "Gloves",
+            "image": "/assets/starsavior/sheet/102e5bf6a8fe38db24642ab7da06e48ee5a31185.png"
+          },
+          {
+            "name": "Hat",
+            "image": "/assets/starsavior/sheet/0789a1df0ab7c771452089e630ccc521c7aa8f3c.png"
+          }
+        ]
+      },
+      "cards": [
+        {
+          "name": "Lacy",
+          "image": "/assets/starsavior/sheet/bcf95c09e54cf26ecf3d33dd620a0113ac5f336d.png"
+        },
+        {
+          "name": "Kyra",
+          "image": "/assets/starsavior/sheet/e605bd33f2bca763bc382ff6888342405b850afa.png"
+        },
+        {
+          "name": "BG Frey",
+          "image": "/assets/starsavior/sheet/de78e666bfe8a1df69ef4501ebf662dc4f9beb4f.png"
+        },
+        {
+          "name": "Charlotte",
+          "image": "/assets/starsavior/sheet/f9acd84fc597be5fa366d9e5cb18d5432c20885b.png"
+        },
+        {
+          "name": "Petra or Naru",
+          "image": "/assets/starsavior/sheet/dab409310606273d68c1ef55b82e9c35fe21ad35.png"
+        }
+      ],
+      "alternate": null
+    },
+    "talismans": {
+      "journeyNormal": "Bunnygirl Charlotte",
+      "journeyHard": "DPS - AX5"
+    },
+    "notes": [
+      "Bunnygirl Charlotte keeps a SPD necklace and ATK% ring in the published build sheet, with Insight (4pc) + Valor (2pc) as the first stop.",
+      "Journey Hard routing in the sheet points toward DPS - AX5."
+    ]
+  },
+  {
+    "name": "Bunnygirl Claire",
+    "slug": "bunnygirl-claire",
+    "role": "Single-target DPS",
+    "modes": [
+      "PvE",
+      "PvP"
+    ],
+    "image": "/assets/starsavior/sheet/df484e14609d8e4735c6f173954719a3634c4607.png",
+    "setIcons": {
+      "budget": [
+        "/assets/starsavior/sheet/b41733d67d33ac888f0393e951dd1d7b582086a0.png",
+        "/assets/starsavior/sheet/efec4b74fa3b43df579bfa0f9c9a7003905758a9.png"
+      ],
+      "endgame": [
+        "/assets/starsavior/sheet/b413c56e8429fc358939010b6155036c43af1820.png",
+        "/assets/starsavior/sheet/efec4b74fa3b43df579bfa0f9c9a7003905758a9.png"
+      ],
+      "alternate": [
+        "/assets/starsavior/sheet/9dc8554a55fa3ee6136f181cf977f0a3cf5c4f68.png",
+        "/assets/starsavior/sheet/efec4b74fa3b43df579bfa0f9c9a7003905758a9.png"
+      ]
+    },
+    "updatedAt": "2026-03-30",
+    "sourceTabs": [
+      "All Character Build Guide"
+    ],
+    "sourceContext": null,
+    "recommendedSets": [
+      {
+        "label": "Budget",
+        "sets": [
+          "Destruction (4pc)",
+          "Valor (2pc)"
+        ],
+        "neckMain": "SPD",
+        "ringMain": "ATK%",
+        "notes": "The source sheet favors a direct crit-damage package immediately."
+      },
+      {
+        "label": "Endgame",
+        "sets": [
+          "Insight (4pc)",
+          "Valor (2pc)"
+        ],
+        "neckMain": "SPD",
+        "ringMain": "ATK%",
+        "notes": "High-end route pivots into a more stable crit-rate shell."
+      }
+    ],
+    "subStats": [
+      "SPD",
+      "Crit Rate",
+      "Crit DMG",
+      "ATK%"
+    ],
+    "skillLevels": {
+      "budget": "3 / 3 / 3",
+      "endgame": "7 / 7 / 7",
+      "progression": [
+        "3 / 3 / 3",
+        "7 / 7 / 7"
+      ]
+    },
+    "arcana": [
+      "Crit-damage Strength Arcana",
+      "Crit-rate Focus Arcana"
+    ],
+    "journeyNormal": {
+      "cards": [
+        {
+          "name": "Lacy",
+          "image": "/assets/starsavior/sheet/bcf95c09e54cf26ecf3d33dd620a0113ac5f336d.png"
+        },
+        {
+          "name": "BG Frey",
+          "image": "/assets/starsavior/sheet/de78e666bfe8a1df69ef4501ebf662dc4f9beb4f.png"
+        },
+        {
+          "name": "Charlotte",
+          "image": "/assets/starsavior/sheet/f9acd84fc597be5fa366d9e5cb18d5432c20885b.png"
+        },
+        {
+          "name": "BG Claire",
+          "image": "/assets/starsavior/sheet/948699f0fd251e717871c7c52acf43d59d2fd0d3.png"
+        },
+        {
+          "name": "Petra or Naru",
+          "image": "/assets/starsavior/sheet/dab409310606273d68c1ef55b82e9c35fe21ad35.png"
+        }
+      ],
+      "training": {
+        "name": "Bunnygirl Claire",
+        "image": "/assets/starsavior/sheet/e6dd41978797c0f70870d930ae6e4b0541d21a2d.png"
+      }
+    },
+    "journeyHard": {
+      "talisman": {
+        "label": "DPS - AX6",
+        "owner": "Bunnygirl Claire",
+        "guideIcon": "/assets/starsavior/sheet/df484e14609d8e4735c6f173954719a3634c4607.png",
+        "pieces": [
+          {
+            "name": "Gloves",
+            "image": "/assets/starsavior/sheet/102e5bf6a8fe38db24642ab7da06e48ee5a31185.png"
+          },
+          {
+            "name": "Necklace",
+            "image": "/assets/starsavior/sheet/c4ed73b9e9e065fd31f2f17d11dff362c685af0e.png"
+          }
+        ]
+      },
+      "cards": [
+        {
+          "name": "Lacy",
+          "image": "/assets/starsavior/sheet/bcf95c09e54cf26ecf3d33dd620a0113ac5f336d.png"
+        },
+        {
+          "name": "BG Frey",
+          "image": "/assets/starsavior/sheet/de78e666bfe8a1df69ef4501ebf662dc4f9beb4f.png"
+        },
+        {
+          "name": "Lyn or BG Claire",
+          "image": "/assets/starsavior/sheet/c381ad05202c655936b55e33f9686edcee53dcf7.png"
+        },
+        {
+          "name": "Charlotte",
+          "image": "/assets/starsavior/sheet/f9acd84fc597be5fa366d9e5cb18d5432c20885b.png"
+        },
+        {
+          "name": "Petra or Naru",
+          "image": "/assets/starsavior/sheet/dab409310606273d68c1ef55b82e9c35fe21ad35.png"
+        }
+      ],
+      "alternate": null
+    },
+    "talismans": {
+      "journeyNormal": "Bunnygirl Claire",
+      "journeyHard": "DPS - AX6"
+    },
+    "notes": [
+      "The launch build card treats BG Claire as a premier Moon single-target finisher that scales hard with better crit infrastructure.",
+      "The source explicitly preserves SPD neck plus ATK% ring across the main recommendations."
+    ]
+  },
+  {
+    "name": "Bunnygirl Scarlet",
+    "slug": "bunnygirl-scarlet",
+    "role": "Build Guide",
+    "modes": [
+      "PvE",
+      "PvP"
+    ],
+    "image": "/assets/starsavior/sheet/3738e7a52e1c103fbc85f5a98a4c9524b22779ca.png",
+    "setIcons": {
+      "budget": [
+        "/assets/starsavior/sheet/b413c56e8429fc358939010b6155036c43af1820.png",
+        "/assets/starsavior/sheet/95bb620610231a6272439e099ae070b8d70171eb.png"
+      ],
+      "endgame": [
+        "/assets/starsavior/sheet/b41733d67d33ac888f0393e951dd1d7b582086a0.png",
+        "/assets/starsavior/sheet/efec4b74fa3b43df579bfa0f9c9a7003905758a9.png"
+      ],
+      "alternate": [
+        "/assets/starsavior/sheet/b41733d67d33ac888f0393e951dd1d7b582086a0.png",
+        "/assets/starsavior/sheet/95bb620610231a6272439e099ae070b8d70171eb.png"
+      ]
+    },
+    "updatedAt": "2026-03-30",
+    "sourceTabs": [
+      "All Character Build Guide"
+    ],
+    "sourceContext": null,
+    "recommendedSets": [
+      {
+        "label": "PvE / PvP",
+        "sets": [
+          "Insight (4pc)",
+          "Hit (2pc)"
+        ],
+        "neckMain": "SPD",
+        "ringMain": "ATK%"
+      },
+      {
+        "label": "High-end",
+        "sets": [
+          "Destruction (4pc)",
+          "Valor (2pc)"
+        ],
+        "neckMain": "SPD",
+        "ringMain": "ATK%"
+      },
+      {
+        "label": "PvP",
+        "sets": [
+          "Destruction (4pc)",
+          "Hit (2pc)"
+        ],
+        "neckMain": "SPD",
+        "ringMain": "ATK%"
+      }
+    ],
+    "subStats": [
+      "SPD",
+      "Effect Hit%",
+      "Crit Rate",
+      "Crit DMG",
+      "ATK%"
+    ],
+    "skillLevels": {
+      "budget": "3 / 3 / 3",
+      "endgame": "7 / 7 / 7",
+      "progression": [
+        "3 / 3 / 3",
+        "7 / 7 / 7"
+      ]
+    },
+    "arcana": [
+      "Lacy",
+      "BG Scarlet",
+      "Charlotte",
+      "BG Claire",
+      "Petra or Naru"
+    ],
+    "journeyNormal": {
+      "cards": [
+        {
+          "name": "Lacy",
+          "image": "/assets/starsavior/sheet/bcf95c09e54cf26ecf3d33dd620a0113ac5f336d.png"
+        },
+        {
+          "name": "BG Scarlet",
+          "image": "/assets/starsavior/sheet/0b4955ee94ef3a993690c23f6f6ca32f5f40304d.png"
+        },
+        {
+          "name": "Charlotte",
+          "image": "/assets/starsavior/sheet/f9acd84fc597be5fa366d9e5cb18d5432c20885b.png"
+        },
+        {
+          "name": "BG Claire",
+          "image": "/assets/starsavior/sheet/948699f0fd251e717871c7c52acf43d59d2fd0d3.png"
+        },
+        {
+          "name": "Petra or Naru",
+          "image": "/assets/starsavior/sheet/dab409310606273d68c1ef55b82e9c35fe21ad35.png"
+        }
+      ],
+      "training": {
+        "name": "Bunnygirl Scarlet",
+        "image": "/assets/starsavior/sheet/e6dd41978797c0f70870d930ae6e4b0541d21a2d.png"
+      }
+    },
+    "journeyHard": {
+      "talisman": {
+        "label": "DPS - AX5",
+        "owner": "BG Scarlet",
+        "guideIcon": "/assets/starsavior/sheet/3738e7a52e1c103fbc85f5a98a4c9524b22779ca.png",
+        "pieces": [
+          {
+            "name": "Gloves",
+            "image": "/assets/starsavior/sheet/102e5bf6a8fe38db24642ab7da06e48ee5a31185.png"
+          },
+          {
+            "name": "Hat",
+            "image": "/assets/starsavior/sheet/0789a1df0ab7c771452089e630ccc521c7aa8f3c.png"
+          }
+        ]
+      },
+      "cards": [
+        {
+          "name": "Lacy",
+          "image": "/assets/starsavior/sheet/bcf95c09e54cf26ecf3d33dd620a0113ac5f336d.png"
+        },
+        {
+          "name": "BG Scarlet or BG Claire",
+          "image": "/assets/starsavior/sheet/0b4955ee94ef3a993690c23f6f6ca32f5f40304d.png"
+        },
+        {
+          "name": "BG Frey",
+          "image": "/assets/starsavior/sheet/de78e666bfe8a1df69ef4501ebf662dc4f9beb4f.png"
+        },
+        {
+          "name": "Charlotte",
+          "image": "/assets/starsavior/sheet/f9acd84fc597be5fa366d9e5cb18d5432c20885b.png"
+        },
+        {
+          "name": "Petra or Naru",
+          "image": "/assets/starsavior/sheet/dab409310606273d68c1ef55b82e9c35fe21ad35.png"
+        }
+      ],
+      "alternate": null
+    },
+    "talismans": {
+      "journeyNormal": "Bunnygirl Scarlet",
+      "journeyHard": "DPS - AX5"
+    },
+    "notes": [
+      "Bunnygirl Scarlet keeps a SPD necklace and ATK% ring in the published build sheet, with Insight (4pc) + Hit (2pc) as the first stop.",
+      "The source sheet highlights Effect Hit% as the standout roll target on top of the usual SPD and Effect Hit% shell.",
+      "Journey Hard routing in the sheet points toward DPS - AX5."
+    ]
+  },
+  {
+    "name": "Carmen",
+    "slug": "carmen",
+    "role": "Build Guide",
+    "modes": [
+      "PvE",
+      "PvP"
+    ],
+    "image": "/assets/starsavior/sheet/71d3031c6a5a2977d14432cf1210ba04353beeff.png",
+    "setIcons": {
+      "budget": [
+        "/assets/starsavior/sheet/6a30ee6d70a7c919289a33883852244a6140010f.png",
+        "/assets/starsavior/sheet/95bb620610231a6272439e099ae070b8d70171eb.png"
+      ],
+      "endgame": [
+        "/assets/starsavior/sheet/6a30ee6d70a7c919289a33883852244a6140010f.png",
+        "/assets/starsavior/sheet/f185b864bb5d24221e81d13cb8b761d357d763ae.png"
+      ],
+      "alternate": [
+        "/assets/starsavior/sheet/6a30ee6d70a7c919289a33883852244a6140010f.png",
+        "/assets/starsavior/sheet/bdf6e0e3e41894af1ba91e0059e13d6667eb4e48.png"
+      ]
+    },
+    "updatedAt": "2026-03-30",
+    "sourceTabs": [
+      "All Character Build Guide",
+      "Tychara character guide"
+    ],
+    "sourceContext": null,
+    "recommendedSets": [
+      {
+        "label": "PvE / PvP",
+        "sets": [
+          "Speed (4pc)",
+          "Hit (2pc)"
+        ],
+        "neckMain": "SPD",
+        "ringMain": "HP%"
+      },
+      {
+        "label": "High-end",
+        "sets": [
+          "Speed (4pc)",
+          "Barrier (2pc)"
+        ],
+        "neckMain": "SPD",
+        "ringMain": "HP%"
+      },
+      {
+        "label": "PvP",
+        "sets": [
+          "Speed (4pc)",
+          "DEF (2pc)"
+        ],
+        "neckMain": "SPD",
+        "ringMain": "HP%"
+      }
+    ],
+    "subStats": [
+      "Speed",
+      "HP",
+      "Defense",
+      "Effect RES %"
+    ],
+    "skillLevels": {
+      "budget": "3 / 3 / 3",
+      "endgame": "7 / 8 / 8",
+      "progression": [
+        "3 / 3 / 3",
+        "3 / 3 / 6",
+        "3 / 6 / 6",
+        "3 / 6 / 8",
+        "7 / 8 / 8"
+      ]
+    },
+    "arcana": [
+      "A Knight's Oath",
+      "A Quiet Moment of Rest",
+      "Young Lady of Stranis",
+      "Nostalgia Strikes Back",
+      "Night View Beyond the Window"
+    ],
+    "journeyNormal": {
+      "cards": [
+        {
+          "name": "Charlotte",
+          "image": "/assets/starsavior/sheet/f9acd84fc597be5fa366d9e5cb18d5432c20885b.png"
+        },
+        {
+          "name": "Asherah Waltz",
+          "image": "/assets/starsavior/sheet/d47bc451d1a8e5871b8e54f8d6936fc4d47fb2b1.png"
+        },
+        {
+          "name": "Emilly",
+          "image": "/assets/starsavior/sheet/0de3daf61046dd13a0d64ea3109c35cf844fd953.png"
+        },
+        {
+          "name": "Hilde",
+          "image": "/assets/starsavior/sheet/689872f0e711b687d1388cead5d4a1d1494eb1d3.png"
+        },
+        {
+          "name": "Carmen",
+          "image": "/assets/starsavior/sheet/f15fd74b55de3f38323573a65599790b8847ceef.png"
+        }
+      ],
+      "training": {
+        "name": "Carmen",
+        "image": "/assets/starsavior/sheet/a5c2e86f714220c50da54c520d74766d2a17be61.png"
+      }
+    },
+    "journeyHard": {
+      "talisman": {
+        "label": "PVP - DX4",
+        "owner": "Carmen",
+        "guideIcon": "/assets/starsavior/sheet/71d3031c6a5a2977d14432cf1210ba04353beeff.png",
+        "pieces": [
+          {
+            "name": "Shoes",
+            "image": "/assets/starsavior/sheet/99ed6d7b5d9dcc3a19ce44ca07b8ca8cb397f134.png"
+          },
+          {
+            "name": "Shoes",
+            "image": "/assets/starsavior/sheet/a9936d1dd7360c7cb74f836c5ae1d3a75889871e.png"
+          }
+        ]
+      },
+      "cards": [
+        {
+          "name": "Charlotte",
+          "image": "/assets/starsavior/sheet/f9acd84fc597be5fa366d9e5cb18d5432c20885b.png"
+        },
+        {
+          "name": "Emilly",
+          "image": "/assets/starsavior/sheet/0de3daf61046dd13a0d64ea3109c35cf844fd953.png"
+        },
+        {
+          "name": "Waltz or BG Claire",
+          "image": "/assets/starsavior/sheet/d47bc451d1a8e5871b8e54f8d6936fc4d47fb2b1.png"
+        },
+        {
+          "name": "Hilde",
+          "image": "/assets/starsavior/sheet/689872f0e711b687d1388cead5d4a1d1494eb1d3.png"
+        },
+        {
+          "name": "Carmen",
+          "image": "/assets/starsavior/sheet/f15fd74b55de3f38323573a65599790b8847ceef.png"
+        }
+      ],
+      "alternate": {
+        "label": "PVP",
+        "cards": [
+          {
+            "name": "Charlotte",
+            "image": "/assets/starsavior/sheet/f9acd84fc597be5fa366d9e5cb18d5432c20885b.png"
+          },
+          {
+            "name": "Emilly",
+            "image": "/assets/starsavior/sheet/0de3daf61046dd13a0d64ea3109c35cf844fd953.png"
+          },
+          {
+            "name": "Harley or Besta",
+            "image": "/assets/starsavior/sheet/e8711d1809f6eff5acd9193a61fc9e907db27e0d.png"
+          },
+          {
+            "name": "Hilde",
+            "image": "/assets/starsavior/sheet/689872f0e711b687d1388cead5d4a1d1494eb1d3.png"
+          },
+          {
+            "name": "Carmen",
+            "image": "/assets/starsavior/sheet/f15fd74b55de3f38323573a65599790b8847ceef.png"
+          }
+        ]
+      }
+    },
+    "talismans": {
+      "journeyNormal": "Carmen",
+      "journeyHard": "PVP - DX4"
+    },
+    "notes": [
+      "Carmen keeps a SPD necklace and HP% ring in the published build sheet, with Speed (4pc) + Hit (2pc) as the first stop.",
+      "Journey Hard routing in the sheet points toward PVP - DX4."
+    ]
+  },
+  {
+    "name": "Charlotte",
+    "slug": "charlotte",
+    "role": "Support DPS",
+    "modes": [
+      "PvE",
+      "PvP"
+    ],
+    "image": "/assets/starsavior/sheet/a5a1dae1bb523bfe6add1588693909e51e060e3b.png",
+    "setIcons": {
+      "budget": [
+        "/assets/starsavior/sheet/b413c56e8429fc358939010b6155036c43af1820.png",
+        "/assets/starsavior/sheet/95bb620610231a6272439e099ae070b8d70171eb.png"
+      ],
+      "endgame": [
+        "/assets/starsavior/sheet/b41733d67d33ac888f0393e951dd1d7b582086a0.png",
+        "/assets/starsavior/sheet/efec4b74fa3b43df579bfa0f9c9a7003905758a9.png"
+      ],
+      "alternate": [
+        "/assets/starsavior/sheet/6a30ee6d70a7c919289a33883852244a6140010f.png",
+        "/assets/starsavior/sheet/efec4b74fa3b43df579bfa0f9c9a7003905758a9.png"
+      ]
+    },
+    "updatedAt": "2026-03-30",
+    "sourceTabs": [
+      "All Character Build Guide",
+      "Tychara character guide"
+    ],
+    "sourceContext": null,
+    "recommendedSets": [
+      {
+        "label": "Budget",
+        "sets": [
+          "Insight (4pc)",
+          "Hit (2pc)"
+        ],
+        "neckMain": "SPD",
+        "ringMain": "ATK%",
+        "notes": "The source build leans on Effect Hit support value while keeping Charlotte fast."
+      },
+      {
+        "label": "Endgame",
+        "sets": [
+          "Destruction (4pc)",
+          "Valor (2pc)"
+        ],
+        "neckMain": "SPD",
+        "ringMain": "ATK%",
+        "notes": "Swap into a harder damage shell once crit and gear quality are stable."
+      }
+    ],
+    "subStats": [
+      "SPD",
+      "Crit Rate",
+      "Crit DMG",
+      "ATK%",
+      "Effect Hit%"
+    ],
+    "skillLevels": {
+      "budget": "3 / 6 / 6",
+      "endgame": "7 / 7 / 10",
+      "progression": [
+        "3 / 6 / 6",
+        "7 / 7 / 7",
+        "7 / 7 / 10"
+      ]
+    },
+    "arcana": [
+      "Crit-rate Strength Arcana",
+      "Speed HP Arcana"
+    ],
+    "journeyNormal": {
+      "cards": [
+        {
+          "name": "Lacy",
+          "image": "/assets/starsavior/sheet/bcf95c09e54cf26ecf3d33dd620a0113ac5f336d.png"
+        },
+        {
+          "name": "BG Frey",
+          "image": "/assets/starsavior/sheet/de78e666bfe8a1df69ef4501ebf662dc4f9beb4f.png"
+        },
+        {
+          "name": "Charlotte",
+          "image": "/assets/starsavior/sheet/f9acd84fc597be5fa366d9e5cb18d5432c20885b.png"
+        },
+        {
+          "name": "BG Claire",
+          "image": "/assets/starsavior/sheet/948699f0fd251e717871c7c52acf43d59d2fd0d3.png"
+        },
+        {
+          "name": "Petra or Naru",
+          "image": "/assets/starsavior/sheet/dab409310606273d68c1ef55b82e9c35fe21ad35.png"
+        }
+      ],
+      "training": {
+        "name": "Charlotte",
+        "image": "/assets/starsavior/sheet/e6dd41978797c0f70870d930ae6e4b0541d21a2d.png"
+      }
+    },
+    "journeyHard": {
+      "talisman": {
+        "label": "DPS - AX5",
+        "owner": "Charlotte",
+        "guideIcon": "/assets/starsavior/sheet/a5a1dae1bb523bfe6add1588693909e51e060e3b.png",
+        "pieces": [
+          {
+            "name": "Gloves",
+            "image": "/assets/starsavior/sheet/102e5bf6a8fe38db24642ab7da06e48ee5a31185.png"
+          },
+          {
+            "name": "Hat",
+            "image": "/assets/starsavior/sheet/0789a1df0ab7c771452089e630ccc521c7aa8f3c.png"
+          }
+        ]
+      },
+      "cards": [
+        {
+          "name": "Lacy",
+          "image": "/assets/starsavior/sheet/bcf95c09e54cf26ecf3d33dd620a0113ac5f336d.png"
+        },
+        {
+          "name": "BG Frey",
+          "image": "/assets/starsavior/sheet/de78e666bfe8a1df69ef4501ebf662dc4f9beb4f.png"
+        },
+        {
+          "name": "Lyn or BG Claire",
+          "image": "/assets/starsavior/sheet/c381ad05202c655936b55e33f9686edcee53dcf7.png"
+        },
+        {
+          "name": "Charlotte",
+          "image": "/assets/starsavior/sheet/f9acd84fc597be5fa366d9e5cb18d5432c20885b.png"
+        },
+        {
+          "name": "Petra or Naru",
+          "image": "/assets/starsavior/sheet/dab409310606273d68c1ef55b82e9c35fe21ad35.png"
+        }
+      ],
+      "alternate": null
+    },
+    "talismans": {
+      "journeyNormal": "Charlotte",
+      "journeyHard": "DPS - AX5"
+    },
+    "notes": [
+      "Charlotte sits in the hybrid support-DPS lane, so speed and utility substats still matter even when you upgrade into higher damage sets.",
+      "The sheet keeps Charlotte on SPD neck and ATK% ring across both budget and late-game routes."
+    ]
+  },
+  {
+    "name": "Claire",
+    "slug": "claire",
+    "role": "Single-target DPS",
+    "modes": [
+      "PvE",
+      "PvP"
+    ],
+    "image": "/assets/starsavior/tychara/208d63044f78e296868e9383553ea4227648b809.webp",
+    "updatedAt": "2026-03-30",
+    "sourceTabs": [
+      "Tychara character guide",
+      "Fallback build profile"
+    ],
+    "sourceContext": {
+      "url": "https://tychara.com/StarSavior/characters/claire",
+      "lead": "Fallback build profile based on Tychara's character guide.",
+      "citationText": "Source page: Claire Guide - Star Savior | Tychara.",
+      "permissionNote": "Tychara does not currently publish a dedicated build section for this unit, so this build uses the Tychara stat line and skill kit as its source."
+    },
+    "recommendedSets": [
+      {
+        "label": "Core",
+        "sets": [
+          "Destruction (4pc)",
+          "Valor (2pc)"
+        ],
+        "neckMain": "SPD",
+        "ringMain": "ATK%"
+      },
+      {
+        "label": "Tempo",
+        "sets": [
+          "Speed (4pc)",
+          "Valor (2pc)"
+        ],
+        "neckMain": "SPD",
+        "ringMain": "ATK%"
+      },
+      {
+        "label": "Budget",
+        "sets": [
+          "ATK (4pc)",
+          "Valor (2pc)"
+        ],
+        "neckMain": "SPD",
+        "ringMain": "ATK%"
+      }
+    ],
+    "subStats": [
+      "SPD",
+      "Crit Rate",
+      "Crit DMG",
+      "ATK%",
+      "Flat ATK"
+    ],
+    "skillLevels": {
+      "budget": "3 / 3 / 3",
+      "endgame": "7 / 7 / 8",
+      "progression": [
+        "3 / 3 / 3",
+        "3 / 6 / 6",
+        "7 / 7 / 8"
+      ]
+    },
+    "arcana": [
+      "No Pain, No Gain",
+      "The Indomitable Masterpiece",
+      "A Knight's Oath"
+    ],
+    "notes": [
+      "Claire does not have a published build section on Tychara yet, so this page uses her Tychara stat line and kit details as a fallback build profile.",
+      "Her passive and ultimate both lean into self-crit scaling, so standard crit damage shells fit naturally.",
+      "Action Gauge gain on the special keeps SPD valuable even on a pure single-target setup."
+    ]
+  },
+  {
+    "name": "Clarissa",
+    "slug": "clarissa",
+    "role": "Control DPS",
+    "modes": [
+      "PvE",
+      "PvP"
+    ],
+    "image": "/assets/starsavior/tychara/ef88ab29622d77227a30b33cfdbf430055a51274.webp",
+    "updatedAt": "2026-03-30",
+    "sourceTabs": [
+      "Tychara character guide",
+      "Fallback build profile"
+    ],
+    "sourceContext": {
+      "url": "https://tychara.com/StarSavior/characters/clarissa",
+      "lead": "Fallback build profile based on Tychara's character guide.",
+      "citationText": "Source page: Clarissa Guide - Star Savior | Tychara.",
+      "permissionNote": "Tychara does not currently publish a dedicated build section for this unit, so this build uses the Tychara stat line and skill kit as its source."
+    },
+    "recommendedSets": [
+      {
+        "label": "Core",
+        "sets": [
+          "Insight (4pc)",
+          "Hit (2pc)"
+        ],
+        "neckMain": "SPD",
+        "ringMain": "ATK%"
+      },
+      {
+        "label": "Damage",
+        "sets": [
+          "Destruction (4pc)",
+          "Valor (2pc)"
+        ],
+        "neckMain": "SPD",
+        "ringMain": "ATK%"
+      },
+      {
+        "label": "Tempo",
+        "sets": [
+          "Speed (4pc)",
+          "Hit (2pc)"
+        ],
+        "neckMain": "SPD",
+        "ringMain": "ATK%"
+      }
+    ],
+    "subStats": [
+      "SPD",
+      "Effect Hit%",
+      "Crit Rate",
+      "Crit DMG",
+      "ATK%"
+    ],
+    "skillLevels": {
+      "budget": "3 / 3 / 3",
+      "endgame": "7 / 8 / 8",
+      "progression": [
+        "3 / 3 / 3",
+        "3 / 6 / 6",
+        "7 / 8 / 8"
+      ]
+    },
+    "arcana": [
+      "No Pain, No Gain",
+      "The Indomitable Masterpiece",
+      "Made by Petra♡"
+    ],
+    "notes": [
+      "Clarissa does not have a published build section on Tychara yet, so this page uses her Tychara stat line and kit details as a fallback build profile.",
+      "Her special already brings SPD Down and Action Gauge control, which makes Effect Hit the cleanest flex stat after speed.",
+      "The kit is still primarily single-target damage, so crit stats stay relevant even on the control route."
+    ]
+  },
+  {
+    "name": "Dana",
+    "slug": "dana",
+    "role": "Build Guide",
+    "modes": [
+      "PvE",
+      "PvP"
+    ],
+    "image": "/assets/starsavior/sheet/26bd481005ded8584ea85e383dc1cf66eea025c4.png",
+    "setIcons": {
+      "budget": [
+        "/assets/starsavior/sheet/b413c56e8429fc358939010b6155036c43af1820.png",
+        "/assets/starsavior/sheet/efec4b74fa3b43df579bfa0f9c9a7003905758a9.png"
+      ],
+      "endgame": [
+        "/assets/starsavior/sheet/b41733d67d33ac888f0393e951dd1d7b582086a0.png",
+        "/assets/starsavior/sheet/efec4b74fa3b43df579bfa0f9c9a7003905758a9.png"
+      ],
+      "alternate": [
+        "/assets/starsavior/sheet/9dc8554a55fa3ee6136f181cf977f0a3cf5c4f68.png",
+        "/assets/starsavior/sheet/efec4b74fa3b43df579bfa0f9c9a7003905758a9.png"
+      ]
+    },
+    "updatedAt": "2026-03-30",
+    "sourceTabs": [
+      "All Character Build Guide",
+      "Tychara character guide"
+    ],
+    "sourceContext": null,
+    "recommendedSets": [
+      {
+        "label": "PvE / PvP",
+        "sets": [
+          "Insight (4pc)",
+          "Valor (2pc)"
+        ],
+        "neckMain": "SPD",
+        "ringMain": "ATK%"
+      },
+      {
+        "label": "High-end",
+        "sets": [
+          "Destruction (4pc)",
+          "Valor (2pc)"
+        ],
+        "neckMain": "SPD",
+        "ringMain": "ATK%"
+      },
+      {
+        "label": "PvP",
+        "sets": [
+          "ATK (4pc)",
+          "Valor (2pc)"
+        ],
+        "neckMain": "SPD",
+        "ringMain": "ATK%"
+      }
+    ],
+    "subStats": [
+      "Speed",
+      "Critical Rate",
+      "Critical Damage",
+      "ATK%",
+      "Effect Hit"
+    ],
+    "skillLevels": {
+      "budget": "3 / 3 / 3",
+      "endgame": "7 / 7 / 8",
+      "progression": [
+        "3 / 3 / 3",
+        "3 / 3 / 6",
+        "3 / 3 / 8",
+        "7 / 7 / 8"
+      ]
+    },
+    "arcana": [
+      "No Pain, No Gain",
+      "Divine Judgement",
+      "The Indomitable Masterpiece",
+      "A Knight's Oath",
+      "Made by Petra♡"
+    ],
+    "journeyNormal": {
+      "cards": [
+        {
+          "name": "Lacy",
+          "image": "/assets/starsavior/sheet/bcf95c09e54cf26ecf3d33dd620a0113ac5f336d.png"
+        },
+        {
+          "name": "Muriel",
+          "image": "/assets/starsavior/sheet/b69d9f9367f0d3dda723340d46c73017cc3af6d7.png"
+        },
+        {
+          "name": "Charlotte",
+          "image": "/assets/starsavior/sheet/f9acd84fc597be5fa366d9e5cb18d5432c20885b.png"
+        },
+        {
+          "name": "BG Claire",
+          "image": "/assets/starsavior/sheet/948699f0fd251e717871c7c52acf43d59d2fd0d3.png"
+        },
+        {
+          "name": "Petra or Naru",
+          "image": "/assets/starsavior/sheet/dab409310606273d68c1ef55b82e9c35fe21ad35.png"
+        }
+      ],
+      "training": {
+        "name": "Dana",
+        "image": "/assets/starsavior/sheet/e6dd41978797c0f70870d930ae6e4b0541d21a2d.png"
+      }
+    },
+    "journeyHard": {
+      "talisman": {
+        "label": "DPS - AX5",
+        "owner": "Dana",
+        "guideIcon": "/assets/starsavior/sheet/26bd481005ded8584ea85e383dc1cf66eea025c4.png",
+        "pieces": [
+          {
+            "name": "Gloves",
+            "image": "/assets/starsavior/sheet/102e5bf6a8fe38db24642ab7da06e48ee5a31185.png"
+          },
+          {
+            "name": "Hat",
+            "image": "/assets/starsavior/sheet/0789a1df0ab7c771452089e630ccc521c7aa8f3c.png"
+          }
+        ]
+      },
+      "cards": [
+        {
+          "name": "Lacy",
+          "image": "/assets/starsavior/sheet/bcf95c09e54cf26ecf3d33dd620a0113ac5f336d.png"
+        },
+        {
+          "name": "Muriel",
+          "image": "/assets/starsavior/sheet/b69d9f9367f0d3dda723340d46c73017cc3af6d7.png"
+        },
+        {
+          "name": "BG Frey",
+          "image": "/assets/starsavior/sheet/de78e666bfe8a1df69ef4501ebf662dc4f9beb4f.png"
+        },
+        {
+          "name": "Charlotte",
+          "image": "/assets/starsavior/sheet/f9acd84fc597be5fa366d9e5cb18d5432c20885b.png"
+        },
+        {
+          "name": "Petra or Naru",
+          "image": "/assets/starsavior/sheet/dab409310606273d68c1ef55b82e9c35fe21ad35.png"
+        }
+      ],
+      "alternate": {
+        "label": "PVP",
+        "cards": [
+          {
+            "name": "Lacy",
+            "image": "/assets/starsavior/sheet/bcf95c09e54cf26ecf3d33dd620a0113ac5f336d.png"
+          },
+          {
+            "name": "Muriel or Frey",
+            "image": "/assets/starsavior/sheet/b69d9f9367f0d3dda723340d46c73017cc3af6d7.png"
+          },
+          {
+            "name": "Dana",
+            "image": "/assets/starsavior/sheet/99ce997890d11fcc673b2cbf83d0a6e0f2f2bb28.png"
+          },
+          {
+            "name": "Charlotte",
+            "image": "/assets/starsavior/sheet/f9acd84fc597be5fa366d9e5cb18d5432c20885b.png"
+          },
+          {
+            "name": "Petra",
+            "image": "/assets/starsavior/sheet/dab409310606273d68c1ef55b82e9c35fe21ad35.png"
+          }
+        ]
+      }
+    },
+    "talismans": {
+      "journeyNormal": "Dana",
+      "journeyHard": "DPS - AX5"
+    },
+    "notes": [
+      "Dana keeps a SPD necklace and ATK% ring in the published build sheet, with Insight (4pc) + Valor (2pc) as the first stop.",
+      "Journey Hard routing in the sheet points toward DPS - AX5."
+    ]
+  },
+  {
+    "name": "Elisa",
+    "slug": "elisa",
+    "role": "Build Guide",
+    "modes": [
+      "PvE",
+      "PvP"
+    ],
+    "image": "/assets/starsavior/sheet/ac90e122207b8cabae7ca61317349e9683f37b56.png",
+    "setIcons": {
+      "budget": [
+        "/assets/starsavior/sheet/044e06d4cf81bcaf65709cb735e2f334988d77d6.png",
+        "/assets/starsavior/sheet/f185b864bb5d24221e81d13cb8b761d357d763ae.png"
+      ],
+      "endgame": [
+        "/assets/starsavior/sheet/044e06d4cf81bcaf65709cb735e2f334988d77d6.png",
+        "/assets/starsavior/sheet/bdf6e0e3e41894af1ba91e0059e13d6667eb4e48.png"
+      ],
+      "alternate": [
+        "/assets/starsavior/sheet/044e06d4cf81bcaf65709cb735e2f334988d77d6.png",
+        "/assets/starsavior/sheet/dd5d6de1f9a842846fda617a6155efa3bb029471.png"
+      ]
+    },
+    "updatedAt": "2026-03-30",
+    "sourceTabs": [
+      "All Character Build Guide",
+      "Tychara character guide"
+    ],
+    "sourceContext": null,
+    "recommendedSets": [
+      {
+        "label": "PvE / PvP",
+        "sets": [
+          "HP (4pc)",
+          "Barrier (2pc)"
+        ],
+        "neckMain": "SPD",
+        "ringMain": "HP%"
+      },
+      {
+        "label": "High-end",
+        "sets": [
+          "HP (4pc)",
+          "DEF (2pc)"
+        ],
+        "neckMain": "SPD",
+        "ringMain": "HP%"
+      },
+      {
+        "label": "PvP",
+        "sets": [
+          "HP (4pc)",
+          "Res (2pc)"
+        ],
+        "neckMain": "SPD",
+        "ringMain": "HP%"
+      }
+    ],
+    "subStats": [
+      "Speed",
+      "HP",
+      "Defense",
+      "Effect RES %"
+    ],
+    "skillLevels": {
+      "budget": "3 / 3 / 3",
+      "endgame": "7 / 10 / 8",
+      "progression": [
+        "3 / 3 / 3",
+        "3 / 6 / 3",
+        "3 / 6 / 6",
+        "3 / 10 / 6",
+        "7 / 10 / 8"
+      ]
+    },
+    "arcana": [
+      "A Knight's Oath",
+      "Young Lady of Stranis",
+      "The Princess Ascends the Throne",
+      "The Perfect Bunny Girl",
+      "Divine Trial"
+    ],
+    "journeyNormal": {
+      "cards": [
+        {
+          "name": "Charlotte",
+          "image": "/assets/starsavior/sheet/f9acd84fc597be5fa366d9e5cb18d5432c20885b.png"
+        },
+        {
+          "name": "Asherah Waltz",
+          "image": "/assets/starsavior/sheet/d47bc451d1a8e5871b8e54f8d6936fc4d47fb2b1.png"
+        },
+        {
+          "name": "Frey",
+          "image": "/assets/starsavior/sheet/ca1d2bf7b21ace62f2c55d02ed3aeb9d24f0cbea.png"
+        },
+        {
+          "name": "Harley",
+          "image": "/assets/starsavior/sheet/e8711d1809f6eff5acd9193a61fc9e907db27e0d.png"
+        },
+        {
+          "name": "Elisa",
+          "image": "/assets/starsavior/sheet/29dd8aa7a43f374af99fe0390608c375c8c329e1.png"
+        }
+      ],
+      "training": {
+        "name": "Elisa",
+        "image": "/assets/starsavior/sheet/a5c2e86f714220c50da54c520d74766d2a17be61.png"
+      }
+    },
+    "journeyHard": {
+      "talisman": {
+        "label": "Tank - BX2",
+        "owner": "Elisa",
+        "guideIcon": "/assets/starsavior/sheet/ac90e122207b8cabae7ca61317349e9683f37b56.png",
+        "pieces": [
+          {
+            "name": "Armor",
+            "image": "/assets/starsavior/sheet/933a358280c090c5df3e7c18f0d11a1650fd31bb.png"
+          },
+          {
+            "name": "Armor",
+            "image": "/assets/starsavior/sheet/1943f6788567aad6bf841efa95f7d2d1c04e8b44.png"
+          }
+        ]
+      },
+      "cards": [
+        {
+          "name": "Charlotte",
+          "image": "/assets/starsavior/sheet/f9acd84fc597be5fa366d9e5cb18d5432c20885b.png"
+        },
+        {
+          "name": "Asherah Waltz",
+          "image": "/assets/starsavior/sheet/d47bc451d1a8e5871b8e54f8d6936fc4d47fb2b1.png"
+        },
+        {
+          "name": "Frey",
+          "image": "/assets/starsavior/sheet/ca1d2bf7b21ace62f2c55d02ed3aeb9d24f0cbea.png"
+        },
+        {
+          "name": "BG Claire",
+          "image": "/assets/starsavior/sheet/948699f0fd251e717871c7c52acf43d59d2fd0d3.png"
+        },
+        {
+          "name": "Elisa",
+          "image": "/assets/starsavior/sheet/29dd8aa7a43f374af99fe0390608c375c8c329e1.png"
+        }
+      ],
+      "alternate": null
+    },
+    "talismans": {
+      "journeyNormal": "Elisa",
+      "journeyHard": "Tank - BX2"
+    },
+    "notes": [
+      "Elisa keeps a SPD necklace and HP% ring in the published build sheet, with HP (4pc) + Barrier (2pc) as the first stop.",
+      "Journey Hard routing in the sheet points toward Tank - BX2."
+    ]
+  },
+  {
+    "name": "Emilly",
+    "slug": "emilly",
+    "role": "Build Guide",
+    "modes": [
+      "PvE",
+      "PvP"
+    ],
+    "image": "/assets/starsavior/sheet/2f7a5eb015835c70fd92cdc281bc2061144a4e38.png",
+    "setIcons": {
+      "budget": [
+        "/assets/starsavior/sheet/044e06d4cf81bcaf65709cb735e2f334988d77d6.png",
+        "/assets/starsavior/sheet/f185b864bb5d24221e81d13cb8b761d357d763ae.png"
+      ],
+      "endgame": [
+        "/assets/starsavior/sheet/b413c56e8429fc358939010b6155036c43af1820.png",
+        "/assets/starsavior/sheet/f185b864bb5d24221e81d13cb8b761d357d763ae.png"
+      ],
+      "alternate": [
+        "/assets/starsavior/sheet/6a30ee6d70a7c919289a33883852244a6140010f.png",
+        "/assets/starsavior/sheet/f185b864bb5d24221e81d13cb8b761d357d763ae.png"
+      ]
+    },
+    "updatedAt": "2026-03-30",
+    "sourceTabs": [
+      "All Character Build Guide",
+      "Tychara character guide"
+    ],
+    "sourceContext": null,
+    "recommendedSets": [
+      {
+        "label": "PvE / PvP",
+        "sets": [
+          "HP (4pc)",
+          "Barrier (2pc)"
+        ],
+        "neckMain": "SPD",
+        "ringMain": "HP%"
+      },
+      {
+        "label": "High-end",
+        "sets": [
+          "Insight (4pc)",
+          "Barrier (2pc)"
+        ],
+        "neckMain": "SPD",
+        "ringMain": "HP%"
+      },
+      {
+        "label": "PvP",
+        "sets": [
+          "Speed (4pc)",
+          "Barrier (2pc)"
+        ],
+        "neckMain": "SPD",
+        "ringMain": "HP%"
+      }
+    ],
+    "subStats": [
+      "Speed",
+      "HP",
+      "Critical Rate",
+      "Critical Damage",
+      "ATK%"
+    ],
+    "skillLevels": {
+      "budget": "3 / 3 / 3",
+      "endgame": "7 / 10 / 7",
+      "progression": [
+        "3 / 3 / 3",
+        "3 / 6 / 3",
+        "3 / 6 / 6",
+        "7 / 7 / 7",
+        "7 / 10 / 7"
+      ]
+    },
+    "arcana": [
+      "A Knight's Oath",
+      "A Quiet Moment of Rest",
+      "The Perfect Bunny Girl",
+      "Nostalgia Strikes Back",
+      "Made by Petra♡"
+    ],
+    "journeyNormal": {
+      "cards": [
+        {
+          "name": "Lacy",
+          "image": "/assets/starsavior/sheet/bcf95c09e54cf26ecf3d33dd620a0113ac5f336d.png"
+        },
+        {
+          "name": "Charlotte",
+          "image": "/assets/starsavior/sheet/f9acd84fc597be5fa366d9e5cb18d5432c20885b.png"
+        },
+        {
+          "name": "BG Claire",
+          "image": "/assets/starsavior/sheet/948699f0fd251e717871c7c52acf43d59d2fd0d3.png"
+        },
+        {
+          "name": "Emilly",
+          "image": "/assets/starsavior/sheet/0de3daf61046dd13a0d64ea3109c35cf844fd953.png"
+        },
+        {
+          "name": "Petra or Naru",
+          "image": "/assets/starsavior/sheet/dab409310606273d68c1ef55b82e9c35fe21ad35.png"
+        }
+      ],
+      "training": {
+        "name": "Emilly",
+        "image": "/assets/starsavior/sheet/a5c2e86f714220c50da54c520d74766d2a17be61.png"
+      }
+    },
+    "journeyHard": {
+      "talisman": {
+        "label": "CRIT - EX5",
+        "owner": "Emilly",
+        "guideIcon": "/assets/starsavior/sheet/2f7a5eb015835c70fd92cdc281bc2061144a4e38.png",
+        "pieces": [
+          {
+            "name": "Tank - BX2",
+            "image": "/assets/starsavior/sheet/4bbe1a7fe4523c08bde8ae0d4019fa0d197016d7.png"
+          },
+          {
+            "name": "Shoes",
+            "image": "/assets/starsavior/sheet/a9936d1dd7360c7cb74f836c5ae1d3a75889871e.png"
+          }
+        ]
+      },
+      "cards": [
+        {
+          "name": "Charlotte",
+          "image": "/assets/starsavior/sheet/f9acd84fc597be5fa366d9e5cb18d5432c20885b.png"
+        },
+        {
+          "name": "Emilly",
+          "image": "/assets/starsavior/sheet/0de3daf61046dd13a0d64ea3109c35cf844fd953.png"
+        },
+        {
+          "name": "Waltz or Lacy",
+          "image": "/assets/starsavior/sheet/d47bc451d1a8e5871b8e54f8d6936fc4d47fb2b1.png"
+        },
+        {
+          "name": "BG Claire",
+          "image": "/assets/starsavior/sheet/948699f0fd251e717871c7c52acf43d59d2fd0d3.png"
+        },
+        {
+          "name": "Petra or Naru",
+          "image": "/assets/starsavior/sheet/dab409310606273d68c1ef55b82e9c35fe21ad35.png"
+        }
+      ],
+      "alternate": {
+        "label": "PVP",
+        "cards": [
+          {
+            "name": "Charlotte",
+            "image": "/assets/starsavior/sheet/f9acd84fc597be5fa366d9e5cb18d5432c20885b.png"
+          },
+          {
+            "name": "Emilly",
+            "image": "/assets/starsavior/sheet/0de3daf61046dd13a0d64ea3109c35cf844fd953.png"
+          },
+          {
+            "name": "Waltz or BG Claire",
+            "image": "/assets/starsavior/sheet/d47bc451d1a8e5871b8e54f8d6936fc4d47fb2b1.png"
+          },
+          {
+            "name": "Hilde",
+            "image": "/assets/starsavior/sheet/689872f0e711b687d1388cead5d4a1d1494eb1d3.png"
+          },
+          {
+            "name": "Besta or Harley",
+            "image": "/assets/starsavior/sheet/409e623e04a6ba7c73197bf3a677d53c99173cfc.png"
+          }
+        ]
+      }
+    },
+    "talismans": {
+      "journeyNormal": "Emilly",
+      "journeyHard": "CRIT - EX5"
+    },
+    "notes": [
+      "Emilly keeps a SPD necklace and HP% ring in the published build sheet, with HP (4pc) + Barrier (2pc) as the first stop.",
+      "The source sheet highlights ATK% as the standout roll target on top of the usual Speed and HP shell.",
+      "Journey Hard routing in the sheet points toward CRIT - EX5."
+    ]
+  },
+  {
+    "name": "Epindel",
+    "slug": "epindel",
+    "role": "Build Guide",
+    "modes": [
+      "PvE",
+      "PvP"
+    ],
+    "image": "/assets/starsavior/sheet/f93f0f9016989b8b8f07d41d99d31528d5a25097.png",
+    "setIcons": {
+      "budget": [
+        "/assets/starsavior/sheet/b413c56e8429fc358939010b6155036c43af1820.png",
+        "/assets/starsavior/sheet/efec4b74fa3b43df579bfa0f9c9a7003905758a9.png"
+      ],
+      "endgame": [
+        "/assets/starsavior/sheet/b41733d67d33ac888f0393e951dd1d7b582086a0.png",
+        "/assets/starsavior/sheet/efec4b74fa3b43df579bfa0f9c9a7003905758a9.png"
+      ],
+      "alternate": [
+        "/assets/starsavior/sheet/9dc8554a55fa3ee6136f181cf977f0a3cf5c4f68.png",
+        "/assets/starsavior/sheet/efec4b74fa3b43df579bfa0f9c9a7003905758a9.png"
+      ]
+    },
+    "updatedAt": "2026-03-30",
+    "sourceTabs": [
+      "All Character Build Guide",
+      "Tychara character guide"
+    ],
+    "sourceContext": null,
+    "recommendedSets": [
+      {
+        "label": "PvE / PvP",
+        "sets": [
+          "Insight (4pc)",
+          "Valor (2pc)"
+        ],
+        "neckMain": "SPD",
+        "ringMain": "ATK%"
+      },
+      {
+        "label": "High-end",
+        "sets": [
+          "Destruction (4pc)",
+          "Valor (2pc)"
+        ],
+        "neckMain": "SPD",
+        "ringMain": "ATK%"
+      },
+      {
+        "label": "PvP",
+        "sets": [
+          "ATK (4pc)",
+          "Valor (2pc)"
+        ],
+        "neckMain": "SPD",
+        "ringMain": "ATK%"
+      }
+    ],
+    "subStats": [
+      "Speed",
+      "Critical Rate",
+      "Critical Damage",
+      "ATK%"
+    ],
+    "skillLevels": {
+      "budget": "3 / 3 / 3",
+      "endgame": "7 / 10 / 7",
+      "progression": [
+        "3 / 3 / 3",
+        "3 / 6 / 3",
+        "3 / 6 / 6",
+        "7 / 7 / 7",
+        "7 / 10 / 7"
+      ]
+    },
+    "arcana": [
+      "No Pain, No Gain",
+      "As Cute as Kyra!",
+      "The Indomitable Masterpiece",
+      "A Knight's Oath",
+      "Made by Petra♡"
+    ],
+    "journeyNormal": {
+      "cards": [
+        {
+          "name": "Lacy",
+          "image": "/assets/starsavior/sheet/bcf95c09e54cf26ecf3d33dd620a0113ac5f336d.png"
+        },
+        {
+          "name": "Kyra",
+          "image": "/assets/starsavior/sheet/e605bd33f2bca763bc382ff6888342405b850afa.png"
+        },
+        {
+          "name": "Charlotte",
+          "image": "/assets/starsavior/sheet/f9acd84fc597be5fa366d9e5cb18d5432c20885b.png"
+        },
+        {
+          "name": "BG Claire",
+          "image": "/assets/starsavior/sheet/948699f0fd251e717871c7c52acf43d59d2fd0d3.png"
+        },
+        {
+          "name": "Petra",
+          "image": "/assets/starsavior/sheet/dab409310606273d68c1ef55b82e9c35fe21ad35.png"
+        }
+      ],
+      "training": {
+        "name": "Epindel",
+        "image": "/assets/starsavior/sheet/e6dd41978797c0f70870d930ae6e4b0541d21a2d.png"
+      }
+    },
+    "journeyHard": {
+      "talisman": {
+        "label": "DPS - AX5",
+        "owner": "Epindel",
+        "guideIcon": "/assets/starsavior/sheet/f93f0f9016989b8b8f07d41d99d31528d5a25097.png",
+        "pieces": [
+          {
+            "name": "Gloves",
+            "image": "/assets/starsavior/sheet/102e5bf6a8fe38db24642ab7da06e48ee5a31185.png"
+          },
+          {
+            "name": "Hat",
+            "image": "/assets/starsavior/sheet/0789a1df0ab7c771452089e630ccc521c7aa8f3c.png"
+          }
+        ]
+      },
+      "cards": [
+        {
+          "name": "Lacy",
+          "image": "/assets/starsavior/sheet/bcf95c09e54cf26ecf3d33dd620a0113ac5f336d.png"
+        },
+        {
+          "name": "Kyra",
+          "image": "/assets/starsavior/sheet/e605bd33f2bca763bc382ff6888342405b850afa.png"
+        },
+        {
+          "name": "BG Frey",
+          "image": "/assets/starsavior/sheet/de78e666bfe8a1df69ef4501ebf662dc4f9beb4f.png"
+        },
+        {
+          "name": "Charlotte",
+          "image": "/assets/starsavior/sheet/f9acd84fc597be5fa366d9e5cb18d5432c20885b.png"
+        },
+        {
+          "name": "Petra or Naru",
+          "image": "/assets/starsavior/sheet/dab409310606273d68c1ef55b82e9c35fe21ad35.png"
+        }
+      ],
+      "alternate": null
+    },
+    "talismans": {
+      "journeyNormal": "Epindel",
+      "journeyHard": "DPS - AX5"
+    },
+    "notes": [
+      "Epindel keeps a SPD necklace and ATK% ring in the published build sheet, with Insight (4pc) + Valor (2pc) as the first stop.",
+      "Journey Hard routing in the sheet points toward DPS - AX5."
+    ]
+  },
+  {
+    "name": "Frey",
+    "slug": "frey",
+    "role": "Build Guide",
+    "modes": [
+      "PvE",
+      "PvP"
+    ],
+    "image": "/assets/starsavior/sheet/17610034a6bf830c4deae70baa570c0a0adc598c.png",
+    "setIcons": {
+      "budget": [
+        "/assets/starsavior/sheet/044e06d4cf81bcaf65709cb735e2f334988d77d6.png",
+        "/assets/starsavior/sheet/f185b864bb5d24221e81d13cb8b761d357d763ae.png"
+      ],
+      "endgame": [
+        "/assets/starsavior/sheet/044e06d4cf81bcaf65709cb735e2f334988d77d6.png",
+        "/assets/starsavior/sheet/bdf6e0e3e41894af1ba91e0059e13d6667eb4e48.png"
+      ],
+      "alternate": [
+        "/assets/starsavior/sheet/6a30ee6d70a7c919289a33883852244a6140010f.png",
+        "/assets/starsavior/sheet/f185b864bb5d24221e81d13cb8b761d357d763ae.png"
+      ]
+    },
+    "updatedAt": "2026-03-30",
+    "sourceTabs": [
+      "All Character Build Guide",
+      "Tychara character guide"
+    ],
+    "sourceContext": null,
+    "recommendedSets": [
+      {
+        "label": "PvE / PvP",
+        "sets": [
+          "HP (4pc)",
+          "Barrier (2pc)"
+        ],
+        "neckMain": "SPD",
+        "ringMain": "HP%"
+      },
+      {
+        "label": "High-end",
+        "sets": [
+          "HP (4pc)",
+          "DEF (2pc)"
+        ],
+        "neckMain": "SPD",
+        "ringMain": "HP%"
+      },
+      {
+        "label": "PvP",
+        "sets": [
+          "Speed (4pc)",
+          "Barrier (2pc)"
+        ],
+        "neckMain": "SPD",
+        "ringMain": "HP%"
+      }
+    ],
+    "subStats": [
+      "Speed",
+      "HP",
+      "Defense",
+      "Effect RES %"
+    ],
+    "skillLevels": {
+      "budget": "3 / 3 / 3",
+      "endgame": "3 / 7 / 7 or 7 / 7 / 7",
+      "progression": [
+        "3 / 3 / 3",
+        "3 / 3 / 6",
+        "3 / 7 / 7 or 7 / 7 / 7"
+      ]
+    },
+    "arcana": [
+      "A Knight's Oath",
+      "Young Lady of Stranis",
+      "The Princess Ascends the Throne",
+      "The Perfect Bunny Girl",
+      "Divine Trial"
+    ],
+    "journeyNormal": {
+      "cards": [
+        {
+          "name": "Charlotte",
+          "image": "/assets/starsavior/sheet/f9acd84fc597be5fa366d9e5cb18d5432c20885b.png"
+        },
+        {
+          "name": "Asherah Waltz",
+          "image": "/assets/starsavior/sheet/d47bc451d1a8e5871b8e54f8d6936fc4d47fb2b1.png"
+        },
+        {
+          "name": "Frey",
+          "image": "/assets/starsavior/sheet/ca1d2bf7b21ace62f2c55d02ed3aeb9d24f0cbea.png"
+        },
+        {
+          "name": "Harley",
+          "image": "/assets/starsavior/sheet/e8711d1809f6eff5acd9193a61fc9e907db27e0d.png"
+        },
+        {
+          "name": "Elisa",
+          "image": "/assets/starsavior/sheet/29dd8aa7a43f374af99fe0390608c375c8c329e1.png"
+        }
+      ],
+      "training": {
+        "name": "Frey",
+        "image": "/assets/starsavior/sheet/a5c2e86f714220c50da54c520d74766d2a17be61.png"
+      }
+    },
+    "journeyHard": {
+      "talisman": {
+        "label": "Tank - BX2",
+        "owner": "Frey",
+        "guideIcon": "/assets/starsavior/sheet/17610034a6bf830c4deae70baa570c0a0adc598c.png",
+        "pieces": [
+          {
+            "name": "Armor",
+            "image": "/assets/starsavior/sheet/933a358280c090c5df3e7c18f0d11a1650fd31bb.png"
+          },
+          {
+            "name": "Armor",
+            "image": "/assets/starsavior/sheet/1943f6788567aad6bf841efa95f7d2d1c04e8b44.png"
+          }
+        ]
+      },
+      "cards": [
+        {
+          "name": "Charlotte",
+          "image": "/assets/starsavior/sheet/f9acd84fc597be5fa366d9e5cb18d5432c20885b.png"
+        },
+        {
+          "name": "Asherah Waltz",
+          "image": "/assets/starsavior/sheet/d47bc451d1a8e5871b8e54f8d6936fc4d47fb2b1.png"
+        },
+        {
+          "name": "Frey",
+          "image": "/assets/starsavior/sheet/ca1d2bf7b21ace62f2c55d02ed3aeb9d24f0cbea.png"
+        },
+        {
+          "name": "BG Claire",
+          "image": "/assets/starsavior/sheet/948699f0fd251e717871c7c52acf43d59d2fd0d3.png"
+        },
+        {
+          "name": "Elisa",
+          "image": "/assets/starsavior/sheet/29dd8aa7a43f374af99fe0390608c375c8c329e1.png"
+        }
+      ],
+      "alternate": null
+    },
+    "talismans": {
+      "journeyNormal": "Frey",
+      "journeyHard": "Tank - BX2"
+    },
+    "notes": [
+      "Frey keeps a SPD necklace and HP% ring in the published build sheet, with HP (4pc) + Barrier (2pc) as the first stop.",
+      "Journey Hard routing in the sheet points toward Tank - BX2."
+    ]
+  },
+  {
+    "name": "Noble Princess Frey",
+    "slug": "noble-princess-frey",
+    "role": "Single-target DPS",
+    "modes": [
+      "PvE",
+      "PvP"
+    ],
+    "image": "/assets/starsavior/sheet/2d43552f89a910ffbfecef704d0dde0324c17010.png",
+    "setIcons": {
+      "budget": [
+        "/assets/starsavior/sheet/b41733d67d33ac888f0393e951dd1d7b582086a0.png",
+        "/assets/starsavior/sheet/efec4b74fa3b43df579bfa0f9c9a7003905758a9.png"
+      ],
+      "endgame": [
+        "/assets/starsavior/sheet/b413c56e8429fc358939010b6155036c43af1820.png",
+        "/assets/starsavior/sheet/efec4b74fa3b43df579bfa0f9c9a7003905758a9.png"
+      ],
+      "alternate": [
+        "/assets/starsavior/sheet/9dc8554a55fa3ee6136f181cf977f0a3cf5c4f68.png",
+        "/assets/starsavior/sheet/efec4b74fa3b43df579bfa0f9c9a7003905758a9.png"
+      ]
+    },
+    "updatedAt": "2026-03-30",
+    "sourceTabs": [
+      "All Character Build Guide"
+    ],
+    "sourceContext": null,
+    "recommendedSets": [
+      {
+        "label": "Budget",
+        "sets": [
+          "Destruction (4pc)",
+          "Valor (2pc)"
+        ],
+        "neckMain": "SPD",
+        "ringMain": "ATK%"
+      },
+      {
+        "label": "Endgame",
+        "sets": [
+          "Insight (4pc)",
+          "Valor (2pc)"
+        ],
+        "neckMain": "SPD",
+        "ringMain": "ATK%",
+        "notes": "The source keeps both crit-damage and crit-rate routes alive depending on account quality."
+      }
+    ],
+    "subStats": [
+      "SPD",
+      "Crit Rate",
+      "Crit DMG",
+      "ATK%"
+    ],
+    "skillLevels": {
+      "budget": "3 / 3 / 3",
+      "endgame": "7 / 7 / 8",
+      "progression": [
+        "3 / 3 / 3",
+        "3 / 6 / 3",
+        "3 / 6 / 6",
+        "3 / 6 / 8",
+        "7 / 7 / 8"
+      ]
+    },
+    "arcana": [
+      "Crit-damage Strength Arcana",
+      "Crit-rate Strength Arcana"
+    ],
+    "journeyNormal": {
+      "cards": [
+        {
+          "name": "Lacy",
+          "image": "/assets/starsavior/sheet/bcf95c09e54cf26ecf3d33dd620a0113ac5f336d.png"
+        },
+        {
+          "name": "Muriel",
+          "image": "/assets/starsavior/sheet/b69d9f9367f0d3dda723340d46c73017cc3af6d7.png"
+        },
+        {
+          "name": "Charlotte",
+          "image": "/assets/starsavior/sheet/f9acd84fc597be5fa366d9e5cb18d5432c20885b.png"
+        },
+        {
+          "name": "BG Claire",
+          "image": "/assets/starsavior/sheet/948699f0fd251e717871c7c52acf43d59d2fd0d3.png"
+        },
+        {
+          "name": "Petra or Naru",
+          "image": "/assets/starsavior/sheet/dab409310606273d68c1ef55b82e9c35fe21ad35.png"
+        }
+      ],
+      "training": {
+        "name": "Noble Princess Frey",
+        "image": "/assets/starsavior/sheet/e6dd41978797c0f70870d930ae6e4b0541d21a2d.png"
+      }
+    },
+    "journeyHard": {
+      "talisman": {
+        "label": "DPS - AX5",
+        "owner": "Noble Princess Frey",
+        "guideIcon": "/assets/starsavior/sheet/2d43552f89a910ffbfecef704d0dde0324c17010.png",
+        "pieces": [
+          {
+            "name": "Gloves",
+            "image": "/assets/starsavior/sheet/102e5bf6a8fe38db24642ab7da06e48ee5a31185.png"
+          },
+          {
+            "name": "Hat",
+            "image": "/assets/starsavior/sheet/0789a1df0ab7c771452089e630ccc521c7aa8f3c.png"
+          }
+        ]
+      },
+      "cards": [
+        {
+          "name": "Lacy",
+          "image": "/assets/starsavior/sheet/bcf95c09e54cf26ecf3d33dd620a0113ac5f336d.png"
+        },
+        {
+          "name": "Muriel",
+          "image": "/assets/starsavior/sheet/b69d9f9367f0d3dda723340d46c73017cc3af6d7.png"
+        },
+        {
+          "name": "BG Frey",
+          "image": "/assets/starsavior/sheet/de78e666bfe8a1df69ef4501ebf662dc4f9beb4f.png"
+        },
+        {
+          "name": "Charlotte",
+          "image": "/assets/starsavior/sheet/f9acd84fc597be5fa366d9e5cb18d5432c20885b.png"
+        },
+        {
+          "name": "Petra or Naru",
+          "image": "/assets/starsavior/sheet/dab409310606273d68c1ef55b82e9c35fe21ad35.png"
+        }
+      ],
+      "alternate": null
+    },
+    "talismans": {
+      "journeyNormal": "Noble Princess Frey",
+      "journeyHard": "DPS - AX5"
+    },
+    "notes": [
+      "The sheet treats Noble Princess Frey as a premium damage dealer with more than one viable crit shell.",
+      "Her progression path is gradual and worth following because the source explicitly lists multiple midpoints."
+    ]
+  },
+  {
+    "name": "Harley",
+    "slug": "harley",
+    "role": "Build Guide",
+    "modes": [
+      "PvE",
+      "PvP"
+    ],
+    "image": "/assets/starsavior/sheet/aed1e20536171d767b20ea1069f5d51b6a849ca9.png",
+    "setIcons": {
+      "budget": [
+        "/assets/starsavior/sheet/044e06d4cf81bcaf65709cb735e2f334988d77d6.png",
+        "/assets/starsavior/sheet/95bb620610231a6272439e099ae070b8d70171eb.png"
+      ],
+      "endgame": [
+        "/assets/starsavior/sheet/b413c56e8429fc358939010b6155036c43af1820.png",
+        "/assets/starsavior/sheet/95bb620610231a6272439e099ae070b8d70171eb.png"
+      ],
+      "alternate": [
+        "/assets/starsavior/sheet/6a30ee6d70a7c919289a33883852244a6140010f.png",
+        "/assets/starsavior/sheet/95bb620610231a6272439e099ae070b8d70171eb.png"
+      ]
+    },
+    "updatedAt": "2026-03-30",
+    "sourceTabs": [
+      "All Character Build Guide",
+      "Tychara character guide"
+    ],
+    "sourceContext": null,
+    "recommendedSets": [
+      {
+        "label": "PvE / PvP",
+        "sets": [
+          "HP (4pc)",
+          "Hit (2pc)"
+        ],
+        "neckMain": "SPD",
+        "ringMain": "HP%"
+      },
+      {
+        "label": "High-end",
+        "sets": [
+          "Insight (4pc)",
+          "Effect Hit (2pc)"
+        ],
+        "neckMain": "SPD",
+        "ringMain": "HP%"
+      },
+      {
+        "label": "PvP",
+        "sets": [
+          "Speed (4pc)",
+          "Hit (2pc)"
+        ],
+        "neckMain": "SPD",
+        "ringMain": "HP%"
+      }
+    ],
+    "subStats": [
+      "Speed",
+      "Critical Rate",
+      "Critical Damage",
+      "HP",
+      "Effect Hit"
+    ],
+    "skillLevels": {
+      "budget": "3 / 3 / 3",
+      "endgame": "7 / 7 / 8",
+      "progression": [
+        "3 / 3 / 3",
+        "3 / 3 / 6",
+        "3 / 6 / 6",
+        "3 / 6 / 8",
+        "7 / 7 / 8"
+      ]
+    },
+    "arcana": [
+      "A Knight's Oath",
+      "The Perfect Bunny Girl",
+      "A Quiet Moment of Rest",
+      "Young Lady of Stranis",
+      "Made by Petra♡"
+    ],
+    "journeyNormal": {
+      "cards": [
+        {
+          "name": "Lacy",
+          "image": "/assets/starsavior/sheet/bcf95c09e54cf26ecf3d33dd620a0113ac5f336d.png"
+        },
+        {
+          "name": "Charlotte",
+          "image": "/assets/starsavior/sheet/f9acd84fc597be5fa366d9e5cb18d5432c20885b.png"
+        },
+        {
+          "name": "BG Claire",
+          "image": "/assets/starsavior/sheet/948699f0fd251e717871c7c52acf43d59d2fd0d3.png"
+        },
+        {
+          "name": "Emilly",
+          "image": "/assets/starsavior/sheet/0de3daf61046dd13a0d64ea3109c35cf844fd953.png"
+        },
+        {
+          "name": "Petra or Naru",
+          "image": "/assets/starsavior/sheet/dab409310606273d68c1ef55b82e9c35fe21ad35.png"
+        }
+      ],
+      "training": {
+        "name": "Harley",
+        "image": "/assets/starsavior/sheet/a5c2e86f714220c50da54c520d74766d2a17be61.png"
+      }
+    },
+    "journeyHard": {
+      "talisman": {
+        "label": "CRIT - EX5",
+        "owner": "Harley",
+        "guideIcon": "/assets/starsavior/sheet/aed1e20536171d767b20ea1069f5d51b6a849ca9.png",
+        "pieces": [
+          {
+            "name": "Hat",
+            "image": "/assets/starsavior/sheet/4bbe1a7fe4523c08bde8ae0d4019fa0d197016d7.png"
+          },
+          {
+            "name": "Shoes",
+            "image": "/assets/starsavior/sheet/a9936d1dd7360c7cb74f836c5ae1d3a75889871e.png"
+          }
+        ]
+      },
+      "cards": [
+        {
+          "name": "Charlotte",
+          "image": "/assets/starsavior/sheet/f9acd84fc597be5fa366d9e5cb18d5432c20885b.png"
+        },
+        {
+          "name": "Emilly",
+          "image": "/assets/starsavior/sheet/0de3daf61046dd13a0d64ea3109c35cf844fd953.png"
+        },
+        {
+          "name": "Waltz or Lacy",
+          "image": "/assets/starsavior/sheet/d47bc451d1a8e5871b8e54f8d6936fc4d47fb2b1.png"
+        },
+        {
+          "name": "BG Claire",
+          "image": "/assets/starsavior/sheet/948699f0fd251e717871c7c52acf43d59d2fd0d3.png"
+        },
+        {
+          "name": "Petra or Naru",
+          "image": "/assets/starsavior/sheet/dab409310606273d68c1ef55b82e9c35fe21ad35.png"
+        }
+      ],
+      "alternate": {
+        "label": "PVP",
+        "cards": [
+          {
+            "name": "Charlotte",
+            "image": "/assets/starsavior/sheet/f9acd84fc597be5fa366d9e5cb18d5432c20885b.png"
+          },
+          {
+            "name": "Emilly",
+            "image": "/assets/starsavior/sheet/0de3daf61046dd13a0d64ea3109c35cf844fd953.png"
+          },
+          {
+            "name": "Waltz or BG Claire",
+            "image": "/assets/starsavior/sheet/d47bc451d1a8e5871b8e54f8d6936fc4d47fb2b1.png"
+          },
+          {
+            "name": "Hilde",
+            "image": "/assets/starsavior/sheet/689872f0e711b687d1388cead5d4a1d1494eb1d3.png"
+          },
+          {
+            "name": "Besta or Harley",
+            "image": "/assets/starsavior/sheet/409e623e04a6ba7c73197bf3a677d53c99173cfc.png"
+          }
+        ]
+      }
+    },
+    "talismans": {
+      "journeyNormal": "Harley",
+      "journeyHard": "CRIT - EX5"
+    },
+    "notes": [
+      "Harley keeps a SPD necklace and HP% ring in the published build sheet, with HP (4pc) + Hit (2pc) as the first stop.",
+      "The source sheet highlights Effect Hit% as the standout roll target on top of the usual Speed and Critical Rate shell.",
+      "Journey Hard routing in the sheet points toward CRIT - EX5."
+    ]
+  },
+  {
+    "name": "Haydee",
+    "slug": "haydee",
+    "role": "Build Guide",
+    "modes": [
+      "PvE",
+      "PvP"
+    ],
+    "image": "/assets/starsavior/sheet/43bd18749c168ae36fdb1f6c6e302017ade3f198.png",
+    "setIcons": {
+      "budget": [
+        "/assets/starsavior/sheet/bdf6e0e3e41894af1ba91e0059e13d6667eb4e48.png",
+        "/assets/starsavior/sheet/bdf6e0e3e41894af1ba91e0059e13d6667eb4e48.png"
+      ],
+      "endgame": [
+        "/assets/starsavior/sheet/044e06d4cf81bcaf65709cb735e2f334988d77d6.png",
+        "/assets/starsavior/sheet/bdf6e0e3e41894af1ba91e0059e13d6667eb4e48.png"
+      ],
+      "alternate": [
+        "/assets/starsavior/sheet/044e06d4cf81bcaf65709cb735e2f334988d77d6.png",
+        "/assets/starsavior/sheet/f185b864bb5d24221e81d13cb8b761d357d763ae.png"
+      ]
+    },
+    "updatedAt": "2026-03-30",
+    "sourceTabs": [
+      "All Character Build Guide",
+      "Tychara character guide"
+    ],
+    "sourceContext": null,
+    "recommendedSets": [
+      {
+        "label": "PvE / PvP",
+        "sets": [
+          "DEF (2pc)",
+          "DEF (2pc)"
+        ],
+        "neckMain": "SPD",
+        "ringMain": "DEF%"
+      },
+      {
+        "label": "High-end",
+        "sets": [
+          "HP (4pc)",
+          "DEF (2pc)"
+        ],
+        "neckMain": "SPD",
+        "ringMain": "DEF%"
+      },
+      {
+        "label": "PvP",
+        "sets": [
+          "HP (4pc)",
+          "Barrier (2pc)"
+        ],
+        "neckMain": "SPD",
+        "ringMain": "DEF%"
+      }
+    ],
+    "subStats": [
+      "Speed",
+      "Defense",
+      "Critical Rate",
+      "Critical Damage",
+      "HP"
+    ],
+    "skillLevels": {
+      "budget": "3 / 3 / 3",
+      "endgame": "7 / 10 / 7",
+      "progression": [
+        "3 / 3 / 3",
+        "3 / 3 / 6",
+        "3 / 6 / 6",
+        "7 / 7 / 7",
+        "7 / 10 / 7"
+      ]
+    },
+    "arcana": [
+      "A Knight's Oath",
+      "Young Lady of Stranis",
+      "A Quiet Moment of Rest",
+      "Nostalgia Strikes Back",
+      "A Satisfying Meal"
+    ],
+    "journeyNormal": {
+      "cards": [
+        {
+          "name": "Charlotte",
+          "image": "/assets/starsavior/sheet/f9acd84fc597be5fa366d9e5cb18d5432c20885b.png"
+        },
+        {
+          "name": "Asherah Waltz",
+          "image": "/assets/starsavior/sheet/d47bc451d1a8e5871b8e54f8d6936fc4d47fb2b1.png"
+        },
+        {
+          "name": "Emilly",
+          "image": "/assets/starsavior/sheet/0de3daf61046dd13a0d64ea3109c35cf844fd953.png"
+        },
+        {
+          "name": "Hilde",
+          "image": "/assets/starsavior/sheet/689872f0e711b687d1388cead5d4a1d1494eb1d3.png"
+        },
+        {
+          "name": "Besta",
+          "image": "/assets/starsavior/sheet/409e623e04a6ba7c73197bf3a677d53c99173cfc.png"
+        }
+      ],
+      "training": {
+        "name": "Haydee",
+        "image": "/assets/starsavior/sheet/e34cf4aa4d879bdbb904d8c76a0b43c52e13078e.png"
+      }
+    },
+    "journeyHard": {
+      "talisman": {
+        "label": "Tank CX3",
+        "owner": "Haydee",
+        "guideIcon": "/assets/starsavior/sheet/43bd18749c168ae36fdb1f6c6e302017ade3f198.png",
+        "pieces": [
+          {
+            "name": "Pants",
+            "image": "/assets/starsavior/sheet/e0537ab77bedb8d3f92a291dae6d329ed02e5bb0.png"
+          },
+          {
+            "name": "Pants",
+            "image": "/assets/starsavior/sheet/d690d22eafdaf57763af3c8ffe3505213333b738.png"
+          }
+        ]
+      },
+      "cards": [
+        {
+          "name": "Charlotte",
+          "image": "/assets/starsavior/sheet/f9acd84fc597be5fa366d9e5cb18d5432c20885b.png"
+        },
+        {
+          "name": "Emilly",
+          "image": "/assets/starsavior/sheet/0de3daf61046dd13a0d64ea3109c35cf844fd953.png"
+        },
+        {
+          "name": "Elisa or Waltz",
+          "image": "/assets/starsavior/sheet/29dd8aa7a43f374af99fe0390608c375c8c329e1.png"
+        },
+        {
+          "name": "Hilde",
+          "image": "/assets/starsavior/sheet/689872f0e711b687d1388cead5d4a1d1494eb1d3.png"
+        },
+        {
+          "name": "Besta or Harley",
+          "image": "/assets/starsavior/sheet/409e623e04a6ba7c73197bf3a677d53c99173cfc.png"
+        }
+      ],
+      "alternate": {
+        "label": "PVP",
+        "cards": [
+          {
+            "name": "Charlotte",
+            "image": "/assets/starsavior/sheet/f9acd84fc597be5fa366d9e5cb18d5432c20885b.png"
+          },
+          {
+            "name": "Emilly",
+            "image": "/assets/starsavior/sheet/0de3daf61046dd13a0d64ea3109c35cf844fd953.png"
+          },
+          {
+            "name": "Waltz or BG Claire",
+            "image": "/assets/starsavior/sheet/d47bc451d1a8e5871b8e54f8d6936fc4d47fb2b1.png"
+          },
+          {
+            "name": "Hilde",
+            "image": "/assets/starsavior/sheet/689872f0e711b687d1388cead5d4a1d1494eb1d3.png"
+          },
+          {
+            "name": "Besta or Harley",
+            "image": "/assets/starsavior/sheet/409e623e04a6ba7c73197bf3a677d53c99173cfc.png"
+          }
+        ]
+      }
+    },
+    "talismans": {
+      "journeyNormal": "Haydee",
+      "journeyHard": "Tank CX3"
+    },
+    "notes": [
+      "Haydee keeps a SPD necklace and DEF% ring in the published build sheet, with DEF (2pc) + DEF (2pc) as the first stop.",
+      "The source sheet highlights Effect Hit% as the standout roll target on top of the usual Speed and Defense shell.",
+      "Journey Hard routing in the sheet points toward Tank CX3."
+    ]
+  },
+  {
+    "name": "Hilde",
+    "slug": "hilde",
+    "role": "Build Guide",
+    "modes": [
+      "PvE",
+      "PvP"
+    ],
+    "image": "/assets/starsavior/sheet/79eef4cd69c6c52f6382098496f8b7b03f72d44e.jpg",
+    "setIcons": {
+      "budget": [
+        "/assets/starsavior/sheet/044e06d4cf81bcaf65709cb735e2f334988d77d6.png",
+        "/assets/starsavior/sheet/f185b864bb5d24221e81d13cb8b761d357d763ae.png"
+      ],
+      "endgame": [
+        "/assets/starsavior/sheet/044e06d4cf81bcaf65709cb735e2f334988d77d6.png",
+        "/assets/starsavior/sheet/95bb620610231a6272439e099ae070b8d70171eb.png"
+      ],
+      "alternate": [
+        "/assets/starsavior/sheet/6a30ee6d70a7c919289a33883852244a6140010f.png",
+        "/assets/starsavior/sheet/f185b864bb5d24221e81d13cb8b761d357d763ae.png"
+      ]
+    },
+    "updatedAt": "2026-03-30",
+    "sourceTabs": [
+      "All Character Build Guide",
+      "Tychara character guide"
+    ],
+    "sourceContext": null,
+    "recommendedSets": [
+      {
+        "label": "PvE / PvP",
+        "sets": [
+          "HP (4pc)",
+          "Barrier (2pc)"
+        ],
+        "neckMain": "SPD",
+        "ringMain": "HP%"
+      },
+      {
+        "label": "High-end",
+        "sets": [
+          "HP (4pc)",
+          "Hit (2pc)"
+        ],
+        "neckMain": "SPD",
+        "ringMain": "HP%"
+      },
+      {
+        "label": "PvP",
+        "sets": [
+          "Speed (4pc)",
+          "Barrier (2pc)"
+        ],
+        "neckMain": "SPD",
+        "ringMain": "HP%"
+      }
+    ],
+    "subStats": [
+      "Speed",
+      "HP",
+      "Defense",
+      "Critical Rate",
+      "Effect Hit"
+    ],
+    "skillLevels": {
+      "budget": "3 / 3 / 3",
+      "endgame": "7 / 7 / 8",
+      "progression": [
+        "3 / 3 / 3",
+        "3 / 3 / 6",
+        "3 / 6 / 6",
+        "3 / 6 / 8",
+        "7 / 7 / 8"
+      ]
+    },
+    "arcana": [
+      "A Knight's Oath",
+      "A Quiet Moment of Rest",
+      "Young Lady of Stranis",
+      "Nostalgia Strikes Back",
+      "A Satisfying Meal"
+    ],
+    "journeyNormal": {
+      "cards": [
+        {
+          "name": "Charlotte",
+          "image": "/assets/starsavior/sheet/f9acd84fc597be5fa366d9e5cb18d5432c20885b.png"
+        },
+        {
+          "name": "Asherah Waltz",
+          "image": "/assets/starsavior/sheet/d47bc451d1a8e5871b8e54f8d6936fc4d47fb2b1.png"
+        },
+        {
+          "name": "Emilly",
+          "image": "/assets/starsavior/sheet/0de3daf61046dd13a0d64ea3109c35cf844fd953.png"
+        },
+        {
+          "name": "Hilde",
+          "image": "/assets/starsavior/sheet/689872f0e711b687d1388cead5d4a1d1494eb1d3.png"
+        },
+        {
+          "name": "Besta",
+          "image": "/assets/starsavior/sheet/409e623e04a6ba7c73197bf3a677d53c99173cfc.png"
+        }
+      ],
+      "training": {
+        "name": "Hilde",
+        "image": "/assets/starsavior/sheet/a5c2e86f714220c50da54c520d74766d2a17be61.png"
+      }
+    },
+    "journeyHard": {
+      "talisman": {
+        "label": "Tank - BX4",
+        "owner": "Hilde",
+        "guideIcon": "/assets/starsavior/sheet/79eef4cd69c6c52f6382098496f8b7b03f72d44e.jpg",
+        "pieces": [
+          {
+            "name": "Armor",
+            "image": "/assets/starsavior/sheet/933a358280c090c5df3e7c18f0d11a1650fd31bb.png"
+          },
+          {
+            "name": "Shoes",
+            "image": "/assets/starsavior/sheet/a9936d1dd7360c7cb74f836c5ae1d3a75889871e.png"
+          }
+        ]
+      },
+      "cards": [
+        {
+          "name": "Charlotte",
+          "image": "/assets/starsavior/sheet/f9acd84fc597be5fa366d9e5cb18d5432c20885b.png"
+        },
+        {
+          "name": "Emilly",
+          "image": "/assets/starsavior/sheet/0de3daf61046dd13a0d64ea3109c35cf844fd953.png"
+        },
+        {
+          "name": "Waltz or BG Claire",
+          "image": "/assets/starsavior/sheet/d47bc451d1a8e5871b8e54f8d6936fc4d47fb2b1.png"
+        },
+        {
+          "name": "Hilde",
+          "image": "/assets/starsavior/sheet/689872f0e711b687d1388cead5d4a1d1494eb1d3.png"
+        },
+        {
+          "name": "Besta",
+          "image": "/assets/starsavior/sheet/409e623e04a6ba7c73197bf3a677d53c99173cfc.png"
+        }
+      ],
+      "alternate": {
+        "label": "PVP",
+        "cards": [
+          {
+            "name": "Charlotte",
+            "image": "/assets/starsavior/sheet/f9acd84fc597be5fa366d9e5cb18d5432c20885b.png"
+          },
+          {
+            "name": "Emilly",
+            "image": "/assets/starsavior/sheet/0de3daf61046dd13a0d64ea3109c35cf844fd953.png"
+          },
+          {
+            "name": "Waltz or BG Claire",
+            "image": "/assets/starsavior/sheet/d47bc451d1a8e5871b8e54f8d6936fc4d47fb2b1.png"
+          },
+          {
+            "name": "Hilde",
+            "image": "/assets/starsavior/sheet/689872f0e711b687d1388cead5d4a1d1494eb1d3.png"
+          },
+          {
+            "name": "Besta or Harley",
+            "image": "/assets/starsavior/sheet/409e623e04a6ba7c73197bf3a677d53c99173cfc.png"
+          }
+        ]
+      }
+    },
+    "talismans": {
+      "journeyNormal": "Hilde",
+      "journeyHard": "Tank - BX4"
+    },
+    "notes": [
+      "Hilde keeps a SPD necklace and HP% ring in the published build sheet, with HP (4pc) + Barrier (2pc) as the first stop.",
+      "The source sheet highlights Effect Hit% as the standout roll target on top of the usual Speed and HP shell.",
+      "Journey Hard routing in the sheet points toward Tank - BX4."
+    ]
+  },
+  {
+    "name": "Kyra",
+    "slug": "kyra",
+    "role": "Build Guide",
+    "modes": [
+      "PvE",
+      "PvP"
+    ],
+    "image": "/assets/starsavior/sheet/0c7c4676deae3ff8a92c7cb2c116c429044a5f54.png",
+    "setIcons": {
+      "budget": [
+        "/assets/starsavior/sheet/b413c56e8429fc358939010b6155036c43af1820.png",
+        "/assets/starsavior/sheet/95bb620610231a6272439e099ae070b8d70171eb.png"
+      ],
+      "endgame": [
+        "/assets/starsavior/sheet/b413c56e8429fc358939010b6155036c43af1820.png",
+        "/assets/starsavior/sheet/efec4b74fa3b43df579bfa0f9c9a7003905758a9.png"
+      ],
+      "alternate": [
+        "/assets/starsavior/sheet/b41733d67d33ac888f0393e951dd1d7b582086a0.png",
+        "/assets/starsavior/sheet/efec4b74fa3b43df579bfa0f9c9a7003905758a9.png"
+      ]
+    },
+    "updatedAt": "2026-03-30",
+    "sourceTabs": [
+      "All Character Build Guide",
+      "Tychara character guide"
+    ],
+    "sourceContext": null,
+    "recommendedSets": [
+      {
+        "label": "PvE / PvP",
+        "sets": [
+          "Insight (4pc)",
+          "Hit (2pc)"
+        ],
+        "neckMain": "SPD",
+        "ringMain": "ATK%"
+      },
+      {
+        "label": "High-end",
+        "sets": [
+          "Insight (4pc)",
+          "Valor (2pc)"
+        ],
+        "neckMain": "SPD",
+        "ringMain": "ATK%"
+      },
+      {
+        "label": "PvP",
+        "sets": [
+          "Destruction (4pc)",
+          "Valor (2pc)"
+        ],
+        "neckMain": "SPD",
+        "ringMain": "ATK%"
+      }
+    ],
+    "subStats": [
+      "Speed",
+      "Critical Rate",
+      "Critical Damage",
+      "ATK%",
+      "Effect Hit"
+    ],
+    "skillLevels": {
+      "budget": "3 / 3 / 3",
+      "endgame": "7 / 10 / 10",
+      "progression": [
+        "3 / 3 / 3",
+        "3 / 3 / 6",
+        "3 / 6 / 6",
+        "7 / 7 / 7",
+        "7 / 10 / 10"
+      ]
+    },
+    "arcana": [
+      "No Pain, No Gain",
+      "As Cute as Kyra!",
+      "The Indomitable Masterpiece",
+      "A Knight's Oath",
+      "Made by Petra♡"
+    ],
+    "journeyNormal": {
+      "cards": [
+        {
+          "name": "Lacy",
+          "image": "/assets/starsavior/sheet/bcf95c09e54cf26ecf3d33dd620a0113ac5f336d.png"
+        },
+        {
+          "name": "Kyra",
+          "image": "/assets/starsavior/sheet/e605bd33f2bca763bc382ff6888342405b850afa.png"
+        },
+        {
+          "name": "Charlotte",
+          "image": "/assets/starsavior/sheet/f9acd84fc597be5fa366d9e5cb18d5432c20885b.png"
+        },
+        {
+          "name": "BG Claire",
+          "image": "/assets/starsavior/sheet/948699f0fd251e717871c7c52acf43d59d2fd0d3.png"
+        },
+        {
+          "name": "Petra",
+          "image": "/assets/starsavior/sheet/dab409310606273d68c1ef55b82e9c35fe21ad35.png"
+        }
+      ],
+      "training": {
+        "name": "Kyra",
+        "image": "/assets/starsavior/sheet/e6dd41978797c0f70870d930ae6e4b0541d21a2d.png"
+      }
+    },
+    "journeyHard": {
+      "talisman": {
+        "label": "DPS - AX5",
+        "owner": "Kyra",
+        "guideIcon": "/assets/starsavior/sheet/0c7c4676deae3ff8a92c7cb2c116c429044a5f54.png",
+        "pieces": [
+          {
+            "name": "Gloves",
+            "image": "/assets/starsavior/sheet/102e5bf6a8fe38db24642ab7da06e48ee5a31185.png"
+          },
+          {
+            "name": "Hat",
+            "image": "/assets/starsavior/sheet/0789a1df0ab7c771452089e630ccc521c7aa8f3c.png"
+          }
+        ]
+      },
+      "cards": [
+        {
+          "name": "Lacy",
+          "image": "/assets/starsavior/sheet/bcf95c09e54cf26ecf3d33dd620a0113ac5f336d.png"
+        },
+        {
+          "name": "Kyra",
+          "image": "/assets/starsavior/sheet/e605bd33f2bca763bc382ff6888342405b850afa.png"
+        },
+        {
+          "name": "BG Frey",
+          "image": "/assets/starsavior/sheet/de78e666bfe8a1df69ef4501ebf662dc4f9beb4f.png"
+        },
+        {
+          "name": "Charlotte",
+          "image": "/assets/starsavior/sheet/f9acd84fc597be5fa366d9e5cb18d5432c20885b.png"
+        },
+        {
+          "name": "Petra or Naru",
+          "image": "/assets/starsavior/sheet/dab409310606273d68c1ef55b82e9c35fe21ad35.png"
+        }
+      ],
+      "alternate": null
+    },
+    "talismans": {
+      "journeyNormal": "Kyra",
+      "journeyHard": "DPS - AX5"
+    },
+    "notes": [
+      "Kyra keeps a SPD necklace and ATK% ring in the published build sheet, with Insight (4pc) + Hit (2pc) as the first stop.",
+      "The source sheet highlights Effect Hit% as the standout roll target on top of the usual Speed and Critical Rate shell.",
+      "Journey Hard routing in the sheet points toward DPS - AX5."
+    ]
+  },
+  {
+    "name": "Lacy",
+    "slug": "lacy",
+    "role": "Bruiser DPS",
+    "modes": [
+      "PvE",
+      "PvP"
+    ],
+    "image": "/assets/starsavior/sheet/3823764a5f34af0b7275445317c1f876fa4e59af.png",
+    "setIcons": {
+      "budget": [
+        "/assets/starsavior/sheet/b413c56e8429fc358939010b6155036c43af1820.png",
+        "/assets/starsavior/sheet/95bb620610231a6272439e099ae070b8d70171eb.png"
+      ],
+      "endgame": [
+        "/assets/starsavior/sheet/9dc8554a55fa3ee6136f181cf977f0a3cf5c4f68.png",
+        "/assets/starsavior/sheet/95bb620610231a6272439e099ae070b8d70171eb.png"
+      ],
+      "alternate": [
+        "/assets/starsavior/sheet/a490c3de326769065d7ab788bb49ee10be1dff20.png",
+        "/assets/starsavior/sheet/95bb620610231a6272439e099ae070b8d70171eb.png"
+      ]
+    },
+    "updatedAt": "2026-03-30",
+    "sourceTabs": [
+      "All Character Build Guide",
+      "Tychara character guide"
+    ],
+    "sourceContext": null,
+    "recommendedSets": [
+      {
+        "label": "Budget",
+        "sets": [
+          "Insight (4pc)",
+          "Hit (2pc)"
+        ],
+        "neckMain": "SPD",
+        "ringMain": "ATK%"
+      },
+      {
+        "label": "Endgame",
+        "sets": [
+          "ATK (4pc)",
+          "Hit (2pc)"
+        ],
+        "neckMain": "SPD",
+        "ringMain": "ATK%",
+        "notes": "The sheet also shows a Precision-based route, but the attack shell is the clearest late target."
+      }
+    ],
+    "subStats": [
+      "SPD",
+      "ATK%",
+      "Crit Rate",
+      "Crit DMG",
+      "Effect Hit%"
+    ],
+    "skillLevels": {
+      "budget": "3 / 3 / 6",
+      "endgame": "7 / 7 / 8",
+      "progression": [
+        "3 / 3 / 3",
+        "3 / 3 / 6",
+        "3 / 6 / 8",
+        "7 / 7 / 8"
+      ]
+    },
+    "arcana": [
+      "ATK Strength Arcana",
+      "Crit-rate Focus Arcana"
+    ],
+    "journeyNormal": {
+      "cards": [
+        {
+          "name": "Lacy",
+          "image": "/assets/starsavior/sheet/bcf95c09e54cf26ecf3d33dd620a0113ac5f336d.png"
+        },
+        {
+          "name": "BG Frey",
+          "image": "/assets/starsavior/sheet/de78e666bfe8a1df69ef4501ebf662dc4f9beb4f.png"
+        },
+        {
+          "name": "Charlotte",
+          "image": "/assets/starsavior/sheet/f9acd84fc597be5fa366d9e5cb18d5432c20885b.png"
+        },
+        {
+          "name": "BG Claire",
+          "image": "/assets/starsavior/sheet/948699f0fd251e717871c7c52acf43d59d2fd0d3.png"
+        },
+        {
+          "name": "Petra or Naru",
+          "image": "/assets/starsavior/sheet/dab409310606273d68c1ef55b82e9c35fe21ad35.png"
+        }
+      ],
+      "training": {
+        "name": "Lacy",
+        "image": "/assets/starsavior/sheet/e6dd41978797c0f70870d930ae6e4b0541d21a2d.png"
+      }
+    },
+    "journeyHard": {
+      "talisman": {
+        "label": "DPS - AX5",
+        "owner": "Lacy",
+        "guideIcon": "/assets/starsavior/sheet/3823764a5f34af0b7275445317c1f876fa4e59af.png",
+        "pieces": [
+          {
+            "name": "Gloves",
+            "image": "/assets/starsavior/sheet/102e5bf6a8fe38db24642ab7da06e48ee5a31185.png"
+          },
+          {
+            "name": "Hat",
+            "image": "/assets/starsavior/sheet/0789a1df0ab7c771452089e630ccc521c7aa8f3c.png"
+          }
+        ]
+      },
+      "cards": [
+        {
+          "name": "Lacy",
+          "image": "/assets/starsavior/sheet/bcf95c09e54cf26ecf3d33dd620a0113ac5f336d.png"
+        },
+        {
+          "name": "BG Frey",
+          "image": "/assets/starsavior/sheet/de78e666bfe8a1df69ef4501ebf662dc4f9beb4f.png"
+        },
+        {
+          "name": "Lyn or BG Claire",
+          "image": "/assets/starsavior/sheet/c381ad05202c655936b55e33f9686edcee53dcf7.png"
+        },
+        {
+          "name": "Charlotte",
+          "image": "/assets/starsavior/sheet/f9acd84fc597be5fa366d9e5cb18d5432c20885b.png"
+        },
+        {
+          "name": "Petra or Naru",
+          "image": "/assets/starsavior/sheet/dab409310606273d68c1ef55b82e9c35fe21ad35.png"
+        }
+      ],
+      "alternate": null
+    },
+    "talismans": {
+      "journeyNormal": "Lacy",
+      "journeyHard": "DPS - AX5"
+    },
+    "notes": [
+      "Lacy is treated across the source sheet as a premium all-purpose unit, so her build aims for both damage and utility consistency.",
+      "The source row keeps Effect Hit% in the recommended substat package rather than stripping her down to pure crit stats."
+    ]
+  },
+  {
+    "name": "Lily",
+    "slug": "lily",
+    "role": "Build Guide",
+    "modes": [
+      "PvE",
+      "PvP"
+    ],
+    "image": "/assets/starsavior/sheet/c6056745de826eca97eef41117befa80680bb318.png",
+    "setIcons": {
+      "budget": [
+        "/assets/starsavior/sheet/b413c56e8429fc358939010b6155036c43af1820.png",
+        "/assets/starsavior/sheet/95bb620610231a6272439e099ae070b8d70171eb.png"
+      ],
+      "endgame": [
+        "/assets/starsavior/sheet/b413c56e8429fc358939010b6155036c43af1820.png",
+        "/assets/starsavior/sheet/efec4b74fa3b43df579bfa0f9c9a7003905758a9.png"
+      ],
+      "alternate": [
+        "/assets/starsavior/sheet/b41733d67d33ac888f0393e951dd1d7b582086a0.png",
+        "/assets/starsavior/sheet/efec4b74fa3b43df579bfa0f9c9a7003905758a9.png"
+      ]
+    },
+    "updatedAt": "2026-03-30",
+    "sourceTabs": [
+      "All Character Build Guide",
+      "Tychara character guide"
+    ],
+    "sourceContext": null,
+    "recommendedSets": [
+      {
+        "label": "PvE / PvP",
+        "sets": [
+          "Insight (4pc)",
+          "Hit (2pc)"
+        ],
+        "neckMain": "SPD",
+        "ringMain": "ATK%"
+      },
+      {
+        "label": "High-end",
+        "sets": [
+          "Insight (4pc)",
+          "Valor (2pc)"
+        ],
+        "neckMain": "SPD",
+        "ringMain": "ATK%"
+      },
+      {
+        "label": "PvP",
+        "sets": [
+          "Destruction (4pc)",
+          "Valor (2pc)"
+        ],
+        "neckMain": "SPD",
+        "ringMain": "ATK%"
+      }
+    ],
+    "subStats": [
+      "Speed",
+      "ATK%",
+      "Critical Rate",
+      "Critical Damage",
+      "Effect Hit"
+    ],
+    "skillLevels": {
+      "budget": "3 / 3 / 3",
+      "endgame": "7 / 7 / 7",
+      "progression": [
+        "3 / 3 / 3",
+        "3 / 3 / 6",
+        "3 / 6 / 6",
+        "7 / 7 / 7"
+      ]
+    },
+    "arcana": [
+      "No Pain, No Gain",
+      "Divine Judgement",
+      "The Indomitable Masterpiece",
+      "A Knight's Oath",
+      "Made by Petra♡"
+    ],
+    "journeyNormal": {
+      "cards": [
+        {
+          "name": "Lacy",
+          "image": "/assets/starsavior/sheet/bcf95c09e54cf26ecf3d33dd620a0113ac5f336d.png"
+        },
+        {
+          "name": "Muriel",
+          "image": "/assets/starsavior/sheet/b69d9f9367f0d3dda723340d46c73017cc3af6d7.png"
+        },
+        {
+          "name": "Charlotte",
+          "image": "/assets/starsavior/sheet/f9acd84fc597be5fa366d9e5cb18d5432c20885b.png"
+        },
+        {
+          "name": "BG Claire",
+          "image": "/assets/starsavior/sheet/948699f0fd251e717871c7c52acf43d59d2fd0d3.png"
+        },
+        {
+          "name": "Petra or Naru",
+          "image": "/assets/starsavior/sheet/dab409310606273d68c1ef55b82e9c35fe21ad35.png"
+        }
+      ],
+      "training": {
+        "name": "Lily",
+        "image": "/assets/starsavior/sheet/e6dd41978797c0f70870d930ae6e4b0541d21a2d.png"
+      }
+    },
+    "journeyHard": {
+      "talisman": {
+        "label": "DPS - AX5",
+        "owner": "Lily",
+        "guideIcon": "/assets/starsavior/sheet/c6056745de826eca97eef41117befa80680bb318.png",
+        "pieces": [
+          {
+            "name": "Gloves",
+            "image": "/assets/starsavior/sheet/102e5bf6a8fe38db24642ab7da06e48ee5a31185.png"
+          },
+          {
+            "name": "Hat",
+            "image": "/assets/starsavior/sheet/0789a1df0ab7c771452089e630ccc521c7aa8f3c.png"
+          }
+        ]
+      },
+      "cards": [
+        {
+          "name": "Lacy",
+          "image": "/assets/starsavior/sheet/bcf95c09e54cf26ecf3d33dd620a0113ac5f336d.png"
+        },
+        {
+          "name": "Muriel",
+          "image": "/assets/starsavior/sheet/b69d9f9367f0d3dda723340d46c73017cc3af6d7.png"
+        },
+        {
+          "name": "BG Frey",
+          "image": "/assets/starsavior/sheet/de78e666bfe8a1df69ef4501ebf662dc4f9beb4f.png"
+        },
+        {
+          "name": "Charlotte",
+          "image": "/assets/starsavior/sheet/f9acd84fc597be5fa366d9e5cb18d5432c20885b.png"
+        },
+        {
+          "name": "Petra or Naru",
+          "image": "/assets/starsavior/sheet/dab409310606273d68c1ef55b82e9c35fe21ad35.png"
+        }
+      ],
+      "alternate": null
+    },
+    "talismans": {
+      "journeyNormal": "Lily",
+      "journeyHard": "DPS - AX5"
+    },
+    "notes": [
+      "Lily keeps a SPD necklace and ATK% ring in the published build sheet, with Insight (4pc) + Hit (2pc) as the first stop.",
+      "The source sheet highlights Effect Hit% as the standout roll target on top of the usual Speed and ATK% shell.",
+      "Journey Hard routing in the sheet points toward DPS - AX5."
+    ]
+  },
+  {
+    "name": "Lugh",
+    "slug": "lugh",
+    "role": "Build Guide",
+    "modes": [
+      "PvE",
+      "PvP"
+    ],
+    "image": "/assets/starsavior/sheet/3984f2d40f6d49aa762d09fd3cfb483ac894f453.png",
+    "setIcons": {
+      "budget": [
+        "/assets/starsavior/sheet/b413c56e8429fc358939010b6155036c43af1820.png",
+        "/assets/starsavior/sheet/95bb620610231a6272439e099ae070b8d70171eb.png"
+      ],
+      "endgame": [
+        "/assets/starsavior/sheet/b413c56e8429fc358939010b6155036c43af1820.png",
+        "/assets/starsavior/sheet/efec4b74fa3b43df579bfa0f9c9a7003905758a9.png"
+      ],
+      "alternate": [
+        "/assets/starsavior/sheet/a490c3de326769065d7ab788bb49ee10be1dff20.png",
+        "/assets/starsavior/sheet/95bb620610231a6272439e099ae070b8d70171eb.png"
+      ]
+    },
+    "updatedAt": "2026-03-30",
+    "sourceTabs": [
+      "All Character Build Guide",
+      "Tychara character guide"
+    ],
+    "sourceContext": null,
+    "recommendedSets": [
+      {
+        "label": "PvE / PvP",
+        "sets": [
+          "Insight (4pc)",
+          "Hit (2pc)"
+        ],
+        "neckMain": "SPD",
+        "ringMain": "ATK%"
+      },
+      {
+        "label": "High-end",
+        "sets": [
+          "Insight (4pc)",
+          "Valor (2pc)"
+        ],
+        "neckMain": "SPD",
+        "ringMain": "ATK%"
+      },
+      {
+        "label": "PvP",
+        "sets": [
+          "Precision (4pc)",
+          "Hit (2pc)"
+        ],
+        "neckMain": "SPD",
+        "ringMain": "ATK%"
+      }
+    ],
+    "subStats": [
+      "Speed",
+      "Critical Rate",
+      "Critical Damage",
+      "ATK%",
+      "Effect Hit"
+    ],
+    "skillLevels": {
+      "budget": "3 / 3 / 3",
+      "endgame": "7 / 8 / 8",
+      "progression": [
+        "3 / 3 / 3",
+        "3 / 3 / 6",
+        "3 / 6 / 6",
+        "3 / 6 / 8",
+        "7 / 8 / 8"
+      ]
+    },
+    "arcana": [
+      "No Pain, No Gain",
+      "The Indomitable Masterpiece",
+      "Under the Glass Moon, Over the Pavilion",
+      "A Knight's Oath",
+      "Made by Petra♡"
+    ],
+    "journeyNormal": {
+      "cards": [
+        {
+          "name": "Lacy",
+          "image": "/assets/starsavior/sheet/bcf95c09e54cf26ecf3d33dd620a0113ac5f336d.png"
+        },
+        {
+          "name": "BG Frey",
+          "image": "/assets/starsavior/sheet/de78e666bfe8a1df69ef4501ebf662dc4f9beb4f.png"
+        },
+        {
+          "name": "Charlotte",
+          "image": "/assets/starsavior/sheet/f9acd84fc597be5fa366d9e5cb18d5432c20885b.png"
+        },
+        {
+          "name": "BG Claire",
+          "image": "/assets/starsavior/sheet/948699f0fd251e717871c7c52acf43d59d2fd0d3.png"
+        },
+        {
+          "name": "Petra or Naru",
+          "image": "/assets/starsavior/sheet/dab409310606273d68c1ef55b82e9c35fe21ad35.png"
+        }
+      ],
+      "training": {
+        "name": "Lugh",
+        "image": "/assets/starsavior/sheet/e6dd41978797c0f70870d930ae6e4b0541d21a2d.png"
+      }
+    },
+    "journeyHard": {
+      "talisman": {
+        "label": "DPS - AX5",
+        "owner": "Lugh",
+        "guideIcon": "/assets/starsavior/sheet/3984f2d40f6d49aa762d09fd3cfb483ac894f453.png",
+        "pieces": [
+          {
+            "name": "Gloves",
+            "image": "/assets/starsavior/sheet/102e5bf6a8fe38db24642ab7da06e48ee5a31185.png"
+          },
+          {
+            "name": "Hat",
+            "image": "/assets/starsavior/sheet/0789a1df0ab7c771452089e630ccc521c7aa8f3c.png"
+          }
+        ]
+      },
+      "cards": [
+        {
+          "name": "Lacy",
+          "image": "/assets/starsavior/sheet/bcf95c09e54cf26ecf3d33dd620a0113ac5f336d.png"
+        },
+        {
+          "name": "BG Frey",
+          "image": "/assets/starsavior/sheet/de78e666bfe8a1df69ef4501ebf662dc4f9beb4f.png"
+        },
+        {
+          "name": "Lyn or BG Claire",
+          "image": "/assets/starsavior/sheet/c381ad05202c655936b55e33f9686edcee53dcf7.png"
+        },
+        {
+          "name": "Charlotte",
+          "image": "/assets/starsavior/sheet/f9acd84fc597be5fa366d9e5cb18d5432c20885b.png"
+        },
+        {
+          "name": "Petra or Naru",
+          "image": "/assets/starsavior/sheet/dab409310606273d68c1ef55b82e9c35fe21ad35.png"
+        }
+      ],
+      "alternate": null
+    },
+    "talismans": {
+      "journeyNormal": "Lugh",
+      "journeyHard": "DPS - AX5"
+    },
+    "notes": [
+      "Lugh keeps a SPD necklace and ATK% ring in the published build sheet, with Insight (4pc) + Hit (2pc) as the first stop.",
+      "The source sheet highlights Effect Hit% as the standout roll target on top of the usual Speed and Critical Rate shell.",
+      "Journey Hard routing in the sheet points toward DPS - AX5."
+    ]
+  },
+  {
+    "name": "Luna",
+    "slug": "luna",
+    "role": "Build Guide",
+    "modes": [
+      "PvE",
+      "PvP"
+    ],
+    "image": "/assets/starsavior/sheet/9957fd9915490b322e4326a18f450a0ae020336b.png",
+    "setIcons": {
+      "budget": [
+        "/assets/starsavior/sheet/b413c56e8429fc358939010b6155036c43af1820.png",
+        "/assets/starsavior/sheet/efec4b74fa3b43df579bfa0f9c9a7003905758a9.png"
+      ],
+      "endgame": [
+        "/assets/starsavior/sheet/b41733d67d33ac888f0393e951dd1d7b582086a0.png",
+        "/assets/starsavior/sheet/efec4b74fa3b43df579bfa0f9c9a7003905758a9.png"
+      ],
+      "alternate": [
+        "/assets/starsavior/sheet/9dc8554a55fa3ee6136f181cf977f0a3cf5c4f68.png",
+        "/assets/starsavior/sheet/efec4b74fa3b43df579bfa0f9c9a7003905758a9.png"
+      ]
+    },
+    "updatedAt": "2026-03-30",
+    "sourceTabs": [
+      "All Character Build Guide",
+      "Tychara character guide"
+    ],
+    "sourceContext": null,
+    "recommendedSets": [
+      {
+        "label": "PvE / PvP",
+        "sets": [
+          "Insight (4pc)",
+          "Valor (2pc)"
+        ],
+        "neckMain": "SPD",
+        "ringMain": "ATK%"
+      },
+      {
+        "label": "High-end",
+        "sets": [
+          "Destruction (4pc)",
+          "Valor (2pc)"
+        ],
+        "neckMain": "SPD",
+        "ringMain": "ATK%"
+      },
+      {
+        "label": "PvP",
+        "sets": [
+          "ATK (4pc)",
+          "Valor (2pc)"
+        ],
+        "neckMain": "SPD",
+        "ringMain": "ATK%"
+      }
+    ],
+    "subStats": [
+      "Speed",
+      "Critical Rate",
+      "Critical Damage",
+      "ATK%",
+      "Effect Hit"
+    ],
+    "skillLevels": {
+      "budget": "3 / 3 / 3",
+      "endgame": "7 / 7 / 8",
+      "progression": [
+        "3 / 3 / 3",
+        "3 / 3 / 6",
+        "3 / 6 / 6",
+        "7 / 7 / 7",
+        "7 / 7 / 8"
+      ]
+    },
+    "arcana": [
+      "No Pain, No Gain",
+      "Divine Judgement",
+      "The Indomitable Masterpiece",
+      "A Knight's Oath",
+      "Made by Petra♡"
+    ],
+    "journeyNormal": {
+      "cards": [
+        {
+          "name": "Lacy",
+          "image": "/assets/starsavior/sheet/cc546995ae2dd51e5dca6b22f9bcd49760e26cec.png"
+        },
+        {
+          "name": "Muriel",
+          "image": "/assets/starsavior/sheet/b69d9f9367f0d3dda723340d46c73017cc3af6d7.png"
+        },
+        {
+          "name": "Charlotte",
+          "image": "/assets/starsavior/sheet/f9acd84fc597be5fa366d9e5cb18d5432c20885b.png"
+        },
+        {
+          "name": "BG Claire",
+          "image": "/assets/starsavior/sheet/948699f0fd251e717871c7c52acf43d59d2fd0d3.png"
+        },
+        {
+          "name": "Petra or Naru",
+          "image": "/assets/starsavior/sheet/dab409310606273d68c1ef55b82e9c35fe21ad35.png"
+        }
+      ],
+      "training": {
+        "name": "Luna",
+        "image": "/assets/starsavior/sheet/e6dd41978797c0f70870d930ae6e4b0541d21a2d.png"
+      }
+    },
+    "journeyHard": {
+      "talisman": {
+        "label": "DPS - AX5",
+        "owner": "Luna",
+        "guideIcon": "/assets/starsavior/sheet/9957fd9915490b322e4326a18f450a0ae020336b.png",
+        "pieces": [
+          {
+            "name": "Gloves",
+            "image": "/assets/starsavior/sheet/102e5bf6a8fe38db24642ab7da06e48ee5a31185.png"
+          },
+          {
+            "name": "Hat",
+            "image": "/assets/starsavior/sheet/0789a1df0ab7c771452089e630ccc521c7aa8f3c.png"
+          }
+        ]
+      },
+      "cards": [
+        {
+          "name": "Lacy",
+          "image": "/assets/starsavior/sheet/bcf95c09e54cf26ecf3d33dd620a0113ac5f336d.png"
+        },
+        {
+          "name": "Muriel",
+          "image": "/assets/starsavior/sheet/b69d9f9367f0d3dda723340d46c73017cc3af6d7.png"
+        },
+        {
+          "name": "BG Frey",
+          "image": "/assets/starsavior/sheet/de78e666bfe8a1df69ef4501ebf662dc4f9beb4f.png"
+        },
+        {
+          "name": "Charlotte",
+          "image": "/assets/starsavior/sheet/f9acd84fc597be5fa366d9e5cb18d5432c20885b.png"
+        },
+        {
+          "name": "Petra or Naru",
+          "image": "/assets/starsavior/sheet/dab409310606273d68c1ef55b82e9c35fe21ad35.png"
+        }
+      ],
+      "alternate": {
+        "label": "PVP",
+        "cards": [
+          {
+            "name": "Lacy",
+            "image": "/assets/starsavior/sheet/bcf95c09e54cf26ecf3d33dd620a0113ac5f336d.png"
+          },
+          {
+            "name": "Muriel or Frey",
+            "image": "/assets/starsavior/sheet/b69d9f9367f0d3dda723340d46c73017cc3af6d7.png"
+          },
+          {
+            "name": "Dana",
+            "image": "/assets/starsavior/sheet/99ce997890d11fcc673b2cbf83d0a6e0f2f2bb28.png"
+          },
+          {
+            "name": "Charlotte",
+            "image": "/assets/starsavior/sheet/f9acd84fc597be5fa366d9e5cb18d5432c20885b.png"
+          },
+          {
+            "name": "Petra or Naru",
+            "image": "/assets/starsavior/sheet/dab409310606273d68c1ef55b82e9c35fe21ad35.png"
+          }
+        ]
+      }
+    },
+    "talismans": {
+      "journeyNormal": "Luna",
+      "journeyHard": "DPS - AX5"
+    },
+    "notes": [
+      "Luna keeps a SPD necklace and ATK% ring in the published build sheet, with Insight (4pc) + Valor (2pc) as the first stop.",
+      "Journey Hard routing in the sheet points toward DPS - AX5."
+    ]
+  },
+  {
+    "name": "Lydia",
+    "slug": "lydia",
+    "role": "Debuff DPS",
+    "modes": [
+      "PvE",
+      "PvP"
+    ],
+    "image": "/assets/starsavior/sheet/0b5b70ac9d61e9253595436fa101dd302e29e11a.png",
+    "setIcons": {
+      "budget": [
+        "/assets/starsavior/sheet/b413c56e8429fc358939010b6155036c43af1820.png",
+        "/assets/starsavior/sheet/95bb620610231a6272439e099ae070b8d70171eb.png"
+      ],
+      "endgame": [
+        "/assets/starsavior/sheet/b413c56e8429fc358939010b6155036c43af1820.png",
+        "/assets/starsavior/sheet/efec4b74fa3b43df579bfa0f9c9a7003905758a9.png"
+      ],
+      "alternate": [
+        "/assets/starsavior/sheet/a490c3de326769065d7ab788bb49ee10be1dff20.png",
+        "/assets/starsavior/sheet/95bb620610231a6272439e099ae070b8d70171eb.png"
+      ]
+    },
+    "updatedAt": "2026-03-30",
+    "sourceTabs": [
+      "All Character Build Guide",
+      "Tychara character guide"
+    ],
+    "sourceContext": null,
+    "recommendedSets": [
+      {
+        "label": "Core",
+        "sets": [
+          "Insight (4pc)",
+          "Hit (2pc)"
+        ],
+        "neckMain": "SPD",
+        "ringMain": "ATK%"
+      },
+      {
+        "label": "Endgame",
+        "sets": [
+          "Precision (4pc)",
+          "Hit (2pc)"
+        ],
+        "neckMain": "SPD",
+        "ringMain": "ATK%",
+        "notes": "The endgame version doubles down on debuff reliability and action control."
+      }
+    ],
+    "subStats": [
+      "SPD",
+      "Crit Rate",
+      "Crit DMG",
+      "ATK%",
+      "Effect Hit%"
+    ],
+    "skillLevels": {
+      "budget": "3 / 3 / 6",
+      "endgame": "7 / 7 / 10",
+      "progression": [
+        "3 / 3 / 3",
+        "3 / 6 / 6",
+        "7 / 7 / 10"
+      ]
+    },
+    "arcana": [
+      "Effect-hit Focus Arcana",
+      "Speed HP Arcana"
+    ],
+    "journeyNormal": {
+      "cards": [
+        {
+          "name": "Lacy",
+          "image": "/assets/starsavior/sheet/bcf95c09e54cf26ecf3d33dd620a0113ac5f336d.png"
+        },
+        {
+          "name": "BG Frey",
+          "image": "/assets/starsavior/sheet/de78e666bfe8a1df69ef4501ebf662dc4f9beb4f.png"
+        },
+        {
+          "name": "Charlotte",
+          "image": "/assets/starsavior/sheet/f9acd84fc597be5fa366d9e5cb18d5432c20885b.png"
+        },
+        {
+          "name": "BG Claire",
+          "image": "/assets/starsavior/sheet/948699f0fd251e717871c7c52acf43d59d2fd0d3.png"
+        },
+        {
+          "name": "Petra or Naru",
+          "image": "/assets/starsavior/sheet/dab409310606273d68c1ef55b82e9c35fe21ad35.png"
+        }
+      ],
+      "training": {
+        "name": "Lydia",
+        "image": "/assets/starsavior/sheet/e6dd41978797c0f70870d930ae6e4b0541d21a2d.png"
+      }
+    },
+    "journeyHard": {
+      "talisman": {
+        "label": "DPS - AX5",
+        "owner": "Lydia",
+        "guideIcon": "/assets/starsavior/sheet/0b5b70ac9d61e9253595436fa101dd302e29e11a.png",
+        "pieces": [
+          {
+            "name": "Gloves",
+            "image": "/assets/starsavior/sheet/102e5bf6a8fe38db24642ab7da06e48ee5a31185.png"
+          },
+          {
+            "name": "Hat",
+            "image": "/assets/starsavior/sheet/0789a1df0ab7c771452089e630ccc521c7aa8f3c.png"
+          }
+        ]
+      },
+      "cards": [
+        {
+          "name": "Lacy",
+          "image": "/assets/starsavior/sheet/bcf95c09e54cf26ecf3d33dd620a0113ac5f336d.png"
+        },
+        {
+          "name": "BG Frey",
+          "image": "/assets/starsavior/sheet/de78e666bfe8a1df69ef4501ebf662dc4f9beb4f.png"
+        },
+        {
+          "name": "Lyn or BG Claire",
+          "image": "/assets/starsavior/sheet/c381ad05202c655936b55e33f9686edcee53dcf7.png"
+        },
+        {
+          "name": "Charlotte",
+          "image": "/assets/starsavior/sheet/f9acd84fc597be5fa366d9e5cb18d5432c20885b.png"
+        },
+        {
+          "name": "Petra or Naru",
+          "image": "/assets/starsavior/sheet/dab409310606273d68c1ef55b82e9c35fe21ad35.png"
+        }
+      ],
+      "alternate": null
+    },
+    "talismans": {
+      "journeyNormal": "Lydia",
+      "journeyHard": "DPS - AX5"
+    },
+    "notes": [
+      "Lydia’s gear path in the source guide strongly preserves hit-rate support because her value depends on debuff uptime.",
+      "She rewards players who build for speed and control rather than only raw damage."
+    ]
+  },
+  {
+    "name": "Marcille",
+    "slug": "marcille",
+    "role": "Single-target Debuff DPS",
+    "modes": [
+      "PvE",
+      "PvP"
+    ],
+    "image": "/assets/starsavior/tychara/69947d4d2c0b21248dd7e23a8f79c03e969f8743.png",
+    "updatedAt": "2026-03-30",
+    "sourceTabs": [
+      "Tychara character guide",
+      "Fallback build profile"
+    ],
+    "sourceContext": {
+      "url": "https://tychara.com/StarSavior/characters/marcille",
+      "lead": "Fallback build profile based on Tychara's character guide.",
+      "citationText": "Source page: Marcille Guide - Star Savior | Tychara.",
+      "permissionNote": "Tychara does not currently publish a dedicated build section for this unit, so this build uses the Tychara stat line and skill kit as its source."
+    },
+    "recommendedSets": [
+      {
+        "label": "Core",
+        "sets": [
+          "Insight (4pc)",
+          "Hit (2pc)"
+        ],
+        "neckMain": "SPD",
+        "ringMain": "ATK%"
+      },
+      {
+        "label": "Damage",
+        "sets": [
+          "Destruction (4pc)",
+          "Valor (2pc)"
+        ],
+        "neckMain": "SPD",
+        "ringMain": "ATK%"
+      },
+      {
+        "label": "Tempo",
+        "sets": [
+          "Speed (4pc)",
+          "Hit (2pc)"
+        ],
+        "neckMain": "SPD",
+        "ringMain": "ATK%"
+      }
+    ],
+    "subStats": [
+      "SPD",
+      "Crit Rate",
+      "Crit DMG",
+      "ATK%",
+      "Effect Hit%"
+    ],
+    "skillLevels": {
+      "budget": "3 / 3 / 3",
+      "endgame": "7 / 8 / 8",
+      "progression": [
+        "3 / 3 / 3",
+        "3 / 6 / 6",
+        "7 / 8 / 8"
+      ]
+    },
+    "arcana": [
+      "No Pain, No Gain",
+      "The Indomitable Masterpiece",
+      "Made by Petra♡"
+    ],
+    "notes": [
+      "Marcille does not have a published build section on Tychara yet, so this page uses her Tychara stat line and kit details as a fallback build profile.",
+      "Burn and Recovery Down are both attached to her damage buttons, so she benefits from a mixed crit-plus-hit stat line.",
+      "Her high base crit rate lets her reach a stable damage shell earlier than most SR casters."
+    ]
+  },
+  {
+    "name": "Muriel",
+    "slug": "muriel",
+    "role": "Debuff DPS",
+    "modes": [
+      "PvE",
+      "PvP"
+    ],
+    "image": "/assets/starsavior/sheet/b4958d26b3c6e503d234b4f9a85b039ed7d6c435.png",
+    "setIcons": {
+      "budget": [
+        "/assets/starsavior/sheet/b413c56e8429fc358939010b6155036c43af1820.png",
+        "/assets/starsavior/sheet/95bb620610231a6272439e099ae070b8d70171eb.png"
+      ],
+      "endgame": [
+        "/assets/starsavior/sheet/b413c56e8429fc358939010b6155036c43af1820.png",
+        "/assets/starsavior/sheet/efec4b74fa3b43df579bfa0f9c9a7003905758a9.png"
+      ],
+      "alternate": [
+        "/assets/starsavior/sheet/a490c3de326769065d7ab788bb49ee10be1dff20.png",
+        "/assets/starsavior/sheet/95bb620610231a6272439e099ae070b8d70171eb.png"
+      ]
+    },
+    "updatedAt": "2026-03-30",
+    "sourceTabs": [
+      "All Character Build Guide",
+      "Tychara character guide"
+    ],
+    "sourceContext": null,
+    "recommendedSets": [
+      {
+        "label": "Core",
+        "sets": [
+          "Insight (4pc)",
+          "Hit (2pc)"
+        ],
+        "neckMain": "SPD",
+        "ringMain": "ATK%"
+      },
+      {
+        "label": "Late-game control",
+        "sets": [
+          "Precision (4pc)",
+          "Hit (2pc)"
+        ],
+        "neckMain": "SPD",
+        "ringMain": "ATK%"
+      }
+    ],
+    "subStats": [
+      "SPD",
+      "Crit Rate",
+      "Crit DMG",
+      "ATK%",
+      "Effect Hit%"
+    ],
+    "skillLevels": {
+      "budget": "3 / 6 / 6",
+      "endgame": "7 / 8 / 8",
+      "progression": [
+        "3 / 3 / 3",
+        "3 / 6 / 6",
+        "7 / 8 / 8"
+      ]
+    },
+    "arcana": [
+      "Effect-hit Focus Arcana",
+      "Crit-rate Strength Arcana"
+    ],
+    "journeyNormal": {
+      "cards": [
+        {
+          "name": "Lacy",
+          "image": "/assets/starsavior/sheet/bcf95c09e54cf26ecf3d33dd620a0113ac5f336d.png"
+        },
+        {
+          "name": "Muriel",
+          "image": "/assets/starsavior/sheet/b69d9f9367f0d3dda723340d46c73017cc3af6d7.png"
+        },
+        {
+          "name": "Charlotte",
+          "image": "/assets/starsavior/sheet/f9acd84fc597be5fa366d9e5cb18d5432c20885b.png"
+        },
+        {
+          "name": "BG Claire",
+          "image": "/assets/starsavior/sheet/948699f0fd251e717871c7c52acf43d59d2fd0d3.png"
+        },
+        {
+          "name": "Petra or Naru",
+          "image": "/assets/starsavior/sheet/dab409310606273d68c1ef55b82e9c35fe21ad35.png"
+        }
+      ],
+      "training": {
+        "name": "Muriel",
+        "image": "/assets/starsavior/sheet/e6dd41978797c0f70870d930ae6e4b0541d21a2d.png"
+      }
+    },
+    "journeyHard": {
+      "talisman": {
+        "label": "DPS - AX5",
+        "owner": "Muriel",
+        "guideIcon": "/assets/starsavior/sheet/b4958d26b3c6e503d234b4f9a85b039ed7d6c435.png",
+        "pieces": [
+          {
+            "name": "Gloves",
+            "image": "/assets/starsavior/sheet/102e5bf6a8fe38db24642ab7da06e48ee5a31185.png"
+          },
+          {
+            "name": "Hat",
+            "image": "/assets/starsavior/sheet/0789a1df0ab7c771452089e630ccc521c7aa8f3c.png"
+          }
+        ]
+      },
+      "cards": [
+        {
+          "name": "Lacy",
+          "image": "/assets/starsavior/sheet/bcf95c09e54cf26ecf3d33dd620a0113ac5f336d.png"
+        },
+        {
+          "name": "Muriel",
+          "image": "/assets/starsavior/sheet/b69d9f9367f0d3dda723340d46c73017cc3af6d7.png"
+        },
+        {
+          "name": "BG Frey",
+          "image": "/assets/starsavior/sheet/de78e666bfe8a1df69ef4501ebf662dc4f9beb4f.png"
+        },
+        {
+          "name": "Charlotte",
+          "image": "/assets/starsavior/sheet/f9acd84fc597be5fa366d9e5cb18d5432c20885b.png"
+        },
+        {
+          "name": "Petra or Naru",
+          "image": "/assets/starsavior/sheet/dab409310606273d68c1ef55b82e9c35fe21ad35.png"
+        }
+      ],
+      "alternate": {
+        "label": "PVP",
+        "cards": [
+          {
+            "name": "Lacy",
+            "image": "/assets/starsavior/sheet/bcf95c09e54cf26ecf3d33dd620a0113ac5f336d.png"
+          },
+          {
+            "name": "Muriel or Frey",
+            "image": "/assets/starsavior/sheet/b69d9f9367f0d3dda723340d46c73017cc3af6d7.png"
+          },
+          {
+            "name": "Dana",
+            "image": "/assets/starsavior/sheet/99ce997890d11fcc673b2cbf83d0a6e0f2f2bb28.png"
+          },
+          {
+            "name": "Charlotte",
+            "image": "/assets/starsavior/sheet/f9acd84fc597be5fa366d9e5cb18d5432c20885b.png"
+          },
+          {
+            "name": "Petra or Naru",
+            "image": "/assets/starsavior/sheet/dab409310606273d68c1ef55b82e9c35fe21ad35.png"
+          }
+        ]
+      }
+    },
+    "talismans": {
+      "journeyNormal": "Muriel",
+      "journeyHard": "DPS - AX5"
+    },
+    "notes": [
+      "Muriel’s source build is another clear example of the sheet favoring Hit support on units whose identity is tied to debuff value.",
+      "Keep her fast enough to extend and recycle debuffs instead of chasing a pure glass-cannon setup."
+    ]
+  },
+  {
+    "name": "Naru",
+    "slug": "naru",
+    "role": "Debuff DPS",
+    "modes": [
+      "PvE",
+      "PvP"
+    ],
+    "image": "/assets/starsavior/tychara/6f486facee2cdc9969a2c10ffd6fd4f51e647683.webp",
+    "updatedAt": "2026-03-30",
+    "sourceTabs": [
+      "Tychara character guide",
+      "Fallback build profile"
+    ],
+    "sourceContext": {
+      "url": "https://tychara.com/StarSavior/characters/naru",
+      "lead": "Fallback build profile based on Tychara's character guide.",
+      "citationText": "Source page: Naru Guide - Star Savior | Tychara.",
+      "permissionNote": "Tychara does not currently publish a dedicated build section for this unit, so this build uses the Tychara stat line and skill kit as its source."
+    },
+    "recommendedSets": [
+      {
+        "label": "Core",
+        "sets": [
+          "Insight (4pc)",
+          "Hit (2pc)"
+        ],
+        "neckMain": "SPD",
+        "ringMain": "ATK%"
+      },
+      {
+        "label": "Tempo",
+        "sets": [
+          "Speed (4pc)",
+          "Hit (2pc)"
+        ],
+        "neckMain": "SPD",
+        "ringMain": "ATK%"
+      },
+      {
+        "label": "Damage",
+        "sets": [
+          "Destruction (4pc)",
+          "Hit (2pc)"
+        ],
+        "neckMain": "SPD",
+        "ringMain": "ATK%"
+      }
+    ],
+    "subStats": [
+      "SPD",
+      "Effect Hit%",
+      "ATK%",
+      "Crit Rate",
+      "Crit DMG"
+    ],
+    "skillLevels": {
+      "budget": "3 / 3 / 3",
+      "endgame": "7 / 8 / 8",
+      "progression": [
+        "3 / 3 / 3",
+        "3 / 6 / 6",
+        "7 / 8 / 8"
+      ]
+    },
+    "arcana": [
+      "No Pain, No Gain",
+      "The Indomitable Masterpiece",
+      "Made by Petra♡"
+    ],
+    "notes": [
+      "Naru does not have a published build section on Tychara yet, so this page uses her Tychara stat line and kit details as a fallback build profile.",
+      "Her ultimate adds both SPD Down and Effect RES Down, so Hit-focused sets give her the clearest team value.",
+      "She still carries attack-scaling single-target skills, so ATK% and crit remain worthwhile once speed and hit are covered."
+    ]
+  },
+  {
+    "name": "Omega",
+    "slug": "omega",
+    "role": "Build Guide",
+    "modes": [
+      "PvE",
+      "PvP"
+    ],
+    "image": "/assets/starsavior/sheet/afdc12b580c6ec3c98404904734b1ee9f7ceb7e2.png",
+    "setIcons": {
+      "budget": [
+        "/assets/starsavior/sheet/b413c56e8429fc358939010b6155036c43af1820.png",
+        "/assets/starsavior/sheet/efec4b74fa3b43df579bfa0f9c9a7003905758a9.png"
+      ],
+      "endgame": [
+        "/assets/starsavior/sheet/b41733d67d33ac888f0393e951dd1d7b582086a0.png",
+        "/assets/starsavior/sheet/efec4b74fa3b43df579bfa0f9c9a7003905758a9.png"
+      ],
+      "alternate": [
+        "/assets/starsavior/sheet/9dc8554a55fa3ee6136f181cf977f0a3cf5c4f68.png",
+        "/assets/starsavior/sheet/efec4b74fa3b43df579bfa0f9c9a7003905758a9.png"
+      ]
+    },
+    "updatedAt": "2026-03-30",
+    "sourceTabs": [
+      "All Character Build Guide",
+      "Tychara character guide"
+    ],
+    "sourceContext": null,
+    "recommendedSets": [
+      {
+        "label": "PvE / PvP",
+        "sets": [
+          "Insight (4pc)",
+          "Valor (2pc)"
+        ],
+        "neckMain": "SPD",
+        "ringMain": "ATK%"
+      },
+      {
+        "label": "High-end",
+        "sets": [
+          "Destruction (4pc)",
+          "Valor (2pc)"
+        ],
+        "neckMain": "SPD",
+        "ringMain": "ATK%"
+      },
+      {
+        "label": "PvP",
+        "sets": [
+          "ATK (4pc)",
+          "Valor (2pc)"
+        ],
+        "neckMain": "SPD",
+        "ringMain": "ATK%"
+      }
+    ],
+    "subStats": [
+      "Speed",
+      "Critical Rate",
+      "Critical Damage",
+      "ATK%"
+    ],
+    "skillLevels": {
+      "budget": "3 / 3 / 3",
+      "endgame": "7 / 7 / 7",
+      "progression": [
+        "3 / 3 / 3",
+        "3 / 3 / 6",
+        "3 / 6 / 6",
+        "7 / 7 / 7"
+      ]
+    },
+    "arcana": [
+      "No Pain, No Gain",
+      "Divine Judgement",
+      "The Indomitable Masterpiece",
+      "A Knight's Oath",
+      "Made by Petra♡"
+    ],
+    "journeyNormal": {
+      "cards": [
+        {
+          "name": "Lacy",
+          "image": "/assets/starsavior/sheet/bcf95c09e54cf26ecf3d33dd620a0113ac5f336d.png"
+        },
+        {
+          "name": "Muriel",
+          "image": "/assets/starsavior/sheet/b69d9f9367f0d3dda723340d46c73017cc3af6d7.png"
+        },
+        {
+          "name": "Charlotte",
+          "image": "/assets/starsavior/sheet/f9acd84fc597be5fa366d9e5cb18d5432c20885b.png"
+        },
+        {
+          "name": "BG Claire",
+          "image": "/assets/starsavior/sheet/948699f0fd251e717871c7c52acf43d59d2fd0d3.png"
+        },
+        {
+          "name": "Petra or Naru",
+          "image": "/assets/starsavior/sheet/dab409310606273d68c1ef55b82e9c35fe21ad35.png"
+        }
+      ],
+      "training": {
+        "name": "Omega",
+        "image": "/assets/starsavior/sheet/e6dd41978797c0f70870d930ae6e4b0541d21a2d.png"
+      }
+    },
+    "journeyHard": {
+      "talisman": {
+        "label": "DPS - AX5",
+        "owner": "Omega",
+        "guideIcon": "/assets/starsavior/sheet/afdc12b580c6ec3c98404904734b1ee9f7ceb7e2.png",
+        "pieces": [
+          {
+            "name": "Gloves",
+            "image": "/assets/starsavior/sheet/102e5bf6a8fe38db24642ab7da06e48ee5a31185.png"
+          },
+          {
+            "name": "Hat",
+            "image": "/assets/starsavior/sheet/0789a1df0ab7c771452089e630ccc521c7aa8f3c.png"
+          }
+        ]
+      },
+      "cards": [
+        {
+          "name": "Lacy",
+          "image": "/assets/starsavior/sheet/bcf95c09e54cf26ecf3d33dd620a0113ac5f336d.png"
+        },
+        {
+          "name": "Muriel",
+          "image": "/assets/starsavior/sheet/b69d9f9367f0d3dda723340d46c73017cc3af6d7.png"
+        },
+        {
+          "name": "BG Frey",
+          "image": "/assets/starsavior/sheet/de78e666bfe8a1df69ef4501ebf662dc4f9beb4f.png"
+        },
+        {
+          "name": "Charlotte",
+          "image": "/assets/starsavior/sheet/f9acd84fc597be5fa366d9e5cb18d5432c20885b.png"
+        },
+        {
+          "name": "Petra or Naru",
+          "image": "/assets/starsavior/sheet/dab409310606273d68c1ef55b82e9c35fe21ad35.png"
+        }
+      ],
+      "alternate": null
+    },
+    "talismans": {
+      "journeyNormal": "Omega",
+      "journeyHard": "DPS - AX5"
+    },
+    "notes": [
+      "Omega keeps a SPD necklace and ATK% ring in the published build sheet, with Insight (4pc) + Valor (2pc) as the first stop.",
+      "Journey Hard routing in the sheet points toward DPS - AX5."
+    ]
+  },
+  {
+    "name": "Petra",
+    "slug": "petra",
+    "role": "Build Guide",
+    "modes": [
+      "PvE",
+      "PvP"
+    ],
+    "image": "/assets/starsavior/sheet/a60ec88674e6674d0b9e75dd8938d8f7b0f391b7.png",
+    "setIcons": {
+      "budget": [
+        "/assets/starsavior/sheet/b413c56e8429fc358939010b6155036c43af1820.png",
+        "/assets/starsavior/sheet/95bb620610231a6272439e099ae070b8d70171eb.png"
+      ],
+      "endgame": [
+        "/assets/starsavior/sheet/b413c56e8429fc358939010b6155036c43af1820.png",
+        "/assets/starsavior/sheet/efec4b74fa3b43df579bfa0f9c9a7003905758a9.png"
+      ],
+      "alternate": [
+        "/assets/starsavior/sheet/a490c3de326769065d7ab788bb49ee10be1dff20.png",
+        "/assets/starsavior/sheet/95bb620610231a6272439e099ae070b8d70171eb.png"
+      ]
+    },
+    "updatedAt": "2026-03-30",
+    "sourceTabs": [
+      "All Character Build Guide",
+      "Tychara character guide"
+    ],
+    "sourceContext": null,
+    "recommendedSets": [
+      {
+        "label": "PvE / PvP",
+        "sets": [
+          "Insight (4pc)",
+          "Hit (2pc)"
+        ],
+        "neckMain": "SPD",
+        "ringMain": "ATK%"
+      },
+      {
+        "label": "High-end",
+        "sets": [
+          "Insight (4pc)",
+          "Valor (2pc)"
+        ],
+        "neckMain": "SPD",
+        "ringMain": "ATK%"
+      },
+      {
+        "label": "PvP",
+        "sets": [
+          "Precision (4pc)",
+          "Hit (2pc)"
+        ],
+        "neckMain": "SPD",
+        "ringMain": "ATK%"
+      }
+    ],
+    "subStats": [
+      "Speed",
+      "Critical Rate",
+      "Critical Damage",
+      "ATK%",
+      "Effect Hit"
+    ],
+    "skillLevels": {
+      "budget": "3 / 3 / 3",
+      "endgame": "7 / 7 / 8",
+      "progression": [
+        "3 / 3 / 3",
+        "3 / 3 / 6",
+        "3 / 3 / 8",
+        "7 / 7 / 8"
+      ]
+    },
+    "arcana": [
+      "No Pain, No Gain",
+      "The Indomitable Masterpiece",
+      "Under the Glass Moon, Over the Pavilion",
+      "A Knight's Oath",
+      "Made by Petra♡"
+    ],
+    "journeyNormal": {
+      "cards": [
+        {
+          "name": "Lacy",
+          "image": "/assets/starsavior/sheet/bcf95c09e54cf26ecf3d33dd620a0113ac5f336d.png"
+        },
+        {
+          "name": "BG Frey",
+          "image": "/assets/starsavior/sheet/de78e666bfe8a1df69ef4501ebf662dc4f9beb4f.png"
+        },
+        {
+          "name": "Charlotte",
+          "image": "/assets/starsavior/sheet/f9acd84fc597be5fa366d9e5cb18d5432c20885b.png"
+        },
+        {
+          "name": "BG Claire",
+          "image": "/assets/starsavior/sheet/948699f0fd251e717871c7c52acf43d59d2fd0d3.png"
+        },
+        {
+          "name": "Petra or Naru",
+          "image": "/assets/starsavior/sheet/dab409310606273d68c1ef55b82e9c35fe21ad35.png"
+        }
+      ],
+      "training": {
+        "name": "Petra",
+        "image": "/assets/starsavior/sheet/e6dd41978797c0f70870d930ae6e4b0541d21a2d.png"
+      }
+    },
+    "journeyHard": {
+      "talisman": {
+        "label": "DPS - AX5",
+        "owner": "Petra",
+        "guideIcon": "/assets/starsavior/sheet/a60ec88674e6674d0b9e75dd8938d8f7b0f391b7.png",
+        "pieces": [
+          {
+            "name": "Gloves",
+            "image": "/assets/starsavior/sheet/102e5bf6a8fe38db24642ab7da06e48ee5a31185.png"
+          },
+          {
+            "name": "Hat",
+            "image": "/assets/starsavior/sheet/0789a1df0ab7c771452089e630ccc521c7aa8f3c.png"
+          }
+        ]
+      },
+      "cards": [
+        {
+          "name": "Lacy",
+          "image": "/assets/starsavior/sheet/bcf95c09e54cf26ecf3d33dd620a0113ac5f336d.png"
+        },
+        {
+          "name": "BG Frey",
+          "image": "/assets/starsavior/sheet/de78e666bfe8a1df69ef4501ebf662dc4f9beb4f.png"
+        },
+        {
+          "name": "Lyn or BG Claire",
+          "image": "/assets/starsavior/sheet/c381ad05202c655936b55e33f9686edcee53dcf7.png"
+        },
+        {
+          "name": "Charlotte",
+          "image": "/assets/starsavior/sheet/f9acd84fc597be5fa366d9e5cb18d5432c20885b.png"
+        },
+        {
+          "name": "Petra or Naru",
+          "image": "/assets/starsavior/sheet/dab409310606273d68c1ef55b82e9c35fe21ad35.png"
+        }
+      ],
+      "alternate": null
+    },
+    "talismans": {
+      "journeyNormal": "Petra",
+      "journeyHard": "DPS - AX5"
+    },
+    "notes": [
+      "Petra keeps a SPD necklace and ATK% ring in the published build sheet, with Insight (4pc) + Hit (2pc) as the first stop.",
+      "The source sheet highlights Effect Hit% as the standout roll target on top of the usual Speed and Critical Rate shell.",
+      "Journey Hard routing in the sheet points toward DPS - AX5."
+    ]
+  },
+  {
+    "name": "Roberta",
+    "slug": "roberta",
+    "role": "Bruiser DPS",
+    "modes": [
+      "PvE",
+      "PvP"
+    ],
+    "image": "/assets/starsavior/sheet/8f2fe100be6cdb912aabcfca3420181fd563bb87.png",
+    "setIcons": {
+      "budget": [
+        "/assets/starsavior/sheet/b41733d67d33ac888f0393e951dd1d7b582086a0.png",
+        "/assets/starsavior/sheet/efec4b74fa3b43df579bfa0f9c9a7003905758a9.png"
+      ],
+      "endgame": [
+        "/assets/starsavior/sheet/b41733d67d33ac888f0393e951dd1d7b582086a0.png",
+        "/assets/starsavior/sheet/39f4ff0c0263092e1feb09d226cc5ea0aa4a609f.png"
+      ],
+      "alternate": [
+        "/assets/starsavior/sheet/b41733d67d33ac888f0393e951dd1d7b582086a0.png",
+        "/assets/starsavior/sheet/bdf6e0e3e41894af1ba91e0059e13d6667eb4e48.png"
+      ]
+    },
+    "updatedAt": "2026-03-30",
+    "sourceTabs": [
+      "All Character Build Guide",
+      "Tychara character guide"
+    ],
+    "sourceContext": null,
+    "recommendedSets": [
+      {
+        "label": "Core bruiser",
+        "sets": [
+          "Destruction (4pc)",
+          "Valor (2pc)"
+        ],
+        "neckMain": "SPD",
+        "ringMain": "ATK%"
+      },
+      {
+        "label": "Late survival",
+        "sets": [
+          "Destruction (4pc)",
+          "Barrier (2pc)"
+        ],
+        "neckMain": "SPD",
+        "ringMain": "ATK%",
+        "notes": "The tab also shows a defensive two-piece fallback for sturdier bruiser play."
+      }
+    ],
+    "subStats": [
+      "SPD",
+      "Crit DMG",
+      "ATK%",
+      "HP%",
+      "Crit Rate"
+    ],
+    "skillLevels": {
+      "budget": "3 / 4 / 6",
+      "endgame": "7 / 8 / 8",
+      "progression": [
+        "3 / 4 / 6",
+        "7 / 8 / 8"
+      ]
+    },
+    "arcana": [
+      "Crit-damage Strength Arcana",
+      "HP Bruiser Arcana"
+    ],
+    "journeyNormal": {
+      "cards": [
+        {
+          "name": "Lacy",
+          "image": "/assets/starsavior/sheet/bcf95c09e54cf26ecf3d33dd620a0113ac5f336d.png"
+        },
+        {
+          "name": "BG Frey",
+          "image": "/assets/starsavior/sheet/de78e666bfe8a1df69ef4501ebf662dc4f9beb4f.png"
+        },
+        {
+          "name": "Charlotte",
+          "image": "/assets/starsavior/sheet/f9acd84fc597be5fa366d9e5cb18d5432c20885b.png"
+        },
+        {
+          "name": "Roberta",
+          "image": "/assets/starsavior/sheet/9fb4fca7f52c76a35a5919a46c4aa9f89f3f9d6e.png"
+        },
+        {
+          "name": "Petra or Naru",
+          "image": "/assets/starsavior/sheet/dab409310606273d68c1ef55b82e9c35fe21ad35.png"
+        }
+      ],
+      "training": {
+        "name": "Roberta",
+        "image": "/assets/starsavior/sheet/e6dd41978797c0f70870d930ae6e4b0541d21a2d.png"
+      }
+    },
+    "journeyHard": {
+      "talisman": {
+        "label": "DPS - AX6",
+        "owner": "Roberta",
+        "guideIcon": "/assets/starsavior/sheet/8f2fe100be6cdb912aabcfca3420181fd563bb87.png",
+        "pieces": [
+          {
+            "name": "Gloves",
+            "image": "/assets/starsavior/sheet/102e5bf6a8fe38db24642ab7da06e48ee5a31185.png"
+          },
+          {
+            "name": "Necklace",
+            "image": "/assets/starsavior/sheet/c4ed73b9e9e065fd31f2f17d11dff362c685af0e.png"
+          }
+        ]
+      },
+      "cards": [
+        {
+          "name": "Lacy",
+          "image": "/assets/starsavior/sheet/bcf95c09e54cf26ecf3d33dd620a0113ac5f336d.png"
+        },
+        {
+          "name": "BG Frey",
+          "image": "/assets/starsavior/sheet/de78e666bfe8a1df69ef4501ebf662dc4f9beb4f.png"
+        },
+        {
+          "name": "Roberta or Harley",
+          "image": "/assets/starsavior/sheet/9fb4fca7f52c76a35a5919a46c4aa9f89f3f9d6e.png"
+        },
+        {
+          "name": "Charlotte",
+          "image": "/assets/starsavior/sheet/f9acd84fc597be5fa366d9e5cb18d5432c20885b.png"
+        },
+        {
+          "name": "Petra or Naru",
+          "image": "/assets/starsavior/sheet/dab409310606273d68c1ef55b82e9c35fe21ad35.png"
+        }
+      ],
+      "alternate": null
+    },
+    "talismans": {
+      "journeyNormal": "Roberta",
+      "journeyHard": "DPS - AX6"
+    },
+    "notes": [
+      "Roberta’s source row is one of the few that visibly mixes damage with survival pairings.",
+      "The build keeps SPD neck plus ATK% ring while letting the two-piece set carry the defensive adjustment."
+    ]
+  },
+  {
+    "name": "Rosaria",
+    "slug": "rosaria",
+    "role": "Burst Debuff DPS",
+    "modes": [
+      "PvE",
+      "PvP"
+    ],
+    "image": "/assets/starsavior/tychara/ac911446295dc6c5ed72b8071ef3297cb91255d3.webp",
+    "updatedAt": "2026-03-30",
+    "sourceTabs": [
+      "Tychara character guide",
+      "Fallback build profile"
+    ],
+    "sourceContext": {
+      "url": "https://tychara.com/StarSavior/characters/rosaria",
+      "lead": "Fallback build profile based on Tychara's character guide.",
+      "citationText": "Source page: Rosaria Guide - Star Savior | Tychara.",
+      "permissionNote": "Tychara does not currently publish a dedicated build section for this unit, so this build uses the Tychara stat line and skill kit as its source."
+    },
+    "recommendedSets": [
+      {
+        "label": "Core",
+        "sets": [
+          "Insight (4pc)",
+          "Hit (2pc)"
+        ],
+        "neckMain": "SPD",
+        "ringMain": "ATK%"
+      },
+      {
+        "label": "Damage",
+        "sets": [
+          "Destruction (4pc)",
+          "Valor (2pc)"
+        ],
+        "neckMain": "SPD",
+        "ringMain": "ATK%"
+      },
+      {
+        "label": "Tempo",
+        "sets": [
+          "Speed (4pc)",
+          "Hit (2pc)"
+        ],
+        "neckMain": "SPD",
+        "ringMain": "ATK%"
+      }
+    ],
+    "subStats": [
+      "SPD",
+      "Crit Rate",
+      "Crit DMG",
+      "ATK%",
+      "Effect Hit%"
+    ],
+    "skillLevels": {
+      "budget": "3 / 3 / 3",
+      "endgame": "7 / 8 / 10",
+      "progression": [
+        "3 / 3 / 3",
+        "3 / 6 / 6",
+        "7 / 8 / 10"
+      ]
+    },
+    "arcana": [
+      "No Pain, No Gain",
+      "The Indomitable Masterpiece",
+      "A Knight's Oath"
+    ],
+    "notes": [
+      "Rosaria does not have a published build section on Tychara yet, so this page uses her Tychara stat line and kit details as a fallback build profile.",
+      "Her kit mixes personal damage ramping with teamwide DEF Down, which makes an Insight shell the safest first route.",
+      "Once crit quality is stable, a Destruction swap gives her much stronger payoff on the inferno burst loop."
+    ]
+  },
+  {
+    "name": "Scarlet",
+    "slug": "scarlet",
+    "role": "Speed-cycle DPS",
+    "modes": [
+      "PvE",
+      "PvP"
+    ],
+    "image": "/assets/starsavior/tychara/079a443f5d9fb1d0e8967ffdbaa0d43ece56955f.webp",
+    "updatedAt": "2026-03-30",
+    "sourceTabs": [
+      "Tychara character guide",
+      "Fallback build profile"
+    ],
+    "sourceContext": {
+      "url": "https://tychara.com/StarSavior/characters/scarlet",
+      "lead": "Fallback build profile based on Tychara's character guide.",
+      "citationText": "Source page: Scarlet Guide - Star Savior | Tychara.",
+      "permissionNote": "Tychara does not currently publish a dedicated build section for this unit, so this build uses the Tychara stat line and skill kit as its source."
+    },
+    "recommendedSets": [
+      {
+        "label": "Core",
+        "sets": [
+          "Speed (4pc)",
+          "Hit (2pc)"
+        ],
+        "neckMain": "SPD",
+        "ringMain": "ATK%"
+      },
+      {
+        "label": "Control",
+        "sets": [
+          "Insight (4pc)",
+          "Hit (2pc)"
+        ],
+        "neckMain": "SPD",
+        "ringMain": "ATK%"
+      },
+      {
+        "label": "Damage",
+        "sets": [
+          "Destruction (4pc)",
+          "Hit (2pc)"
+        ],
+        "neckMain": "SPD",
+        "ringMain": "ATK%"
+      }
+    ],
+    "subStats": [
+      "SPD",
+      "Effect Hit%",
+      "Crit Rate",
+      "Crit DMG",
+      "ATK%"
+    ],
+    "skillLevels": {
+      "budget": "3 / 3 / 3",
+      "endgame": "7 / 8 / 8",
+      "progression": [
+        "3 / 3 / 3",
+        "3 / 6 / 6",
+        "7 / 8 / 8"
+      ]
+    },
+    "arcana": [
+      "No Pain, No Gain",
+      "The Indomitable Masterpiece",
+      "Made by Petra♡"
+    ],
+    "notes": [
+      "Scarlet does not have a published build section on Tychara yet, so this page uses her Tychara stat line and kit details as a fallback build profile.",
+      "Extra turns on the special and speed ramping in the passive reward a true SPD-first setup.",
+      "Her AoE ultimate carries SPD Down, so Hit remains a high-value secondary stat instead of a throwaway roll."
+    ]
+  },
+  {
+    "name": "Seira",
+    "slug": "seira",
+    "role": "Support DPS",
+    "modes": [
+      "PvE",
+      "PvP"
+    ],
+    "image": "/assets/starsavior/sheet/cdf8747b0f16eeb849d99a67bb3325d132789136.png",
+    "setIcons": {
+      "budget": [
+        "/assets/starsavior/sheet/b413c56e8429fc358939010b6155036c43af1820.png",
+        "/assets/starsavior/sheet/95bb620610231a6272439e099ae070b8d70171eb.png"
+      ],
+      "endgame": [
+        "/assets/starsavior/sheet/b413c56e8429fc358939010b6155036c43af1820.png",
+        "/assets/starsavior/sheet/efec4b74fa3b43df579bfa0f9c9a7003905758a9.png"
+      ],
+      "alternate": [
+        "/assets/starsavior/sheet/6a30ee6d70a7c919289a33883852244a6140010f.png",
+        "/assets/starsavior/sheet/efec4b74fa3b43df579bfa0f9c9a7003905758a9.png"
+      ]
+    },
+    "updatedAt": "2026-03-30",
+    "sourceTabs": [
+      "All Character Build Guide",
+      "Tychara character guide"
+    ],
+    "sourceContext": null,
+    "recommendedSets": [
+      {
+        "label": "Control support",
+        "sets": [
+          "Insight (4pc)",
+          "Hit (2pc)"
+        ],
+        "neckMain": "SPD",
+        "ringMain": "ATK%"
+      },
+      {
+        "label": "PvP tempo",
+        "sets": [
+          "Speed (4pc)",
+          "Valor (2pc)"
+        ],
+        "neckMain": "SPD",
+        "ringMain": "ATK%",
+        "notes": "The PvP variant keeps her fast and disruptive rather than turning her into a raw damage dealer."
+      }
+    ],
+    "subStats": [
+      "SPD",
+      "Crit Rate",
+      "Crit DMG",
+      "ATK%",
+      "Effect Hit%"
+    ],
+    "skillLevels": {
+      "budget": "3 / 6 / 3",
+      "endgame": "7 / 7 / 10",
+      "progression": [
+        "3 / 6 / 3",
+        "3 / 6 / 6",
+        "7 / 7 / 10"
+      ]
+    },
+    "arcana": [
+      "Effect-hit Arcana",
+      "Speed Arcana"
+    ],
+    "journeyNormal": {
+      "cards": [
+        {
+          "name": "Lacy",
+          "image": "/assets/starsavior/sheet/bcf95c09e54cf26ecf3d33dd620a0113ac5f336d.png"
+        },
+        {
+          "name": "BG Frey",
+          "image": "/assets/starsavior/sheet/de78e666bfe8a1df69ef4501ebf662dc4f9beb4f.png"
+        },
+        {
+          "name": "Charlotte",
+          "image": "/assets/starsavior/sheet/f9acd84fc597be5fa366d9e5cb18d5432c20885b.png"
+        },
+        {
+          "name": "BG Claire",
+          "image": "/assets/starsavior/sheet/948699f0fd251e717871c7c52acf43d59d2fd0d3.png"
+        },
+        {
+          "name": "Petra or Naru",
+          "image": "/assets/starsavior/sheet/dab409310606273d68c1ef55b82e9c35fe21ad35.png"
+        }
+      ],
+      "training": {
+        "name": "Seira",
+        "image": "/assets/starsavior/sheet/e6dd41978797c0f70870d930ae6e4b0541d21a2d.png"
+      }
+    },
+    "journeyHard": {
+      "talisman": {
+        "label": "DPS - AX4",
+        "owner": "Seira",
+        "guideIcon": "/assets/starsavior/sheet/cdf8747b0f16eeb849d99a67bb3325d132789136.png",
+        "pieces": [
+          {
+            "name": "Gloves",
+            "image": "/assets/starsavior/sheet/102e5bf6a8fe38db24642ab7da06e48ee5a31185.png"
+          },
+          {
+            "name": "Shoes",
+            "image": "/assets/starsavior/sheet/a9936d1dd7360c7cb74f836c5ae1d3a75889871e.png"
+          }
+        ]
+      },
+      "cards": [
+        {
+          "name": "Lacy",
+          "image": "/assets/starsavior/sheet/bcf95c09e54cf26ecf3d33dd620a0113ac5f336d.png"
+        },
+        {
+          "name": "BG Frey",
+          "image": "/assets/starsavior/sheet/de78e666bfe8a1df69ef4501ebf662dc4f9beb4f.png"
+        },
+        {
+          "name": "Lyn or BG Claire",
+          "image": "/assets/starsavior/sheet/c381ad05202c655936b55e33f9686edcee53dcf7.png"
+        },
+        {
+          "name": "Charlotte",
+          "image": "/assets/starsavior/sheet/f9acd84fc597be5fa366d9e5cb18d5432c20885b.png"
+        },
+        {
+          "name": "Petra or Naru",
+          "image": "/assets/starsavior/sheet/dab409310606273d68c1ef55b82e9c35fe21ad35.png"
+        }
+      ],
+      "alternate": null
+    },
+    "talismans": {
+      "journeyNormal": "Seira",
+      "journeyHard": "DPS - AX4"
+    },
+    "notes": [
+      "Seira’s sheet row clearly preserves Effect Hit% as part of her substat package.",
+      "Treat her as a fast control-oriented damage piece rather than a pure finisher."
+    ]
+  },
+  {
+    "name": "Serpang",
+    "slug": "serpang",
+    "role": "Build Guide",
+    "modes": [
+      "PvE",
+      "PvP"
+    ],
+    "image": "/assets/starsavior/sheet/6925c98f19ed1ce54920a0f44a5bf7d6bac26d87.png",
+    "setIcons": {
+      "budget": [
+        "/assets/starsavior/sheet/044e06d4cf81bcaf65709cb735e2f334988d77d6.png",
+        "/assets/starsavior/sheet/f185b864bb5d24221e81d13cb8b761d357d763ae.png"
+      ],
+      "endgame": [
+        "/assets/starsavior/sheet/044e06d4cf81bcaf65709cb735e2f334988d77d6.png",
+        "/assets/starsavior/sheet/bdf6e0e3e41894af1ba91e0059e13d6667eb4e48.png"
+      ],
+      "alternate": [
+        "/assets/starsavior/sheet/6a30ee6d70a7c919289a33883852244a6140010f.png",
+        "/assets/starsavior/sheet/f185b864bb5d24221e81d13cb8b761d357d763ae.png"
+      ]
+    },
+    "updatedAt": "2026-03-30",
+    "sourceTabs": [
+      "All Character Build Guide",
+      "Tychara character guide"
+    ],
+    "sourceContext": null,
+    "recommendedSets": [
+      {
+        "label": "PvE / PvP",
+        "sets": [
+          "HP (4pc)",
+          "Barrier (2pc)"
+        ],
+        "neckMain": "SPD",
+        "ringMain": "HP%"
+      },
+      {
+        "label": "High-end",
+        "sets": [
+          "HP (4pc)",
+          "DEF (2pc)"
+        ],
+        "neckMain": "SPD",
+        "ringMain": "HP%"
+      },
+      {
+        "label": "PvP",
+        "sets": [
+          "Speed (4pc)",
+          "Barrier (2pc)"
+        ],
+        "neckMain": "SPD",
+        "ringMain": "HP%"
+      }
+    ],
+    "subStats": [
+      "Speed",
+      "HP",
+      "Defense",
+      "Effect RES %"
+    ],
+    "skillLevels": {
+      "budget": "3 / 3 / 3",
+      "endgame": "3 / 7 / 7 or 7 / 7 / 7",
+      "progression": [
+        "3 / 3 / 3",
+        "3 / 7 / 7 or 7 / 7 / 7"
+      ]
+    },
+    "arcana": [
+      "A Knight's Oath",
+      "Young Lady of Stranis",
+      "The Princess Ascends the Throne",
+      "The Perfect Bunny Girl",
+      "Divine Trial"
+    ],
+    "journeyNormal": {
+      "cards": [
+        {
+          "name": "Charlotte",
+          "image": "/assets/starsavior/sheet/f9acd84fc597be5fa366d9e5cb18d5432c20885b.png"
+        },
+        {
+          "name": "Asherah Waltz",
+          "image": "/assets/starsavior/sheet/d47bc451d1a8e5871b8e54f8d6936fc4d47fb2b1.png"
+        },
+        {
+          "name": "Frey",
+          "image": "/assets/starsavior/sheet/ca1d2bf7b21ace62f2c55d02ed3aeb9d24f0cbea.png"
+        },
+        {
+          "name": "Harley",
+          "image": "/assets/starsavior/sheet/e8711d1809f6eff5acd9193a61fc9e907db27e0d.png"
+        },
+        {
+          "name": "Elisa",
+          "image": "/assets/starsavior/sheet/29dd8aa7a43f374af99fe0390608c375c8c329e1.png"
+        }
+      ],
+      "training": {
+        "name": "Serpang",
+        "image": "/assets/starsavior/sheet/a5c2e86f714220c50da54c520d74766d2a17be61.png"
+      }
+    },
+    "journeyHard": {
+      "talisman": {
+        "label": "Tank - BX2",
+        "owner": "Serpang",
+        "guideIcon": "/assets/starsavior/sheet/6925c98f19ed1ce54920a0f44a5bf7d6bac26d87.png",
+        "pieces": [
+          {
+            "name": "Armor",
+            "image": "/assets/starsavior/sheet/933a358280c090c5df3e7c18f0d11a1650fd31bb.png"
+          },
+          {
+            "name": "Armor",
+            "image": "/assets/starsavior/sheet/1943f6788567aad6bf841efa95f7d2d1c04e8b44.png"
+          }
+        ]
+      },
+      "cards": [
+        {
+          "name": "Charlotte",
+          "image": "/assets/starsavior/sheet/f9acd84fc597be5fa366d9e5cb18d5432c20885b.png"
+        },
+        {
+          "name": "Asherah Waltz",
+          "image": "/assets/starsavior/sheet/d47bc451d1a8e5871b8e54f8d6936fc4d47fb2b1.png"
+        },
+        {
+          "name": "Frey",
+          "image": "/assets/starsavior/sheet/ca1d2bf7b21ace62f2c55d02ed3aeb9d24f0cbea.png"
+        },
+        {
+          "name": "BG Claire",
+          "image": "/assets/starsavior/sheet/948699f0fd251e717871c7c52acf43d59d2fd0d3.png"
+        },
+        {
+          "name": "Elisa",
+          "image": "/assets/starsavior/sheet/29dd8aa7a43f374af99fe0390608c375c8c329e1.png"
+        }
+      ],
+      "alternate": null
+    },
+    "talismans": {
+      "journeyNormal": "Serpang",
+      "journeyHard": "Tank - BX2"
+    },
+    "notes": [
+      "Serpang keeps a SPD necklace and HP% ring in the published build sheet, with HP (4pc) + Barrier (2pc) as the first stop.",
+      "Journey Hard routing in the sheet points toward Tank - BX2."
+    ]
+  },
+  {
+    "name": "Smile",
+    "slug": "smile",
+    "role": "Build Guide",
+    "modes": [
+      "PvE",
+      "PvP"
+    ],
+    "image": "/assets/starsavior/sheet/92f76970f99d8f3e32c9cee6ab1ef6041d7cf3df.png",
+    "setIcons": {
+      "budget": [
+        "/assets/starsavior/sheet/b413c56e8429fc358939010b6155036c43af1820.png",
+        "/assets/starsavior/sheet/95bb620610231a6272439e099ae070b8d70171eb.png"
+      ],
+      "endgame": [
+        "/assets/starsavior/sheet/b413c56e8429fc358939010b6155036c43af1820.png",
+        "/assets/starsavior/sheet/efec4b74fa3b43df579bfa0f9c9a7003905758a9.png"
+      ],
+      "alternate": [
+        "/assets/starsavior/sheet/a490c3de326769065d7ab788bb49ee10be1dff20.png",
+        "/assets/starsavior/sheet/95bb620610231a6272439e099ae070b8d70171eb.png"
+      ]
+    },
+    "updatedAt": "2026-03-30",
+    "sourceTabs": [
+      "All Character Build Guide",
+      "Tychara character guide"
+    ],
+    "sourceContext": null,
+    "recommendedSets": [
+      {
+        "label": "PvE / PvP",
+        "sets": [
+          "Insight (4pc)",
+          "Effect Hit (2pc)"
+        ],
+        "neckMain": "SPD",
+        "ringMain": "ATK%"
+      },
+      {
+        "label": "High-end",
+        "sets": [
+          "Insight (4pc)",
+          "Valor (2pc)"
+        ],
+        "neckMain": "SPD",
+        "ringMain": "ATK%"
+      },
+      {
+        "label": "PvP",
+        "sets": [
+          "Precision (4pc)",
+          "Hit (2pc)"
+        ],
+        "neckMain": "SPD",
+        "ringMain": "ATK%"
+      }
+    ],
+    "subStats": [
+      "Speed",
+      "Critical Rate",
+      "Critical Damage",
+      "ATK%",
+      "Effect Hit"
+    ],
+    "skillLevels": {
+      "budget": "3 / 3 / 3",
+      "endgame": "7 / 7 / 7",
+      "progression": [
+        "3 / 3 / 3",
+        "3 / 3 / 6",
+        "3 / 6 / 6",
+        "7 / 7 / 7"
+      ]
+    },
+    "arcana": [
+      "No Pain, No Gain",
+      "The Indomitable Masterpiece",
+      "Under the Glass Moon, Over the Pavilion",
+      "A Knight's Oath",
+      "Made by Petra♡"
+    ],
+    "journeyNormal": {
+      "cards": [
+        {
+          "name": "Lacy",
+          "image": "/assets/starsavior/sheet/bcf95c09e54cf26ecf3d33dd620a0113ac5f336d.png"
+        },
+        {
+          "name": "BG Frey",
+          "image": "/assets/starsavior/sheet/de78e666bfe8a1df69ef4501ebf662dc4f9beb4f.png"
+        },
+        {
+          "name": "Charlotte",
+          "image": "/assets/starsavior/sheet/f9acd84fc597be5fa366d9e5cb18d5432c20885b.png"
+        },
+        {
+          "name": "BG Claire",
+          "image": "/assets/starsavior/sheet/948699f0fd251e717871c7c52acf43d59d2fd0d3.png"
+        },
+        {
+          "name": "Petra or Naru",
+          "image": "/assets/starsavior/sheet/dab409310606273d68c1ef55b82e9c35fe21ad35.png"
+        }
+      ],
+      "training": {
+        "name": "Smile",
+        "image": "/assets/starsavior/sheet/e6dd41978797c0f70870d930ae6e4b0541d21a2d.png"
+      }
+    },
+    "journeyHard": {
+      "talisman": {
+        "label": "DPS - AX5",
+        "owner": "Smile",
+        "guideIcon": "/assets/starsavior/sheet/92f76970f99d8f3e32c9cee6ab1ef6041d7cf3df.png",
+        "pieces": [
+          {
+            "name": "Gloves",
+            "image": "/assets/starsavior/sheet/102e5bf6a8fe38db24642ab7da06e48ee5a31185.png"
+          },
+          {
+            "name": "Hat",
+            "image": "/assets/starsavior/sheet/0789a1df0ab7c771452089e630ccc521c7aa8f3c.png"
+          }
+        ]
+      },
+      "cards": [
+        {
+          "name": "Lacy",
+          "image": "/assets/starsavior/sheet/bcf95c09e54cf26ecf3d33dd620a0113ac5f336d.png"
+        },
+        {
+          "name": "BG Frey",
+          "image": "/assets/starsavior/sheet/de78e666bfe8a1df69ef4501ebf662dc4f9beb4f.png"
+        },
+        {
+          "name": "Lyn or BG Claire",
+          "image": "/assets/starsavior/sheet/c381ad05202c655936b55e33f9686edcee53dcf7.png"
+        },
+        {
+          "name": "Charlotte",
+          "image": "/assets/starsavior/sheet/f9acd84fc597be5fa366d9e5cb18d5432c20885b.png"
+        },
+        {
+          "name": "Petra or Naru",
+          "image": "/assets/starsavior/sheet/dab409310606273d68c1ef55b82e9c35fe21ad35.png"
+        }
+      ],
+      "alternate": null
+    },
+    "talismans": {
+      "journeyNormal": "Smile",
+      "journeyHard": "DPS - AX5"
+    },
+    "notes": [
+      "Smile keeps a SPD necklace and ATK% ring in the published build sheet, with Insight (4pc) + Effect Hit (2pc) as the first stop.",
+      "The source sheet highlights Effect Hit% as the standout roll target on top of the usual Speed and Critical Rate shell.",
+      "Journey Hard routing in the sheet points toward DPS - AX5."
+    ]
+  },
+  {
+    "name": "Tanya",
+    "slug": "tanya",
+    "role": "Single-target DPS",
+    "modes": [
+      "PvE",
+      "PvP"
+    ],
+    "image": "/assets/starsavior/sheet/9bf4ff803239e9204f9e224951453b4fe0da83e8.png",
+    "setIcons": {
+      "budget": [
+        "/assets/starsavior/sheet/b413c56e8429fc358939010b6155036c43af1820.png",
+        "/assets/starsavior/sheet/efec4b74fa3b43df579bfa0f9c9a7003905758a9.png"
+      ],
+      "endgame": [
+        "/assets/starsavior/sheet/6a30ee6d70a7c919289a33883852244a6140010f.png",
+        "/assets/starsavior/sheet/efec4b74fa3b43df579bfa0f9c9a7003905758a9.png"
+      ],
+      "alternate": [
+        "/assets/starsavior/sheet/9dc8554a55fa3ee6136f181cf977f0a3cf5c4f68.png",
+        "/assets/starsavior/sheet/efec4b74fa3b43df579bfa0f9c9a7003905758a9.png"
+      ]
+    },
+    "updatedAt": "2026-03-30",
+    "sourceTabs": [
+      "All Character Build Guide",
+      "Tychara character guide"
+    ],
+    "sourceContext": null,
+    "recommendedSets": [
+      {
+        "label": "Core",
+        "sets": [
+          "Insight (4pc)",
+          "Valor (2pc)"
+        ],
+        "neckMain": "SPD",
+        "ringMain": "ATK%"
+      },
+      {
+        "label": "PvP pressure",
+        "sets": [
+          "Speed (4pc)",
+          "Valor (2pc)"
+        ],
+        "neckMain": "SPD",
+        "ringMain": "ATK%",
+        "notes": "The sheet includes a speed-heavy lane for PvP pressure and turn tempo."
+      }
+    ],
+    "subStats": [
+      "SPD",
+      "Crit Rate",
+      "Crit DMG",
+      "ATK%"
+    ],
+    "skillLevels": {
+      "budget": "3 / 6 / 6",
+      "endgame": "7 / 8 / 7",
+      "progression": [
+        "3 / 6 / 3",
+        "3 / 6 / 6",
+        "3 / 8 / 6",
+        "7 / 8 / 7"
+      ]
+    },
+    "arcana": [
+      "Crit-rate Strength Arcana",
+      "Speed Focus Arcana"
+    ],
+    "journeyNormal": {
+      "cards": [
+        {
+          "name": "Lacy",
+          "image": "/assets/starsavior/sheet/bcf95c09e54cf26ecf3d33dd620a0113ac5f336d.png"
+        },
+        {
+          "name": "BG Frey",
+          "image": "/assets/starsavior/sheet/de78e666bfe8a1df69ef4501ebf662dc4f9beb4f.png"
+        },
+        {
+          "name": "Charlotte",
+          "image": "/assets/starsavior/sheet/f9acd84fc597be5fa366d9e5cb18d5432c20885b.png"
+        },
+        {
+          "name": "Petra",
+          "image": "/assets/starsavior/sheet/dab409310606273d68c1ef55b82e9c35fe21ad35.png"
+        },
+        {
+          "name": "Tanya",
+          "image": "/assets/starsavior/sheet/753039f96a39c5e5d512c5ef19f996569d70e0e1.png"
+        }
+      ],
+      "training": {
+        "name": "Tanya",
+        "image": "/assets/starsavior/sheet/e6dd41978797c0f70870d930ae6e4b0541d21a2d.png"
+      }
+    },
+    "journeyHard": {
+      "talisman": {
+        "label": "DPS - AX5",
+        "owner": "Tanya",
+        "guideIcon": "/assets/starsavior/sheet/9bf4ff803239e9204f9e224951453b4fe0da83e8.png",
+        "pieces": [
+          {
+            "name": "Gloves",
+            "image": "/assets/starsavior/sheet/102e5bf6a8fe38db24642ab7da06e48ee5a31185.png"
+          },
+          {
+            "name": "Hat",
+            "image": "/assets/starsavior/sheet/0789a1df0ab7c771452089e630ccc521c7aa8f3c.png"
+          }
+        ]
+      },
+      "cards": [
+        {
+          "name": "Lacy",
+          "image": "/assets/starsavior/sheet/bcf95c09e54cf26ecf3d33dd620a0113ac5f336d.png"
+        },
+        {
+          "name": "BG Frey",
+          "image": "/assets/starsavior/sheet/de78e666bfe8a1df69ef4501ebf662dc4f9beb4f.png"
+        },
+        {
+          "name": "Charlotte",
+          "image": "/assets/starsavior/sheet/f9acd84fc597be5fa366d9e5cb18d5432c20885b.png"
+        },
+        {
+          "name": "Tanya or BG Claire",
+          "image": "/assets/starsavior/sheet/753039f96a39c5e5d512c5ef19f996569d70e0e1.png"
+        },
+        {
+          "name": "Petra or Naru",
+          "image": "/assets/starsavior/sheet/dab409310606273d68c1ef55b82e9c35fe21ad35.png"
+        }
+      ],
+      "alternate": null
+    },
+    "talismans": {
+      "journeyNormal": "Tanya",
+      "journeyHard": "DPS - AX5"
+    },
+    "notes": [
+      "Tanya keeps the same speed and attack stat line but flexes her set package depending on whether you need raw damage or faster initiative.",
+      "The source build path is one of the more explicit skill-roadmap entries in the sheet."
+    ]
+  },
+  {
+    "name": "Trish",
+    "slug": "trish",
+    "role": "Build Guide",
+    "modes": [
+      "PvE",
+      "PvP"
+    ],
+    "image": "/assets/starsavior/sheet/29e4bba22580593c57d2395295cd8b5c07ab168b.png",
+    "setIcons": {
+      "budget": [
+        "/assets/starsavior/sheet/b413c56e8429fc358939010b6155036c43af1820.png",
+        "/assets/starsavior/sheet/efec4b74fa3b43df579bfa0f9c9a7003905758a9.png"
+      ],
+      "endgame": [
+        "/assets/starsavior/sheet/b41733d67d33ac888f0393e951dd1d7b582086a0.png",
+        "/assets/starsavior/sheet/efec4b74fa3b43df579bfa0f9c9a7003905758a9.png"
+      ],
+      "alternate": [
+        "/assets/starsavior/sheet/9dc8554a55fa3ee6136f181cf977f0a3cf5c4f68.png",
+        "/assets/starsavior/sheet/efec4b74fa3b43df579bfa0f9c9a7003905758a9.png"
+      ]
+    },
+    "updatedAt": "2026-03-30",
+    "sourceTabs": [
+      "All Character Build Guide",
+      "Tychara character guide"
+    ],
+    "sourceContext": null,
+    "recommendedSets": [
+      {
+        "label": "PvE / PvP",
+        "sets": [
+          "Insight (4pc)",
+          "Valor (2pc)"
+        ],
+        "neckMain": "SPD",
+        "ringMain": "ATK%"
+      },
+      {
+        "label": "High-end",
+        "sets": [
+          "Destruction (4pc)",
+          "Valor (2pc)"
+        ],
+        "neckMain": "SPD",
+        "ringMain": "ATK%"
+      },
+      {
+        "label": "PvP",
+        "sets": [
+          "ATK (4pc)",
+          "Valor (2pc)"
+        ],
+        "neckMain": "SPD",
+        "ringMain": "ATK%"
+      }
+    ],
+    "subStats": [
+      "Speed",
+      "Critical Rate",
+      "Critical Damage",
+      "ATK%"
+    ],
+    "skillLevels": {
+      "budget": "3 / 3 / 3",
+      "endgame": "7 / 7 / 7",
+      "progression": [
+        "3 / 3 / 3",
+        "3 / 3 / 6",
+        "7 / 7 / 7"
+      ]
+    },
+    "arcana": [
+      "No Pain, No Gain",
+      "As Cute as Kyra!",
+      "The Indomitable Masterpiece",
+      "A Knight's Oath",
+      "Made by Petra♡"
+    ],
+    "journeyNormal": {
+      "cards": [
+        {
+          "name": "Lacy",
+          "image": "/assets/starsavior/sheet/bcf95c09e54cf26ecf3d33dd620a0113ac5f336d.png"
+        },
+        {
+          "name": "Kyra",
+          "image": "/assets/starsavior/sheet/e605bd33f2bca763bc382ff6888342405b850afa.png"
+        },
+        {
+          "name": "Charlotte",
+          "image": "/assets/starsavior/sheet/f9acd84fc597be5fa366d9e5cb18d5432c20885b.png"
+        },
+        {
+          "name": "BG Claire",
+          "image": "/assets/starsavior/sheet/948699f0fd251e717871c7c52acf43d59d2fd0d3.png"
+        },
+        {
+          "name": "Petra",
+          "image": "/assets/starsavior/sheet/dab409310606273d68c1ef55b82e9c35fe21ad35.png"
+        }
+      ],
+      "training": {
+        "name": "Trish",
+        "image": "/assets/starsavior/sheet/e6dd41978797c0f70870d930ae6e4b0541d21a2d.png"
+      }
+    },
+    "journeyHard": {
+      "talisman": {
+        "label": "DPS - AX5",
+        "owner": "Trish",
+        "guideIcon": "/assets/starsavior/sheet/29e4bba22580593c57d2395295cd8b5c07ab168b.png",
+        "pieces": [
+          {
+            "name": "Gloves",
+            "image": "/assets/starsavior/sheet/102e5bf6a8fe38db24642ab7da06e48ee5a31185.png"
+          },
+          {
+            "name": "Hat",
+            "image": "/assets/starsavior/sheet/0789a1df0ab7c771452089e630ccc521c7aa8f3c.png"
+          }
+        ]
+      },
+      "cards": [
+        {
+          "name": "Lacy",
+          "image": "/assets/starsavior/sheet/bcf95c09e54cf26ecf3d33dd620a0113ac5f336d.png"
+        },
+        {
+          "name": "Kyra",
+          "image": "/assets/starsavior/sheet/e605bd33f2bca763bc382ff6888342405b850afa.png"
+        },
+        {
+          "name": "BG Frey",
+          "image": "/assets/starsavior/sheet/de78e666bfe8a1df69ef4501ebf662dc4f9beb4f.png"
+        },
+        {
+          "name": "Charlotte",
+          "image": "/assets/starsavior/sheet/f9acd84fc597be5fa366d9e5cb18d5432c20885b.png"
+        },
+        {
+          "name": "Petra or Naru",
+          "image": "/assets/starsavior/sheet/dab409310606273d68c1ef55b82e9c35fe21ad35.png"
+        }
+      ],
+      "alternate": null
+    },
+    "talismans": {
+      "journeyNormal": "Trish",
+      "journeyHard": "DPS - AX5"
+    },
+    "notes": [
+      "Trish keeps a SPD necklace and ATK% ring in the published build sheet, with Insight (4pc) + Valor (2pc) as the first stop.",
+      "Journey Hard routing in the sheet points toward DPS - AX5."
+    ]
+  },
+  {
+    "name": "Vera",
+    "slug": "vera",
+    "role": "Healer Support",
+    "modes": [
+      "PvE",
+      "PvP"
+    ],
+    "image": "/assets/starsavior/tychara/ef3c71dbfca389638ddd94632ccc04fd61e87148.webp",
+    "updatedAt": "2026-03-30",
+    "sourceTabs": [
+      "Tychara character guide",
+      "Fallback build profile"
+    ],
+    "sourceContext": {
+      "url": "https://tychara.com/StarSavior/characters/vera",
+      "lead": "Fallback build profile based on Tychara's character guide.",
+      "citationText": "Source page: Vera Guide - Star Savior | Tychara.",
+      "permissionNote": "Tychara does not currently publish a dedicated build section for this unit, so this build uses the Tychara stat line and skill kit as its source."
+    },
+    "recommendedSets": [
+      {
+        "label": "Core",
+        "sets": [
+          "HP (4pc)",
+          "Barrier (2pc)"
+        ],
+        "neckMain": "SPD",
+        "ringMain": "HP%"
+      },
+      {
+        "label": "Fast healer",
+        "sets": [
+          "Speed (4pc)",
+          "Barrier (2pc)"
+        ],
+        "neckMain": "SPD",
+        "ringMain": "HP%"
+      },
+      {
+        "label": "Safe lane",
+        "sets": [
+          "HP (4pc)",
+          "Res (2pc)"
+        ],
+        "neckMain": "SPD",
+        "ringMain": "HP%"
+      }
+    ],
+    "subStats": [
+      "SPD",
+      "HP%",
+      "Effect Res",
+      "DEF%",
+      "Flat HP"
+    ],
+    "skillLevels": {
+      "budget": "3 / 3 / 3",
+      "endgame": "4 / 8 / 8",
+      "progression": [
+        "3 / 3 / 3",
+        "4 / 6 / 6",
+        "4 / 8 / 8"
+      ]
+    },
+    "arcana": [
+      "A Knight's Oath",
+      "Under the Glass Moon",
+      "Made by Petra♡"
+    ],
+    "notes": [
+      "Vera does not have a published build section on Tychara yet, so this page uses her Tychara stat line and kit details as a fallback build profile.",
+      "Both of her healing buttons scale from Max HP, so HP sets stay ahead of attack-oriented support shells.",
+      "Her special removes debuffs and the ultimate is full-team recovery, which makes speed and effect resistance the cleanest supporting rolls."
+    ]
+  },
+  {
+    "name": "Yoo Mina",
+    "slug": "yoo-mina",
+    "role": "Build Guide",
+    "modes": [
+      "PvE",
+      "PvP"
+    ],
+    "image": "/assets/starsavior/sheet/2a7515e5cf888cede44f85b2feea668f496ea972.jpg",
+    "setIcons": {
+      "budget": [
+        "/assets/starsavior/sheet/b41733d67d33ac888f0393e951dd1d7b582086a0.png",
+        "/assets/starsavior/sheet/95bb620610231a6272439e099ae070b8d70171eb.png"
+      ],
+      "endgame": [
+        "/assets/starsavior/sheet/b413c56e8429fc358939010b6155036c43af1820.png",
+        "/assets/starsavior/sheet/95bb620610231a6272439e099ae070b8d70171eb.png"
+      ],
+      "alternate": [
+        "/assets/starsavior/sheet/b413c56e8429fc358939010b6155036c43af1820.png",
+        "/assets/starsavior/sheet/efec4b74fa3b43df579bfa0f9c9a7003905758a9.png"
+      ]
+    },
+    "updatedAt": "2026-03-30",
+    "sourceTabs": [
+      "All Character Build Guide"
+    ],
+    "sourceContext": null,
+    "recommendedSets": [
+      {
+        "label": "PvE / PvP",
+        "sets": [
+          "Destruction (4pc)",
+          "Hit (2pc)"
+        ],
+        "neckMain": "SPD",
+        "ringMain": "ATK%"
+      },
+      {
+        "label": "High-end",
+        "sets": [
+          "Insight (4pc)",
+          "Hit (2pc)"
+        ],
+        "neckMain": "SPD",
+        "ringMain": "ATK%"
+      },
+      {
+        "label": "PvP",
+        "sets": [
+          "Insight (4pc)",
+          "Valor (2pc)"
+        ],
+        "neckMain": "SPD",
+        "ringMain": "ATK%"
+      }
+    ],
+    "subStats": [
+      "SPD",
+      "Effect Hit%",
+      "Crit Rate",
+      "Crit DMG",
+      "ATK%"
+    ],
+    "skillLevels": {
+      "budget": "3 / 3 / 3",
+      "endgame": "7 / 8 / 8",
+      "progression": [
+        "3 / 3 / 3",
+        "3 / 6 / 3",
+        "3 / 6 / 6",
+        "3 / 6 / 8",
+        "7 / 8 / 8"
+      ]
+    },
+    "arcana": [
+      "Lacy",
+      "BG Frey",
+      "Yoo Mina",
+      "Charlotte",
+      "Petra or Naru"
+    ],
+    "journeyNormal": {
+      "cards": [
+        {
+          "name": "Lacy",
+          "image": "/assets/starsavior/sheet/bcf95c09e54cf26ecf3d33dd620a0113ac5f336d.png"
+        },
+        {
+          "name": "BG Frey",
+          "image": "/assets/starsavior/sheet/de78e666bfe8a1df69ef4501ebf662dc4f9beb4f.png"
+        },
+        {
+          "name": "Yoo Mina",
+          "image": "/assets/starsavior/sheet/5c41cdebd8b8adf7181204340b35e6de706c8d5b.png"
+        },
+        {
+          "name": "Charlotte",
+          "image": "/assets/starsavior/sheet/f9acd84fc597be5fa366d9e5cb18d5432c20885b.png"
+        },
+        {
+          "name": "Petra or Naru",
+          "image": "/assets/starsavior/sheet/dab409310606273d68c1ef55b82e9c35fe21ad35.png"
+        }
+      ],
+      "training": {
+        "name": "Yoo Mina",
+        "image": "/assets/starsavior/sheet/e6dd41978797c0f70870d930ae6e4b0541d21a2d.png"
+      }
+    },
+    "journeyHard": {
+      "talisman": {
+        "label": "DPS - AX5",
+        "owner": "Yoo Mina",
+        "guideIcon": "/assets/starsavior/sheet/2a7515e5cf888cede44f85b2feea668f496ea972.jpg",
+        "pieces": [
+          {
+            "name": "Gloves",
+            "image": "/assets/starsavior/sheet/102e5bf6a8fe38db24642ab7da06e48ee5a31185.png"
+          },
+          {
+            "name": "Hat",
+            "image": "/assets/starsavior/sheet/0789a1df0ab7c771452089e630ccc521c7aa8f3c.png"
+          }
+        ]
+      },
+      "cards": [
+        {
+          "name": "Lacy",
+          "image": "/assets/starsavior/sheet/bcf95c09e54cf26ecf3d33dd620a0113ac5f336d.png"
+        },
+        {
+          "name": "BG Frey",
+          "image": "/assets/starsavior/sheet/de78e666bfe8a1df69ef4501ebf662dc4f9beb4f.png"
+        },
+        {
+          "name": "Yoo Mina or BG Claire",
+          "image": "/assets/starsavior/sheet/5c41cdebd8b8adf7181204340b35e6de706c8d5b.png"
+        },
+        {
+          "name": "Charlotte",
+          "image": "/assets/starsavior/sheet/f9acd84fc597be5fa366d9e5cb18d5432c20885b.png"
+        },
+        {
+          "name": "Petra or Naru",
+          "image": "/assets/starsavior/sheet/dab409310606273d68c1ef55b82e9c35fe21ad35.png"
+        }
+      ],
+      "alternate": null
+    },
+    "talismans": {
+      "journeyNormal": "Yoo Mina",
+      "journeyHard": "DPS - AX5"
+    },
+    "notes": [
+      "Yoo Mina keeps a SPD necklace and ATK% ring in the published build sheet, with Destruction (4pc) + Hit (2pc) as the first stop.",
+      "The source sheet highlights Effect Hit% as the standout roll target on top of the usual SPD and Effect Hit% shell.",
+      "Journey Hard routing in the sheet points toward DPS - AX5."
+    ]
+  }
+]

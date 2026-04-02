@@ -1,0 +1,53 @@
+---
+import HubLayout from "../../layouts/HubLayout.astro";
+const base = import.meta.env.BASE_URL;
+---
+
+<HubLayout
+  title="Search | Avinoc Games"
+  description="Search across all games, guides, builds, and tools."
+>
+  <section class="hero">
+    <div class="container">
+      <div class="hero-wrap">
+        <p class="eyebrow">Search</p>
+        <h1>Find anything across all games</h1>
+        <p>
+          Search guides, builds, tier lists, ship data, and more — powered by Pagefind.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="container stack">
+    <div id="search"></div>
+
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow">Popular</p>
+        <h2>Quick links</h2>
+      </div>
+    </div>
+
+    <div class="page-chips">
+      <a class="page-chip" href={`${base}starsavior/builds/`}>Builds</a>
+      <a class="page-chip" href={`${base}starsavior/tier-lists/saviors`}>Tier List</a>
+      <a class="page-chip" href={`${base}starsavior/guides/reroll/`}>Reroll Guide</a>
+      <a class="page-chip" href={`${base}lagrange/fleet-builder`}>Fleet Builder</a>
+    </div>
+  </section>
+
+  <link rel="stylesheet" href={`${base}pagefind/pagefind-ui.css`} />
+  <script is:inline define:vars={{ base }}>
+    window.addEventListener("DOMContentLoaded", () => {
+      if (typeof PagefindUI !== "undefined") {
+        new PagefindUI({
+          element: "#search",
+          showSubResults: true,
+          baseUrl: base,
+        });
+      }
+    });
+  </script>
+  <script src={`${base}pagefind/pagefind-ui.js`} type="text/javascript"></script>
+</HubLayout>

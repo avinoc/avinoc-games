@@ -1,0 +1,876 @@
+{
+  "charlotte": {
+    "image": "/assets/starsavior/sheet/a5a1dae1bb523bfe6add1588693909e51e060e3b.png",
+    "setIcons": {
+      "budget": [
+        "/assets/starsavior/sheet/b413c56e8429fc358939010b6155036c43af1820.png",
+        "/assets/starsavior/sheet/95bb620610231a6272439e099ae070b8d70171eb.png"
+      ],
+      "endgame": [
+        "/assets/starsavior/sheet/b41733d67d33ac888f0393e951dd1d7b582086a0.png",
+        "/assets/starsavior/sheet/efec4b74fa3b43df579bfa0f9c9a7003905758a9.png"
+      ],
+      "alternate": [
+        "/assets/starsavior/sheet/6a30ee6d70a7c919289a33883852244a6140010f.png",
+        "/assets/starsavior/sheet/efec4b74fa3b43df579bfa0f9c9a7003905758a9.png"
+      ]
+    },
+    "journeyNormal": {
+      "cards": [
+        {
+          "name": "Lacy",
+          "image": "/assets/starsavior/sheet/bcf95c09e54cf26ecf3d33dd620a0113ac5f336d.png"
+        },
+        {
+          "name": "BG Frey",
+          "image": "/assets/starsavior/sheet/de78e666bfe8a1df69ef4501ebf662dc4f9beb4f.png"
+        },
+        {
+          "name": "Charlotte",
+          "image": "/assets/starsavior/sheet/f9acd84fc597be5fa366d9e5cb18d5432c20885b.png"
+        },
+        {
+          "name": "BG Claire",
+          "image": "/assets/starsavior/sheet/948699f0fd251e717871c7c52acf43d59d2fd0d3.png"
+        },
+        {
+          "name": "Petra or Naru",
+          "image": "/assets/starsavior/sheet/dab409310606273d68c1ef55b82e9c35fe21ad35.png"
+        }
+      ],
+      "training": {
+        "name": "Charlotte",
+        "image": "/assets/starsavior/sheet/e6dd41978797c0f70870d930ae6e4b0541d21a2d.png"
+      }
+    },
+    "journeyHard": {
+      "talisman": {
+        "label": "DPS - AX5",
+        "owner": "Charlotte",
+        "guideIcon": "/assets/starsavior/sheet/a5a1dae1bb523bfe6add1588693909e51e060e3b.png",
+        "pieces": [
+          {
+            "name": "Gloves",
+            "image": "/assets/starsavior/sheet/102e5bf6a8fe38db24642ab7da06e48ee5a31185.png"
+          },
+          {
+            "name": "Hat",
+            "image": "/assets/starsavior/sheet/0789a1df0ab7c771452089e630ccc521c7aa8f3c.png"
+          }
+        ]
+      },
+      "cards": [
+        {
+          "name": "Lacy",
+          "image": "/assets/starsavior/sheet/bcf95c09e54cf26ecf3d33dd620a0113ac5f336d.png"
+        },
+        {
+          "name": "BG Frey",
+          "image": "/assets/starsavior/sheet/de78e666bfe8a1df69ef4501ebf662dc4f9beb4f.png"
+        },
+        {
+          "name": "Lyn or BG Claire",
+          "image": "/assets/starsavior/sheet/c381ad05202c655936b55e33f9686edcee53dcf7.png"
+        },
+        {
+          "name": "Charlotte",
+          "image": "/assets/starsavior/sheet/f9acd84fc597be5fa366d9e5cb18d5432c20885b.png"
+        },
+        {
+          "name": "Petra or Naru",
+          "image": "/assets/starsavior/sheet/dab409310606273d68c1ef55b82e9c35fe21ad35.png"
+        }
+      ],
+      "alternate": null
+    }
+  },
+  "bunnygirl-claire": {
+    "image": "/assets/starsavior/sheet/df484e14609d8e4735c6f173954719a3634c4607.png",
+    "setIcons": {
+      "budget": [
+        "/assets/starsavior/sheet/b41733d67d33ac888f0393e951dd1d7b582086a0.png",
+        "/assets/starsavior/sheet/efec4b74fa3b43df579bfa0f9c9a7003905758a9.png"
+      ],
+      "endgame": [
+        "/assets/starsavior/sheet/b413c56e8429fc358939010b6155036c43af1820.png",
+        "/assets/starsavior/sheet/efec4b74fa3b43df579bfa0f9c9a7003905758a9.png"
+      ],
+      "alternate": [
+        "/assets/starsavior/sheet/9dc8554a55fa3ee6136f181cf977f0a3cf5c4f68.png",
+        "/assets/starsavior/sheet/efec4b74fa3b43df579bfa0f9c9a7003905758a9.png"
+      ]
+    },
+    "journeyNormal": {
+      "cards": [
+        {
+          "name": "Lacy",
+          "image": "/assets/starsavior/sheet/bcf95c09e54cf26ecf3d33dd620a0113ac5f336d.png"
+        },
+        {
+          "name": "BG Frey",
+          "image": "/assets/starsavior/sheet/de78e666bfe8a1df69ef4501ebf662dc4f9beb4f.png"
+        },
+        {
+          "name": "Charlotte",
+          "image": "/assets/starsavior/sheet/f9acd84fc597be5fa366d9e5cb18d5432c20885b.png"
+        },
+        {
+          "name": "BG Claire",
+          "image": "/assets/starsavior/sheet/948699f0fd251e717871c7c52acf43d59d2fd0d3.png"
+        },
+        {
+          "name": "Petra or Naru",
+          "image": "/assets/starsavior/sheet/dab409310606273d68c1ef55b82e9c35fe21ad35.png"
+        }
+      ],
+      "training": {
+        "name": "Bunnygirl Claire",
+        "image": "/assets/starsavior/sheet/e6dd41978797c0f70870d930ae6e4b0541d21a2d.png"
+      }
+    },
+    "journeyHard": {
+      "talisman": {
+        "label": "DPS - AX6",
+        "owner": "Bunnygirl Claire",
+        "guideIcon": "/assets/starsavior/sheet/df484e14609d8e4735c6f173954719a3634c4607.png",
+        "pieces": [
+          {
+            "name": "Gloves",
+            "image": "/assets/starsavior/sheet/102e5bf6a8fe38db24642ab7da06e48ee5a31185.png"
+          },
+          {
+            "name": "Necklace",
+            "image": "/assets/starsavior/sheet/c4ed73b9e9e065fd31f2f17d11dff362c685af0e.png"
+          }
+        ]
+      },
+      "cards": [
+        {
+          "name": "Lacy",
+          "image": "/assets/starsavior/sheet/bcf95c09e54cf26ecf3d33dd620a0113ac5f336d.png"
+        },
+        {
+          "name": "BG Frey",
+          "image": "/assets/starsavior/sheet/de78e666bfe8a1df69ef4501ebf662dc4f9beb4f.png"
+        },
+        {
+          "name": "Lyn or BG Claire",
+          "image": "/assets/starsavior/sheet/c381ad05202c655936b55e33f9686edcee53dcf7.png"
+        },
+        {
+          "name": "Charlotte",
+          "image": "/assets/starsavior/sheet/f9acd84fc597be5fa366d9e5cb18d5432c20885b.png"
+        },
+        {
+          "name": "Petra or Naru",
+          "image": "/assets/starsavior/sheet/dab409310606273d68c1ef55b82e9c35fe21ad35.png"
+        }
+      ],
+      "alternate": null
+    }
+  },
+  "asherah": {
+    "image": "/assets/starsavior/sheet/6319edbe734417d33855a4c6633913a8cc2c26c1.png",
+    "setIcons": {
+      "budget": [
+        "/assets/starsavior/sheet/b413c56e8429fc358939010b6155036c43af1820.png",
+        "/assets/starsavior/sheet/efec4b74fa3b43df579bfa0f9c9a7003905758a9.png"
+      ],
+      "endgame": [
+        "/assets/starsavior/sheet/b41733d67d33ac888f0393e951dd1d7b582086a0.png",
+        "/assets/starsavior/sheet/efec4b74fa3b43df579bfa0f9c9a7003905758a9.png"
+      ],
+      "alternate": [
+        "/assets/starsavior/sheet/9dc8554a55fa3ee6136f181cf977f0a3cf5c4f68.png",
+        "/assets/starsavior/sheet/efec4b74fa3b43df579bfa0f9c9a7003905758a9.png"
+      ]
+    },
+    "journeyNormal": {
+      "cards": [
+        {
+          "name": "Lacy",
+          "image": "/assets/starsavior/sheet/bcf95c09e54cf26ecf3d33dd620a0113ac5f336d.png"
+        },
+        {
+          "name": "BG Frey",
+          "image": "/assets/starsavior/sheet/de78e666bfe8a1df69ef4501ebf662dc4f9beb4f.png"
+        },
+        {
+          "name": "Charlotte",
+          "image": "/assets/starsavior/sheet/f9acd84fc597be5fa366d9e5cb18d5432c20885b.png"
+        },
+        {
+          "name": "BG Claire",
+          "image": "/assets/starsavior/sheet/948699f0fd251e717871c7c52acf43d59d2fd0d3.png"
+        },
+        {
+          "name": "Petra",
+          "image": "/assets/starsavior/sheet/dab409310606273d68c1ef55b82e9c35fe21ad35.png"
+        }
+      ],
+      "training": {
+        "name": "Asherah",
+        "image": "/assets/starsavior/sheet/e6dd41978797c0f70870d930ae6e4b0541d21a2d.png"
+      }
+    },
+    "journeyHard": {
+      "talisman": {
+        "label": "DPS - AX5",
+        "owner": "Asherah",
+        "guideIcon": "/assets/starsavior/sheet/6319edbe734417d33855a4c6633913a8cc2c26c1.png",
+        "pieces": [
+          {
+            "name": "Gloves",
+            "image": "/assets/starsavior/sheet/102e5bf6a8fe38db24642ab7da06e48ee5a31185.png"
+          },
+          {
+            "name": "Hat",
+            "image": "/assets/starsavior/sheet/0789a1df0ab7c771452089e630ccc521c7aa8f3c.png"
+          }
+        ]
+      },
+      "cards": [
+        {
+          "name": "Lacy",
+          "image": "/assets/starsavior/sheet/bcf95c09e54cf26ecf3d33dd620a0113ac5f336d.png"
+        },
+        {
+          "name": "BG Frey",
+          "image": "/assets/starsavior/sheet/de78e666bfe8a1df69ef4501ebf662dc4f9beb4f.png"
+        },
+        {
+          "name": "Lyn or BG Claire",
+          "image": "/assets/starsavior/sheet/c381ad05202c655936b55e33f9686edcee53dcf7.png"
+        },
+        {
+          "name": "Charlotte",
+          "image": "/assets/starsavior/sheet/f9acd84fc597be5fa366d9e5cb18d5432c20885b.png"
+        },
+        {
+          "name": "Petra or Naru",
+          "image": "/assets/starsavior/sheet/dab409310606273d68c1ef55b82e9c35fe21ad35.png"
+        }
+      ],
+      "alternate": null
+    }
+  },
+  "tanya": {
+    "image": "/assets/starsavior/sheet/9bf4ff803239e9204f9e224951453b4fe0da83e8.png",
+    "setIcons": {
+      "budget": [
+        "/assets/starsavior/sheet/b413c56e8429fc358939010b6155036c43af1820.png",
+        "/assets/starsavior/sheet/efec4b74fa3b43df579bfa0f9c9a7003905758a9.png"
+      ],
+      "endgame": [
+        "/assets/starsavior/sheet/6a30ee6d70a7c919289a33883852244a6140010f.png",
+        "/assets/starsavior/sheet/efec4b74fa3b43df579bfa0f9c9a7003905758a9.png"
+      ],
+      "alternate": [
+        "/assets/starsavior/sheet/9dc8554a55fa3ee6136f181cf977f0a3cf5c4f68.png",
+        "/assets/starsavior/sheet/efec4b74fa3b43df579bfa0f9c9a7003905758a9.png"
+      ]
+    },
+    "journeyNormal": {
+      "cards": [
+        {
+          "name": "Lacy",
+          "image": "/assets/starsavior/sheet/bcf95c09e54cf26ecf3d33dd620a0113ac5f336d.png"
+        },
+        {
+          "name": "BG Frey",
+          "image": "/assets/starsavior/sheet/de78e666bfe8a1df69ef4501ebf662dc4f9beb4f.png"
+        },
+        {
+          "name": "Charlotte",
+          "image": "/assets/starsavior/sheet/f9acd84fc597be5fa366d9e5cb18d5432c20885b.png"
+        },
+        {
+          "name": "Petra",
+          "image": "/assets/starsavior/sheet/dab409310606273d68c1ef55b82e9c35fe21ad35.png"
+        },
+        {
+          "name": "Tanya",
+          "image": "/assets/starsavior/sheet/753039f96a39c5e5d512c5ef19f996569d70e0e1.png"
+        }
+      ],
+      "training": {
+        "name": "Tanya",
+        "image": "/assets/starsavior/sheet/e6dd41978797c0f70870d930ae6e4b0541d21a2d.png"
+      }
+    },
+    "journeyHard": {
+      "talisman": {
+        "label": "DPS - AX5",
+        "owner": "Tanya",
+        "guideIcon": "/assets/starsavior/sheet/9bf4ff803239e9204f9e224951453b4fe0da83e8.png",
+        "pieces": [
+          {
+            "name": "Gloves",
+            "image": "/assets/starsavior/sheet/102e5bf6a8fe38db24642ab7da06e48ee5a31185.png"
+          },
+          {
+            "name": "Hat",
+            "image": "/assets/starsavior/sheet/0789a1df0ab7c771452089e630ccc521c7aa8f3c.png"
+          }
+        ]
+      },
+      "cards": [
+        {
+          "name": "Lacy",
+          "image": "/assets/starsavior/sheet/bcf95c09e54cf26ecf3d33dd620a0113ac5f336d.png"
+        },
+        {
+          "name": "BG Frey",
+          "image": "/assets/starsavior/sheet/de78e666bfe8a1df69ef4501ebf662dc4f9beb4f.png"
+        },
+        {
+          "name": "Charlotte",
+          "image": "/assets/starsavior/sheet/f9acd84fc597be5fa366d9e5cb18d5432c20885b.png"
+        },
+        {
+          "name": "Tanya or BG Claire",
+          "image": "/assets/starsavior/sheet/753039f96a39c5e5d512c5ef19f996569d70e0e1.png"
+        },
+        {
+          "name": "Petra or Naru",
+          "image": "/assets/starsavior/sheet/dab409310606273d68c1ef55b82e9c35fe21ad35.png"
+        }
+      ],
+      "alternate": null
+    }
+  },
+  "roberta": {
+    "image": "/assets/starsavior/sheet/8f2fe100be6cdb912aabcfca3420181fd563bb87.png",
+    "setIcons": {
+      "budget": [
+        "/assets/starsavior/sheet/b41733d67d33ac888f0393e951dd1d7b582086a0.png",
+        "/assets/starsavior/sheet/efec4b74fa3b43df579bfa0f9c9a7003905758a9.png"
+      ],
+      "endgame": [
+        "/assets/starsavior/sheet/b41733d67d33ac888f0393e951dd1d7b582086a0.png",
+        "/assets/starsavior/sheet/39f4ff0c0263092e1feb09d226cc5ea0aa4a609f.png"
+      ],
+      "alternate": [
+        "/assets/starsavior/sheet/b41733d67d33ac888f0393e951dd1d7b582086a0.png",
+        "/assets/starsavior/sheet/bdf6e0e3e41894af1ba91e0059e13d6667eb4e48.png"
+      ]
+    },
+    "journeyNormal": {
+      "cards": [
+        {
+          "name": "Lacy",
+          "image": "/assets/starsavior/sheet/bcf95c09e54cf26ecf3d33dd620a0113ac5f336d.png"
+        },
+        {
+          "name": "BG Frey",
+          "image": "/assets/starsavior/sheet/de78e666bfe8a1df69ef4501ebf662dc4f9beb4f.png"
+        },
+        {
+          "name": "Charlotte",
+          "image": "/assets/starsavior/sheet/f9acd84fc597be5fa366d9e5cb18d5432c20885b.png"
+        },
+        {
+          "name": "Roberta",
+          "image": "/assets/starsavior/sheet/9fb4fca7f52c76a35a5919a46c4aa9f89f3f9d6e.png"
+        },
+        {
+          "name": "Petra or Naru",
+          "image": "/assets/starsavior/sheet/dab409310606273d68c1ef55b82e9c35fe21ad35.png"
+        }
+      ],
+      "training": {
+        "name": "Roberta",
+        "image": "/assets/starsavior/sheet/e6dd41978797c0f70870d930ae6e4b0541d21a2d.png"
+      }
+    },
+    "journeyHard": {
+      "talisman": {
+        "label": "DPS - AX6",
+        "owner": "Roberta",
+        "guideIcon": "/assets/starsavior/sheet/8f2fe100be6cdb912aabcfca3420181fd563bb87.png",
+        "pieces": [
+          {
+            "name": "Gloves",
+            "image": "/assets/starsavior/sheet/102e5bf6a8fe38db24642ab7da06e48ee5a31185.png"
+          },
+          {
+            "name": "Necklace",
+            "image": "/assets/starsavior/sheet/c4ed73b9e9e065fd31f2f17d11dff362c685af0e.png"
+          }
+        ]
+      },
+      "cards": [
+        {
+          "name": "Lacy",
+          "image": "/assets/starsavior/sheet/bcf95c09e54cf26ecf3d33dd620a0113ac5f336d.png"
+        },
+        {
+          "name": "BG Frey",
+          "image": "/assets/starsavior/sheet/de78e666bfe8a1df69ef4501ebf662dc4f9beb4f.png"
+        },
+        {
+          "name": "Roberta or Harley",
+          "image": "/assets/starsavior/sheet/9fb4fca7f52c76a35a5919a46c4aa9f89f3f9d6e.png"
+        },
+        {
+          "name": "Charlotte",
+          "image": "/assets/starsavior/sheet/f9acd84fc597be5fa366d9e5cb18d5432c20885b.png"
+        },
+        {
+          "name": "Petra or Naru",
+          "image": "/assets/starsavior/sheet/dab409310606273d68c1ef55b82e9c35fe21ad35.png"
+        }
+      ],
+      "alternate": null
+    }
+  },
+  "seira": {
+    "image": "/assets/starsavior/sheet/cdf8747b0f16eeb849d99a67bb3325d132789136.png",
+    "setIcons": {
+      "budget": [
+        "/assets/starsavior/sheet/b413c56e8429fc358939010b6155036c43af1820.png",
+        "/assets/starsavior/sheet/95bb620610231a6272439e099ae070b8d70171eb.png"
+      ],
+      "endgame": [
+        "/assets/starsavior/sheet/b413c56e8429fc358939010b6155036c43af1820.png",
+        "/assets/starsavior/sheet/efec4b74fa3b43df579bfa0f9c9a7003905758a9.png"
+      ],
+      "alternate": [
+        "/assets/starsavior/sheet/6a30ee6d70a7c919289a33883852244a6140010f.png",
+        "/assets/starsavior/sheet/efec4b74fa3b43df579bfa0f9c9a7003905758a9.png"
+      ]
+    },
+    "journeyNormal": {
+      "cards": [
+        {
+          "name": "Lacy",
+          "image": "/assets/starsavior/sheet/bcf95c09e54cf26ecf3d33dd620a0113ac5f336d.png"
+        },
+        {
+          "name": "BG Frey",
+          "image": "/assets/starsavior/sheet/de78e666bfe8a1df69ef4501ebf662dc4f9beb4f.png"
+        },
+        {
+          "name": "Charlotte",
+          "image": "/assets/starsavior/sheet/f9acd84fc597be5fa366d9e5cb18d5432c20885b.png"
+        },
+        {
+          "name": "BG Claire",
+          "image": "/assets/starsavior/sheet/948699f0fd251e717871c7c52acf43d59d2fd0d3.png"
+        },
+        {
+          "name": "Petra or Naru",
+          "image": "/assets/starsavior/sheet/dab409310606273d68c1ef55b82e9c35fe21ad35.png"
+        }
+      ],
+      "training": {
+        "name": "Seira",
+        "image": "/assets/starsavior/sheet/e6dd41978797c0f70870d930ae6e4b0541d21a2d.png"
+      }
+    },
+    "journeyHard": {
+      "talisman": {
+        "label": "DPS - AX4",
+        "owner": "Seira",
+        "guideIcon": "/assets/starsavior/sheet/cdf8747b0f16eeb849d99a67bb3325d132789136.png",
+        "pieces": [
+          {
+            "name": "Gloves",
+            "image": "/assets/starsavior/sheet/102e5bf6a8fe38db24642ab7da06e48ee5a31185.png"
+          },
+          {
+            "name": "Shoes",
+            "image": "/assets/starsavior/sheet/a9936d1dd7360c7cb74f836c5ae1d3a75889871e.png"
+          }
+        ]
+      },
+      "cards": [
+        {
+          "name": "Lacy",
+          "image": "/assets/starsavior/sheet/bcf95c09e54cf26ecf3d33dd620a0113ac5f336d.png"
+        },
+        {
+          "name": "BG Frey",
+          "image": "/assets/starsavior/sheet/de78e666bfe8a1df69ef4501ebf662dc4f9beb4f.png"
+        },
+        {
+          "name": "Lyn or BG Claire",
+          "image": "/assets/starsavior/sheet/c381ad05202c655936b55e33f9686edcee53dcf7.png"
+        },
+        {
+          "name": "Charlotte",
+          "image": "/assets/starsavior/sheet/f9acd84fc597be5fa366d9e5cb18d5432c20885b.png"
+        },
+        {
+          "name": "Petra or Naru",
+          "image": "/assets/starsavior/sheet/dab409310606273d68c1ef55b82e9c35fe21ad35.png"
+        }
+      ],
+      "alternate": null
+    }
+  },
+  "lacy": {
+    "image": "/assets/starsavior/sheet/3823764a5f34af0b7275445317c1f876fa4e59af.png",
+    "setIcons": {
+      "budget": [
+        "/assets/starsavior/sheet/b413c56e8429fc358939010b6155036c43af1820.png",
+        "/assets/starsavior/sheet/95bb620610231a6272439e099ae070b8d70171eb.png"
+      ],
+      "endgame": [
+        "/assets/starsavior/sheet/9dc8554a55fa3ee6136f181cf977f0a3cf5c4f68.png",
+        "/assets/starsavior/sheet/95bb620610231a6272439e099ae070b8d70171eb.png"
+      ],
+      "alternate": [
+        "/assets/starsavior/sheet/a490c3de326769065d7ab788bb49ee10be1dff20.png",
+        "/assets/starsavior/sheet/95bb620610231a6272439e099ae070b8d70171eb.png"
+      ]
+    },
+    "journeyNormal": {
+      "cards": [
+        {
+          "name": "Lacy",
+          "image": "/assets/starsavior/sheet/bcf95c09e54cf26ecf3d33dd620a0113ac5f336d.png"
+        },
+        {
+          "name": "BG Frey",
+          "image": "/assets/starsavior/sheet/de78e666bfe8a1df69ef4501ebf662dc4f9beb4f.png"
+        },
+        {
+          "name": "Charlotte",
+          "image": "/assets/starsavior/sheet/f9acd84fc597be5fa366d9e5cb18d5432c20885b.png"
+        },
+        {
+          "name": "BG Claire",
+          "image": "/assets/starsavior/sheet/948699f0fd251e717871c7c52acf43d59d2fd0d3.png"
+        },
+        {
+          "name": "Petra or Naru",
+          "image": "/assets/starsavior/sheet/dab409310606273d68c1ef55b82e9c35fe21ad35.png"
+        }
+      ],
+      "training": {
+        "name": "Lacy",
+        "image": "/assets/starsavior/sheet/e6dd41978797c0f70870d930ae6e4b0541d21a2d.png"
+      }
+    },
+    "journeyHard": {
+      "talisman": {
+        "label": "DPS - AX5",
+        "owner": "Lacy",
+        "guideIcon": "/assets/starsavior/sheet/3823764a5f34af0b7275445317c1f876fa4e59af.png",
+        "pieces": [
+          {
+            "name": "Gloves",
+            "image": "/assets/starsavior/sheet/102e5bf6a8fe38db24642ab7da06e48ee5a31185.png"
+          },
+          {
+            "name": "Hat",
+            "image": "/assets/starsavior/sheet/0789a1df0ab7c771452089e630ccc521c7aa8f3c.png"
+          }
+        ]
+      },
+      "cards": [
+        {
+          "name": "Lacy",
+          "image": "/assets/starsavior/sheet/bcf95c09e54cf26ecf3d33dd620a0113ac5f336d.png"
+        },
+        {
+          "name": "BG Frey",
+          "image": "/assets/starsavior/sheet/de78e666bfe8a1df69ef4501ebf662dc4f9beb4f.png"
+        },
+        {
+          "name": "Lyn or BG Claire",
+          "image": "/assets/starsavior/sheet/c381ad05202c655936b55e33f9686edcee53dcf7.png"
+        },
+        {
+          "name": "Charlotte",
+          "image": "/assets/starsavior/sheet/f9acd84fc597be5fa366d9e5cb18d5432c20885b.png"
+        },
+        {
+          "name": "Petra or Naru",
+          "image": "/assets/starsavior/sheet/dab409310606273d68c1ef55b82e9c35fe21ad35.png"
+        }
+      ],
+      "alternate": null
+    }
+  },
+  "lydia": {
+    "image": "/assets/starsavior/sheet/0b5b70ac9d61e9253595436fa101dd302e29e11a.png",
+    "setIcons": {
+      "budget": [
+        "/assets/starsavior/sheet/b413c56e8429fc358939010b6155036c43af1820.png",
+        "/assets/starsavior/sheet/95bb620610231a6272439e099ae070b8d70171eb.png"
+      ],
+      "endgame": [
+        "/assets/starsavior/sheet/b413c56e8429fc358939010b6155036c43af1820.png",
+        "/assets/starsavior/sheet/efec4b74fa3b43df579bfa0f9c9a7003905758a9.png"
+      ],
+      "alternate": [
+        "/assets/starsavior/sheet/a490c3de326769065d7ab788bb49ee10be1dff20.png",
+        "/assets/starsavior/sheet/95bb620610231a6272439e099ae070b8d70171eb.png"
+      ]
+    },
+    "journeyNormal": {
+      "cards": [
+        {
+          "name": "Lacy",
+          "image": "/assets/starsavior/sheet/bcf95c09e54cf26ecf3d33dd620a0113ac5f336d.png"
+        },
+        {
+          "name": "BG Frey",
+          "image": "/assets/starsavior/sheet/de78e666bfe8a1df69ef4501ebf662dc4f9beb4f.png"
+        },
+        {
+          "name": "Charlotte",
+          "image": "/assets/starsavior/sheet/f9acd84fc597be5fa366d9e5cb18d5432c20885b.png"
+        },
+        {
+          "name": "BG Claire",
+          "image": "/assets/starsavior/sheet/948699f0fd251e717871c7c52acf43d59d2fd0d3.png"
+        },
+        {
+          "name": "Petra or Naru",
+          "image": "/assets/starsavior/sheet/dab409310606273d68c1ef55b82e9c35fe21ad35.png"
+        }
+      ],
+      "training": {
+        "name": "Lydia",
+        "image": "/assets/starsavior/sheet/e6dd41978797c0f70870d930ae6e4b0541d21a2d.png"
+      }
+    },
+    "journeyHard": {
+      "talisman": {
+        "label": "DPS - AX5",
+        "owner": "Lydia",
+        "guideIcon": "/assets/starsavior/sheet/0b5b70ac9d61e9253595436fa101dd302e29e11a.png",
+        "pieces": [
+          {
+            "name": "Gloves",
+            "image": "/assets/starsavior/sheet/102e5bf6a8fe38db24642ab7da06e48ee5a31185.png"
+          },
+          {
+            "name": "Hat",
+            "image": "/assets/starsavior/sheet/0789a1df0ab7c771452089e630ccc521c7aa8f3c.png"
+          }
+        ]
+      },
+      "cards": [
+        {
+          "name": "Lacy",
+          "image": "/assets/starsavior/sheet/bcf95c09e54cf26ecf3d33dd620a0113ac5f336d.png"
+        },
+        {
+          "name": "BG Frey",
+          "image": "/assets/starsavior/sheet/de78e666bfe8a1df69ef4501ebf662dc4f9beb4f.png"
+        },
+        {
+          "name": "Lyn or BG Claire",
+          "image": "/assets/starsavior/sheet/c381ad05202c655936b55e33f9686edcee53dcf7.png"
+        },
+        {
+          "name": "Charlotte",
+          "image": "/assets/starsavior/sheet/f9acd84fc597be5fa366d9e5cb18d5432c20885b.png"
+        },
+        {
+          "name": "Petra or Naru",
+          "image": "/assets/starsavior/sheet/dab409310606273d68c1ef55b82e9c35fe21ad35.png"
+        }
+      ],
+      "alternate": null
+    }
+  },
+  "muriel": {
+    "image": "/assets/starsavior/sheet/b4958d26b3c6e503d234b4f9a85b039ed7d6c435.png",
+    "setIcons": {
+      "budget": [
+        "/assets/starsavior/sheet/b413c56e8429fc358939010b6155036c43af1820.png",
+        "/assets/starsavior/sheet/95bb620610231a6272439e099ae070b8d70171eb.png"
+      ],
+      "endgame": [
+        "/assets/starsavior/sheet/b413c56e8429fc358939010b6155036c43af1820.png",
+        "/assets/starsavior/sheet/efec4b74fa3b43df579bfa0f9c9a7003905758a9.png"
+      ],
+      "alternate": [
+        "/assets/starsavior/sheet/a490c3de326769065d7ab788bb49ee10be1dff20.png",
+        "/assets/starsavior/sheet/95bb620610231a6272439e099ae070b8d70171eb.png"
+      ]
+    },
+    "journeyNormal": {
+      "cards": [
+        {
+          "name": "Lacy",
+          "image": "/assets/starsavior/sheet/bcf95c09e54cf26ecf3d33dd620a0113ac5f336d.png"
+        },
+        {
+          "name": "Muriel",
+          "image": "/assets/starsavior/sheet/b69d9f9367f0d3dda723340d46c73017cc3af6d7.png"
+        },
+        {
+          "name": "Charlotte",
+          "image": "/assets/starsavior/sheet/f9acd84fc597be5fa366d9e5cb18d5432c20885b.png"
+        },
+        {
+          "name": "BG Claire",
+          "image": "/assets/starsavior/sheet/948699f0fd251e717871c7c52acf43d59d2fd0d3.png"
+        },
+        {
+          "name": "Petra or Naru",
+          "image": "/assets/starsavior/sheet/dab409310606273d68c1ef55b82e9c35fe21ad35.png"
+        }
+      ],
+      "training": {
+        "name": "Muriel",
+        "image": "/assets/starsavior/sheet/e6dd41978797c0f70870d930ae6e4b0541d21a2d.png"
+      }
+    },
+    "journeyHard": {
+      "talisman": {
+        "label": "DPS - AX5",
+        "owner": "Muriel",
+        "guideIcon": "/assets/starsavior/sheet/b4958d26b3c6e503d234b4f9a85b039ed7d6c435.png",
+        "pieces": [
+          {
+            "name": "Gloves",
+            "image": "/assets/starsavior/sheet/102e5bf6a8fe38db24642ab7da06e48ee5a31185.png"
+          },
+          {
+            "name": "Hat",
+            "image": "/assets/starsavior/sheet/0789a1df0ab7c771452089e630ccc521c7aa8f3c.png"
+          }
+        ]
+      },
+      "cards": [
+        {
+          "name": "Lacy",
+          "image": "/assets/starsavior/sheet/bcf95c09e54cf26ecf3d33dd620a0113ac5f336d.png"
+        },
+        {
+          "name": "Muriel",
+          "image": "/assets/starsavior/sheet/b69d9f9367f0d3dda723340d46c73017cc3af6d7.png"
+        },
+        {
+          "name": "BG Frey",
+          "image": "/assets/starsavior/sheet/de78e666bfe8a1df69ef4501ebf662dc4f9beb4f.png"
+        },
+        {
+          "name": "Charlotte",
+          "image": "/assets/starsavior/sheet/f9acd84fc597be5fa366d9e5cb18d5432c20885b.png"
+        },
+        {
+          "name": "Petra or Naru",
+          "image": "/assets/starsavior/sheet/dab409310606273d68c1ef55b82e9c35fe21ad35.png"
+        }
+      ],
+      "alternate": {
+        "label": "PVP",
+        "cards": [
+          {
+            "name": "Lacy",
+            "image": "/assets/starsavior/sheet/bcf95c09e54cf26ecf3d33dd620a0113ac5f336d.png"
+          },
+          {
+            "name": "Muriel or Frey",
+            "image": "/assets/starsavior/sheet/b69d9f9367f0d3dda723340d46c73017cc3af6d7.png"
+          },
+          {
+            "name": "Dana",
+            "image": "/assets/starsavior/sheet/99ce997890d11fcc673b2cbf83d0a6e0f2f2bb28.png"
+          },
+          {
+            "name": "Charlotte",
+            "image": "/assets/starsavior/sheet/f9acd84fc597be5fa366d9e5cb18d5432c20885b.png"
+          },
+          {
+            "name": "Petra or Naru",
+            "image": "/assets/starsavior/sheet/dab409310606273d68c1ef55b82e9c35fe21ad35.png"
+          }
+        ]
+      }
+    }
+  },
+  "noble-princess-frey": {
+    "image": "/assets/starsavior/sheet/2d43552f89a910ffbfecef704d0dde0324c17010.png",
+    "setIcons": {
+      "budget": [
+        "/assets/starsavior/sheet/b41733d67d33ac888f0393e951dd1d7b582086a0.png",
+        "/assets/starsavior/sheet/efec4b74fa3b43df579bfa0f9c9a7003905758a9.png"
+      ],
+      "endgame": [
+        "/assets/starsavior/sheet/b413c56e8429fc358939010b6155036c43af1820.png",
+        "/assets/starsavior/sheet/efec4b74fa3b43df579bfa0f9c9a7003905758a9.png"
+      ],
+      "alternate": [
+        "/assets/starsavior/sheet/9dc8554a55fa3ee6136f181cf977f0a3cf5c4f68.png",
+        "/assets/starsavior/sheet/efec4b74fa3b43df579bfa0f9c9a7003905758a9.png"
+      ]
+    },
+    "journeyNormal": {
+      "cards": [
+        {
+          "name": "Lacy",
+          "image": "/assets/starsavior/sheet/bcf95c09e54cf26ecf3d33dd620a0113ac5f336d.png"
+        },
+        {
+          "name": "Muriel",
+          "image": "/assets/starsavior/sheet/b69d9f9367f0d3dda723340d46c73017cc3af6d7.png"
+        },
+        {
+          "name": "Charlotte",
+          "image": "/assets/starsavior/sheet/f9acd84fc597be5fa366d9e5cb18d5432c20885b.png"
+        },
+        {
+          "name": "BG Claire",
+          "image": "/assets/starsavior/sheet/948699f0fd251e717871c7c52acf43d59d2fd0d3.png"
+        },
+        {
+          "name": "Petra or Naru",
+          "image": "/assets/starsavior/sheet/dab409310606273d68c1ef55b82e9c35fe21ad35.png"
+        }
+      ],
+      "training": {
+        "name": "Noble Princess Frey",
+        "image": "/assets/starsavior/sheet/e6dd41978797c0f70870d930ae6e4b0541d21a2d.png"
+      }
+    },
+    "journeyHard": {
+      "talisman": {
+        "label": "DPS - AX5",
+        "owner": "Noble Princess Frey",
+        "guideIcon": "/assets/starsavior/sheet/2d43552f89a910ffbfecef704d0dde0324c17010.png",
+        "pieces": [
+          {
+            "name": "Gloves",
+            "image": "/assets/starsavior/sheet/102e5bf6a8fe38db24642ab7da06e48ee5a31185.png"
+          },
+          {
+            "name": "Hat",
+            "image": "/assets/starsavior/sheet/0789a1df0ab7c771452089e630ccc521c7aa8f3c.png"
+          }
+        ]
+      },
+      "cards": [
+        {
+          "name": "Lacy",
+          "image": "/assets/starsavior/sheet/bcf95c09e54cf26ecf3d33dd620a0113ac5f336d.png"
+        },
+        {
+          "name": "Muriel",
+          "image": "/assets/starsavior/sheet/b69d9f9367f0d3dda723340d46c73017cc3af6d7.png"
+        },
+        {
+          "name": "BG Frey",
+          "image": "/assets/starsavior/sheet/de78e666bfe8a1df69ef4501ebf662dc4f9beb4f.png"
+        },
+        {
+          "name": "Charlotte",
+          "image": "/assets/starsavior/sheet/f9acd84fc597be5fa366d9e5cb18d5432c20885b.png"
+        },
+        {
+          "name": "Petra or Naru",
+          "image": "/assets/starsavior/sheet/dab409310606273d68c1ef55b82e9c35fe21ad35.png"
+        }
+      ],
+      "alternate": null
+    }
+  }
+}

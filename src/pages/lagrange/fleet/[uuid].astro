@@ -1,0 +1,18 @@
+---
+import GameLayout from "../../../layouts/GameLayout.astro";
+import FleetShareView from "../../../components/lagrange/FleetShareView";
+
+export function getStaticPaths() {
+  return [];
+}
+---
+
+<GameLayout
+  title="Shared Fleet | Infinite Lagrange"
+  description="View a shared fleet composition."
+  game="lagrange"
+>
+  <section class="container" style="padding: 2rem 0;">
+    <FleetShareView client:load />
+  </section>
+</GameLayout>

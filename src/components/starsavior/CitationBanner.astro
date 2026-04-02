@@ -1,0 +1,131 @@
+---
+import { sourceMeta } from "../../data/starsavior/content";
+import { formatDisplayDate } from "../../data/starsavior/relations";
+
+interface Props {
+  sourceTabs: string[];
+  updatedAt?: string;
+  variant?: "compact" | "full";
+  sourceContext?: {
+    url: string;
+    lead: string;
+    citationText: string;
+    permissionNote?: string;
+  } | null;
+}
+
+const { sourceTabs, updatedAt, variant = "compact", sourceContext = null } = Astro.props;
+const reviewedAt = formatDisplayDate(updatedAt || sourceMeta.lastReviewed);
+const citationLead = sourceContext?.lead || "Adapted from Bullet's published guide sheet.";
+const citationText = sourceContext?.citationText || sourceMeta.citationText;
+const citationUrl = sourceContext?.url || sourceMeta.sheetUrl;
+const permissionNote = sourceContext?.permissionNote || sourceMeta.permissionNote;
+---
+
+{
+  variant === "full" ? (
+    <aside class="citation-note citation-note--full">
+      <p class="eyebrow">Source And Attribution</p>
+      <div class="citation-note__body">
+        <p><strong>{citationText}</strong></p>
+        <p><strong>Last reviewed:</strong> {reviewedAt}</p>
+        <p><strong>Reviewed against:</strong> {sourceTabs.join(", ")}</p>
+        <p>{permissionNote}</p>
+        <p>
+          <a href={citationUrl}>Open the source page</a>
+        </p>
+      </div>
+    </aside>
+  ) : (
+    <details class="citation-note citation-note--compact">
+      <summary>
+        <span class="citation-note__lead">{citationLead}</span>
+        <span class="citation-note__meta">Last reviewed {reviewedAt}</span>
+        <span class="citation-note__toggle">Details</span>
+      </summary>
+      <div class="citation-note__body">
+        <p><strong>Reviewed against:</strong> {sourceTabs.join(", ")}</p>
+        <p>
+          <a href={citationUrl}>Open the source page</a>
+        </p>
+      </div>
+    </details>
+  )
+}
+
+<style>
+  .citation-note {
+    border-radius: var(--radius-md);
+    border: 1px solid var(--line);
+    background: var(--surface-1);
+    color: var(--text);
+  }
+
+  .citation-note--compact summary {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.8rem;
+    padding: 0.85rem 1rem;
+    list-style: none;
+    cursor: pointer;
+  }
+
+  .citation-note--compact summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .citation-note__lead {
+    font-weight: 600;
+    color: var(--ink);
+  }
+
+  .citation-note__meta {
+    color: var(--text-soft);
+    font-size: 0.92rem;
+  }
+
+  .citation-note__toggle {
+    margin-left: auto;
+    padding: 0.32rem 0.7rem;
+    border-radius: 999px;
+    background: rgba(88, 185, 221, 0.12);
+    border: 1px solid rgba(88, 185, 221, 0.18);
+    color: var(--ink);
+    font-size: 0.82rem;
+    font-weight: 600;
+  }
+
+  .citation-note[open] .citation-note__toggle {
+    background: rgba(240, 160, 59, 0.16);
+    border-color: rgba(240, 160, 59, 0.2);
+  }
+
+  .citation-note__body {
+    padding: 0 1rem 1rem;
+  }
+
+  .citation-note__body p {
+    margin: 0.5rem 0 0;
+    color: var(--text-soft);
+  }
+
+  .citation-note__body strong,
+  .citation-note__body a {
+    color: var(--ink);
+  }
+
+  .citation-note--full {
+    padding: 1.1rem 1.2rem;
+  }
+
+  .citation-note--full .citation-note__body {
+    padding: 0;
+  }
+
+  @media (max-width: 720px) {
+    .citation-note__toggle {
+      margin-left: 0;
+    }
+  }
+</style>

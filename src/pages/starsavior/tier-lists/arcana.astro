@@ -1,0 +1,315 @@
+---
+import GameLayout from "../../../layouts/GameLayout.astro";
+import Hero from "../../../components/starsavior/Hero.astro";
+import CitationBanner from "../../../components/starsavior/CitationBanner.astro";
+import TierBoardTile from "../../../components/starsavior/TierBoardTile.astro";
+import TierCard from "../../../components/starsavior/TierCard.astro";
+import { arcana } from "../../../data/starsavior/content";
+import { arcanaTierOrder, getTierRank } from "../../../data/starsavior/relations";
+
+const tierDescriptions: Record<string, string> = {
+  SS: "Premium Arcana that define the most efficient early and mid-game builds.",
+  S: "Strong follow-up choices once the truly universal premium picks are covered.",
+  A: "Useful backups with narrower or more roster-specific payoff."
+};
+const tierDefinitions = [
+  { tier: "SS", text: "Arcana that stay relevant across many builds and usually justify early chase priority." },
+  { tier: "S", text: "High-value secondary Arcana with either class restrictions or slightly narrower use cases." },
+  { tier: "A", text: "Serviceable fallback pieces that usually trail the top options in efficiency." }
+];
+const classOptions = [
+  { value: "all", label: "All classes" },
+  { value: "universal", label: "Universal" },
+  { value: "assassin", label: "Assassin" },
+  { value: "caster", label: "Caster" },
+  { value: "defender", label: "Defender" }
+];
+const focusOptions = [
+  { value: "all", label: "All stats" },
+  { value: "speed", label: "Speed" },
+  { value: "crit-rate", label: "Crit Rate" },
+  { value: "crit-dmg", label: "Crit DMG" },
+  { value: "pvp", label: "PvP" }
+];
+
+const sorted = [...arcana].sort(
+  (a, b) => getTierRank(a.tier, arcanaTierOrder) - getTierRank(b.tier, arcanaTierOrder) || a.name.localeCompare(b.name)
+);
+const entries = sorted.map((entry) => {
+  const classFilters = new Set<string>();
+  const focusFilters = new Set<string>();
+  const haystack = `${entry.class} ${entry.tags.join(" ")}`;
+
+  if (/^all$/i.test(entry.class)) classFilters.add("universal");
+  if (/assassin/i.test(entry.class)) classFilters.add("assassin");
+  if (/caster/i.test(entry.class)) classFilters.add("caster");
+  if (/defender/i.test(entry.class)) classFilters.add("defender");
+
+  if (/speed/i.test(haystack)) focusFilters.add("speed");
+  if (/crit rate/i.test(haystack)) focusFilters.add("crit-rate");
+  if (/crit dmg/i.test(haystack)) focusFilters.add("crit-dmg");
+  if (/pvp/i.test(haystack)) focusFilters.add("pvp");
+
+  return {
+    ...entry,
+    classFilters: [...classFilters],
+    focusFilters: [...focusFilters],
+    searchText: `${entry.name} ${entry.class} ${entry.tags.join(" ")} ${entry.summary} ${entry.specialPotential || ""}`
+  };
+});
+const grouped = arcanaTierOrder
+  .map((tier) => ({ tier, entries: entries.filter((entry) => entry.tier === tier) }))
+  .filter((group) => group.entries.length > 0);
+---
+
+<GameLayout title="Arcana Tier List | StarSavior Atlas" description="Row-based Arcana tier list with ranked bands and quick note jumps." game="starsavior">
+  <Hero
+    title="Arcana tier list as a ranked board."
+    summary="Use the tier rows for the quick answer, then drop into the notes below for special-potential details and the cleaned English explanations behind each Arcana pick."
+  />
+
+  <section class="container stack">
+    <CitationBanner sourceTabs={["Arcana Tier List"]} updatedAt={entries[0]?.updatedAt} />
+
+    <div class="panel" style="padding: 1.4rem;">
+      <div class="tier-toolbar">
+        <div class="filter-bar" style="margin-bottom: 0;">
+          <input id="arcana-search" type="search" placeholder="Search Arcana names, class locks, stats, or notes..." />
+        </div>
+
+        <div class="tier-filter-stack">
+          <div class="tier-filter-group" role="group" aria-label="Filter Arcana by tier">
+            <span class="tier-filter-group__label">Tier</span>
+            <button class="tier-filter-chip is-active" type="button" data-tier-filter="all">All</button>
+            {grouped.map((group) => (
+              <button class="tier-filter-chip" type="button" data-tier-filter={group.tier}>{group.tier}</button>
+            ))}
+          </div>
+
+          <div class="tier-filter-group" role="group" aria-label="Filter Arcana by class">
+            <span class="tier-filter-group__label">Class</span>
+            {classOptions.map((option, index) => (
+              <button
+                class:list={["tier-filter-chip", index === 0 && "is-active"]}
+                type="button"
+                data-class-filter={option.value}
+              >
+                {option.label}
+              </button>
+            ))}
+          </div>
+
+          <div class="tier-filter-group" role="group" aria-label="Filter Arcana by focus">
+            <span class="tier-filter-group__label">Focus</span>
+            {focusOptions.map((option, index) => (
+              <button
+                class:list={["tier-filter-chip", index === 0 && "is-active"]}
+                type="button"
+                data-focus-filter={option.value}
+              >
+                {option.label}
+              </button>
+            ))}
+
+            <button class="tier-filter-chip tier-filter-chip--reset" type="button" data-reset-filters>
+              Reset
+            </button>
+          </div>
+        </div>
+
+        <details class="tier-definitions">
+          <summary>Show tier definitions</summary>
+          <div class="tier-definition-grid">
+            {tierDefinitions.map((definition) => (
+              <article class="tier-definition-card">
+                <strong>{definition.tier}</strong>
+                <p>{definition.text}</p>
+              </article>
+            ))}
+          </div>
+        </details>
+      </div>
+
+      <div class="tier-board" id="arcana-board">
+        {grouped.map((group) => (
+          <section class="tier-row" data-tier-group={group.tier}>
+            <div class="tier-row-label" data-tier-label={group.tier}>
+              <span class="tier-row-label__rank">{group.tier}</span>
+              <p>{tierDescriptions[group.tier]}</p>
+            </div>
+
+            <div class="tier-row-track">
+              {group.entries.map((entry) => (
+                <TierBoardTile
+                  href={`#note-${entry.slug}`}
+                  tier={entry.tier}
+                  title={entry.name}
+                  subtitle={entry.class}
+                  searchText={entry.searchText}
+                  filterValues={[...entry.classFilters, ...entry.focusFilters]}
+                />
+              ))}
+            </div>
+          </section>
+        ))}
+      </div>
+
+      <section class="stack" style="margin-top: 1.5rem;">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Arcana Notes</p>
+            <h2>Full notes for every ranked Arcana</h2>
+            <p>The row view answers “what tier is it?” quickly. The notes below preserve the actual reasoning and special-potential details from the translated source.</p>
+          </div>
+        </div>
+
+        <div class="tier-note-grid">
+          {entries.map((entry) => (
+            <TierCard
+              id={`note-${entry.slug}`}
+              tier={entry.tier}
+              title={entry.name}
+              subtitle={entry.class}
+              detail={entry.specialPotential ? `Special potential: ${entry.specialPotential}` : undefined}
+              summary={entry.summary}
+              tags={entry.tags}
+              searchText={entry.searchText}
+              filterValues={[...entry.classFilters, ...entry.focusFilters]}
+            />
+          ))}
+        </div>
+      </section>
+    </div>
+  </section>
+
+  <script is:inline>
+    const searchInput = document.querySelector("#arcana-search");
+    const tierButtons = [...document.querySelectorAll("[data-tier-filter]")];
+    const classButtons = [...document.querySelectorAll("[data-class-filter]")];
+    const focusButtons = [...document.querySelectorAll("[data-focus-filter]")];
+    const resetButton = document.querySelector("[data-reset-filters]");
+    const tiles = [...document.querySelectorAll(".tier-tile")];
+    const notes = [...document.querySelectorAll(".tier-note")];
+    const groups = [...document.querySelectorAll("[data-tier-group]")];
+    const params = new URLSearchParams(window.location.search);
+
+    let activeTier = params.get("tier") || "all";
+    let activeClass = params.get("class") || "all";
+    let activeFocus = params.get("focus") || "all";
+
+    if (searchInput && params.get("q")) {
+      searchInput.value = params.get("q");
+    }
+
+    const getFocusValues = (element) =>
+      (element.dataset.focus || "")
+        .split(",")
+        .map((value) => value.trim())
+        .filter(Boolean);
+
+    const matches = (element) => {
+      const query = searchInput?.value.toLowerCase().trim() ?? "";
+      const searchable = (element.dataset.search || element.textContent || "").toLowerCase();
+      const matchesQuery = !query || searchable.includes(query);
+      const matchesTier = activeTier === "all" || element.dataset.tier === activeTier;
+      const filterValues = getFocusValues(element);
+      const matchesClass = activeClass === "all" || filterValues.includes(activeClass);
+      const matchesFocus = activeFocus === "all" || filterValues.includes(activeFocus);
+      return matchesQuery && matchesTier && matchesClass && matchesFocus;
+    };
+
+    const syncButtons = () => {
+      tierButtons.forEach((button) => {
+        button.classList.toggle("is-active", button.dataset.tierFilter === activeTier);
+      });
+
+      classButtons.forEach((button) => {
+        button.classList.toggle("is-active", button.dataset.classFilter === activeClass);
+      });
+
+      focusButtons.forEach((button) => {
+        button.classList.toggle("is-active", button.dataset.focusFilter === activeFocus);
+      });
+    };
+
+    const syncUrl = () => {
+      const nextParams = new URLSearchParams(window.location.search);
+      const query = searchInput?.value.trim() ?? "";
+
+      if (query) {
+        nextParams.set("q", query);
+      } else {
+        nextParams.delete("q");
+      }
+
+      if (activeTier !== "all") {
+        nextParams.set("tier", activeTier);
+      } else {
+        nextParams.delete("tier");
+      }
+
+      if (activeClass !== "all") {
+        nextParams.set("class", activeClass);
+      } else {
+        nextParams.delete("class");
+      }
+
+      if (activeFocus !== "all") {
+        nextParams.set("focus", activeFocus);
+      } else {
+        nextParams.delete("focus");
+      }
+
+      const nextUrl = `${window.location.pathname}${nextParams.toString() ? `?${nextParams.toString()}` : ""}${window.location.hash}`;
+      window.history.replaceState({}, "", nextUrl);
+    };
+
+    const update = () => {
+      tiles.forEach((tile) => tile.classList.toggle("hidden", !matches(tile)));
+      notes.forEach((note) => note.classList.toggle("hidden", !matches(note)));
+
+      groups.forEach((group) => {
+        const visibleTiles = [...group.querySelectorAll(".tier-tile")].filter((tile) => !tile.classList.contains("hidden"));
+        group.classList.toggle("hidden", visibleTiles.length === 0);
+      });
+
+      syncButtons();
+      syncUrl();
+    };
+
+    tierButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        activeTier = button.dataset.tierFilter || "all";
+        update();
+      });
+    });
+
+    classButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        activeClass = button.dataset.classFilter || "all";
+        update();
+      });
+    });
+
+    focusButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        activeFocus = button.dataset.focusFilter || "all";
+        update();
+      });
+    });
+
+    resetButton?.addEventListener("click", () => {
+      activeTier = "all";
+      activeClass = "all";
+      activeFocus = "all";
+      if (searchInput) {
+        searchInput.value = "";
+      }
+      update();
+    });
+
+    searchInput?.addEventListener("input", update);
+    syncButtons();
+    update();
+  </script>
+</GameLayout>

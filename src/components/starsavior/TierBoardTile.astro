@@ -1,0 +1,59 @@
+---
+interface Props {
+  href: string;
+  tier: string;
+  title: string;
+  subtitle?: string;
+  image?: string;
+  badge?: string;
+  searchText?: string;
+  filterValues?: string[];
+}
+
+const {
+  href,
+  tier,
+  title,
+  subtitle,
+  image,
+  badge,
+  searchText = `${title} ${subtitle || ""}`,
+  filterValues = []
+} = Astro.props;
+
+const base = import.meta.env.BASE_URL;
+const resolveAsset = (src?: string) => {
+  if (!src) return undefined;
+  if (/^https?:\/\//i.test(src)) return src;
+  return `${base}${src.replace(/^\/+/, "")}`;
+};
+const initials = title
+  .split(/[\s-]+/)
+  .filter(Boolean)
+  .slice(0, 2)
+  .map((chunk) => chunk[0]?.toUpperCase())
+  .join("");
+---
+
+<a
+  class="tier-tile"
+  href={href}
+  data-tier={tier}
+  data-search={searchText}
+  data-focus={filterValues.join(",")}
+>
+  <span class:list={["tier-tile__avatar", !image && "tier-tile__avatar--fallback"]} aria-hidden={image ? "false" : "true"}>
+    {image ? (
+      <img src={resolveAsset(image)} alt={`${title} artwork`} loading="lazy" />
+    ) : (
+      <span>{initials}</span>
+    )}
+  </span>
+
+  <span class="tier-tile__copy">
+    <strong>{title}</strong>
+    {subtitle && <small>{subtitle}</small>}
+  </span>
+
+  {badge && <span class="tier-tile__badge">{badge}</span>}
+</a>

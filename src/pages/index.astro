@@ -1,0 +1,87 @@
+---
+import HubLayout from "../layouts/HubLayout.astro";
+import GameCard from "../components/shared/GameCard.astro";
+import { getActiveGames } from "../data/games";
+
+const games = getActiveGames();
+const base = import.meta.env.BASE_URL;
+---
+
+<HubLayout
+  title="Avinoc Games | Tools & Guides"
+  description="Tools, guides, and resources for the games I play."
+>
+  <section class="hero">
+    <div class="container">
+      <div class="hero-wrap">
+        <p class="eyebrow">Avinoc Games</p>
+        <h1>Tools, guides, and resources for the games I play.</h1>
+        <p>
+          A personal collection of web tools and strategy resources built around the games
+          I actively play. Each game section has its own set of guides, planners, and references.
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href={`${base}search/`}>Search everything</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container stack">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow">Game Sections</p>
+        <h2>Pick a game to explore</h2>
+      </div>
+    </div>
+
+    <div class="card-grid" style="grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));">
+      {games.map((game) => (
+        <GameCard
+          name={game.name}
+          description={game.description}
+          href={`/${game.slug}/`}
+          status={game.status}
+          accentColor={game.accentColor}
+        />
+      ))}
+    </div>
+
+    <div class="panel" style="padding: 1.4rem;">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">What's Here</p>
+          <h2>What each section offers</h2>
+        </div>
+      </div>
+
+      <div class="card-grid">
+        <article class="content-card">
+          <h3>StarSavior</h3>
+          <p>
+            Builds, tier lists, and progression guides sourced from Bullet's published strategy sheet.
+            Covers rerolling, onboarding, gear paths, Journey mode, and character rankings.
+          </p>
+          <div class="tag-row">
+            <span class="tag">10 Builds</span>
+            <span class="tag">42 Savior Rankings</span>
+            <span class="tag">7 Guides</span>
+          </div>
+        </article>
+
+        <article class="content-card">
+          <h3>Infinite Lagrange</h3>
+          <p>
+            Fleet composition planner with a database of 145+ ships across 8 classes.
+            Build fleets, track CP totals, and share compositions with other players.
+          </p>
+          <div class="tag-row">
+            <span class="tag">Fleet Builder</span>
+            <span class="tag">145+ Ships</span>
+            <span class="tag">Share Links</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+</HubLayout>

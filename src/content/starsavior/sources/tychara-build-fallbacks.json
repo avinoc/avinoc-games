@@ -1,0 +1,78 @@
+{
+  "extractedAt": "2026-03-30T22:35:28.922Z",
+  "fallbackCount": 9,
+  "fallbacks": [
+    {
+      "name": "Annah",
+      "slug": "annah",
+      "url": "https://tychara.com/StarSavior/characters/annah",
+      "hasBuildSection": false,
+      "lastUpdated": "27.03.2026",
+      "build": null
+    },
+    {
+      "name": "Besta",
+      "slug": "besta",
+      "url": "https://tychara.com/StarSavior/characters/besta",
+      "hasBuildSection": false,
+      "lastUpdated": "27.03.2026",
+      "build": null
+    },
+    {
+      "name": "Claire",
+      "slug": "claire",
+      "url": "https://tychara.com/StarSavior/characters/claire",
+      "hasBuildSection": false,
+      "lastUpdated": "27.03.2026",
+      "build": null
+    },
+    {
+      "name": "Clarissa",
+      "slug": "clarissa",
+      "url": "https://tychara.com/StarSavior/characters/clarissa",
+      "hasBuildSection": false,
+      "lastUpdated": "27.03.2026",
+      "build": null
+    },
+    {
+      "name": "Marcille",
+      "slug": "marcille",
+      "url": "https://tychara.com/StarSavior/characters/marcille",
+      "hasBuildSection": false,
+      "lastUpdated": "27.03.2026",
+      "build": null
+    },
+    {
+      "name": "Naru",
+      "slug": "naru",
+      "url": "https://tychara.com/StarSavior/characters/naru",
+      "hasBuildSection": false,
+      "lastUpdated": "27.03.2026",
+      "build": null
+    },
+    {
+      "name": "Rosaria",
+      "slug": "rosaria",
+      "url": "https://tychara.com/StarSavior/characters/rosaria",
+      "hasBuildSection": false,
+      "lastUpdated": "27.03.2026",
+      "build": null
+    },
+    {
+      "name": "Scarlet",
+      "slug": "scarlet",
+      "url": "https://tychara.com/StarSavior/characters/scarlet",
+      "hasBuildSection": false,
+      "lastUpdated": "27.03.2026",
+      "build": null
+    },
+    {
+      "name": "Vera",
+      "slug": "vera",
+      "url": "https://tychara.com/StarSavior/characters/vera",
+      "hasBuildSection": false,
+      "lastUpdated": "27.03.2026",
+      "build": null
+    }
+  ]
+}

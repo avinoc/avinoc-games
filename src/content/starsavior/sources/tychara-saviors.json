@@ -1,0 +1,107 @@
+{
+  "extractedAt": "2026-03-30T14:55:36.3873414-07:00",
+  "rankedCount": 35,
+  "rosterCount": 42,
+  "rankedNames": [
+    "Asherah",
+    "Bunnygirl Scarlet",
+    "Epindel",
+    "Frey",
+    "Harley",
+    "Lily",
+    "Omega",
+    "Serpang",
+    "Smile",
+    "Annah",
+    "Carmen",
+    "Marcille",
+    "Trish",
+    "Yoo Mina",
+    "Roberta",
+    "Charlotte",
+    "Dana",
+    "Elisa",
+    "Haydee",
+    "Kyra",
+    "Lugh",
+    "Luna",
+    "Lydia",
+    "Petra",
+    "Seira",
+    "Tanya",
+    "Hilde",
+    "Frey Noble Princess",
+    "Bell Rhys",
+    "Bunnygirl Claire",
+    "Muriel",
+    "Bunnygirl Charlotte",
+    "Asherah Waltz of Starlight",
+    "Emilly",
+    "Lacy"
+  ],
+  "missingFromRanked": [
+    {
+      "name": "Besta",
+      "image": "https://tychara.com/StarSavior/characterimg/Besta.webp",
+      "element": "star",
+      "role": "defender",
+      "class": "defender",
+      "rarityClass": "Character-SR",
+      "slug": "besta"
+    },
+    {
+      "name": "Claire",
+      "image": "https://tychara.com/StarSavior/characterimg/Claire.webp",
+      "element": "moon",
+      "role": "striker",
+      "class": "striker",
+      "rarityClass": "Character-SR",
+      "slug": "claire"
+    },
+    {
+      "name": "Clarissa",
+      "image": "https://tychara.com/StarSavior/characterimg/Clarissa.webp",
+      "element": "star",
+      "role": "ranger",
+      "class": "ranger",
+      "rarityClass": "Character-SR",
+      "slug": "clarissa"
+    },
+    {
+      "name": "Naru",
+      "image": "https://tychara.com/StarSavior/characterimg/Naru.webp",
+      "element": "star",
+      "role": "ranger",
+      "class": "ranger",
+      "rarityClass": "Character-SR",
+      "slug": "naru"
+    },
+    {
+      "name": "Rosaria",
+      "image": "https://tychara.com/StarSavior/characterimg/Rosaria.webp",
+      "element": "chaos",
+      "role": "ranger",
+      "class": "ranger",
+      "rarityClass": "Character-SSR",
+      "slug": "rosaria"
+    },
+    {
+      "name": "Scarlet",
+      "image": "https://tychara.com/StarSavior/characterimg/Scarlet.webp",
+      "element": "sun",
+      "role": "ranger",
+      "class": "ranger",
+      "rarityClass": "Character-SR",
+      "slug": "scarlet"
+    },
+    {
+      "name": "Vera",
+      "image": "https://tychara.com/StarSavior/characterimg/Vera.webp",
+      "element": "moon",
+      "role": "supporter",
+      "class": "supporter",
+      "rarityClass": "Character-SR",
+      "slug": "vera"
+    }
+  ]
+}

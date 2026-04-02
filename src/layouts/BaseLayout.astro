@@ -1,0 +1,92 @@
+---
+import "../styles/global.css";
+
+interface Props {
+  title?: string;
+  description?: string;
+  game?: string;
+}
+
+const {
+  title = "Avinoc Games",
+  description = "Tools, guides, and resources for the games I play.",
+  game,
+} = Astro.props;
+
+const dataGame = game || "";
+---
+
+<!doctype html>
+<html lang="en" data-game={dataGame || undefined}>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="theme-color" content="#07111d" />
+    <link rel="icon" type="image/svg+xml" href={`${import.meta.env.BASE_URL}favicon.svg`} />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Space+Grotesk:wght@400;500;700&family=Orbitron:wght@400;500;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <script is:inline>
+      (() => {
+        const storageKey = "avinoc-theme";
+        const themeColors = { dark: "#07111d", light: "#eff3fa" };
+
+        const applyTheme = (theme) => {
+          const resolved = theme === "light" ? "light" : "dark";
+          document.documentElement.dataset.theme = resolved;
+          document.documentElement.style.colorScheme = resolved;
+          if (resolved === "dark") {
+            document.documentElement.classList.add("dark");
+          } else {
+            document.documentElement.classList.remove("dark");
+          }
+          const meta = document.querySelector('meta[name="theme-color"]');
+          if (meta) meta.setAttribute("content", themeColors[resolved]);
+          document.querySelectorAll("[data-theme-toggle]").forEach((btn) => {
+            const next = resolved === "light" ? "dark" : "light";
+            btn.setAttribute("aria-pressed", String(resolved === "light"));
+            btn.setAttribute("aria-label", `Switch to ${next} mode`);
+            const label = btn.querySelector("[data-theme-toggle-label]");
+            if (label) label.textContent = `${next.charAt(0).toUpperCase()}${next.slice(1)} mode`;
+          });
+        };
+
+        let initial = "dark";
+        try {
+          const saved = localStorage.getItem(storageKey);
+          if (saved === "light" || saved === "dark") initial = saved;
+          else if (window.matchMedia("(prefers-color-scheme: light)").matches) initial = "light";
+        } catch {}
+        applyTheme(initial);
+
+        window.__setTheme = (theme) => {
+          try { localStorage.setItem(storageKey, theme); } catch {}
+          applyTheme(theme);
+        };
+
+        document.addEventListener("click", (e) => {
+          const toggle = e.target.closest("[data-theme-toggle]");
+          if (!toggle) return;
+          const next = document.documentElement.dataset.theme === "light" ? "dark" : "light";
+          window.__setTheme(next);
+        });
+
+        document.addEventListener("DOMContentLoaded", () => {
+          applyTheme(document.documentElement.dataset.theme || initial);
+        });
+      })();
+    </script>
+  </head>
+  <body>
+    <a href="#main-content" class="skip-link">Skip to content</a>
+    <div class="site-shell">
+      <slot name="header" />
+      <main id="main-content">
+        <slot />
+      </main>
+      <slot name="footer" />
+    </div>
+  </body>
+</html>

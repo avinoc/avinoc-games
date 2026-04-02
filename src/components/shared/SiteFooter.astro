@@ -1,0 +1,87 @@
+---
+import { games } from "../../data/games";
+const year = new Date().getFullYear();
+const base = import.meta.env.BASE_URL;
+---
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <p class="eyebrow">Avinoc Games</p>
+      <p class="footer-desc">
+        A personal collection of tools, guides, and resources for the games I play.
+        Built with Astro, open source on GitHub.
+      </p>
+    </div>
+
+    {games.filter((g) => g.status === "active").map((game) => (
+      <div>
+        <p class="eyebrow">{game.name}</p>
+        <div class="footer-links">
+          {game.routes.map((route) => (
+            <a href={`${base}${route.href.replace(/^\//, "")}`}>{route.label}</a>
+          ))}
+        </div>
+      </div>
+    ))}
+  </div>
+
+  <div class="container footer-bottom">
+    <small>&copy; {year} Avinoc Games</small>
+    <small>Static site built with Astro + Pagefind</small>
+  </div>
+</footer>
+
+<style>
+  .site-footer {
+    margin-top: 4rem;
+    padding: 2.5rem 0 1.8rem;
+    border-top: 1px solid var(--line);
+    background:
+      linear-gradient(180deg, rgba(4, 9, 17, 0.18), rgba(4, 9, 17, 0.72)),
+      radial-gradient(circle at top, rgba(88, 185, 221, 0.08), transparent 42%);
+  }
+
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 1.5fr repeat(2, 0.75fr);
+    gap: 1.5rem;
+  }
+
+  .footer-desc {
+    color: var(--text-soft);
+    max-width: 28rem;
+    line-height: 1.7;
+  }
+
+  .footer-links {
+    display: grid;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+  }
+
+  .footer-links a {
+    color: var(--text-soft);
+    padding: 0.4rem 0;
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    transition: color 160ms ease;
+  }
+
+  .footer-links a:hover { color: var(--ink); }
+
+  .footer-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 0.75rem;
+    padding-top: 1.6rem;
+    color: var(--text-soft);
+  }
+
+  @media (max-width: 760px) {
+    .footer-grid { grid-template-columns: 1fr; }
+  }
+</style>

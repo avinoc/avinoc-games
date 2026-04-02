@@ -1,0 +1,852 @@
+[
+  {
+    "name": "Annah",
+    "slug": "annah",
+    "tier": "B",
+    "mode": "Sun Defender",
+    "tags": [
+      "Defender",
+      "Sun",
+      "SR",
+      "Tank"
+    ],
+    "summary": "Tychara ranks Annah in PvE B / PvP unlisted as a SR Sun Defender, but the exported character note is currently blank.",
+    "image": "https://cdn.sanity.io/images/1olr33nh/production/90c33cbe73588f1312b271be3a60c71068482c51-80x80.webp?w=120&h=120&fit=crop&auto=format",
+    "updatedAt": "2026-03-30",
+    "sourceTabs": [
+      "Savior Tier list (ENG)",
+      "Tychara Star Savior Tier List (Mar 2026)"
+    ]
+  },
+  {
+    "name": "Asherah",
+    "slug": "asherah",
+    "tier": "A",
+    "mode": "Moon Striker",
+    "tags": [
+      "Striker",
+      "Moon",
+      "SSR",
+      "AoE DPS",
+      "PvP B"
+    ],
+    "summary": "A savior with two area-of-effect skills. Since this is a distribution character, it can be used when there is no good area-of-effect dealer.",
+    "image": "https://cdn.sanity.io/images/1olr33nh/production/00e8755b10b596c96acffab9ab34781223b8fddc-80x80.webp?w=120&h=120&fit=crop&auto=format",
+    "updatedAt": "2026-03-30",
+    "sourceTabs": [
+      "Savior Tier list (ENG)",
+      "Tychara Star Savior Tier List (Mar 2026)"
+    ]
+  },
+  {
+    "name": "Asherah Waltz of Starlight",
+    "slug": "waltz-asherah",
+    "tier": "T0",
+    "mode": "Order Supporter",
+    "tags": [
+      "Supporter",
+      "Order",
+      "SSR",
+      "Support",
+      "Debuff",
+      "Tank",
+      "PvP T0"
+    ],
+    "summary": "A savior who can heal with basic attacks, deal single damage, and tank in the front line. When using the ultimate skill, removes allies' debuffs and increases their action gauge. In case of 0 breakthrough, the damage and recovery ability are greatly reduced because the normal attack heal + joint attack disappears. It is usually better to use another supporter.",
+    "image": "https://cdn.sanity.io/images/1olr33nh/production/83eca5c98b669f044cf191da98e8110e2f08d9f1-80x80.webp?w=120&h=120&fit=crop&auto=format",
+    "updatedAt": "2026-03-30",
+    "sourceTabs": [
+      "Savior Tier list (ENG)",
+      "Tychara Star Savior Tier List (Mar 2026)"
+    ]
+  },
+  {
+    "name": "Bell Rhys",
+    "slug": "bell-rhys",
+    "tier": "SS",
+    "mode": "Star Ranger",
+    "tags": [
+      "Ranger",
+      "Star",
+      "SSR",
+      "Support",
+      "Debuff",
+      "PvP T0"
+    ],
+    "summary": "A savior specialized in debuffing enemies. A debuffer with decent damage, if a gimmick that requires removing buffs comes out, it can be used as a key character.",
+    "image": "https://cdn.sanity.io/images/1olr33nh/production/f6bff0298302369e954703eeb278f1805dde1ca4-80x80.webp?w=120&h=120&fit=crop&auto=format",
+    "updatedAt": "2026-03-30",
+    "sourceTabs": [
+      "Savior Tier list (ENG)",
+      "Tychara Star Savior Tier List (Mar 2026)"
+    ]
+  },
+  {
+    "name": "Besta",
+    "slug": "besta",
+    "tier": "NR",
+    "mode": "Star Defender",
+    "tags": [
+      "Defender",
+      "Star",
+      "SR",
+      "Tank",
+      "Reference Only"
+    ],
+    "summary": "Tychara lists Besta as a SR Star Defender, but the current exposed ranked dataset does not include a PvE or PvP note for this unit.",
+    "image": "https://tychara.com/StarSavior/characterimg/Besta.webp",
+    "updatedAt": "2026-03-30",
+    "sourceTabs": [
+      "Tychara Star Savior Team Builder (Mar 2026)"
+    ]
+  },
+  {
+    "name": "Bunnygirl Charlotte",
+    "slug": "bg-charlotte",
+    "tier": "T0",
+    "mode": "Sun Assassin",
+    "tags": [
+      "Assassin",
+      "Sun",
+      "SSR",
+      "Single-target DPS",
+      "Support",
+      "PvP SS"
+    ],
+    "summary": "A single dealer who grants a 2-turn attack power increase buff to all allies. Although a sub-dealer, he is as strong as a main dealer.",
+    "image": "https://cdn.sanity.io/images/1olr33nh/production/a55092c7b41a770467aef433ac3d809060d3e92c-256x256.webp?w=120&h=120&fit=crop&auto=format",
+    "updatedAt": "2026-03-30",
+    "sourceTabs": [
+      "Savior Tier list (ENG)",
+      "Tychara Star Savior Tier List (Mar 2026)"
+    ]
+  },
+  {
+    "name": "Bunnygirl Claire",
+    "slug": "bg-claire",
+    "tier": "SS",
+    "mode": "Moon Striker",
+    "tags": [
+      "Striker",
+      "Moon",
+      "SSR",
+      "Single-target DPS",
+      "PvP SS"
+    ],
+    "summary": "Powerful single dealer. Highly rated among moon attribute dealers",
+    "image": "https://cdn.sanity.io/images/1olr33nh/production/fc2ba2c16fda9de57759314e0729f725b6e94540-80x80.webp?w=120&h=120&fit=crop&auto=format",
+    "updatedAt": "2026-03-30",
+    "sourceTabs": [
+      "Savior Tier list (ENG)",
+      "Tychara Star Savior Tier List (Mar 2026)"
+    ]
+  },
+  {
+    "name": "Bunnygirl Scarlet",
+    "slug": "bunnygirl-scarlet",
+    "tier": "A",
+    "mode": "Sun Ranger",
+    "tags": [
+      "Ranger",
+      "Sun",
+      "SSR",
+      "Debuff",
+      "PvP B"
+    ],
+    "summary": "Lotto Skill: Area Dealer with a certain probability to reduce or reset the ultimate skill cooldown. Special skills grant additional turns, so they are also good at lowering enemy toughness.",
+    "image": "https://cdn.sanity.io/images/1olr33nh/production/fb8c13f8bf55b8ad2f0743d51179336de15728fc-80x80.webp?w=120&h=120&fit=crop&auto=format",
+    "updatedAt": "2026-03-30",
+    "sourceTabs": [
+      "Savior Tier list (ENG)",
+      "Tychara Star Savior Tier List (Mar 2026)"
+    ]
+  },
+  {
+    "name": "Carmen",
+    "slug": "carmen",
+    "tier": "B",
+    "mode": "Moon Defender",
+    "tags": [
+      "Defender",
+      "Moon",
+      "SSR",
+      "Tank",
+      "PvP S"
+    ],
+    "summary": "she better than before, but it's disappointing compared to Emily. If there were an arcana exclusive to Carmen, she could probably be raised to B-tier.",
+    "image": "https://cdn.sanity.io/images/1olr33nh/production/52166781d7a0fc890e3ca7ff11de84fa5bfe03d8-80x80.webp?w=120&h=120&fit=crop&auto=format",
+    "updatedAt": "2026-03-30",
+    "sourceTabs": [
+      "Savior Tier list (ENG)",
+      "Tychara Star Savior Tier List (Mar 2026)"
+    ]
+  },
+  {
+    "name": "Charlotte",
+    "slug": "charlotte",
+    "tier": "S",
+    "mode": "Sun Striker",
+    "tags": [
+      "Striker",
+      "Sun",
+      "SSR",
+      "Single-target DPS",
+      "Support",
+      "Debuff",
+      "PvP SS"
+    ],
+    "summary": "A single dealer who grants a critical hit chance + attack power buff to one ally. When using the ultimate skill, it grants an attack power debuff, which greatly helps the party's stability.",
+    "image": "https://cdn.sanity.io/images/1olr33nh/production/75448a140e071c8b6338fe7e2a5282a5d2c83762-80x80.webp?w=120&h=120&fit=crop&auto=format",
+    "updatedAt": "2026-03-30",
+    "sourceTabs": [
+      "Savior Tier list (ENG)",
+      "Tychara Star Savior Tier List (Mar 2026)"
+    ]
+  },
+  {
+    "name": "Claire",
+    "slug": "claire",
+    "tier": "NR",
+    "mode": "Moon Striker",
+    "tags": [
+      "Striker",
+      "Moon",
+      "SR",
+      "Reference Only"
+    ],
+    "summary": "Tychara lists Claire as a SR Moon Striker, but the current exposed ranked dataset does not include a PvE or PvP note for this unit.",
+    "image": "https://tychara.com/StarSavior/characterimg/Claire.webp",
+    "updatedAt": "2026-03-30",
+    "sourceTabs": [
+      "Tychara Star Savior Team Builder (Mar 2026)"
+    ]
+  },
+  {
+    "name": "Clarissa",
+    "slug": "clarissa",
+    "tier": "NR",
+    "mode": "Star Ranger",
+    "tags": [
+      "Ranger",
+      "Star",
+      "SR",
+      "Reference Only"
+    ],
+    "summary": "Tychara lists Clarissa as a SR Star Ranger, but the current exposed ranked dataset does not include a PvE or PvP note for this unit.",
+    "image": "https://tychara.com/StarSavior/characterimg/Clarissa.webp",
+    "updatedAt": "2026-03-30",
+    "sourceTabs": [
+      "Tychara Star Savior Team Builder (Mar 2026)"
+    ]
+  },
+  {
+    "name": "Dana",
+    "slug": "dana",
+    "tier": "S",
+    "mode": "Star Caster",
+    "tags": [
+      "Caster",
+      "Star",
+      "SSR",
+      "Support",
+      "Debuff",
+      "PvP SS"
+    ],
+    "summary": "Powerful ultimate damage + applies a speed reduction debuff to enemies. When using a special skill, grants an attack power buff to yourself and one ally with high attack power",
+    "image": "https://cdn.sanity.io/images/1olr33nh/production/7f02ba9163cedf9af6883602d6f533109719cd35-80x80.webp?w=120&h=120&fit=crop&auto=format",
+    "updatedAt": "2026-03-30",
+    "sourceTabs": [
+      "Savior Tier list (ENG)",
+      "Tychara Star Savior Tier List (Mar 2026)"
+    ]
+  },
+  {
+    "name": "Elisa",
+    "slug": "elisa",
+    "tier": "S",
+    "mode": "Chaos Supporter",
+    "tags": [
+      "Supporter",
+      "Chaos",
+      "SSR",
+      "Support",
+      "Debuff",
+      "PvP SS"
+    ],
+    "summary": "A supporter who revives one ally or increases their action gauge through their ultimate skill. The patch has improved the buff that reduces the damage taken by allies.",
+    "image": "https://cdn.sanity.io/images/1olr33nh/production/2c7ab00dbda98c2202f85d501ca8a869a7ff9fa6-80x80.webp?w=120&h=120&fit=crop&auto=format",
+    "updatedAt": "2026-03-30",
+    "sourceTabs": [
+      "Savior Tier list (ENG)",
+      "Tychara Star Savior Tier List (Mar 2026)"
+    ]
+  },
+  {
+    "name": "Emilly",
+    "slug": "emilly",
+    "tier": "T0",
+    "mode": "Moon Defender",
+    "tags": [
+      "Defender",
+      "Moon",
+      "SSR",
+      "Tank",
+      "PvP T0"
+    ],
+    "summary": "The most stable character based on manual control. Even at 0 breakthrough, she shows really good performance.",
+    "image": "https://cdn.sanity.io/images/1olr33nh/production/70f51835bd4f296037dbe31d68657f2005d6d239-80x80.webp?w=120&h=120&fit=crop&auto=format",
+    "updatedAt": "2026-03-30",
+    "sourceTabs": [
+      "Savior Tier list (ENG)",
+      "Tychara Star Savior Tier List (Mar 2026)"
+    ]
+  },
+  {
+    "name": "Epindel",
+    "slug": "epindel",
+    "tier": "A",
+    "mode": "Moon Assassin",
+    "tags": [
+      "Assassin",
+      "Moon",
+      "SSR",
+      "Single-target DPS",
+      "Support",
+      "PvP C"
+    ],
+    "summary": "A single dealer who grants immunity to special attacks. Indirectly buffed by Kira Arcana",
+    "image": "https://cdn.sanity.io/images/1olr33nh/production/674ed7b97e0575c56d72765f7a991deedb548661-80x80.webp?w=120&h=120&fit=crop&auto=format",
+    "updatedAt": "2026-03-30",
+    "sourceTabs": [
+      "Savior Tier list (ENG)",
+      "Tychara Star Savior Tier List (Mar 2026)"
+    ]
+  },
+  {
+    "name": "Frey",
+    "slug": "frey",
+    "tier": "A",
+    "mode": "Star Supporter",
+    "tags": [
+      "Supporter",
+      "Star",
+      "SSR",
+      "Support",
+      "Debuff",
+      "PvP B"
+    ],
+    "summary": "Supporter who grants a shield to allies and removes debuffs. With the patch, the effect of generating a shield has been added when using the basic skill - Nova Burst.",
+    "image": "https://cdn.sanity.io/images/1olr33nh/production/8cd104a3743291f8c395a093f81ebae471bdf3d0-80x80.webp?w=120&h=120&fit=crop&auto=format",
+    "updatedAt": "2026-03-30",
+    "sourceTabs": [
+      "Savior Tier list (ENG)",
+      "Tychara Star Savior Tier List (Mar 2026)"
+    ]
+  },
+  {
+    "name": "Frey Noble Princess",
+    "slug": "bg-frey",
+    "tier": "SS",
+    "mode": "Moon Caster",
+    "tags": [
+      "Caster",
+      "Moon",
+      "SSR",
+      "AoE DPS",
+      "Support",
+      "Debuff",
+      "PvP S"
+    ],
+    "summary": "When using the ultimate skill, she deals wide-area damage + applies a debuff that reduces the attack power of the enemy, which greatly helps the stability of the party. The special skill extends the debuff applied to the enemy.",
+    "image": "https://cdn.sanity.io/images/1olr33nh/production/3258fc97fb8084eae2b44a690bc25af2b25467ef-256x256.webp?w=120&h=120&fit=crop&auto=format",
+    "updatedAt": "2026-03-30",
+    "sourceTabs": [
+      "Savior Tier list (ENG)",
+      "Tychara Star Savior Tier List (Mar 2026)"
+    ]
+  },
+  {
+    "name": "Harley",
+    "slug": "harley",
+    "tier": "A",
+    "mode": "Sun Defender",
+    "tags": [
+      "Defender",
+      "Sun",
+      "SSR",
+      "Support",
+      "Tank",
+      "PvP B"
+    ],
+    "summary": "A damage tank character that grants allies increased defense and speed buffs. she is more stable to stand in the back row than the front row.",
+    "image": "https://cdn.sanity.io/images/1olr33nh/production/3e145a60c8ea7919df07e5fedb1b874d60510011-80x80.webp?w=120&h=120&fit=crop&auto=format",
+    "updatedAt": "2026-03-30",
+    "sourceTabs": [
+      "Savior Tier list (ENG)",
+      "Tychara Star Savior Tier List (Mar 2026)"
+    ]
+  },
+  {
+    "name": "Haydee",
+    "slug": "haydee",
+    "tier": "S",
+    "mode": "Star Defender",
+    "tags": [
+      "Defender",
+      "Star",
+      "SSR",
+      "Support",
+      "Debuff",
+      "Tank",
+      "PvP SS"
+    ],
+    "summary": "Has a buff that allows you to take damage from allies instead of them. The hit rate reduction debuff is also more helpful than you might think.",
+    "image": "https://cdn.sanity.io/images/1olr33nh/production/0b35c04610e82cb3bc5607a654bc56dfdb5233e5-80x80.webp?w=120&h=120&fit=crop&auto=format",
+    "updatedAt": "2026-03-30",
+    "sourceTabs": [
+      "Savior Tier list (ENG)",
+      "Tychara Star Savior Tier List (Mar 2026)"
+    ]
+  },
+  {
+    "name": "Hilde",
+    "slug": "hilde",
+    "tier": "SS",
+    "mode": "Sun Defender",
+    "tags": [
+      "Defender",
+      "Sun",
+      "SSR",
+      "Support",
+      "Debuff",
+      "Tank",
+      "PvP T0"
+    ],
+    "summary": "Long-Term Combat Defender who excels at neutralizing threats before they land by providing complete debuff immunity and an opening barrier that ensures team survival from the very first second of the encounter.",
+    "image": "https://cdn.sanity.io/images/1olr33nh/production/dcf1f1e692ab9cf02a1bbad3036ff612744b48dc-256x256.webp?w=120&h=120&fit=crop&auto=format",
+    "updatedAt": "2026-03-30",
+    "sourceTabs": [
+      "Savior Tier list (ENG)",
+      "Tychara Star Savior Tier List (Mar 2026)"
+    ]
+  },
+  {
+    "name": "Kyra",
+    "slug": "kyra",
+    "tier": "S",
+    "mode": "Sun Assassin",
+    "tags": [
+      "Assassin",
+      "Sun",
+      "SSR",
+      "Support",
+      "PvP S"
+    ],
+    "summary": "Used as the main dealer of Cosmo Gate. Indirectly buffed by Kira Arcana",
+    "image": "https://cdn.sanity.io/images/1olr33nh/production/a4f4df1fdbeaa4ac7ef8942a3d2ecdc70f74b72e-80x80.webp?w=120&h=120&fit=crop&auto=format",
+    "updatedAt": "2026-03-30",
+    "sourceTabs": [
+      "Savior Tier list (ENG)",
+      "Tychara Star Savior Tier List (Mar 2026)"
+    ]
+  },
+  {
+    "name": "Lacy",
+    "slug": "lacy",
+    "tier": "T0",
+    "mode": "Chaos Ranger",
+    "tags": [
+      "Ranger",
+      "Chaos",
+      "SSR",
+      "AoE DPS",
+      "Tank",
+      "PvP S"
+    ],
+    "summary": "A savior that can do everything from area damage + single damage + tanking in the front line. However, since the release of the newer saviors, there are cases where Lacy is missing from the high-point compositions.",
+    "image": "https://cdn.sanity.io/images/1olr33nh/production/386b9003dccc03042fa005222670727042ee7533-80x80.webp?w=120&h=120&fit=crop&auto=format",
+    "updatedAt": "2026-03-30",
+    "sourceTabs": [
+      "Savior Tier list (ENG)",
+      "Tychara Star Savior Tier List (Mar 2026)"
+    ]
+  },
+  {
+    "name": "Lily",
+    "slug": "lily",
+    "tier": "A",
+    "mode": "Moon Caster",
+    "tags": [
+      "Caster",
+      "Moon",
+      "SSR",
+      "AoE DPS",
+      "Support",
+      "Debuff",
+      "PvP C"
+    ],
+    "summary": "A powerful ultimate skill + applies an attack power reduction debuff to all enemies. Used by Cosmo Gate's Immortal King Moguls due to the shield buff.",
+    "image": "https://cdn.sanity.io/images/1olr33nh/production/6124bd9f65360100e52544955093da1fcac9a3aa-80x80.webp?w=120&h=120&fit=crop&auto=format",
+    "updatedAt": "2026-03-30",
+    "sourceTabs": [
+      "Savior Tier list (ENG)",
+      "Tychara Star Savior Tier List (Mar 2026)"
+    ]
+  },
+  {
+    "name": "Lugh",
+    "slug": "lugh",
+    "tier": "S",
+    "mode": "Moon Ranger",
+    "tags": [
+      "Ranger",
+      "Moon",
+      "SSR",
+      "Support",
+      "Debuff",
+      "PvP S"
+    ],
+    "summary": "The ultimate skill has a defense reduction debuff that helps with damage dealing. When using basic and special skills, it gives the enemy a freezing debuff.",
+    "image": "https://cdn.sanity.io/images/1olr33nh/production/377bb7d44012b492e3c6c3bf5e4bf7d15553e150-80x80.webp?w=120&h=120&fit=crop&auto=format",
+    "updatedAt": "2026-03-30",
+    "sourceTabs": [
+      "Savior Tier list (ENG)",
+      "Tychara Star Savior Tier List (Mar 2026)"
+    ]
+  },
+  {
+    "name": "Luna",
+    "slug": "luna",
+    "tier": "S",
+    "mode": "Order Caster",
+    "tags": [
+      "Caster",
+      "Order",
+      "SSR",
+      "AoE DPS",
+      "PvP SS"
+    ],
+    "summary": "A savior whose basic, special, and ultimate skills all inflict area damage. Useful when there are many enemies, but the damage is terrible when there is only one enemy.",
+    "image": "https://cdn.sanity.io/images/1olr33nh/production/972008c41457e1095bbb0b00b20862cfded75218-80x80.webp?w=120&h=120&fit=crop&auto=format",
+    "updatedAt": "2026-03-30",
+    "sourceTabs": [
+      "Savior Tier list (ENG)",
+      "Tychara Star Savior Tier List (Mar 2026)"
+    ]
+  },
+  {
+    "name": "Lydia",
+    "slug": "lydia",
+    "tier": "S",
+    "mode": "Chaos Ranger",
+    "tags": [
+      "Ranger",
+      "Chaos",
+      "SSR",
+      "Support",
+      "Debuff",
+      "PvP A"
+    ],
+    "summary": "Savior with 2 speed reduction debuffs. Can apply debuffs with basic attacks, and when passive stacks are accumulated, damage is also decent.",
+    "image": "https://cdn.sanity.io/images/1olr33nh/production/2127bcf2d1df0108faa31ca28d91696c4599102e-80x80.webp?w=120&h=120&fit=crop&auto=format",
+    "updatedAt": "2026-03-30",
+    "sourceTabs": [
+      "Savior Tier list (ENG)",
+      "Tychara Star Savior Tier List (Mar 2026)"
+    ]
+  },
+  {
+    "name": "Marcille",
+    "slug": "marcille",
+    "tier": "B",
+    "mode": "Star Caster",
+    "tags": [
+      "Caster",
+      "Star",
+      "SR"
+    ],
+    "summary": "Tychara ranks Marcille in PvE B / PvP unlisted as a SR Star Caster, but the exported character note is currently blank.",
+    "image": "https://cdn.sanity.io/images/1olr33nh/production/a2c48465d8339086b21e3120883bde2769d3e49f-80x80.webp?w=120&h=120&fit=crop&auto=format",
+    "updatedAt": "2026-03-30",
+    "sourceTabs": [
+      "Savior Tier list (ENG)",
+      "Tychara Star Savior Tier List (Mar 2026)"
+    ]
+  },
+  {
+    "name": "Muriel",
+    "slug": "muriel",
+    "tier": "SS",
+    "mode": "Sun Caster",
+    "tags": [
+      "Caster",
+      "Sun",
+      "SSR",
+      "AoE DPS",
+      "Support",
+      "Debuff",
+      "PvP S"
+    ],
+    "summary": "When using the ultimate skill, it deals wide-area damage + applies a debuff that reduces the attack power of the enemy, which greatly helps the stability of the party. The special skill extends the debuff applied to the enemy.",
+    "image": "https://cdn.sanity.io/images/1olr33nh/production/9ac4e935a3642f107c4cd151cb76002f549c49a2-80x80.webp?w=120&h=120&fit=crop&auto=format",
+    "updatedAt": "2026-03-30",
+    "sourceTabs": [
+      "Savior Tier list (ENG)",
+      "Tychara Star Savior Tier List (Mar 2026)"
+    ]
+  },
+  {
+    "name": "Naru",
+    "slug": "naru",
+    "tier": "NR",
+    "mode": "Star Ranger",
+    "tags": [
+      "Ranger",
+      "Star",
+      "SR",
+      "Reference Only"
+    ],
+    "summary": "Tychara lists Naru as a SR Star Ranger, but the current exposed ranked dataset does not include a PvE or PvP note for this unit.",
+    "image": "https://tychara.com/StarSavior/characterimg/Naru.webp",
+    "updatedAt": "2026-03-30",
+    "sourceTabs": [
+      "Tychara Star Savior Team Builder (Mar 2026)"
+    ]
+  },
+  {
+    "name": "Omega",
+    "slug": "omega",
+    "tier": "A",
+    "mode": "Star Caster",
+    "tags": [
+      "Caster",
+      "Star",
+      "SSR",
+      "PvP C"
+    ],
+    "summary": "To build up passive stacks, you need to warm up. It is recommended to use at least one ally with a different star attribute.",
+    "image": "https://cdn.sanity.io/images/1olr33nh/production/fc94edc5e4bead9bd4bdd3ac19e95b2beac388c0-80x80.webp?w=120&h=120&fit=crop&auto=format",
+    "updatedAt": "2026-03-30",
+    "sourceTabs": [
+      "Savior Tier list (ENG)",
+      "Tychara Star Savior Tier List (Mar 2026)"
+    ]
+  },
+  {
+    "name": "Petra",
+    "slug": "petra",
+    "tier": "S",
+    "mode": "Sun Ranger",
+    "tags": [
+      "Ranger",
+      "Sun",
+      "SSR",
+      "Support",
+      "Debuff",
+      "PvP S"
+    ],
+    "summary": "The ultimate skill has a defense reduction debuff that helps with damage dealing. If you use Nova Burst in your special skill, it reduces the enemy's toughness by 3.",
+    "image": "https://cdn.sanity.io/images/1olr33nh/production/29bfd9609b22730eb37c4411cc273e7fbf35e7f9-80x80.webp?w=120&h=120&fit=crop&auto=format",
+    "updatedAt": "2026-03-30",
+    "sourceTabs": [
+      "Savior Tier list (ENG)",
+      "Tychara Star Savior Tier List (Mar 2026)"
+    ]
+  },
+  {
+    "name": "Roberta",
+    "slug": "roberta",
+    "tier": "S",
+    "mode": "Star Striker",
+    "tags": [
+      "Striker",
+      "Star",
+      "SSR",
+      "PvP SS"
+    ],
+    "summary": "Tychara ranks Roberta in PvE S / PvP SS as a SSR Star Striker, but the exported character note is currently blank.",
+    "image": "https://cdn.sanity.io/images/1olr33nh/production/0f3426bf1289fbc88a26474c9317985ae26abc3b-256x256.webp?w=120&h=120&fit=crop&auto=format",
+    "updatedAt": "2026-03-30",
+    "sourceTabs": [
+      "Savior Tier list (ENG)",
+      "Tychara Star Savior Tier List (Mar 2026)"
+    ]
+  },
+  {
+    "name": "Rosaria",
+    "slug": "rosaria",
+    "tier": "NR",
+    "mode": "Chaos Ranger",
+    "tags": [
+      "Ranger",
+      "Chaos",
+      "SSR",
+      "Reference Only"
+    ],
+    "summary": "Tychara lists Rosaria as a SSR Chaos Ranger, but the current exposed ranked dataset does not include a PvE or PvP note for this unit.",
+    "image": "https://tychara.com/StarSavior/characterimg/Rosaria.webp",
+    "updatedAt": "2026-03-30",
+    "sourceTabs": [
+      "Tychara Star Savior Team Builder (Mar 2026)"
+    ]
+  },
+  {
+    "name": "Scarlet",
+    "slug": "scarlet",
+    "tier": "NR",
+    "mode": "Sun Ranger",
+    "tags": [
+      "Ranger",
+      "Sun",
+      "SR",
+      "Reference Only"
+    ],
+    "summary": "Tychara lists Scarlet as a SR Sun Ranger, but the current exposed ranked dataset does not include a PvE or PvP note for this unit.",
+    "image": "https://tychara.com/StarSavior/characterimg/Scarlet.webp",
+    "updatedAt": "2026-03-30",
+    "sourceTabs": [
+      "Tychara Star Savior Team Builder (Mar 2026)"
+    ]
+  },
+  {
+    "name": "Seira",
+    "slug": "seira",
+    "tier": "S",
+    "mode": "Order Striker",
+    "tags": [
+      "Striker",
+      "Order",
+      "SSR",
+      "Single-target DPS",
+      "Support",
+      "PvP SS"
+    ],
+    "summary": "A single dealer that increases the attack power of one ally and increases the action gauge. Used because the Cosmo Gate boss is a chaos attribute.",
+    "image": "https://cdn.sanity.io/images/1olr33nh/production/bfcb7e5c248ee45999492967dcf426414150b384-80x80.webp?w=120&h=120&fit=crop&auto=format",
+    "updatedAt": "2026-03-30",
+    "sourceTabs": [
+      "Savior Tier list (ENG)",
+      "Tychara Star Savior Tier List (Mar 2026)"
+    ]
+  },
+  {
+    "name": "Serpang",
+    "slug": "serpang",
+    "tier": "A",
+    "mode": "Sun Supporter",
+    "tags": [
+      "Supporter",
+      "Sun",
+      "SSR",
+      "Support",
+      "Debuff"
+    ],
+    "summary": "Supporter who grants damage immunity to allies and applies an attack power reduction debuff to enemies. With the patch, the effect of healing one ally when using the basic skill - Nova Burst has been added.",
+    "image": "https://cdn.sanity.io/images/1olr33nh/production/c6ef510918cea581fd18de582d21a0ced1e34123-80x80.webp?w=120&h=120&fit=crop&auto=format",
+    "updatedAt": "2026-03-30",
+    "sourceTabs": [
+      "Savior Tier list (ENG)",
+      "Tychara Star Savior Tier List (Mar 2026)"
+    ]
+  },
+  {
+    "name": "Smile",
+    "slug": "smile",
+    "tier": "A",
+    "mode": "Star Ranger",
+    "tags": [
+      "Ranger",
+      "Star",
+      "SSR",
+      "Support",
+      "Debuff",
+      "PvP C"
+    ],
+    "summary": "The ultimate skill has a defense reduction debuff that helps with damage dealing. However, the basic skill coefficient is low, so it is too weak before the trigger skill is activated.",
+    "image": "https://cdn.sanity.io/images/1olr33nh/production/1aed496aa2b7a88a35ce299ca378aba9ed3bfe74-80x80.webp?w=120&h=120&fit=crop&auto=format",
+    "updatedAt": "2026-03-30",
+    "sourceTabs": [
+      "Savior Tier list (ENG)",
+      "Tychara Star Savior Tier List (Mar 2026)"
+    ]
+  },
+  {
+    "name": "Tanya",
+    "slug": "tanya",
+    "tier": "S",
+    "mode": "Star Striker",
+    "tags": [
+      "Striker",
+      "Star",
+      "SSR",
+      "Single-target DPS",
+      "Support",
+      "PvP A"
+    ],
+    "summary": "A single dealer that grants a 1-turn critical hit chance buff to all allies. Special move increases the action gauge, allowing for a quicker deal cycle.",
+    "image": "https://cdn.sanity.io/images/1olr33nh/production/8a83a8a7acfe9c6e7dfc7ae640bcb22151ae277f-80x80.webp?w=120&h=120&fit=crop&auto=format",
+    "updatedAt": "2026-03-30",
+    "sourceTabs": [
+      "Savior Tier list (ENG)",
+      "Tychara Star Savior Tier List (Mar 2026)"
+    ]
+  },
+  {
+    "name": "Trish",
+    "slug": "trish",
+    "tier": "B",
+    "mode": "Star Assassin",
+    "tags": [
+      "Assassin",
+      "Star",
+      "SSR",
+      "Support",
+      "PvP C"
+    ],
+    "summary": "A single-dealer assassin whose passive activates when killing an enemy. Indirectly buffed by Kira Arcana",
+    "image": "https://cdn.sanity.io/images/1olr33nh/production/57c3b76c651a96df069648066eeed176295fb517-80x80.webp?w=120&h=120&fit=crop&auto=format",
+    "updatedAt": "2026-03-30",
+    "sourceTabs": [
+      "Savior Tier list (ENG)",
+      "Tychara Star Savior Tier List (Mar 2026)"
+    ]
+  },
+  {
+    "name": "Vera",
+    "slug": "vera",
+    "tier": "NR",
+    "mode": "Moon Supporter",
+    "tags": [
+      "Supporter",
+      "Moon",
+      "SR",
+      "Reference Only"
+    ],
+    "summary": "Tychara lists Vera as a SR Moon Supporter, but the current exposed ranked dataset does not include a PvE or PvP note for this unit.",
+    "image": "https://tychara.com/StarSavior/characterimg/Vera.webp",
+    "updatedAt": "2026-03-30",
+    "sourceTabs": [
+      "Tychara Star Savior Team Builder (Mar 2026)"
+    ]
+  },
+  {
+    "name": "Yoo Mina",
+    "slug": "yoo-mina",
+    "tier": "S",
+    "mode": "Star Ranger",
+    "tags": [
+      "Ranger",
+      "Star",
+      "SSR",
+      "PvP Core",
+      "PvP S"
+    ],
+    "summary": "This versatile PvP Powerhouse dominates the arena by utilizing Bleed effects that bypass enemy barriers, offering flexible build paths that can even synergize with Harmony-focused team compositions.",
+    "image": "https://cdn.sanity.io/images/1olr33nh/production/9814e97c29ad4b4317ba10c0271b39ddcfa39445-256x256.webp?w=120&h=120&fit=crop&auto=format",
+    "updatedAt": "2026-03-30",
+    "sourceTabs": [
+      "Savior Tier list (ENG)",
+      "Tychara Star Savior Tier List (Mar 2026)"
+    ]
+  }
+]

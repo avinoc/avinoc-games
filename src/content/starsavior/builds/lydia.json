@@ -1,0 +1,34 @@
+{
+  "name": "Lydia",
+  "slug": "lydia",
+  "role": "Debuff DPS",
+  "modes": ["PvE", "PvP"],
+  "updatedAt": "2026-03-30",
+  "sourceTabs": ["All Character Build Guide"],
+  "recommendedSets": [
+    {
+      "label": "Core",
+      "sets": ["Insight (4pc)", "Hit (2pc)"],
+      "neckMain": "SPD",
+      "ringMain": "ATK%"
+    },
+    {
+      "label": "Endgame",
+      "sets": ["Precision (4pc)", "Hit (2pc)"],
+      "neckMain": "SPD",
+      "ringMain": "ATK%",
+      "notes": "The endgame version doubles down on debuff reliability and action control."
+    }
+  ],
+  "subStats": ["SPD", "Crit Rate", "Crit DMG", "ATK%", "Effect Hit%"],
+  "skillLevels": {
+    "budget": "3 / 3 / 6",
+    "endgame": "7 / 7 / 10",
+    "progression": ["3 / 3 / 3", "3 / 6 / 6", "7 / 7 / 10"]
+  },
+  "arcana": ["Effect-hit Focus Arcana", "Speed HP Arcana"],
+  "notes": [
+    "Lydia’s gear path in the source guide strongly preserves hit-rate support because her value depends on debuff uptime.",
+    "She rewards players who build for speed and control rather than only raw damage."
+  ]
+}

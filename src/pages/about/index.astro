@@ -1,0 +1,46 @@
+---
+import HubLayout from "../../layouts/HubLayout.astro";
+---
+
+<HubLayout
+  title="About | Avinoc Games"
+  description="About the Avinoc Games project."
+>
+  <section class="hero">
+    <div class="container">
+      <div class="hero-wrap">
+        <p class="eyebrow">About</p>
+        <h1>About Avinoc Games</h1>
+        <p>
+          This site is a personal project that consolidates tools and resources for the games I play
+          into a single, clean web experience.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="container stack" style="max-width: 42rem;">
+    <div class="prose">
+      <h2>How it works</h2>
+      <p>
+        Each game section is self-contained with its own guides, tools, and data. The site is built
+        with Astro for static content and React for interactive tools like the fleet builder.
+        Everything is open source and deployed via GitHub Pages.
+      </p>
+
+      <h2>Source policy</h2>
+      <p>
+        StarSavior content is adapted from Bullet's published strategy spreadsheet and explicitly
+        cites the original source. All content is committed as static files — no live spreadsheet
+        dependencies.
+      </p>
+
+      <h2>Tech stack</h2>
+      <p>
+        Astro 6 with MDX for guides, React 19 for interactive tools, Tailwind CSS for the fleet
+        builder, vanilla CSS for everything else, Pagefind for full-text search, and GitHub Pages
+        for hosting.
+      </p>
+    </div>
+  </section>
+</HubLayout>

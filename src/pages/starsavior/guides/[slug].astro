@@ -1,0 +1,84 @@
+---
+import GameLayout from "../../../layouts/GameLayout.astro";
+import Hero from "../../../components/starsavior/Hero.astro";
+import CitationBanner from "../../../components/starsavior/CitationBanner.astro";
+import BuildCard from "../../../components/starsavior/BuildCard.astro";
+import { guides } from "../../../data/starsavior/content";
+import { getRelatedBuildsForGuide } from "../../../data/starsavior/relations";
+import Gear from "../../../content/starsavior/guides/gear.mdx";
+import IncreaseCp from "../../../content/starsavior/guides/increase-cp.mdx";
+import Reroll from "../../../content/starsavior/guides/reroll.mdx";
+import StarterGuide from "../../../content/starsavior/guides/starter-guide.mdx";
+import TeamBuilding from "../../../content/starsavior/guides/team-building.mdx";
+
+const guideComponents = {
+  "gear": Gear,
+  "increase-cp": IncreaseCp,
+  "reroll": Reroll,
+  "starter-guide": StarterGuide,
+  "team-building": TeamBuilding
+};
+
+export async function getStaticPaths() {
+  return guides.map((guide) => ({
+    params: { slug: guide.slug },
+    props: { guide }
+  })).filter((entry) => entry.props.guide.routeGroup === "guides");
+}
+
+const { guide } = Astro.props;
+const Content = guideComponents[guide.slug as keyof typeof guideComponents];
+const relatedBuilds = getRelatedBuildsForGuide(guide.slug);
+---
+
+<GameLayout title={`${guide.title} | StarSavior Atlas`} description={guide.summary} game="starsavior">
+  <Hero
+    title={guide.title}
+    summary={guide.summary}
+  />
+
+  <section class="container stack">
+    <CitationBanner sourceTabs={guide.sourceTabs} updatedAt={guide.updatedAt} />
+
+    <nav class="guide-toc" aria-label="Guide sections">
+      {guide.sections.map((section) => (
+        <a href={`#${section.id}`} class="guide-toc-link">{section.title}</a>
+      ))}
+    </nav>
+
+    <div class="split-layout">
+      <article class="panel prose" style="padding: 1.5rem;">
+        <Content />
+      </article>
+
+      <aside class="aside-card">
+        <h3>On this page</h3>
+        <ul>
+          {guide.sections.map((section) => (
+            <li>
+              <a href={`#${section.id}`}>{section.title}</a>
+            </li>
+          ))}
+        </ul>
+      </aside>
+    </div>
+
+    {relatedBuilds.length > 0 && (
+      <div class="panel" style="padding: 1.4rem;">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Related Builds</p>
+            <h2>Concrete character pages that apply this advice</h2>
+            <p>Use these build cards as examples of the stat routing, set choices, and progression tradeoffs mentioned in this guide.</p>
+          </div>
+        </div>
+
+        <div class="related-grid">
+          {relatedBuilds.map((entry) => (
+            <BuildCard entry={entry} />
+          ))}
+        </div>
+      </div>
+    )}
+  </section>
+</GameLayout>

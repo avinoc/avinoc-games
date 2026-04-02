@@ -1,0 +1,34 @@
+{
+  "name": "Tanya",
+  "slug": "tanya",
+  "role": "Single-target DPS",
+  "modes": ["PvE", "PvP"],
+  "updatedAt": "2026-03-30",
+  "sourceTabs": ["All Character Build Guide"],
+  "recommendedSets": [
+    {
+      "label": "Core",
+      "sets": ["Insight (4pc)", "Valor (2pc)"],
+      "neckMain": "SPD",
+      "ringMain": "ATK%"
+    },
+    {
+      "label": "PvP pressure",
+      "sets": ["Speed (4pc)", "Valor (2pc)"],
+      "neckMain": "SPD",
+      "ringMain": "ATK%",
+      "notes": "The sheet includes a speed-heavy lane for PvP pressure and turn tempo."
+    }
+  ],
+  "subStats": ["SPD", "Crit Rate", "Crit DMG", "ATK%"],
+  "skillLevels": {
+    "budget": "3 / 6 / 6",
+    "endgame": "7 / 8 / 7",
+    "progression": ["3 / 6 / 3", "3 / 6 / 6", "3 / 8 / 6", "7 / 8 / 7"]
+  },
+  "arcana": ["Crit-rate Strength Arcana", "Speed Focus Arcana"],
+  "notes": [
+    "Tanya keeps the same speed and attack stat line but flexes her set package depending on whether you need raw damage or faster initiative.",
+    "The source build path is one of the more explicit skill-roadmap entries in the sheet."
+  ]
+}

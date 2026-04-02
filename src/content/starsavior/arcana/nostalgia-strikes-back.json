@@ -1,0 +1,11 @@
+{
+  "name": "Nostalgia Strikes Back",
+  "slug": "nostalgia-strikes-back",
+  "tier": "SS",
+  "class": "PvP Defender",
+  "specialPotential": "Shield of Silence - Preemptive Guard chance +20%",
+  "summary": "A PvP-specific Defender Arcana that can swing target flow by intercepting single-target attacks for allies.",
+  "tags": ["PvP", "Defender", "Guard"],
+  "updatedAt": "2026-03-30",
+  "sourceTabs": ["Arcana Tier List"]
+}

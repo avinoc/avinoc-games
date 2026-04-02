@@ -1,0 +1,34 @@
+{
+  "name": "Seira",
+  "slug": "seira",
+  "role": "Support DPS",
+  "modes": ["PvE", "PvP"],
+  "updatedAt": "2026-03-30",
+  "sourceTabs": ["All Character Build Guide"],
+  "recommendedSets": [
+    {
+      "label": "Control support",
+      "sets": ["Insight (4pc)", "Hit (2pc)"],
+      "neckMain": "SPD",
+      "ringMain": "ATK%"
+    },
+    {
+      "label": "PvP tempo",
+      "sets": ["Speed (4pc)", "Valor (2pc)"],
+      "neckMain": "SPD",
+      "ringMain": "ATK%",
+      "notes": "The PvP variant keeps her fast and disruptive rather than turning her into a raw damage dealer."
+    }
+  ],
+  "subStats": ["SPD", "Crit Rate", "Crit DMG", "ATK%", "Effect Hit%"],
+  "skillLevels": {
+    "budget": "3 / 6 / 3",
+    "endgame": "7 / 7 / 10",
+    "progression": ["3 / 6 / 3", "3 / 6 / 6", "7 / 7 / 10"]
+  },
+  "arcana": ["Effect-hit Arcana", "Speed Arcana"],
+  "notes": [
+    "Seira’s sheet row clearly preserves Effect Hit% as part of her substat package.",
+    "Treat her as a fast control-oriented damage piece rather than a pure finisher."
+  ]
+}

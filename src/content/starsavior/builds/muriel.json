@@ -1,0 +1,33 @@
+{
+  "name": "Muriel",
+  "slug": "muriel",
+  "role": "Debuff DPS",
+  "modes": ["PvE", "PvP"],
+  "updatedAt": "2026-03-30",
+  "sourceTabs": ["All Character Build Guide"],
+  "recommendedSets": [
+    {
+      "label": "Core",
+      "sets": ["Insight (4pc)", "Hit (2pc)"],
+      "neckMain": "SPD",
+      "ringMain": "ATK%"
+    },
+    {
+      "label": "Late-game control",
+      "sets": ["Precision (4pc)", "Hit (2pc)"],
+      "neckMain": "SPD",
+      "ringMain": "ATK%"
+    }
+  ],
+  "subStats": ["SPD", "Crit Rate", "Crit DMG", "ATK%", "Effect Hit%"],
+  "skillLevels": {
+    "budget": "3 / 6 / 6",
+    "endgame": "7 / 8 / 8",
+    "progression": ["3 / 3 / 3", "3 / 6 / 6", "7 / 8 / 8"]
+  },
+  "arcana": ["Effect-hit Focus Arcana", "Crit-rate Strength Arcana"],
+  "notes": [
+    "Muriel’s source build is another clear example of the sheet favoring Hit support on units whose identity is tied to debuff value.",
+    "Keep her fast enough to extend and recycle debuffs instead of chasing a pure glass-cannon setup."
+  ]
+}

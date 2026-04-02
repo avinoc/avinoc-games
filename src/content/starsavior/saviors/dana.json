@@ -1,0 +1,10 @@
+{
+  "name": "Dana",
+  "slug": "dana",
+  "tier": "A",
+  "mode": "PvE AoE DPS",
+  "tags": ["AoE DPS", "ATK Up", "SPD Down", "PvP Core"],
+  "summary": "Dana offers real AoE threat and speed control, with added value when you want one unit to contribute both damage and tempo disruption.",
+  "updatedAt": "2026-03-30",
+  "sourceTabs": ["Savior Tier list (ENG)"]
+}

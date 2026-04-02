@@ -1,0 +1,99 @@
+---
+import type { BuildEntry } from "../../data/starsavior/content";
+
+interface Props {
+  entry: BuildEntry;
+}
+
+const { entry } = Astro.props;
+const base = import.meta.env.BASE_URL;
+const resolveAsset = (src?: string | null) =>
+  !src ? undefined : /^https?:\/\//i.test(src) ? src : `${base}${src.replace(/^\/+/, "")}`;
+---
+
+<article class="content-card build-card" data-role={entry.role} data-modes={entry.modes.join(",")}>
+  <div class="build-card-header">
+    {entry.image && (
+      <a href={`${base}starsavior/builds/${entry.slug}/`} class="build-card-avatar">
+        <img src={resolveAsset(entry.image)} alt={`${entry.name} portrait`} loading="lazy" />
+      </a>
+    )}
+    <div class="build-card-heading">
+      <div class="card-topline">
+        <span class="pill">{entry.role}</span>
+        <span class="muted">{entry.modes.join(" / ")}</span>
+      </div>
+      <h3>
+        <a href={`${base}starsavior/builds/${entry.slug}/`}>{entry.name}</a>
+      </h3>
+    </div>
+  </div>
+  <p>{entry.notes[0]}</p>
+  <div class="tag-row">
+    {entry.recommendedSets.slice(0, 2).map((set) => (
+      <span class="tag">{set.label}: {set.sets.join(" + ")}</span>
+    ))}
+  </div>
+</article>
+
+<style>
+  .build-card {
+    display: grid;
+    gap: 0.9rem;
+  }
+
+  .build-card-header {
+    display: flex;
+    align-items: center;
+    gap: 0.95rem;
+  }
+
+  .build-card-avatar {
+    display: block;
+    width: 82px;
+    height: 82px;
+    min-width: 82px;
+    border-radius: 999px;
+    overflow: hidden;
+    background: var(--card-media-bg);
+    border: 1px solid var(--line);
+    box-shadow: var(--shadow);
+  }
+
+  .build-card-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding: 0.55rem;
+  }
+
+  .build-card-heading {
+    display: grid;
+    gap: 0.5rem;
+    min-width: 0;
+  }
+
+  .build-card-heading h3 {
+    margin: 0;
+  }
+
+  .card-topline {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.6rem;
+    flex-wrap: wrap;
+  }
+
+  @media (max-width: 540px) {
+    .build-card-header {
+      align-items: flex-start;
+    }
+
+    .build-card-avatar {
+      width: 68px;
+      height: 68px;
+      min-width: 68px;
+    }
+  }
+</style>

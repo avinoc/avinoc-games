@@ -1,0 +1,10 @@
+{
+  "name": "Lugh",
+  "slug": "lugh",
+  "tier": "A",
+  "mode": "PvE Single-target DPS",
+  "tags": ["Single-target DPS", "DEF Down", "Freeze", "Debuff Specialist"],
+  "summary": "Lugh combines useful damage with defense reduction and freeze utility, which keeps him relevant even when the pure damage race gets crowded.",
+  "updatedAt": "2026-03-30",
+  "sourceTabs": ["Savior Tier list (ENG)"]
+}

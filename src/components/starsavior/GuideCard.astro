@@ -1,0 +1,60 @@
+---
+interface Props {
+  href: string;
+  title: string;
+  summary: string;
+  kicker: string;
+  step?: number;
+  meta?: string[];
+}
+
+const { href, title, summary, kicker, step, meta = [] } = Astro.props;
+---
+
+<article class:list={["content-card", "guide-card", step && "guide-card--stepped"]}>
+  <div class="guide-card-head">
+    <p class="eyebrow">{kicker}</p>
+    {step && <span class="guide-card-step">Step {step}</span>}
+  </div>
+  <h3><a href={href}>{title}</a></h3>
+  <p>{summary}</p>
+  {meta.length > 0 && (
+    <div class="tag-row">
+      {meta.map((item) => (
+        <span class="tag">{item}</span>
+      ))}
+    </div>
+  )}
+</article>
+
+<style>
+  .guide-card {
+    display: grid;
+    gap: 0.9rem;
+  }
+
+  .guide-card-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+  }
+
+  .guide-card-step {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 70px;
+    min-height: 44px;
+    padding: 0.35rem 0.8rem;
+    border-radius: 999px;
+    background: linear-gradient(135deg, rgba(240, 160, 59, 0.22), rgba(88, 185, 221, 0.16));
+    border: 1px solid rgba(240, 160, 59, 0.2);
+    color: var(--ink);
+    font-weight: 700;
+    font-size: 0.82rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+</style>

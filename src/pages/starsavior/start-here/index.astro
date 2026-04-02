@@ -1,0 +1,108 @@
+---
+import GameLayout from "../../../layouts/GameLayout.astro";
+import Hero from "../../../components/starsavior/Hero.astro";
+import GuideCard from "../../../components/starsavior/GuideCard.astro";
+
+const base = import.meta.env.BASE_URL;
+---
+
+<GameLayout
+  title="Start Here | StarSavior Atlas"
+  description="The quickest path through rerolls, onboarding, team-building, and account progression."
+  game="starsavior"
+>
+  <Hero
+    title="Read these four pages first."
+    summary="The original sheet has a lot of value, but new players still need a clean order of operations. Start here for the first-session flow, then branch into builds and tier references once your account has a shape."
+    actions={[
+      { href: `${base}starsavior/guides/reroll/`, label: "Open reroll guide", tone: "primary" },
+      { href: `${base}search/`, label: "Search units or systems", tone: "secondary" }
+    ]}
+  />
+
+  <section class="container stack">
+    <div class="panel" style="padding: 1.4rem;">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Recommended Reading Order</p>
+          <h2>A cleaner route through the launch content</h2>
+        </div>
+      </div>
+
+      <div class="card-grid">
+        <GuideCard
+          href={`${base}starsavior/guides/reroll/`}
+          title="Reroll Guide"
+          summary="Lock in the best opener, decide whether Arcana reroll is worth the extra time, and leave with realistic targets."
+          kicker="First 30 minutes"
+          step={1}
+          meta={["Asherah Waltz", "Lacy", "BG Frey Arcana"]}
+        />
+        <GuideCard
+          href={`${base}starsavior/guides/starter-guide/`}
+          title="Starter Guide"
+          summary="Use selectors, mileage, and progression currencies in the right order before you burn anything rare."
+          kicker="First day"
+          step={2}
+          meta={["Selectors", "Mileage", "Mainstream"]}
+        />
+        <GuideCard
+          href={`${base}starsavior/guides/team-building/`}
+          title="Team Building"
+          summary="Understand frontline targeting, free-to-play roster width, and attribute-specific team shells for PvE."
+          kicker="First roster"
+          step={3}
+          meta={["Frontline", "Moon teams", "Cosmo Gate"]}
+        />
+        <GuideCard
+          href={`${base}starsavior/guides/increase-cp/`}
+          title="Increase Combat Power"
+          summary="See which upgrades move CP the most so you stop wasting mats on low-impact upgrades."
+          kicker="Mid-game momentum"
+          step={4}
+          meta={["Resonance", "Gear", "Stellar Archive"]}
+        />
+      </div>
+    </div>
+
+    <div class="panel" style="padding: 1.4rem;">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">When To Branch Out</p>
+          <h2>Next pages after the opener</h2>
+        </div>
+      </div>
+
+      <div class="card-grid">
+        <GuideCard
+          href={`${base}starsavior/guides/gear/`}
+          title="Gear Guide"
+          summary="Go here once your first four characters need real set planning instead of generic filler gear."
+          kicker="Power systems"
+          meta={["Farm priority", "Substats", "Enhancement"]}
+        />
+        <GuideCard
+          href={`${base}starsavior/journey/hard-guide/`}
+          title="Journey: Hard Guide"
+          summary="Open this once you are ready to treat Journey as its own mode with rank, condition, and charm-specific constraints."
+          kicker="Mode prep"
+          meta={["Resonance", "Training", "Shop"]}
+        />
+        <GuideCard
+          href={`${base}starsavior/tier-lists/saviors/`}
+          title="Savior Tier List"
+          summary="Use the tier list for prioritization, then jump into the build cards for gear and skill breakpoints."
+          kicker="Reference"
+          meta={["AoE", "Single target", "Healers"]}
+        />
+        <GuideCard
+          href={`${base}starsavior/builds/`}
+          title="Build Index"
+          summary="Scan curated character loadouts with neck/ring priorities, endgame set targets, skill levels, and Journey notes."
+          kicker="Character pages"
+          meta={["Builds", "Arcana", "Talismans"]}
+        />
+      </div>
+    </div>
+  </section>
+</GameLayout>

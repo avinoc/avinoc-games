@@ -1,0 +1,55 @@
+---
+import GameLayout from "../../layouts/GameLayout.astro";
+const base = import.meta.env.BASE_URL;
+---
+
+<GameLayout
+  title="StarSavior"
+  description="Builds, tier lists, and progression guides for StarSavior."
+  game="starsavior"
+>
+  <section class="hero">
+    <div class="container">
+      <div class="hero-wrap">
+        <p class="eyebrow">StarSavior Atlas</p>
+        <h1>Guides that get you to the right answer faster.</h1>
+        <p>
+          StarSavior Atlas turns Bullet's spreadsheet into a cleaner English site for rerolls,
+          onboarding, builds, gear, Journey, and rankings.
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href={`${base}starsavior/start-here/`}>Start Here</a>
+          <a class="button secondary" href={`${base}starsavior/builds/`}>Browse Builds</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container stack">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow">Quick Access</p>
+        <h2>Jump to a section</h2>
+      </div>
+    </div>
+
+    <div class="card-grid">
+      <a class="content-card" href={`${base}starsavior/start-here/`} style="text-decoration: none;">
+        <h3>Start Here</h3>
+        <p>New player onboarding — reroll, starter guide, gear, and Journey in order.</p>
+      </a>
+      <a class="content-card" href={`${base}starsavior/builds/`} style="text-decoration: none;">
+        <h3>Builds</h3>
+        <p>10 character builds with gear sets, skill breakpoints, and arcana recommendations.</p>
+      </a>
+      <a class="content-card" href={`${base}starsavior/tier-lists/saviors`} style="text-decoration: none;">
+        <h3>Savior Tier List</h3>
+        <p>42 saviors ranked from T0 to NR with role tags and build links.</p>
+      </a>
+      <a class="content-card" href={`${base}starsavior/tier-lists/arcana`} style="text-decoration: none;">
+        <h3>Arcana Tier List</h3>
+        <p>9 arcana ranked by tier and class with special potential notes.</p>
+      </a>
+    </div>
+  </section>
+</GameLayout>

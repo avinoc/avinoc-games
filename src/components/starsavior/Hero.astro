@@ -1,0 +1,27 @@
+---
+interface Props {
+  title: string;
+  summary: string;
+  actions?: { href: string; label: string; tone?: "primary" | "secondary" }[];
+}
+
+const { title, summary, actions = [] } = Astro.props;
+---
+
+<section class="hero">
+  <div class="container">
+    <div class="hero-wrap">
+      <h1>{title}</h1>
+      <p>{summary}</p>
+      {actions.length > 0 && (
+        <div class="hero-actions">
+          {actions.map((action) => (
+            <a class={`button ${action.tone ?? "secondary"}`} href={action.href}>
+              {action.label}
+            </a>
+          ))}
+        </div>
+      )}
+    </div>
+  </div>
+</section>

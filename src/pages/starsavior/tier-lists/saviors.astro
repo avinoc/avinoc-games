@@ -1,0 +1,295 @@
+---
+import GameLayout from "../../../layouts/GameLayout.astro";
+import Hero from "../../../components/starsavior/Hero.astro";
+import CitationBanner from "../../../components/starsavior/CitationBanner.astro";
+import TierBoardTile from "../../../components/starsavior/TierBoardTile.astro";
+import TierCard from "../../../components/starsavior/TierCard.astro";
+import { saviors } from "../../../data/starsavior/content";
+import { getBuildForSavior, getTierRank, tierOrder } from "../../../data/starsavior/relations";
+
+const base = import.meta.env.BASE_URL;
+const tierDescriptions: Record<string, string> = {
+  T0: "Meta-defining anchors that pull entire account plans around them.",
+  SS: "Top-tier anchors that solve multiple account needs at once.",
+  S: "Strong specialists and safe investments for stable PvE progression.",
+  A: "Useful niche picks that shine with the right roster or matchup.",
+  B: "Lower-priority options that still have specific applications.",
+  C: "Very situational picks for the current launch slice.",
+  NR: "Present in the live roster, but not ranked in the currently exposed tier data."
+};
+const tierDefinitions = [
+  { tier: "T0", text: "Meta-defining units that immediately reshape account priorities." },
+  { tier: "SS", text: "High-value carries or supports that justify early investment on most rosters." },
+  { tier: "S", text: "Reliable progression options with strong payoffs in the right shell." },
+  { tier: "A", text: "Good secondary choices, especially if they cover a specific need." },
+  { tier: "B", text: "Lower urgency picks that are usually roster-dependent." },
+  { tier: "C", text: "Very narrow value compared with the rest of the board." },
+  { tier: "NR", text: "Roster-complete reference entries that were not ranked in the exposed March 2026 tier dataset." }
+];
+const focusOptions = [
+  { value: "all", label: "All roles" },
+  { value: "single-target", label: "Single target" },
+  { value: "aoe", label: "AoE" },
+  { value: "support", label: "Support" },
+  { value: "utility", label: "Utility" },
+  { value: "tank", label: "Tank" },
+  { value: "pvp", label: "PvP" }
+];
+
+const sorted = [...saviors].sort(
+  (a, b) => getTierRank(a.tier, tierOrder) - getTierRank(b.tier, tierOrder) || a.name.localeCompare(b.name)
+);
+const entries = sorted.map((entry) => {
+  const build = getBuildForSavior(entry.slug);
+  const haystack = `${entry.mode} ${entry.tags.join(" ")}`;
+  const focus = new Set<string>();
+
+  if (/single-target/i.test(haystack)) focus.add("single-target");
+  if (/\baoe\b|st & aoe/i.test(haystack)) focus.add("aoe");
+  if (/healer|action gauge up|atk up|debuff removal/i.test(haystack)) focus.add("support");
+  if (/debuff|down|dispel|silence|freeze|ignition|toughness break/i.test(haystack)) focus.add("utility");
+  if (/tank|bruiser/i.test(haystack)) focus.add("tank");
+  if (/pvp/i.test(haystack)) focus.add("pvp");
+
+  return {
+    ...entry,
+    build,
+    image: entry.image || build?.image,
+    focus: [...focus],
+    tileSubtitle: entry.mode.replace(/^PvE\s*/i, "").replace(/^PvP\s*/i, ""),
+    searchText: `${entry.name} ${entry.mode} ${entry.tags.join(" ")} ${entry.summary}`
+  };
+});
+const grouped = tierOrder
+  .map((tier) => ({ tier, entries: entries.filter((entry) => entry.tier === tier) }))
+  .filter((group) => group.entries.length > 0);
+---
+
+<GameLayout title="Savior Tier List | StarSavior Atlas" description="Row-based StarSavior Savior tier list with ranked bands, quick filters, and linked build notes." game="starsavior">
+  <Hero
+    title="Savior tier list in an actual ranked board."
+    summary="This board now covers the full 42-character live roster. Ranked entries come from the published Bullet-derived tier data, and any missing live-roster units are called out as reference-only instead of being guessed into a tier."
+  />
+
+  <section class="container stack">
+    <CitationBanner
+      sourceTabs={["Savior Tier list (ENG)", "Tychara Star Savior Tier List (Mar 2026)", "Tychara Star Savior Team Builder (Mar 2026)"]}
+      updatedAt={entries[0]?.updatedAt}
+    />
+
+    <div class="panel" style="padding: 1.4rem;">
+      <p class="muted" style="margin: 0 0 1rem;">
+        Ranked notes come from the exposed March 2026 tier dataset. Entries in <strong>NR</strong> are included for roster completeness from Tychara&apos;s live character list and team builder, but they were not assigned a visible tier in the current exported ranking data.
+      </p>
+
+      <div class="tier-toolbar">
+        <div class="filter-bar" style="margin-bottom: 0;">
+          <input id="savior-search" type="search" placeholder="Search Savior names, roles, tags, or notes..." />
+        </div>
+
+        <div class="tier-filter-stack">
+          <div class="tier-filter-group" role="group" aria-label="Filter by tier">
+            <span class="tier-filter-group__label">Tier</span>
+            <button class="tier-filter-chip is-active" type="button" data-tier-filter="all">All</button>
+            {grouped.map((group) => (
+              <button class="tier-filter-chip" type="button" data-tier-filter={group.tier}>{group.tier}</button>
+            ))}
+          </div>
+
+          <div class="tier-filter-group" role="group" aria-label="Filter by role focus">
+            <span class="tier-filter-group__label">Focus</span>
+            {focusOptions.map((option, index) => (
+              <button
+                class:list={["tier-filter-chip", index === 0 && "is-active"]}
+                type="button"
+                data-focus-filter={option.value}
+              >
+                {option.label}
+              </button>
+            ))}
+
+            <button class="tier-filter-chip tier-filter-chip--reset" type="button" data-reset-filters>
+              Reset
+            </button>
+          </div>
+        </div>
+
+        <details class="tier-definitions">
+          <summary>Show tier definitions</summary>
+          <div class="tier-definition-grid">
+            {tierDefinitions.map((definition) => (
+              <article class="tier-definition-card">
+                <strong>{definition.tier}</strong>
+                <p>{definition.text}</p>
+              </article>
+            ))}
+          </div>
+        </details>
+      </div>
+
+      <div class="tier-board" id="savior-board">
+        {grouped.map((group) => (
+          <section class="tier-row" data-tier-group={group.tier}>
+            <div class="tier-row-label" data-tier-label={group.tier}>
+              <span class="tier-row-label__rank">{group.tier}</span>
+              <p>{tierDescriptions[group.tier]}</p>
+            </div>
+
+            <div class="tier-row-track">
+              {group.entries.map((entry) => (
+                <TierBoardTile
+                  href={`#note-${entry.slug}`}
+                  tier={entry.tier}
+                  title={entry.name}
+                  subtitle={entry.tileSubtitle}
+                  image={entry.image}
+                  badge={entry.build ? "Build" : undefined}
+                  searchText={entry.searchText}
+                  filterValues={entry.focus}
+                />
+              ))}
+            </div>
+          </section>
+        ))}
+      </div>
+
+      <section class="stack" style="margin-top: 1.5rem;">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Character Notes</p>
+            <h2>Full notes for the full 42-character roster</h2>
+            <p>Tap any tile above to jump here. Ranked entries keep their translated notes, and the unranked live-roster units stay visible as clearly marked reference entries.</p>
+          </div>
+        </div>
+
+        <div class="tier-note-grid">
+          {entries.map((entry) => (
+            <TierCard
+              id={`note-${entry.slug}`}
+              tier={entry.tier}
+              title={entry.name}
+              subtitle={entry.mode}
+              summary={entry.summary}
+              tags={entry.tags}
+              image={entry.image}
+              searchText={entry.searchText}
+              filterValues={entry.focus}
+              buildHref={entry.build ? `${base}starsavior/builds/${entry.build.slug}/` : undefined}
+              buildLabel={entry.build ? `View ${entry.build.name} build` : undefined}
+            />
+          ))}
+        </div>
+      </section>
+    </div>
+  </section>
+
+  <script is:inline>
+    const searchInput = document.querySelector("#savior-search");
+    const tierButtons = [...document.querySelectorAll("[data-tier-filter]")];
+    const focusButtons = [...document.querySelectorAll("[data-focus-filter]")];
+    const resetButton = document.querySelector("[data-reset-filters]");
+    const tiles = [...document.querySelectorAll(".tier-tile")];
+    const notes = [...document.querySelectorAll(".tier-note")];
+    const groups = [...document.querySelectorAll("[data-tier-group]")];
+    const params = new URLSearchParams(window.location.search);
+
+    let activeTier = params.get("tier") || "all";
+    let activeFocus = params.get("focus") || "all";
+
+    if (searchInput && params.get("q")) {
+      searchInput.value = params.get("q");
+    }
+
+    const getFocusValues = (element) =>
+      (element.dataset.focus || "")
+        .split(",")
+        .map((value) => value.trim())
+        .filter(Boolean);
+
+    const matches = (element) => {
+      const query = searchInput?.value.toLowerCase().trim() ?? "";
+      const searchable = (element.dataset.search || element.textContent || "").toLowerCase();
+      const matchesQuery = !query || searchable.includes(query);
+      const matchesTier = activeTier === "all" || element.dataset.tier === activeTier;
+      const focusValues = getFocusValues(element);
+      const matchesFocus = activeFocus === "all" || focusValues.includes(activeFocus);
+      return matchesQuery && matchesTier && matchesFocus;
+    };
+
+    const syncButtons = () => {
+      tierButtons.forEach((button) => {
+        button.classList.toggle("is-active", button.dataset.tierFilter === activeTier);
+      });
+
+      focusButtons.forEach((button) => {
+        button.classList.toggle("is-active", button.dataset.focusFilter === activeFocus);
+      });
+    };
+
+    const syncUrl = () => {
+      const nextParams = new URLSearchParams(window.location.search);
+      const query = searchInput?.value.trim() ?? "";
+
+      if (query) {
+        nextParams.set("q", query);
+      } else {
+        nextParams.delete("q");
+      }
+
+      if (activeTier !== "all") {
+        nextParams.set("tier", activeTier);
+      } else {
+        nextParams.delete("tier");
+      }
+
+      if (activeFocus !== "all") {
+        nextParams.set("focus", activeFocus);
+      } else {
+        nextParams.delete("focus");
+      }
+
+      const nextUrl = `${window.location.pathname}${nextParams.toString() ? `?${nextParams.toString()}` : ""}${window.location.hash}`;
+      window.history.replaceState({}, "", nextUrl);
+    };
+
+    const update = () => {
+      tiles.forEach((tile) => tile.classList.toggle("hidden", !matches(tile)));
+      notes.forEach((note) => note.classList.toggle("hidden", !matches(note)));
+
+      groups.forEach((group) => {
+        const visibleTiles = [...group.querySelectorAll(".tier-tile")].filter((tile) => !tile.classList.contains("hidden"));
+        group.classList.toggle("hidden", visibleTiles.length === 0);
+      });
+
+      syncButtons();
+      syncUrl();
+    };
+
+    tierButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        activeTier = button.dataset.tierFilter || "all";
+        update();
+      });
+    });
+
+    focusButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        activeFocus = button.dataset.focusFilter || "all";
+        update();
+      });
+    });
+
+    resetButton?.addEventListener("click", () => {
+      activeTier = "all";
+      activeFocus = "all";
+      if (searchInput) {
+        searchInput.value = "";
+      }
+      update();
+    });
+
+    searchInput?.addEventListener("input", update);
+    syncButtons();
+    update();
+  </script>
+</GameLayout>

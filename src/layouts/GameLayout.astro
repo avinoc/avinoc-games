@@ -1,0 +1,22 @@
+---
+import BaseLayout from "./BaseLayout.astro";
+import SiteHeader from "../components/shared/SiteHeader.astro";
+import SiteFooter from "../components/shared/SiteFooter.astro";
+import { getGameBySlug } from "../data/games";
+
+interface Props {
+  title?: string;
+  description?: string;
+  game: string;
+}
+
+const { title, description, game } = Astro.props;
+const gameData = getGameBySlug(game);
+const gameTitle = gameData ? `${title || gameData.name} | Avinoc Games` : title || "Avinoc Games";
+---
+
+<BaseLayout title={gameTitle} description={description} game={game}>
+  <SiteHeader slot="header" currentPath={Astro.url.pathname} />
+  <slot />
+  <SiteFooter slot="footer" />
+</BaseLayout>

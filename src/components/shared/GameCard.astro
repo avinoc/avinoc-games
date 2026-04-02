@@ -1,0 +1,93 @@
+---
+interface Props {
+  name: string;
+  description: string;
+  href: string;
+  status: "active" | "coming-soon" | "archived";
+  accentColor?: string;
+}
+
+const { name, description, href, status, accentColor = "blue" } = Astro.props;
+const base = import.meta.env.BASE_URL;
+const fullHref = `${base}${href.replace(/^\//, "")}`;
+---
+
+<a class="game-card" href={fullHref} data-accent={accentColor}>
+  <div class="game-card__status">
+    <span class:list={["status-badge", status]}>{status === "active" ? "Active" : status === "coming-soon" ? "Coming Soon" : "Archived"}</span>
+  </div>
+  <h3 class="game-card__title">{name}</h3>
+  <p class="game-card__desc">{description}</p>
+  <span class="game-card__cta">Explore &rarr;</span>
+</a>
+
+<style>
+  .game-card {
+    display: grid;
+    gap: 0.6rem;
+    padding: 1.6rem;
+    border-radius: var(--radius-lg, 28px);
+    background: var(--surface-2);
+    border: 1px solid var(--line);
+    text-decoration: none;
+    color: inherit;
+    transition: transform 200ms ease, box-shadow 200ms ease, border-color 200ms ease;
+  }
+
+  .game-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 50px rgba(2, 7, 16, 0.42);
+    border-color: rgba(88, 185, 221, 0.3);
+  }
+
+  .game-card__status {
+    display: flex;
+  }
+
+  .status-badge {
+    display: inline-flex;
+    padding: 0.3rem 0.7rem;
+    border-radius: 999px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+
+  .status-badge.active {
+    background: rgba(88, 221, 127, 0.16);
+    color: #6fe898;
+    border: 1px solid rgba(88, 221, 127, 0.24);
+  }
+
+  .status-badge.coming-soon {
+    background: rgba(240, 160, 59, 0.16);
+    color: #f0a03b;
+    border: 1px solid rgba(240, 160, 59, 0.24);
+  }
+
+  .game-card__title {
+    margin: 0;
+    font-family: "Fraunces", Georgia, serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 1.1;
+    color: var(--ink);
+  }
+
+  .game-card__desc {
+    margin: 0;
+    color: var(--text-soft);
+    line-height: 1.6;
+  }
+
+  .game-card__cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    margin-top: 0.3rem;
+    font-weight: 600;
+    color: var(--accent-ice, #58b9dd);
+    font-size: 0.92rem;
+  }
+</style>
