@@ -5,7 +5,14 @@
   "class": "All",
   "specialPotential": "Sharp Assault - ATK +6%, Crit Rate +6%",
   "summary": "Universal Tier 0 Strength Arcana for most DPS and bruiser characters that still need crit rate. This is one of the sheet's clearest all-purpose premium picks.",
-  "tags": ["Strength", "Crit Rate", "Universal"],
+  "tags": [
+    "Strength",
+    "Crit Rate",
+    "Universal"
+  ],
   "updatedAt": "2026-03-30",
-  "sourceTabs": ["Arcana Tier List"]
+  "sourceTabs": [
+    "Arcana Tier List"
+  ],
+  "status": "needs-review"
 }

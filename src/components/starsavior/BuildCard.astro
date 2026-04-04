@@ -1,5 +1,6 @@
 ---
 import type { BuildEntry } from "../../data/starsavior/content";
+import DraftBadge from "../shared/DraftBadge.astro";
 
 interface Props {
   entry: BuildEntry;
@@ -11,30 +12,32 @@ const resolveAsset = (src?: string | null) =>
   !src ? undefined : /^https?:\/\//i.test(src) ? src : `${base}${src.replace(/^\/+/, "")}`;
 ---
 
-<article class="content-card build-card" data-role={entry.role} data-modes={entry.modes.join(",")}>
-  <div class="build-card-header">
-    {entry.image && (
-      <a href={`${base}starsavior/builds/${entry.slug}/`} class="build-card-avatar">
-        <img src={resolveAsset(entry.image)} alt={`${entry.name} portrait`} loading="lazy" />
-      </a>
-    )}
-    <div class="build-card-heading">
-      <div class="card-topline">
-        <span class="pill">{entry.role}</span>
-        <span class="muted">{entry.modes.join(" / ")}</span>
+<DraftBadge status={entry.status}>
+  <article class="content-card build-card" data-role={entry.role} data-modes={entry.modes.join(",")}>
+    <div class="build-card-header">
+      {entry.image && (
+        <a href={`${base}starsavior/builds/${entry.slug}/`} class="build-card-avatar">
+          <img src={resolveAsset(entry.image)} alt={`${entry.name} portrait`} loading="lazy" />
+        </a>
+      )}
+      <div class="build-card-heading">
+        <div class="card-topline">
+          <span class="pill">{entry.role}</span>
+          <span class="muted">{entry.modes.join(" / ")}</span>
+        </div>
+        <h3>
+          <a href={`${base}starsavior/builds/${entry.slug}/`}>{entry.name}</a>
+        </h3>
       </div>
-      <h3>
-        <a href={`${base}starsavior/builds/${entry.slug}/`}>{entry.name}</a>
-      </h3>
     </div>
-  </div>
-  <p>{entry.notes[0]}</p>
-  <div class="tag-row">
-    {entry.recommendedSets.slice(0, 2).map((set) => (
-      <span class="tag">{set.label}: {set.sets.join(" + ")}</span>
-    ))}
-  </div>
-</article>
+    <p>{entry.notes[0]}</p>
+    <div class="tag-row">
+      {entry.recommendedSets.slice(0, 2).map((set) => (
+        <span class="tag">{set.label}: {set.sets.join(" + ")}</span>
+      ))}
+    </div>
+  </article>
+</DraftBadge>
 
 <style>
   .build-card {

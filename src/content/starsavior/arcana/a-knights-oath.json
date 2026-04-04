@@ -5,7 +5,14 @@
   "class": "All",
   "specialPotential": "Stigma of Speed - SPD +8",
   "summary": "Universal Tier 0 HP Arcana because the flat speed gain is broadly useful on almost every archetype in the game.",
-  "tags": ["HP", "Speed", "Universal"],
+  "tags": [
+    "HP",
+    "Speed",
+    "Universal"
+  ],
   "updatedAt": "2026-03-30",
-  "sourceTabs": ["Arcana Tier List"]
+  "sourceTabs": [
+    "Arcana Tier List"
+  ],
+  "status": "needs-review"
 }

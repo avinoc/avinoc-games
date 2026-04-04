@@ -1,4 +1,6 @@
 ---
+import DraftBadge from "../shared/DraftBadge.astro";
+
 interface Props {
   href: string;
   title: string;
@@ -6,26 +8,29 @@ interface Props {
   kicker: string;
   step?: number;
   meta?: string[];
+  status?: string;
 }
 
-const { href, title, summary, kicker, step, meta = [] } = Astro.props;
+const { href, title, summary, kicker, step, meta = [], status = "published" } = Astro.props;
 ---
 
-<article class:list={["content-card", "guide-card", step && "guide-card--stepped"]}>
-  <div class="guide-card-head">
-    <p class="eyebrow">{kicker}</p>
-    {step && <span class="guide-card-step">Step {step}</span>}
-  </div>
-  <h3><a href={href}>{title}</a></h3>
-  <p>{summary}</p>
-  {meta.length > 0 && (
-    <div class="tag-row">
-      {meta.map((item) => (
-        <span class="tag">{item}</span>
-      ))}
+<DraftBadge status={status}>
+  <article class:list={["content-card", "guide-card", step && "guide-card--stepped"]}>
+    <div class="guide-card-head">
+      <p class="eyebrow">{kicker}</p>
+      {step && <span class="guide-card-step">Step {step}</span>}
     </div>
-  )}
-</article>
+    <h3><a href={href}>{title}</a></h3>
+    <p>{summary}</p>
+    {meta.length > 0 && (
+      <div class="tag-row">
+        {meta.map((item) => (
+          <span class="tag">{item}</span>
+        ))}
+      </div>
+    )}
+  </article>
+</DraftBadge>
 
 <style>
   .guide-card {

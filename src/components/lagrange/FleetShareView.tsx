@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { supabase } from '../../data/lagrange/supabase';
-import { Ship, ships, SHIP_CLASSES } from '../../data/lagrange/ships';
+import { type Ship } from '../../data/lagrange/ships';
 import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
 import { Button } from './ui/button';
 import { Badge } from './ui/badge';

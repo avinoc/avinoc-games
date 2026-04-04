@@ -1,0 +1,700 @@
+---
+import type { BuildEntry, PremiumBuildGuide } from "../../data/starsavior/content";
+
+interface Props {
+  build: BuildEntry;
+  guide: PremiumBuildGuide;
+}
+
+const { build, guide } = Astro.props;
+const base = import.meta.env.BASE_URL;
+const resolveAsset = (src?: string | null) =>
+  !src ? undefined : /^https?:\/\//i.test(src) ? src : `${base}${src.replace(/^\/+/, "")}`;
+const heroImage = guide.hero.image ?? build.image;
+const skillItems = guide.skillCards?.items ?? [];
+const defaultSkillId = guide.skillCards?.defaultTabId ?? skillItems[0]?.id ?? "";
+const hasTeamDrafts = Boolean(guide.teamDrafts?.members?.length);
+const hasTargetStats = Boolean(guide.targetStats?.stats?.length);
+const hasUpgradePath = Boolean(guide.upgradePath?.items?.length);
+const hasJourneyHard = Boolean(guide.journeyHard?.cards?.length);
+const hasSkillCards = Boolean(skillItems.length);
+---
+
+<section class="premium-build" data-premium-build-guide data-default-skill-id={defaultSkillId}>
+  <section id="premium-overview" class="premium-hero panel">
+    <div class="premium-hero-copy">
+      <h1>{guide.hero.title || build.name}</h1>
+      {guide.hero.subhead && <p class="premium-subhead">{guide.hero.subhead}</p>}
+      <p class="premium-summary">{guide.hero.summary}</p>
+
+      <div class="premium-rating-row">
+        {guide.hero.ratings.map((item) => (
+          <div class="premium-rating-pill">
+            <strong>{item.value}</strong>
+            <span>{item.label}</span>
+          </div>
+        ))}
+      </div>
+
+      {guide.hero.actions.length > 0 && (
+        <div class="premium-actions">
+          {guide.hero.actions.map((action) => (
+            <a class={`button ${action.tone ?? "secondary"}`} href={action.href}>
+              {action.label}
+            </a>
+          ))}
+        </div>
+      )}
+    </div>
+
+    <div class="premium-hero-art">
+      <div class="premium-hero-glow"></div>
+      {heroImage && (
+        <img
+          src={resolveAsset(heroImage)}
+          alt={`${build.name} character art`}
+          loading="eager"
+        />
+      )}
+    </div>
+  </section>
+
+  <section class="premium-card-grid">
+    <article class="premium-card panel">
+      <h2>{guide.combatIdentity.title}</h2>
+      <p class="premium-card-summary">{guide.combatIdentity.summary}</p>
+      <ul class="premium-list">
+        {guide.combatIdentity.bullets.map((bullet) => (
+          <li>{bullet}</li>
+        ))}
+      </ul>
+    </article>
+
+    <article class="premium-card panel">
+      <h2>{guide.skillRotation.title}</h2>
+      <p class="premium-card-summary">{guide.skillRotation.summary}</p>
+      <div class="premium-step-grid">
+        {guide.skillRotation.steps.map((item) => (
+          <article class="premium-step">
+            <span>{item.step}</span>
+            <strong>{item.title}</strong>
+            <p>{item.detail}</p>
+          </article>
+        ))}
+      </div>
+    </article>
+
+    <article id={guide.buildPlanner.id} class="premium-card panel">
+      <h2>{guide.buildPlanner.title}</h2>
+      <p class="premium-card-summary">{guide.buildPlanner.summary}</p>
+      {guide.buildPlanner.tag && <span class="premium-tag">{guide.buildPlanner.tag}</span>}
+      <div class="premium-split">
+        <div>
+          {guide.buildPlanner.sets.map((set) => (
+            <div class="premium-detail-block">
+              <p>{set.label}</p>
+              <strong>{set.value}</strong>
+              <span>{set.note}</span>
+            </div>
+          ))}
+        </div>
+        <div>
+          <p class="premium-detail-label">Priorities</p>
+          <ul class="premium-list premium-list--compact">
+            {guide.buildPlanner.priorities.map((note) => (
+              <li>{note}</li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </article>
+
+    {hasTeamDrafts && guide.teamDrafts && (
+      <article id={guide.teamDrafts.id} class="premium-card panel premium-card--team">
+        <h2>{guide.teamDrafts.title}</h2>
+        <p class="premium-card-summary">{guide.teamDrafts.summary}</p>
+        <div class="premium-detail-block premium-team-block">
+          <p>{guide.teamDrafts.label}</p>
+          <strong>{guide.teamDrafts.team}</strong>
+          <div class="premium-team-member-grid" aria-label="Recommended team portraits">
+            {guide.teamDrafts.members.map((member) => (
+              <figure class="premium-team-member">
+                <img src={resolveAsset(member.image)} alt={`${member.name} portrait`} loading="lazy" />
+                <figcaption>{member.name}</figcaption>
+              </figure>
+            ))}
+          </div>
+          <span>{guide.teamDrafts.note}</span>
+        </div>
+      </article>
+    )}
+  </section>
+
+  {(hasTargetStats || hasUpgradePath) && (
+    <section class:list={["premium-triad", !(hasTargetStats && hasUpgradePath) && "premium-triad--single"]}>
+      {hasTargetStats && guide.targetStats && (
+        <article id={guide.targetStats.id} class="premium-card premium-card--stats panel">
+          <p class="premium-card-kicker">{guide.targetStats.kicker}</p>
+          <div class="premium-stat-grid">
+            {guide.targetStats.stats.map((item) => (
+              <div class="premium-stat">
+                <span>{item.label}</span>
+                <strong>{item.value}</strong>
+              </div>
+            ))}
+          </div>
+          <p class="premium-card-summary">{guide.targetStats.summary}</p>
+        </article>
+      )}
+
+      {hasUpgradePath && guide.upgradePath && (
+        <article class="premium-card panel">
+          <p class="premium-card-kicker">{guide.upgradePath.kicker}</p>
+          <h2>{guide.upgradePath.title}</h2>
+          <ul class="premium-list premium-list--compact">
+            {guide.upgradePath.items.map((item) => (
+              <li>{item}</li>
+            ))}
+          </ul>
+        </article>
+      )}
+    </section>
+  )}
+
+  {hasJourneyHard && guide.journeyHard && (
+    <section id={guide.journeyHard.id} class="premium-card premium-hard-journey panel">
+      <p class="premium-card-kicker">{guide.journeyHard.kicker}</p>
+      <h2>{guide.journeyHard.title}</h2>
+      <p class="premium-card-summary">{guide.journeyHard.summary}</p>
+      <div class="premium-support-grid" aria-label="Recommended Journey Hard cards">
+        {guide.journeyHard.cards.map((card) => (
+          <article class="premium-support-card">
+            <img src={resolveAsset(card.image)} alt={`${card.name} portrait`} loading="lazy" />
+            <strong>{card.name}</strong>
+            <span>{card.slot}</span>
+          </article>
+        ))}
+      </div>
+    </section>
+  )}
+
+  {hasSkillCards && guide.skillCards && (
+    <section id={guide.skillCards.id} class="premium-card premium-skills panel">
+      <p class="premium-card-kicker">{guide.skillCards.kicker}</p>
+      <div class="premium-skills-header">
+        <div class="premium-skill-tabs" role="tablist" aria-label={`${build.name} skill details`}>
+          {guide.skillCards.items.map((skill) => (
+            <button
+              type="button"
+              class="premium-skill-tab"
+              data-skill-toggle={skill.id}
+              aria-pressed="false"
+            >
+              {skill.label}
+            </button>
+          ))}
+        </div>
+      </div>
+
+      <div class="premium-skill-panels">
+        {guide.skillCards.items.map((skill) => (
+          <article class="premium-skill-panel" data-skill-panel={skill.id} hidden>
+            <p>{skill.label}</p>
+            <h3>{skill.title}</h3>
+            <p>{skill.summary}</p>
+          </article>
+        ))}
+      </div>
+    </section>
+  )}
+
+  <script is:inline>
+    (() => {
+      const root = document.querySelector("[data-premium-build-guide]");
+      if (!root) return;
+
+      const defaultSkillId = root.getAttribute("data-default-skill-id");
+      const skillButtons = [...root.querySelectorAll("[data-skill-toggle]")];
+      const skillPanels = [...root.querySelectorAll("[data-skill-panel]")];
+
+      const setSkill = (skillId) => {
+        if (!skillId) return;
+
+        skillButtons.forEach((button) => {
+          const active = button.getAttribute("data-skill-toggle") === skillId;
+          button.classList.toggle("is-active", active);
+          button.setAttribute("aria-pressed", String(active));
+        });
+
+        skillPanels.forEach((panel) => {
+          const active = panel.getAttribute("data-skill-panel") === skillId;
+          panel.classList.toggle("is-active", active);
+          panel.hidden = !active;
+        });
+      };
+
+      skillButtons.forEach((button) => {
+        button.addEventListener("click", () => setSkill(button.getAttribute("data-skill-toggle")));
+      });
+
+      setSkill(defaultSkillId || skillButtons[0]?.getAttribute("data-skill-toggle"));
+    })();
+  </script>
+</section>
+
+<style>
+  .premium-build {
+    display: grid;
+    gap: 1rem;
+  }
+
+  .premium-build :is(article[id], section[id]) {
+    scroll-margin-top: 6.25rem;
+  }
+
+  .premium-hero {
+    display: grid;
+    grid-template-columns: minmax(0, 1.12fr) minmax(280px, 0.88fr);
+    gap: 1.25rem;
+    padding: 1.45rem;
+    position: relative;
+    overflow: hidden;
+    background:
+      radial-gradient(circle at 100% 0%, var(--body-spot-cool), transparent 32%),
+      radial-gradient(circle at 0% 100%, var(--body-spot-warm), transparent 28%),
+      linear-gradient(180deg, var(--surface-2), var(--surface-1));
+    border-color: var(--hero-border);
+  }
+
+  .premium-hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+      linear-gradient(120deg, transparent 0%, rgba(255, 255, 255, 0.04) 36%, transparent 62%),
+      linear-gradient(180deg, rgba(123, 175, 212, 0.08), transparent 46%);
+    pointer-events: none;
+  }
+
+  .premium-hero-copy,
+  .premium-hero-art {
+    position: relative;
+    z-index: 1;
+  }
+
+  .premium-hero h1,
+  .premium-card h2,
+  .premium-skills h2 {
+    margin: 0;
+    font-family: "Fraunces", Georgia, serif;
+    line-height: 0.96;
+    color: var(--ink);
+  }
+
+  .premium-hero h1 {
+    font-size: clamp(2.8rem, 5vw, 4.8rem);
+  }
+
+  .premium-subhead,
+  .premium-summary,
+  .premium-card-summary,
+  .premium-step p,
+  .premium-detail-block span,
+  .premium-skill-panel p:last-child {
+    color: var(--text-soft);
+  }
+
+  .premium-subhead {
+    margin: 0.35rem 0 0;
+    font-size: 1.02rem;
+  }
+
+  .premium-summary {
+    margin: 0.9rem 0 0;
+    max-width: 42rem;
+    font-size: 1.08rem;
+    line-height: 1.7;
+  }
+
+  .premium-rating-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.7rem;
+    margin-top: 1rem;
+  }
+
+  .premium-rating-pill {
+    display: grid;
+    gap: 0.18rem;
+    min-width: 94px;
+    padding: 0.72rem 0.92rem;
+    border-radius: 18px;
+    background: var(--surface-glass);
+    border: 1px solid var(--line);
+  }
+
+  .premium-rating-pill strong,
+  .premium-step strong,
+  .premium-detail-block strong,
+  .premium-skill-panel h3,
+  .premium-stat strong,
+  .premium-support-card strong {
+    color: var(--ink);
+  }
+
+  .premium-rating-pill strong {
+    font-size: 1.08rem;
+  }
+
+  .premium-rating-pill span,
+  .premium-step span,
+  .premium-detail-block p,
+  .premium-detail-label,
+  .premium-skill-panel p:first-child,
+  .premium-card-kicker,
+  .premium-stat span,
+  .premium-support-card span {
+    margin: 0;
+    font-size: 0.76rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent-strong);
+  }
+
+  .premium-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 1rem;
+  }
+
+  .premium-hero-art {
+    display: grid;
+    place-items: center;
+    min-height: 100%;
+    isolation: isolate;
+  }
+
+  .premium-hero-glow {
+    position: absolute;
+    width: min(80%, 340px);
+    aspect-ratio: 1;
+    border-radius: 999px;
+    background:
+      radial-gradient(circle, var(--accent-glow), transparent 58%),
+      radial-gradient(circle at 35% 35%, rgba(193, 74, 111, 0.14), transparent 30%);
+    filter: blur(14px);
+    z-index: -1;
+  }
+
+  .premium-hero-art img {
+    width: min(100%, 340px);
+    max-height: 440px;
+    object-fit: contain;
+    filter: drop-shadow(0 24px 30px rgba(2, 7, 16, 0.38));
+  }
+
+  .premium-card-grid,
+  .premium-triad {
+    display: grid;
+    gap: 1rem;
+  }
+
+  .premium-card-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .premium-triad {
+    grid-template-columns: minmax(0, 1.35fr) minmax(300px, 0.65fr);
+  }
+
+  .premium-triad--single {
+    grid-template-columns: 1fr;
+  }
+
+  .premium-card {
+    padding: 1.25rem;
+    background: linear-gradient(180deg, var(--surface-2), var(--surface-1));
+  }
+
+  .premium-card h2,
+  .premium-skills h2 {
+    font-size: clamp(2rem, 4vw, 3rem);
+    margin-top: 0.3rem;
+  }
+
+  .premium-card-summary {
+    margin: 0.7rem 0 0;
+    line-height: 1.68;
+  }
+
+  .premium-list {
+    margin: 1rem 0 0;
+    padding-left: 1.1rem;
+    display: grid;
+    gap: 0.55rem;
+    color: var(--text);
+    line-height: 1.58;
+  }
+
+  .premium-list--compact {
+    gap: 0.42rem;
+    font-size: 0.98rem;
+  }
+
+  .premium-step-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.8rem;
+    margin-top: 1rem;
+  }
+
+  .premium-step,
+  .premium-stat,
+  .premium-team-member,
+  .premium-support-card,
+  .premium-skill-panel {
+    border: 1px solid var(--line);
+    background: var(--surface-3);
+  }
+
+  .premium-step {
+    padding: 0.95rem;
+    border-radius: 22px;
+    display: grid;
+    gap: 0.35rem;
+  }
+
+  .premium-tag {
+    display: inline-flex;
+    margin-top: 0.8rem;
+    padding: 0.4rem 0.8rem;
+    border-radius: 999px;
+    background: var(--nav-hover-bg);
+    border: 1px solid var(--line);
+    color: var(--ink);
+    font-size: 0.82rem;
+    font-weight: 700;
+  }
+
+  .premium-split {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .premium-detail-block + .premium-detail-block {
+    margin-top: 0.95rem;
+  }
+
+  .premium-detail-block strong {
+    display: block;
+    margin-top: 0.22rem;
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+
+  .premium-detail-block span {
+    display: block;
+    margin-top: 0.32rem;
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  .premium-team-block {
+    display: grid;
+    gap: 0.9rem;
+    margin-top: 1rem;
+  }
+
+  .premium-team-member-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 0.75rem;
+    margin: 0.2rem 0;
+  }
+
+  .premium-team-member {
+    margin: 0;
+    display: grid;
+    justify-items: center;
+    gap: 0.45rem;
+    padding: 0.7rem 0.55rem 0.6rem;
+    border-radius: 18px;
+    text-align: center;
+  }
+
+  .premium-team-member img,
+  .premium-support-card img {
+    width: min(100%, 96px);
+    aspect-ratio: 1;
+    object-fit: cover;
+    object-position: center top;
+    border-radius: 16px;
+    border: 1px solid var(--hero-border);
+    background: var(--media-surface);
+    box-shadow: var(--shadow);
+  }
+
+  .premium-team-member figcaption {
+    color: var(--ink);
+    font-size: 0.8rem;
+    font-weight: 600;
+    line-height: 1.25;
+  }
+
+  .premium-card--stats {
+    min-width: 0;
+  }
+
+  .premium-stat-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.85rem;
+    margin-top: 1rem;
+  }
+
+  .premium-stat {
+    padding: 0.75rem 0.9rem;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    min-height: 84px;
+    gap: 0.3rem;
+    overflow: hidden;
+  }
+
+  .premium-stat span {
+    font-size: 0.82rem;
+    color: var(--text-soft);
+  }
+
+  .premium-stat strong {
+    max-width: 100%;
+    font-size: clamp(1.32rem, 1.7vw, 1.7rem);
+    line-height: 0.96;
+    letter-spacing: -0.03em;
+    white-space: nowrap;
+  }
+
+  .premium-hard-journey,
+  .premium-skills {
+    display: grid;
+    gap: 1rem;
+  }
+
+  .premium-support-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(128px, 1fr));
+    gap: 0.8rem;
+  }
+
+  .premium-support-card {
+    display: grid;
+    justify-items: center;
+    gap: 0.45rem;
+    padding: 0.9rem 0.7rem 0.8rem;
+    border-radius: 20px;
+    text-align: center;
+  }
+
+  .premium-support-card strong {
+    font-size: 0.95rem;
+    line-height: 1.2;
+  }
+
+  .premium-skills-header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: end;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  .premium-skill-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.65rem;
+  }
+
+  .premium-skill-tab {
+    border: 1px solid var(--line);
+    background: var(--surface-2);
+    color: var(--ink);
+    border-radius: 999px;
+    padding: 0.72rem 1rem;
+    font: inherit;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 160ms ease, background 160ms ease, color 160ms ease, border-color 160ms ease;
+  }
+
+  .premium-skill-tab:hover {
+    transform: translateY(-1px);
+  }
+
+  .premium-skill-tab.is-active {
+    background: linear-gradient(135deg, var(--button-start), var(--button-end));
+    border-color: transparent;
+    color: #f9fbff;
+  }
+
+  .premium-skill-panels {
+    display: grid;
+  }
+
+  .premium-skill-panel {
+    padding: 1.15rem;
+    border-radius: 24px;
+  }
+
+  .premium-skill-panel h3 {
+    margin: 0.35rem 0 0;
+    font-family: "Fraunces", Georgia, serif;
+    font-size: clamp(1.75rem, 3vw, 2.2rem);
+    line-height: 1.02;
+  }
+
+  .premium-skill-panel[hidden] {
+    display: none !important;
+  }
+
+  @media (max-width: 1100px) {
+    .premium-hero,
+    .premium-card-grid,
+    .premium-triad,
+    .premium-split {
+      grid-template-columns: 1fr;
+    }
+
+    .premium-hero-art {
+      order: -1;
+    }
+  }
+
+  @media (max-width: 720px) {
+    .premium-hero,
+    .premium-card,
+    .premium-skills {
+      padding: 1rem;
+    }
+
+    .premium-hero h1 {
+      font-size: 2.7rem;
+    }
+
+    .premium-step-grid,
+    .premium-stat-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .premium-team-member-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+</style>
+

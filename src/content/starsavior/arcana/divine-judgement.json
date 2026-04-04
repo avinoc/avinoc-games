@@ -5,7 +5,14 @@
   "class": "Caster",
   "specialPotential": "Target Alignment Magic Circle - Crit DMG ramps at turn start",
   "summary": "Caster-exclusive high-end Arcana that dramatically increases firepower through stacking crit-damage bonuses.",
-  "tags": ["Caster", "Crit DMG", "Scaling"],
+  "tags": [
+    "Caster",
+    "Crit DMG",
+    "Scaling"
+  ],
   "updatedAt": "2026-03-30",
-  "sourceTabs": ["Arcana Tier List"]
+  "sourceTabs": [
+    "Arcana Tier List"
+  ],
+  "status": "needs-review"
 }

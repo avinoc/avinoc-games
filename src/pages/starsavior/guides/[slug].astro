@@ -3,6 +3,7 @@ import GameLayout from "../../../layouts/GameLayout.astro";
 import Hero from "../../../components/starsavior/Hero.astro";
 import CitationBanner from "../../../components/starsavior/CitationBanner.astro";
 import BuildCard from "../../../components/starsavior/BuildCard.astro";
+import DraftBadge from "../../../components/shared/DraftBadge.astro";
 import { guides } from "../../../data/starsavior/content";
 import { getRelatedBuildsForGuide } from "../../../data/starsavior/relations";
 import Gear from "../../../content/starsavior/guides/gear.mdx";
@@ -38,6 +39,8 @@ const relatedBuilds = getRelatedBuildsForGuide(guide.slug);
   />
 
   <section class="container stack">
+    <DraftBadge status={guide.status} placement="inline" />
+
     <CitationBanner sourceTabs={guide.sourceTabs} updatedAt={guide.updatedAt} />
 
     <nav class="guide-toc" aria-label="Guide sections">

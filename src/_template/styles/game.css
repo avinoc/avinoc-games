@@ -1,0 +1,43 @@
+[data-game="{{SLUG}}"] {
+  --accent: {{ACCENT}};
+  --accent-strong: {{ACCENT}};
+  --accent-ice: {{ACCENT}};
+  --accent-glow: color-mix(in srgb, {{ACCENT}} 22%, transparent);
+  --button-start: {{ACCENT}};
+  --button-end: {{ACCENT}};
+}
+
+.{{SLUG}}-landing {
+  padding: 2rem 0 4rem;
+}
+
+.{{SLUG}}-landing__inner {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.{{SLUG}}-landing__hero {
+  display: grid;
+  gap: 0.75rem;
+  max-width: 44rem;
+}
+
+.{{SLUG}}-landing__eyebrow {
+  margin: 0;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(214, 226, 244, 0.72);
+}
+
+.{{SLUG}}-landing__hero h1,
+.{{SLUG}}-landing__summary {
+  margin: 0;
+}
+
+.{{SLUG}}-landing__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  gap: 1rem;
+}

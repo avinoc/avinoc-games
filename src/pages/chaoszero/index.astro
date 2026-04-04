@@ -1,0 +1,727 @@
+---
+import GameLayout from "../../layouts/GameLayout.astro";
+import {
+  currentEvent,
+  getAllBuilds,
+  getEventTotal,
+  getTeamTotal,
+} from "../../data/chaoszero/event-scores";
+
+const base = import.meta.env.BASE_URL;
+const teams = currentEvent.teams.map((team) => ({
+  ...team,
+  total: getTeamTotal(team),
+}));
+const allBuilds = getAllBuilds(currentEvent).map((build) => {
+  const team = teams.find((entry) => entry.id === build.teamId);
+
+  return {
+    ...build,
+    teamLabel: team?.label ?? "Team",
+  };
+});
+const eventTotal = getEventTotal(currentEvent);
+const topBuild = allBuilds.reduce((best, build) => (build.score > best.score ? build : best), allBuilds[0]);
+const trackedCards = allBuilds.reduce((sum, build) => sum + build.cardCount, 0);
+const averageFaintMemory = Math.round(allBuilds.reduce((sum, build) => sum + build.faintMemory, 0) / allBuilds.length);
+const averageCopies = Number((allBuilds.reduce((sum, build) => sum + build.copyCount, 0) / allBuilds.length).toFixed(1));
+const averageRemoves = Number((allBuilds.reduce((sum, build) => sum + build.removeCount, 0) / allBuilds.length).toFixed(1));
+
+const repeatedCardMap = new Map<string, { total: number; appearances: number }>();
+
+for (const build of allBuilds) {
+  for (const card of build.cards) {
+    const current = repeatedCardMap.get(card.name) ?? { total: 0, appearances: 0 };
+    repeatedCardMap.set(card.name, {
+      total: current.total + card.count,
+      appearances: current.appearances + 1,
+    });
+  }
+}
+
+const featuredCards = [...repeatedCardMap.entries()]
+  .sort((a, b) => b[1].total - a[1].total || b[1].appearances - a[1].appearances || a[0].localeCompare(b[0]))
+  .slice(0, 5)
+  .map(([name, data]) => ({ name, ...data }));
+
+const statBreakdown = [
+  {
+    label: "Score",
+    value: Math.round((eventTotal / (allBuilds.length * 75000)) * 100),
+    display: `${Math.round(eventTotal / allBuilds.length).toLocaleString("en-US")} avg`,
+  },
+  {
+    label: "Faint Memory",
+    value: Math.round((averageFaintMemory / 200) * 100),
+    display: `${averageFaintMemory} avg`,
+  },
+  {
+    label: "Card Count",
+    value: Math.round((trackedCards / (allBuilds.length * 10)) * 100),
+    display: `${(trackedCards / allBuilds.length).toFixed(1)} avg`,
+  },
+  {
+    label: "Copies",
+    value: Math.round((averageCopies / 5) * 100),
+    display: `${averageCopies} avg`,
+  },
+  {
+    label: "Removes",
+    value: Math.round((averageRemoves / 5) * 100),
+    display: `${averageRemoves} avg`,
+  },
+];
+
+const leadingTeam = teams.reduce((best, team) => (team.total > best.total ? team : best), teams[0]);
+const eventEndsAt = "2026-04-07T18:12:48-07:00";
+const eventEndsLabel = new Date(eventEndsAt).toLocaleString("en-US", {
+  month: "long",
+  day: "numeric",
+  year: "numeric",
+  hour: "numeric",
+  minute: "2-digit",
+  timeZoneName: "short",
+});
+
+function formatScore(score: number): string {
+  return score.toLocaleString("en-US");
+}
+---
+
+<GameLayout
+  title="Chaos Zero Nightmare | Project Avinoc"
+  description="Great Rift domination hub for Chaos Zero Nightmare with imported screenshot builds, card overlap, and tactical breakdowns."
+  game="chaoszero"
+  hideSubnav={true}
+>
+  <div class="cz-hub">
+    <div class="cz-noise" aria-hidden="true"></div>
+
+    <section class="container cz-stage">
+      <p class="cz-kicker">Nightmare build pack</p>
+      <h1 class="cz-title">{currentEvent.headline}</h1>
+
+      <div class="cz-hero-grid">
+        <article class="cz-feature-card">
+          <div class="cz-feature-card__copy">
+            <img
+              class="cz-feature-card__logo"
+              src={currentEvent.logoImage}
+              alt="Chaos Zero Nightmare"
+              width="210"
+              height="92"
+              loading="eager"
+            />
+            <h2>Ultimate Great Rift Team Builds</h2>
+            <p>{currentEvent.summary}</p>
+
+            <div class="cz-metric-row">
+              <span>{currentEvent.teams.length} teams</span>
+              <span>{allBuilds.length} builds</span>
+              <span>{formatScore(eventTotal)} TB combined</span>
+            </div>
+
+            <a class="cz-cta" href={`${base}chaoszero/event-scores/`}>
+              Open leaderboards
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14" />
+                <path d="m12 5 7 7-7 7" />
+              </svg>
+            </a>
+          </div>
+
+          <div class="cz-feature-card__media">
+            <img
+              src={currentEvent.heroImage}
+              alt="Chaos Zero Nightmare story artwork"
+              width="1280"
+              height="720"
+              loading="eager"
+            />
+            <div class="cz-feature-card__top-build">
+              <span>Top single build</span>
+              <strong>{topBuild.label} · {formatScore(topBuild.score)} TB</strong>
+            </div>
+          </div>
+        </article>
+
+        <aside class="cz-sidebar">
+          <a class="cz-side-card" href={`${base}chaoszero/event-scores/`}>
+            <span class="cz-side-card__label">Leaderboards</span>
+            <strong>Build archive</strong>
+            <p>Open the screenshot-driven event viewer and drill into every imported run.</p>
+            <div class="cz-side-card__value">{formatScore(eventTotal)} TB</div>
+          </a>
+
+          <div class="cz-side-card cz-side-card--static">
+            <span class="cz-side-card__label">Event countdown</span>
+            <strong data-countdown-label>4d 9h remaining</strong>
+            <p>Current Great Rift cycle ends on {eventEndsLabel}.</p>
+          </div>
+
+          <a class="cz-side-card" href="#strategy-notes">
+            <span class="cz-side-card__label">Notes</span>
+            <strong>Tactical notes</strong>
+            <p>Jump to the strategy section for the real high-level takeaways from this pack.</p>
+          </a>
+        </aside>
+      </div>
+    </section>
+
+    <section class="container cz-dashboard">
+      <article class="cz-panel">
+        <div class="cz-panel__header">
+          <div>
+            <span class="cz-panel__eyebrow">Current Meta Breakdown</span>
+            <h2>Build datalist</h2>
+          </div>
+        </div>
+
+        <div class="cz-data-table">
+          <div class="cz-data-table__head">
+            <span>Build</span>
+            <span>Team</span>
+            <span>Cards</span>
+            <span>Score</span>
+          </div>
+
+          {allBuilds.map((build) => (
+            <a class="cz-data-row" href={`${base}chaoszero/event-scores/#${build.id}`}>
+              <div>
+                <strong>{build.label}</strong>
+                <p>{build.focus}</p>
+              </div>
+              <span>{build.teamLabel}</span>
+              <span>{build.cardCount}</span>
+              <strong>{formatScore(build.score)} TB</strong>
+            </a>
+          ))}
+        </div>
+
+        <div class="cz-breakdown">
+          <div class="cz-panel__header">
+            <div>
+              <span class="cz-panel__eyebrow">Run Breakdown</span>
+              <h2>Operational metrics</h2>
+            </div>
+          </div>
+
+          <div class="cz-bar-stack">
+            {statBreakdown.map((stat) => (
+              <div class="cz-bar">
+                <div class="cz-bar__head">
+                  <span>{stat.label}</span>
+                  <strong>{stat.display}</strong>
+                </div>
+                <div class="cz-bar__track">
+                  <div class="cz-bar__fill" style={`width:${Math.min(100, stat.value)}%;`}></div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </article>
+
+      <article class="cz-panel">
+        <div class="cz-panel__header">
+          <div>
+            <span class="cz-panel__eyebrow">Character Synergy Matrix</span>
+            <h2>Repeated card overlap</h2>
+          </div>
+        </div>
+
+        <div class="cz-matrix">
+          <div class="cz-matrix__head">
+            <span>Build</span>
+            {featuredCards.map((card) => (
+              <span>{card.name}</span>
+            ))}
+          </div>
+
+          {allBuilds.map((build) => (
+            <div class="cz-matrix__row">
+              <strong>{build.teamLabel} {build.label}</strong>
+              {featuredCards.map((card) => {
+                const match = build.cards.find((entry) => entry.name === card.name);
+                return <span>{match ? `×${match.count}` : "-"}</span>;
+              })}
+            </div>
+          ))}
+        </div>
+
+        <div class="cz-strategy" id="strategy-notes">
+          <div class="cz-panel__header">
+            <div>
+              <span class="cz-panel__eyebrow">Strategy Guide</span>
+              <h2>Tactical notes</h2>
+            </div>
+          </div>
+
+          <div class="cz-strategy__grid">
+            <article>
+              <strong>Lead team</strong>
+              <p>{leadingTeam.label} currently carries the pack with {formatScore(leadingTeam.total)} TB across its three uploaded runs.</p>
+            </article>
+            <article>
+              <strong>Highest spike</strong>
+              <p>{topBuild.focus} is the top single result in the archive at {formatScore(topBuild.score)} TB.</p>
+            </article>
+            <article>
+              <strong>Shared engine</strong>
+              <p>{featuredCards[0]?.name || "No repeated card"} is the most repeated card across the imported runs, showing up {featuredCards[0]?.total || 0} total times.</p>
+            </article>
+          </div>
+        </div>
+      </article>
+    </section>
+  </div>
+</GameLayout>
+
+<script is:inline define:vars={{ eventEndsAt }}>
+  const countdownLabel = document.querySelector("[data-countdown-label]");
+  const endTime = new Date(eventEndsAt).getTime();
+
+  function updateCountdown() {
+    if (!countdownLabel) return;
+
+    const remaining = endTime - Date.now();
+
+    if (remaining <= 0) {
+      countdownLabel.textContent = "Ended";
+      return;
+    }
+
+    const totalMinutes = Math.floor(remaining / 60000);
+    const days = Math.floor(totalMinutes / (60 * 24));
+    const hours = Math.floor((totalMinutes % (60 * 24)) / 60);
+    const minutes = totalMinutes % 60;
+
+    countdownLabel.textContent = `${days}d ${hours}h ${minutes}m remaining`;
+  }
+
+  updateCountdown();
+  setInterval(updateCountdown, 60000);
+</script>
+
+<style>
+  .cz-hub {
+    --cz-cyan: #22d3ee;
+    --cz-pink: #d946a8;
+    --cz-orange: #e8431e;
+    --cz-panel: rgba(8, 11, 18, 0.92);
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
+    background:
+      radial-gradient(circle at top center, rgba(217, 70, 168, 0.14), transparent 24%),
+      radial-gradient(circle at 78% 10%, rgba(34, 211, 238, 0.12), transparent 24%),
+      linear-gradient(180deg, #07050d 0%, #04040a 100%);
+  }
+
+  .cz-noise {
+    display: none;
+    position: absolute;
+    inset: 0;
+    background:
+      linear-gradient(90deg, transparent 0 6%, rgba(34, 211, 238, 0.08) 6.2% 6.8%, transparent 7% 58%, rgba(217, 70, 168, 0.08) 58.3% 59%, transparent 59.2% 100%),
+      repeating-linear-gradient(180deg, rgba(255, 255, 255, 0.02) 0 1px, transparent 1px 4px);
+    opacity: 0.6;
+    pointer-events: none;
+    mix-blend-mode: screen;
+  }
+
+  .cz-stage,
+  .cz-dashboard {
+    position: relative;
+    z-index: 1;
+  }
+
+  .cz-stage {
+    padding-top: 2.5rem;
+    padding-bottom: 1.8rem;
+  }
+
+  .cz-kicker,
+  .cz-panel__eyebrow,
+  .cz-side-card__label,
+  .cz-data-table__head span,
+  .cz-bar__head span {
+    display: inline-flex;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: rgba(192, 223, 255, 0.68);
+  }
+
+  .cz-kicker {
+    margin: 0 0 0.85rem;
+  }
+
+  .cz-title,
+  .cz-feature-card__copy h2,
+  .cz-panel__header h2 {
+    margin: 0;
+    color: #f8fbff;
+    font-family: "Rajdhani", "Space Grotesk", sans-serif;
+    line-height: 1;
+    font-weight: 800;
+    text-transform: uppercase;
+  }
+
+  .cz-title {
+    font-size: clamp(2rem, 4.6vw, 3.6rem);
+    text-shadow: 0 0 32px rgba(217, 70, 168, 0.18);
+  }
+
+  .cz-hero-grid,
+  .cz-dashboard {
+    display: grid;
+    gap: 1.35rem;
+  }
+
+  .cz-hero-grid {
+    grid-template-columns: minmax(0, 1fr) 17rem;
+    align-items: stretch;
+  }
+
+  .cz-feature-card,
+  .cz-panel,
+  .cz-side-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 1.3rem;
+    background: var(--cz-panel);
+    backdrop-filter: blur(18px);
+    box-shadow:
+      0 26px 60px rgba(0, 0, 0, 0.36),
+      0 0 0 1px rgba(217, 70, 168, 0.06);
+  }
+
+  .cz-feature-card::before,
+  .cz-panel::before,
+  .cz-side-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    padding: 1px;
+    border-radius: inherit;
+    background: linear-gradient(90deg, rgba(217, 70, 168, 0.98), rgba(34, 211, 238, 0.72), rgba(232, 67, 30, 0.9));
+    -webkit-mask:
+      linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+  }
+
+  .cz-feature-card {
+    display: grid;
+    grid-template-columns: minmax(18rem, 0.92fr) minmax(0, 1.08fr);
+    min-height: 26rem;
+  }
+
+  .cz-feature-card__copy {
+    padding: 1.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .cz-feature-card__logo {
+    width: min(12.5rem, 100%);
+    height: auto;
+    filter: drop-shadow(0 14px 22px rgba(0, 0, 0, 0.38));
+  }
+
+  .cz-feature-card__copy p,
+  .cz-side-card p,
+  .cz-data-row p,
+  .cz-strategy__grid p {
+    margin: 0;
+    color: rgba(201, 219, 242, 0.76);
+    line-height: 1.58;
+  }
+
+  .cz-metric-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.65rem;
+  }
+
+  .cz-metric-row span,
+  .cz-side-card__value {
+    display: inline-flex;
+    align-items: center;
+    min-height: 2.4rem;
+    padding: 0.45rem 0.9rem;
+    border-radius: 999px;
+    background: rgba(13, 20, 34, 0.94);
+    border: 1px solid rgba(127, 182, 255, 0.18);
+    color: #f4fbff;
+    font-size: 0.9rem;
+    font-weight: 700;
+  }
+
+  .cz-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.55rem;
+    width: fit-content;
+    margin-top: 0.15rem;
+    padding: 0.82rem 1.2rem;
+    border-radius: 999px;
+    text-decoration: none;
+    color: #f7fbff;
+    font-weight: 700;
+    background: linear-gradient(90deg, rgba(217, 70, 168, 0.28), rgba(232, 67, 30, 0.22));
+    border: 1px solid rgba(217, 70, 168, 0.32);
+    box-shadow:
+      0 0 0 1px rgba(34, 211, 238, 0.06),
+      0 0 24px rgba(217, 70, 168, 0.14);
+    transition: transform 160ms ease, box-shadow 160ms ease, border-color 160ms ease;
+  }
+
+  .cz-cta:hover {
+    transform: translateY(-1px);
+    border-color: rgba(255, 155, 220, 0.4);
+    box-shadow:
+      0 0 0 1px rgba(34, 211, 238, 0.1),
+      0 0 34px rgba(217, 70, 168, 0.22);
+  }
+
+  .cz-feature-card__media {
+    position: relative;
+    min-height: 100%;
+  }
+
+  .cz-feature-card__media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .cz-feature-card__media::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+      linear-gradient(90deg, rgba(8, 11, 18, 0.72), transparent 26%),
+      linear-gradient(180deg, transparent, rgba(4, 10, 20, 0.7));
+  }
+
+  .cz-feature-card__top-build {
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+    z-index: 1;
+    display: grid;
+    gap: 0.15rem;
+    padding: 0.85rem 1rem;
+    border-radius: 1rem;
+    background: rgba(8, 14, 25, 0.82);
+    border: 1px solid rgba(217, 70, 168, 0.18);
+  }
+
+  .cz-feature-card__top-build span {
+    font-size: 0.72rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: rgba(217, 222, 255, 0.64);
+  }
+
+  .cz-feature-card__top-build strong {
+    color: #ffffff;
+    font-size: 1rem;
+  }
+
+  .cz-sidebar {
+    display: grid;
+    gap: 1rem;
+  }
+
+  .cz-side-card {
+    display: grid;
+    gap: 0.75rem;
+    align-content: start;
+    padding: 1rem;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 160ms ease, box-shadow 160ms ease;
+  }
+
+  .cz-side-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 26px 54px rgba(0, 0, 0, 0.42);
+  }
+
+  .cz-side-card--static:hover {
+    transform: none;
+  }
+
+  .cz-side-card strong,
+  .cz-data-row strong,
+  .cz-strategy__grid strong {
+    color: #f7fbff;
+  }
+
+  .cz-dashboard {
+    grid-template-columns: minmax(0, 1.05fr) minmax(24rem, 0.95fr);
+    padding-bottom: 4rem;
+  }
+
+  .cz-panel {
+    padding: 1.35rem;
+  }
+
+  .cz-panel__header {
+    margin-bottom: 1rem;
+  }
+
+  .cz-data-table,
+  .cz-matrix {
+    display: grid;
+    gap: 0.65rem;
+  }
+
+  .cz-data-table__head,
+  .cz-data-row,
+  .cz-matrix__head,
+  .cz-matrix__row {
+    display: grid;
+    grid-template-columns: minmax(0, 1.5fr) repeat(3, minmax(0, 0.5fr));
+    gap: 0.8rem;
+    align-items: center;
+  }
+
+  .cz-data-table__head,
+  .cz-matrix__head {
+    padding: 0 0.2rem;
+  }
+
+  .cz-data-row,
+  .cz-matrix__row {
+    padding: 0.85rem 0.9rem;
+    border-radius: 1rem;
+    background: rgba(10, 19, 35, 0.86);
+    border: 1px solid rgba(127, 169, 224, 0.12);
+    text-decoration: none;
+    color: rgba(211, 226, 244, 0.82);
+  }
+
+  .cz-data-row div {
+    min-width: 0;
+  }
+
+  .cz-data-row strong,
+  .cz-matrix__row strong {
+    font-size: 0.98rem;
+  }
+
+  .cz-breakdown,
+  .cz-strategy {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(127, 169, 224, 0.12);
+  }
+
+  .cz-bar-stack {
+    display: grid;
+    gap: 0.8rem;
+  }
+
+  .cz-bar {
+    display: grid;
+    gap: 0.45rem;
+  }
+
+  .cz-bar__head {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  .cz-bar__head strong {
+    color: #f7fbff;
+    font-size: 0.86rem;
+  }
+
+  .cz-bar__track {
+    height: 0.72rem;
+    overflow: hidden;
+    border-radius: 999px;
+    background: rgba(11, 20, 35, 0.96);
+  }
+
+  .cz-bar__fill {
+    height: 100%;
+    border-radius: inherit;
+    background: linear-gradient(90deg, rgba(217, 70, 168, 0.96), rgba(34, 211, 238, 0.86));
+  }
+
+  .cz-matrix__head,
+  .cz-matrix__row {
+    grid-template-columns: minmax(0, 1.35fr) repeat(5, minmax(0, 0.58fr));
+  }
+
+  .cz-matrix__head span,
+  .cz-matrix__row span {
+    font-size: 0.8rem;
+  }
+
+  .cz-strategy__grid {
+    display: grid;
+    gap: 0.85rem;
+  }
+
+  .cz-strategy__grid article {
+    padding: 0.95rem 1rem;
+    border-radius: 1rem;
+    background: rgba(10, 19, 35, 0.86);
+    border: 1px solid rgba(127, 169, 224, 0.12);
+  }
+
+  @media (max-width: 1120px) {
+    .cz-hero-grid,
+    .cz-dashboard,
+    .cz-feature-card {
+      grid-template-columns: 1fr;
+    }
+
+    .cz-sidebar {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+
+  @media (max-width: 900px) {
+    .cz-data-table__head,
+    .cz-data-row,
+    .cz-matrix__head,
+    .cz-matrix__row {
+      grid-template-columns: 1fr;
+    }
+
+    .cz-data-table__head,
+    .cz-matrix__head {
+      display: none;
+    }
+  }
+
+  @media (max-width: 760px) {
+    .cz-stage {
+      padding-top: 2rem;
+    }
+
+    .cz-sidebar {
+      grid-template-columns: 1fr;
+    }
+
+    .cz-panel,
+    .cz-feature-card__copy {
+      padding: 1rem;
+    }
+  }
+</style>

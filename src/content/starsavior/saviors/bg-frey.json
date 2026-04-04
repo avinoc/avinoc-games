@@ -3,8 +3,15 @@
   "slug": "bg-frey",
   "tier": "S",
   "mode": "PvE AoE DPS",
-  "tags": ["ST & AoE", "Crit Rate Up", "Long fights"],
+  "tags": [
+    "ST & AoE",
+    "Crit Rate Up",
+    "Long fights"
+  ],
   "summary": "A strong Moon-centered damage option that raises team crit rate and scales well in longer fights. The sheet repeatedly highlights her synergy with Moon teams.",
   "updatedAt": "2026-03-30",
-  "sourceTabs": ["Savior Tier list (ENG)"]
+  "sourceTabs": [
+    "Savior Tier list (ENG)"
+  ],
+  "status": "needs-review"
 }

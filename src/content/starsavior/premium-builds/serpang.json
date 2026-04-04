@@ -1,0 +1,238 @@
+{
+  "slug": "serpang",
+  "updatedAt": "2026-04-03",
+  "status": "published",
+  "sourceTabs": [
+    "Kamigame Serpang guide"
+  ],
+  "sourceContext": {
+    "url": "https://kamigame.jp/starsavior/page/396886820081669296.html",
+    "lead": "Translated and adapted from Kamigame's Serpang guide.",
+    "citationText": "Source page: Serpang Guide - Star Savior | Kamigame.",
+    "reviewedAgainst": [
+      "Kamigame Serpang guide",
+      "STUDIOBSIDE official game art"
+    ],
+    "attributionNote": "© 2025 STUDIOBSIDE Co. Ltd"
+  },
+  "hero": {
+    "title": "Serpang",
+    "subhead": "Sun | Supporter | PvE / PvP | Mental",
+    "summary": "Serpang starts best on HP (4pc) + Barrier (2pc) with Speed necklace and HP% ring. From there, branch into the High-end route and the PvP route as your gear options widen.",
+    "image": "/assets/starsavior/starsavior/premium/serpang/hero.png",
+    "ratings": [
+      {
+        "label": "Overall",
+        "value": "A"
+      },
+      {
+        "label": "Reroll",
+        "value": "B"
+      },
+      {
+        "label": "Campaign",
+        "value": "A"
+      },
+      {
+        "label": "Boss",
+        "value": "A"
+      },
+      {
+        "label": "Ranked",
+        "value": "B"
+      },
+      {
+        "label": "Strategy",
+        "value": "A"
+      }
+    ],
+    "actions": [
+      {
+        "href": "#serpang-builds",
+        "label": "Build Planner",
+        "tone": "primary"
+      },
+      {
+        "href": "#serpang-stats",
+        "label": "Target Stats",
+        "tone": "secondary"
+      },
+      {
+        "href": "#serpang-hard-journey",
+        "label": "Journey: Hard",
+        "tone": "secondary"
+      }
+    ]
+  },
+  "combatIdentity": {
+    "title": "Combat Identity",
+    "summary": "Serpang feels best once Speed, HP%, and DEF% are online, giving the first rotation a much steadier payoff.",
+    "bullets": [
+      "Baseline set line: HP (4pc) + Barrier (2pc).",
+      "Main stats stay on Speed necklace and HP% ring.",
+      "Substat focus: Speed, HP%, DEF%, and Effect RES.",
+      "Journey: Hard route leans toward Tank - BX2."
+    ]
+  },
+  "skillRotation": {
+    "title": "Skill Rotation",
+    "summary": "Skill investment is cleanest as Ultimate >= Special >= Basic, with the first cooldown setting the pace for the full rotation.",
+    "steps": [
+      {
+        "step": "1",
+        "title": "Open with Ultimate",
+        "detail": "Lead with the highest-invested cooldown so the opener starts on the strongest possible breakpoint."
+      },
+      {
+        "step": "2",
+        "title": "Cash in on Special",
+        "detail": "Special is usually the next meaningful breakpoint once the opener lands and should carry the mid-cycle payoff."
+      },
+      {
+        "step": "3",
+        "title": "Fill with Basic",
+        "detail": "Use Basic between cooldowns while you keep Speed and HP% stable on gear."
+      },
+      {
+        "step": "4",
+        "title": "Upgrade toward the final target",
+        "detail": "Budget target is 3 / 3 / 3, with 3 / 7 / 7 or 7 / 7 / 7 as the long-term skill finish."
+      }
+    ]
+  },
+  "buildPlanner": {
+    "id": "serpang-builds",
+    "title": "Build Planner",
+    "summary": "Start on the PvE / PvP line with HP (4pc) + Barrier (2pc) and Speed necklace and HP% ring. Move into the High-end route and the PvP route once the baseline is stable.",
+    "tag": "PvE / PvP",
+    "sets": [
+      {
+        "label": "PvE / PvP",
+        "value": "HP (4pc) + Barrier (2pc)",
+        "note": "PvE / PvP keeps SPD on the necklace and HP% on the ring."
+      },
+      {
+        "label": "High-end",
+        "value": "HP (4pc) + DEF (2pc)",
+        "note": "High-end keeps SPD on the necklace and HP% on the ring."
+      },
+      {
+        "label": "PvP",
+        "value": "Speed (4pc) + Barrier (2pc)",
+        "note": "PvP keeps SPD on the necklace and HP% on the ring."
+      }
+    ],
+    "priorities": [
+      "Necklace: SPD",
+      "Ring: HP(%)",
+      "Substats: SPD, HP(%), DEF(%), Effect RES"
+    ]
+  },
+  "targetStats": {
+    "id": "serpang-stats",
+    "kicker": "Target Stats",
+    "summary": "Lock Speed necklace and HP% ring, then stack Speed, HP%, DEF%, and Effect RES through substats.",
+    "stats": [
+      {
+        "label": "Necklace",
+        "value": "SPD"
+      },
+      {
+        "label": "Ring",
+        "value": "HP(%)"
+      },
+      {
+        "label": "Focus 1",
+        "value": "SPD"
+      },
+      {
+        "label": "Focus 2",
+        "value": "HP(%)"
+      },
+      {
+        "label": "Focus 3",
+        "value": "DEF(%)"
+      },
+      {
+        "label": "Focus 4",
+        "value": "Effect RES"
+      }
+    ]
+  },
+  "upgradePath": {
+    "kicker": "Upgrade Path",
+    "title": "Priority",
+    "items": [
+      "Skill order: Ultimate >= Special >= Basic",
+      "Budget target: 3 / 3 / 3",
+      "Recommended target: 3 / 7 / 7 or 7 / 7 / 7",
+      "Breakthrough priority: ★☆☆ Works fine at base copy",
+      "Substat focus: Speed, HP%, DEF%, and Effect RES",
+      "Journey: Hard route: Tank - BX2"
+    ]
+  },
+  "journeyHard": {
+    "id": "serpang-hard-journey",
+    "kicker": "Journey: Hard",
+    "title": "Recommended Cards",
+    "summary": "Core line: Charlotte and Waltz Asherah. Fill the remaining slots with Frey, Bunny Claire, and Elisa.",
+    "cards": [
+      {
+        "name": "Charlotte",
+        "slot": "Core",
+        "image": "/assets/starsavior/starsavior/premium/charlotte/hero.png"
+      },
+      {
+        "name": "Waltz Asherah",
+        "slot": "Core",
+        "image": "/assets/starsavior/starsavior/premium/waltz-asherah/hero.webp"
+      },
+      {
+        "name": "Frey",
+        "slot": "Flex 1",
+        "image": "/assets/starsavior/starsavior/premium/frey/hero.png"
+      },
+      {
+        "name": "Bunny Claire",
+        "slot": "Flex 2",
+        "image": "/assets/starsavior/starsavior/premium/bunnygirl-claire/hero.png"
+      },
+      {
+        "name": "Elisa",
+        "slot": "Flex 3",
+        "image": "/assets/starsavior/starsavior/premium/elisa/hero.png"
+      }
+    ]
+  },
+  "skillCards": {
+    "id": "serpang-skills",
+    "kicker": "Skill Cards",
+    "defaultTabId": "ultimate",
+    "items": [
+      {
+        "id": "passive",
+        "label": "Passive",
+        "title": "Rise, Phoenix!",
+        "summary": "Serpang's passive matters more once the core stat line is online and the rotation is already stable."
+      },
+      {
+        "id": "basic",
+        "label": "Basic",
+        "title": "I Choose You!",
+        "summary": "Use the basic to bridge cooldowns; it should stay behind the two higher-impact skills in upgrade priority."
+      },
+      {
+        "id": "special",
+        "label": "Special",
+        "title": "I Trust You!",
+        "summary": "Special is the next major breakpoint after the opener and usually carries the mid-cycle payoff."
+      },
+      {
+        "id": "ultimate",
+        "label": "Ultimate",
+        "title": "Let's Show Them, Toto!",
+        "summary": "Ultimate anchors the opener and stays at the top of the investment order for this build."
+      }
+    ]
+  }
+}

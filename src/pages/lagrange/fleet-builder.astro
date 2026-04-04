@@ -1,14 +1,15 @@
 ---
 import GameLayout from "../../layouts/GameLayout.astro";
-import FleetBuilder from "../../components/lagrange/FleetBuilder";
+import FleetBuilderView from "../../components/lagrange/FleetBuilder";
 ---
 
 <GameLayout
   title="Fleet Builder | Infinite Lagrange"
   description="Build and share fleet compositions for Infinite Lagrange."
   game="lagrange"
+  hideSubnav={true}
 >
   <section class="container" style="padding: 2rem 0;">
-    <FleetBuilder client:load />
+    <FleetBuilderView client:load />
   </section>
 </GameLayout>

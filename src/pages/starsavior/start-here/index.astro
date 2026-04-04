@@ -2,6 +2,7 @@
 import GameLayout from "../../../layouts/GameLayout.astro";
 import Hero from "../../../components/starsavior/Hero.astro";
 import GuideCard from "../../../components/starsavior/GuideCard.astro";
+import { guideBySlug } from "../../../data/starsavior/relations";
 
 const base = import.meta.env.BASE_URL;
 ---
@@ -36,6 +37,7 @@ const base = import.meta.env.BASE_URL;
           summary="Lock in the best opener, decide whether Arcana reroll is worth the extra time, and leave with realistic targets."
           kicker="First 30 minutes"
           step={1}
+          status={guideBySlug["reroll"]?.status}
           meta={["Asherah Waltz", "Lacy", "BG Frey Arcana"]}
         />
         <GuideCard
@@ -44,6 +46,7 @@ const base = import.meta.env.BASE_URL;
           summary="Use selectors, mileage, and progression currencies in the right order before you burn anything rare."
           kicker="First day"
           step={2}
+          status={guideBySlug["starter-guide"]?.status}
           meta={["Selectors", "Mileage", "Mainstream"]}
         />
         <GuideCard
@@ -52,6 +55,7 @@ const base = import.meta.env.BASE_URL;
           summary="Understand frontline targeting, free-to-play roster width, and attribute-specific team shells for PvE."
           kicker="First roster"
           step={3}
+          status={guideBySlug["team-building"]?.status}
           meta={["Frontline", "Moon teams", "Cosmo Gate"]}
         />
         <GuideCard
@@ -60,6 +64,7 @@ const base = import.meta.env.BASE_URL;
           summary="See which upgrades move CP the most so you stop wasting mats on low-impact upgrades."
           kicker="Mid-game momentum"
           step={4}
+          status={guideBySlug["increase-cp"]?.status}
           meta={["Resonance", "Gear", "Stellar Archive"]}
         />
       </div>
@@ -79,6 +84,7 @@ const base = import.meta.env.BASE_URL;
           title="Gear Guide"
           summary="Go here once your first four characters need real set planning instead of generic filler gear."
           kicker="Power systems"
+          status={guideBySlug["gear"]?.status}
           meta={["Farm priority", "Substats", "Enhancement"]}
         />
         <GuideCard
@@ -86,6 +92,7 @@ const base = import.meta.env.BASE_URL;
           title="Journey: Hard Guide"
           summary="Open this once you are ready to treat Journey as its own mode with rank, condition, and charm-specific constraints."
           kicker="Mode prep"
+          status={guideBySlug["hard-guide"]?.status}
           meta={["Resonance", "Training", "Shop"]}
         />
         <GuideCard

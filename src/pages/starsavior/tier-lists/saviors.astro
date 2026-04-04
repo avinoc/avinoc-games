@@ -1,295 +1,1352 @@
 ---
 import GameLayout from "../../../layouts/GameLayout.astro";
-import Hero from "../../../components/starsavior/Hero.astro";
-import CitationBanner from "../../../components/starsavior/CitationBanner.astro";
-import TierBoardTile from "../../../components/starsavior/TierBoardTile.astro";
-import TierCard from "../../../components/starsavior/TierCard.astro";
-import { saviors } from "../../../data/starsavior/content";
-import { getBuildForSavior, getTierRank, tierOrder } from "../../../data/starsavior/relations";
+import DraftBadge from "../../../components/shared/DraftBadge.astro";
+import { getPremiumBuildGuide, saviors } from "../../../data/starsavior/content";
+import { formatDisplayDate, getBuildForSavior, getTierRank } from "../../../data/starsavior/relations";
 
 const base = import.meta.env.BASE_URL;
-const tierDescriptions: Record<string, string> = {
-  T0: "Meta-defining anchors that pull entire account plans around them.",
-  SS: "Top-tier anchors that solve multiple account needs at once.",
-  S: "Strong specialists and safe investments for stable PvE progression.",
-  A: "Useful niche picks that shine with the right roster or matchup.",
-  B: "Lower-priority options that still have specific applications.",
-  C: "Very situational picks for the current launch slice.",
-  NR: "Present in the live roster, but not ranked in the currently exposed tier data."
-};
-const tierDefinitions = [
-  { tier: "T0", text: "Meta-defining units that immediately reshape account priorities." },
-  { tier: "SS", text: "High-value carries or supports that justify early investment on most rosters." },
-  { tier: "S", text: "Reliable progression options with strong payoffs in the right shell." },
-  { tier: "A", text: "Good secondary choices, especially if they cover a specific need." },
-  { tier: "B", text: "Lower urgency picks that are usually roster-dependent." },
-  { tier: "C", text: "Very narrow value compared with the rest of the board." },
-  { tier: "NR", text: "Roster-complete reference entries that were not ranked in the exposed March 2026 tier dataset." }
-];
-const focusOptions = [
-  { value: "all", label: "All roles" },
-  { value: "single-target", label: "Single target" },
-  { value: "aoe", label: "AoE" },
+const attributeOrder = ["Sun", "Moon", "Star", "Order", "Chaos"] as const;
+const classOrder = ["Assassin", "Caster", "Defender", "Ranger", "Striker", "Supporter"] as const;
+const ratingModeOptions = [
+  { value: "pve", label: "PvE" },
+  { value: "pvp", label: "PvP" },
+] as const;
+type RatingMode = (typeof ratingModeOptions)[number]["value"];
+const roleOptions = [
+  { value: "all", label: "All" },
+  { value: "attacker", label: "Attacker" },
+  { value: "defender", label: "Defender" },
   { value: "support", label: "Support" },
-  { value: "utility", label: "Utility" },
-  { value: "tank", label: "Tank" },
-  { value: "pvp", label: "PvP" }
-];
+  { value: "healer", label: "Healer" },
+] as const;
+const rarityOptions = [
+  { value: "all", label: "All" },
+  { value: "SSR", label: "SSR" },
+  { value: "SR", label: "SR" },
+  { value: "Reference", label: "Reference" },
+] as const;
+const ratingTierOrder = ["SSS", "SS", "S+", "S", "A", "B", "C", "NR"] as const;
+const tierDescriptions: Record<string, string> = {
+  SSS: "The most dominant premium-guide performers in the current premium-guide roster.",
+  SS: "Top-end anchors with excellent returns across most account plans.",
+  "S+": "High-impact picks that sit just below the absolute best-in-slot band.",
+  S: "Strong progression and specialist pieces with consistent value.",
+  A: "Useful role players that become better in the right shell or matchup.",
+  B: "More situational units with narrower payoff than the upper bands.",
+  C: "Low-priority or highly niche options in the current roster window.",
+  NR: "Included for completeness when a matching build-guide score is unavailable.",
+};
+const tierStyles: Record<string, { accent: string; tile: string }> = {
+  SSS: {
+    accent: "linear-gradient(135deg, rgba(255, 137, 201, 0.98), rgba(255, 185, 121, 0.92))",
+    tile: "linear-gradient(135deg, rgba(255, 115, 176, 0.62), rgba(252, 154, 92, 0.52))",
+  },
+  SS: {
+    accent: "linear-gradient(135deg, rgba(255, 166, 119, 0.98), rgba(255, 219, 117, 0.92))",
+    tile: "linear-gradient(135deg, rgba(255, 156, 96, 0.55), rgba(255, 209, 111, 0.45))",
+  },
+  "S+": {
+    accent: "linear-gradient(135deg, rgba(255, 218, 117, 0.98), rgba(188, 228, 116, 0.9))",
+    tile: "linear-gradient(135deg, rgba(255, 208, 104, 0.5), rgba(178, 220, 103, 0.4))",
+  },
+  S: {
+    accent: "linear-gradient(135deg, rgba(122, 214, 255, 0.98), rgba(131, 166, 255, 0.92))",
+    tile: "linear-gradient(135deg, rgba(88, 198, 255, 0.52), rgba(118, 144, 255, 0.42))",
+  },
+  A: {
+    accent: "linear-gradient(135deg, rgba(120, 235, 156, 0.98), rgba(66, 197, 212, 0.9))",
+    tile: "linear-gradient(135deg, rgba(104, 226, 150, 0.48), rgba(58, 188, 205, 0.38))",
+  },
+  B: {
+    accent: "linear-gradient(135deg, rgba(152, 208, 255, 0.98), rgba(121, 135, 255, 0.92))",
+    tile: "linear-gradient(135deg, rgba(125, 185, 255, 0.46), rgba(106, 116, 235, 0.36))",
+  },
+  C: {
+    accent: "linear-gradient(135deg, rgba(173, 183, 255, 0.98), rgba(121, 114, 220, 0.92))",
+    tile: "linear-gradient(135deg, rgba(150, 162, 255, 0.42), rgba(108, 101, 214, 0.32))",
+  },
+  NR: {
+    accent: "linear-gradient(135deg, rgba(163, 173, 197, 0.98), rgba(108, 126, 157, 0.9))",
+    tile: "linear-gradient(135deg, rgba(149, 158, 185, 0.4), rgba(103, 118, 144, 0.32))",
+  },
+};
 
-const sorted = [...saviors].sort(
-  (a, b) => getTierRank(a.tier, tierOrder) - getTierRank(b.tier, tierOrder) || a.name.localeCompare(b.name)
-);
-const entries = sorted.map((entry) => {
+function normalizeImage(src?: string) {
+  if (!src) return undefined;
+  if (/^https?:\/\//i.test(src)) return src;
+  if (src.startsWith("/assets/starsavior/starsavior/")) return src;
+  if (src.startsWith("/assets/starsavior/")) {
+    return src.replace("/assets/starsavior/", "/assets/starsavior/starsavior/");
+  }
+  return src;
+}
+
+function getAttribute(entry: (typeof saviors)[number]) {
+  return attributeOrder.find((attribute) => entry.mode.includes(attribute) || entry.tags.includes(attribute)) || "Star";
+}
+
+function getUnitClass(entry: (typeof saviors)[number]) {
+  return classOrder.find((unitClass) => entry.mode.includes(unitClass) || entry.tags.includes(unitClass)) || "Supporter";
+}
+
+function getRarity(entry: (typeof saviors)[number]) {
+  if (entry.tags.includes("Reference Only")) return "Reference";
+  if (entry.tags.includes("SSR")) return "SSR";
+  if (entry.tags.includes("SR")) return "SR";
+  return "Reference";
+}
+
+function getRoleFilters(entry: (typeof saviors)[number], unitClass: string, buildRole?: string, summaryText?: string) {
+  const summary = `${entry.mode} ${entry.tags.join(" ")} ${summaryText || entry.summary} ${buildRole || ""}`;
+  const roles = new Set<string>();
+
+  if (["Assassin", "Caster", "Ranger", "Striker"].includes(unitClass)) roles.add("attacker");
+  if (unitClass === "Defender" || entry.tags.includes("Tank")) roles.add("defender");
+  if (unitClass === "Supporter" || /support|buff|debuff|action gauge/i.test(summary) || entry.tags.includes("Support")) roles.add("support");
+  if (/heal|recovery|self-sustain|sustain/i.test(summary)) roles.add("healer");
+  if (roles.size === 0) roles.add("attacker");
+
+  return [...roles];
+}
+
+function getRoleLabel(roleFilters: string[]) {
+  if (roleFilters.includes("support")) return "Support";
+  if (roleFilters.includes("healer")) return "Healer";
+  if (roleFilters.includes("defender")) return "Defender";
+  return "Attacker";
+}
+
+function getRatingValue(ratings: { label: string; value: string }[] = [], label: string) {
+  return ratings.find((rating) => rating.label.toLowerCase() === label.toLowerCase())?.value;
+}
+
+function pickBestTier(values: Array<string | undefined>) {
+  const available = values.filter((value): value is string => Boolean(value));
+  if (available.length === 0) return "NR";
+  return available.sort((a, b) => getTierRank(a, ratingTierOrder) - getTierRank(b, ratingTierOrder))[0];
+}
+
+function getModeTier(ratings: { label: string; value: string }[] = [], mode: RatingMode) {
+  if (mode === "pve") {
+    return getRatingValue(ratings, "PvE") || pickBestTier([getRatingValue(ratings, "Campaign"), getRatingValue(ratings, "Boss"), getRatingValue(ratings, "Overall")]);
+  }
+
+  return getRatingValue(ratings, "PvP") || pickBestTier([getRatingValue(ratings, "Ranked"), getRatingValue(ratings, "Strategy"), getRatingValue(ratings, "Overall")]);
+}
+
+function getModeRatingSource(ratings: { label: string; value: string }[] = [], mode: RatingMode) {
+  if (mode === "pve") {
+    if (getRatingValue(ratings, "PvE")) return "Uses the direct PvE score from the premium build guide.";
+    if (getRatingValue(ratings, "Campaign") || getRatingValue(ratings, "Boss")) {
+      return "Uses the stronger of the guide's Campaign and Boss ratings to represent PvE.";
+    }
+    return "Falls back to the guide's Overall score because no dedicated PvE labels were present.";
+  }
+
+  if (getRatingValue(ratings, "PvP")) return "Uses the direct PvP score from the premium build guide.";
+  if (getRatingValue(ratings, "Ranked") || getRatingValue(ratings, "Strategy")) {
+    return "Uses the stronger of the guide's Ranked and Strategy ratings to represent PvP.";
+  }
+  return "Falls back to the guide's Overall score because no dedicated PvP labels were present.";
+}
+
+function getTierWeight(tier: string) {
+  return Math.max(1, ratingTierOrder.length - getTierRank(tier, ratingTierOrder));
+}
+
+const initialEntries = saviors.map((entry) => {
   const build = getBuildForSavior(entry.slug);
-  const haystack = `${entry.mode} ${entry.tags.join(" ")}`;
-  const focus = new Set<string>();
-
-  if (/single-target/i.test(haystack)) focus.add("single-target");
-  if (/\baoe\b|st & aoe/i.test(haystack)) focus.add("aoe");
-  if (/healer|action gauge up|atk up|debuff removal/i.test(haystack)) focus.add("support");
-  if (/debuff|down|dispel|silence|freeze|ignition|toughness break/i.test(haystack)) focus.add("utility");
-  if (/tank|bruiser/i.test(haystack)) focus.add("tank");
-  if (/pvp/i.test(haystack)) focus.add("pvp");
+  const premiumBuild = build ? getPremiumBuildGuide(build.slug) : undefined;
+  const ratings = premiumBuild?.hero.ratings || [];
+  const pveTier = getModeTier(ratings, "pve");
+  const pvpTier = getModeTier(ratings, "pvp");
+  const summaryText = premiumBuild?.combatIdentity.summary || premiumBuild?.hero.summary || entry.summary;
+  const attribute = getAttribute(entry);
+  const unitClass = getUnitClass(entry);
+  const roleFilters = getRoleFilters(entry, unitClass, build?.role, summaryText);
+  const roleLabel = getRoleLabel(roleFilters);
+  const rarity = getRarity(entry);
+  const avatarImage = normalizeImage(build?.image || premiumBuild?.hero.image || entry.image);
+  const heroImage = normalizeImage(premiumBuild?.hero.image || build?.image || entry.image);
+  const coreSet = build?.recommendedSets?.[0];
+  const alternateSet = build?.recommendedSets?.[1];
+  const searchText = `${entry.name} ${entry.mode} ${entry.tags.join(" ")} ${summaryText} ${build?.role || ""} ${pveTier} ${pvpTier}`.toLowerCase();
 
   return {
     ...entry,
     build,
-    image: entry.image || build?.image,
-    focus: [...focus],
-    tileSubtitle: entry.mode.replace(/^PvE\s*/i, "").replace(/^PvP\s*/i, ""),
-    searchText: `${entry.name} ${entry.mode} ${entry.tags.join(" ")} ${entry.summary}`
+    premiumBuild,
+    attribute,
+    unitClass,
+    roleFilters,
+    roleLabel,
+    rarity,
+    avatarImage,
+    heroImage,
+    coreSet,
+    alternateSet,
+    summaryText,
+    pveTier,
+    pvpTier,
+    pveSourceNote: getModeRatingSource(ratings, "pve"),
+    pvpSourceNote: getModeRatingSource(ratings, "pvp"),
+    searchText,
+    buildHref: build ? `${base}starsavior/builds/${build.slug}/` : undefined,
+    guideStatus: premiumBuild?.status || build?.status || entry.status,
+    guideUpdatedAt: premiumBuild?.updatedAt || build?.updatedAt || entry.updatedAt,
   };
 });
-const grouped = tierOrder
-  .map((tier) => ({ tier, entries: entries.filter((entry) => entry.tier === tier) }))
-  .filter((group) => group.entries.length > 0);
+
+const entries = initialEntries.map((entry) => {
+  const pairings = initialEntries
+    .filter((candidate) => candidate.slug !== entry.slug)
+    .map((candidate) => {
+      let score = getTierWeight(pickBestTier([candidate.pveTier, candidate.pvpTier])) * 5;
+
+      if (candidate.attribute === entry.attribute) score += 7;
+      if (candidate.roleLabel !== entry.roleLabel) score += 4;
+      if (entry.roleFilters.includes("attacker") && (candidate.roleFilters.includes("support") || candidate.roleFilters.includes("healer"))) score += 5;
+      if (entry.roleFilters.includes("support") && candidate.roleFilters.includes("attacker")) score += 4;
+      if (entry.roleFilters.includes("defender") && candidate.roleFilters.includes("healer")) score += 3;
+      if (candidate.build) score += 1;
+
+      return { candidate, score };
+    })
+    .sort((a, b) => b.score - a.score || a.candidate.name.localeCompare(b.candidate.name))
+    .slice(0, 6)
+    .map(({ candidate }) => candidate);
+
+  return {
+    ...entry,
+    pairings,
+  };
+});
+
+const entriesByMode = {
+  pve: [...entries].sort((a, b) => getTierRank(a.pveTier, ratingTierOrder) - getTierRank(b.pveTier, ratingTierOrder) || a.name.localeCompare(b.name)),
+  pvp: [...entries].sort((a, b) => getTierRank(a.pvpTier, ratingTierOrder) - getTierRank(b.pvpTier, ratingTierOrder) || a.name.localeCompare(b.name)),
+};
+
+const groupedByMode = {
+  pve: ratingTierOrder.map((tier) => ({ tier, entries: entriesByMode.pve.filter((entry) => entry.pveTier === tier) })).filter((group) => group.entries.length > 0),
+  pvp: ratingTierOrder.map((tier) => ({ tier, entries: entriesByMode.pvp.filter((entry) => entry.pvpTier === tier) })).filter((group) => group.entries.length > 0),
+};
+
+const modeBoards = ratingModeOptions.map((mode) => ({
+  ...mode,
+  featured: entriesByMode[mode.value].find((entry) => entry.build) || entriesByMode[mode.value][0] || null,
+  groups: groupedByMode[mode.value],
+}));
+
+const defaultFeatured = modeBoards.find((board) => board.value === "pve")?.featured || modeBoards[0]?.featured || entries[0] || null;
+const reviewStatus = entries.some((entry) => entry.guideStatus !== "published") ? "needs-review" : "published";
+const latestUpdatedAtRaw = entries.reduce((latest, entry) => (entry.guideUpdatedAt > latest ? entry.guideUpdatedAt : latest), "2026-04-03");
+const updatedAt = formatDisplayDate(latestUpdatedAtRaw);
 ---
 
-<GameLayout title="Savior Tier List | StarSavior Atlas" description="Row-based StarSavior Savior tier list with ranked bands, quick filters, and linked build notes." game="starsavior">
-  <Hero
-    title="Savior tier list in an actual ranked board."
-    summary="This board now covers the full 42-character live roster. Ranked entries come from the published Bullet-derived tier data, and any missing live-roster units are called out as reference-only instead of being guessed into a tier."
-  />
+<GameLayout
+  title="Savior Tier List Tool | Project Avinoc"
+  description="Dashboard-style Star Savior tier list driven by premium build-guide PvE and PvP ratings, with filters and a selected-hero build sidebar."
+  game="starsavior"
+  hideSubnav={true}
+>
+  <div class="ss-tier-shell">
+    <div class="ss-tier-shell__noise" aria-hidden="true"></div>
 
-  <section class="container stack">
-    <CitationBanner
-      sourceTabs={["Savior Tier list (ENG)", "Tychara Star Savior Tier List (Mar 2026)", "Tychara Star Savior Team Builder (Mar 2026)"]}
-      updatedAt={entries[0]?.updatedAt}
-    />
+    <section class="container ss-tier-stage">
+      <header class="ss-tier-head">
+        <p class="ss-tier-kicker">Published tier data · Updated {updatedAt}</p>
+        <h1>StarSavior Hero Tier List Tool</h1>
+        <p class="ss-tier-summary">
+          This board now reads from the published premium build guides. Use the toggle to swap between <strong>PvE</strong> and <strong>PvP</strong> rankings, with each band derived from the guide ratings rather than the older sheet-era tier export.
+        </p>
+      </header>
 
-    <div class="panel" style="padding: 1.4rem;">
-      <p class="muted" style="margin: 0 0 1rem;">
-        Ranked notes come from the exposed March 2026 tier dataset. Entries in <strong>NR</strong> are included for roster completeness from Tychara&apos;s live character list and team builder, but they were not assigned a visible tier in the current exported ranking data.
-      </p>
+      <div class="ss-filter-stack">
+        <DraftBadge status={reviewStatus} placement="inline" />
 
-      <div class="tier-toolbar">
-        <div class="filter-bar" style="margin-bottom: 0;">
-          <input id="savior-search" type="search" placeholder="Search Savior names, roles, tags, or notes..." />
-        </div>
-
-        <div class="tier-filter-stack">
-          <div class="tier-filter-group" role="group" aria-label="Filter by tier">
-            <span class="tier-filter-group__label">Tier</span>
-            <button class="tier-filter-chip is-active" type="button" data-tier-filter="all">All</button>
-            {grouped.map((group) => (
-              <button class="tier-filter-chip" type="button" data-tier-filter={group.tier}>{group.tier}</button>
-            ))}
-          </div>
-
-          <div class="tier-filter-group" role="group" aria-label="Filter by role focus">
-            <span class="tier-filter-group__label">Focus</span>
-            {focusOptions.map((option, index) => (
-              <button
-                class:list={["tier-filter-chip", index === 0 && "is-active"]}
-                type="button"
-                data-focus-filter={option.value}
-              >
-                {option.label}
-              </button>
-            ))}
-
-            <button class="tier-filter-chip tier-filter-chip--reset" type="button" data-reset-filters>
-              Reset
+        <div class="ss-filter-group" role="group" aria-label="Switch tier mode">
+          <span class="ss-filter-group__label">Mode</span>
+          {ratingModeOptions.map((mode, index) => (
+            <button
+              class:list={["ss-chip", "ss-chip--mode", index === 0 && "is-active"]}
+              type="button"
+              data-mode-toggle
+              data-mode-value={mode.value}
+              aria-pressed={index === 0 ? "true" : "false"}
+            >
+              {mode.label}
             </button>
-          </div>
-        </div>
-
-        <details class="tier-definitions">
-          <summary>Show tier definitions</summary>
-          <div class="tier-definition-grid">
-            {tierDefinitions.map((definition) => (
-              <article class="tier-definition-card">
-                <strong>{definition.tier}</strong>
-                <p>{definition.text}</p>
-              </article>
-            ))}
-          </div>
-        </details>
-      </div>
-
-      <div class="tier-board" id="savior-board">
-        {grouped.map((group) => (
-          <section class="tier-row" data-tier-group={group.tier}>
-            <div class="tier-row-label" data-tier-label={group.tier}>
-              <span class="tier-row-label__rank">{group.tier}</span>
-              <p>{tierDescriptions[group.tier]}</p>
-            </div>
-
-            <div class="tier-row-track">
-              {group.entries.map((entry) => (
-                <TierBoardTile
-                  href={`#note-${entry.slug}`}
-                  tier={entry.tier}
-                  title={entry.name}
-                  subtitle={entry.tileSubtitle}
-                  image={entry.image}
-                  badge={entry.build ? "Build" : undefined}
-                  searchText={entry.searchText}
-                  filterValues={entry.focus}
-                />
-              ))}
-            </div>
-          </section>
-        ))}
-      </div>
-
-      <section class="stack" style="margin-top: 1.5rem;">
-        <div class="section-heading">
-          <div>
-            <p class="eyebrow">Character Notes</p>
-            <h2>Full notes for the full 42-character roster</h2>
-            <p>Tap any tile above to jump here. Ranked entries keep their translated notes, and the unranked live-roster units stay visible as clearly marked reference entries.</p>
-          </div>
-        </div>
-
-        <div class="tier-note-grid">
-          {entries.map((entry) => (
-            <TierCard
-              id={`note-${entry.slug}`}
-              tier={entry.tier}
-              title={entry.name}
-              subtitle={entry.mode}
-              summary={entry.summary}
-              tags={entry.tags}
-              image={entry.image}
-              searchText={entry.searchText}
-              filterValues={entry.focus}
-              buildHref={entry.build ? `${base}starsavior/builds/${entry.build.slug}/` : undefined}
-              buildLabel={entry.build ? `View ${entry.build.name} build` : undefined}
-            />
           ))}
         </div>
-      </section>
-    </div>
-  </section>
 
-  <script is:inline>
-    const searchInput = document.querySelector("#savior-search");
-    const tierButtons = [...document.querySelectorAll("[data-tier-filter]")];
-    const focusButtons = [...document.querySelectorAll("[data-focus-filter]")];
-    const resetButton = document.querySelector("[data-reset-filters]");
-    const tiles = [...document.querySelectorAll(".tier-tile")];
-    const notes = [...document.querySelectorAll(".tier-note")];
-    const groups = [...document.querySelectorAll("[data-tier-group]")];
-    const params = new URLSearchParams(window.location.search);
+        <div class="ss-filter-group" role="group" aria-label="Filter by attribute">
+          <span class="ss-filter-group__label">Attribute</span>
+          <button class="ss-chip is-active" type="button" data-filter-group="attribute" data-filter-value="all" aria-pressed="true">All</button>
+          {attributeOrder.map((attribute) => (
+            <button class="ss-chip" type="button" data-filter-group="attribute" data-filter-value={attribute} aria-pressed="false">
+              {attribute}
+            </button>
+          ))}
+        </div>
 
-    let activeTier = params.get("tier") || "all";
-    let activeFocus = params.get("focus") || "all";
+        <div class="ss-filter-group" role="group" aria-label="Filter by role">
+          <span class="ss-filter-group__label">Role</span>
+          {roleOptions.map((role, index) => (
+            <button
+              class:list={["ss-chip", index === 0 && "is-active"]}
+              type="button"
+              data-filter-group="role"
+              data-filter-value={role.value}
+              aria-pressed={index === 0 ? "true" : "false"}
+            >
+              {role.label}
+            </button>
+          ))}
+        </div>
 
-    if (searchInput && params.get("q")) {
-      searchInput.value = params.get("q");
+        <div class="ss-filter-group" role="group" aria-label="Filter by rarity">
+          <span class="ss-filter-group__label">Rarity</span>
+          {rarityOptions.map((rarity, index) => (
+            <button
+              class:list={["ss-chip", index === 0 && "is-active"]}
+              type="button"
+              data-filter-group="rarity"
+              data-filter-value={rarity.value}
+              aria-pressed={index === 0 ? "true" : "false"}
+            >
+              {rarity.label}
+            </button>
+          ))}
+        </div>
+
+        <label class="ss-search-chip">
+          <span>Search</span>
+          <input id="savior-tier-search" type="search" placeholder="Name, role, tags, notes" />
+        </label>
+      </div>
+
+      {modeBoards.map((board, boardIndex) => (
+        <div class:list={["ss-tier-layout", boardIndex !== 0 && "is-hidden"]} data-mode-layout={board.value} hidden={boardIndex !== 0}>
+          <section class="ss-board-panel">
+            <div class="ss-board-panel__head">
+              <div>
+                <p class="ss-section-label">Tier Board</p>
+                <h2>{board.label} ranked bands</h2>
+              </div>
+              <p class="ss-board-panel__note">Select any Savior portrait to update the {board.label} guide panel.</p>
+            </div>
+
+            <div class="ss-tier-board">
+              {board.groups.map((group) => (
+                <section
+                  class="ss-tier-row"
+                  data-tier-group={group.tier}
+                  data-mode={board.value}
+                  style={`--tier-accent:${tierStyles[group.tier].accent}; --tier-tile:${tierStyles[group.tier].tile};`}
+                >
+                  <div class="ss-tier-row__label">
+                    <strong>{group.tier}</strong>
+                    <p>{tierDescriptions[group.tier]}</p>
+                  </div>
+
+                  <div class="ss-tier-row__track">
+                    {group.entries.map((entry) => {
+                      const currentTier = board.value === "pve" ? entry.pveTier : entry.pvpTier;
+
+                      return (
+                        <button
+                          class:list={["ss-avatar-tile", entry.slug === board.featured?.slug && "is-selected"]}
+                          type="button"
+                          title={entry.name}
+                          aria-label={`${entry.name}, ${board.label} tier ${currentTier}`}
+                          aria-pressed={entry.slug === board.featured?.slug ? "true" : "false"}
+                          data-savior-button
+                          data-mode={board.value}
+                          data-savior-slug={entry.slug}
+                          data-tier={currentTier}
+                          data-attribute={entry.attribute}
+                          data-role={entry.roleFilters.join(",")}
+                          data-rarity={entry.rarity}
+                          data-search={entry.searchText}
+                        >
+                          {entry.avatarImage ? (
+                            <img src={entry.avatarImage} alt="" loading="lazy" />
+                          ) : (
+                            <span>{entry.name.slice(0, 2).toUpperCase()}</span>
+                          )}
+
+                          <span class="ss-avatar-tile__meta">
+                            <small>{entry.rarity}</small>
+                            <small>{currentTier}</small>
+                          </span>
+                        </button>
+                      );
+                    })}
+                  </div>
+                </section>
+              ))}
+            </div>
+
+            <div class="ss-empty-state" data-empty-state-mode={board.value} hidden>
+              <strong>No saviors match the current filters.</strong>
+              <p>Clear one of the chips or search terms to repopulate the tier board.</p>
+            </div>
+
+            <div class="ss-source-note">
+              <strong>Source note</strong>
+              <p>
+                Ranks come from the published premium build guides. PvE uses the direct <code>PvE</code> score when it exists, otherwise the stronger of <code>Campaign</code> and <code>Boss</code>. PvP uses the direct <code>PvP</code> score when it exists, otherwise the stronger of <code>Ranked</code> and <code>Strategy</code>.
+              </p>
+            </div>
+          </section>
+
+          <aside class="ss-sidebar">
+            {entries.map((entry) => {
+              const currentTier = board.value === "pve" ? entry.pveTier : entry.pvpTier;
+              const currentSourceNote = board.value === "pve" ? entry.pveSourceNote : entry.pvpSourceNote;
+
+              return (
+                <article
+                  class:list={["ss-sidebar-panel", entry.slug === board.featured?.slug && "is-active"]}
+                  data-savior-panel
+                  data-mode={board.value}
+                  data-savior-slug={entry.slug}
+                  aria-hidden={entry.slug === board.featured?.slug ? "false" : "true"}
+                >
+                  <div class="ss-sidebar-hero" style={`--hero-accent:${tierStyles[currentTier].accent};`}>
+                    {entry.heroImage ? (
+                      <img src={entry.heroImage} alt={`${entry.name} artwork`} loading="lazy" />
+                    ) : (
+                      <div class="ss-sidebar-hero__fallback">{entry.name.slice(0, 2).toUpperCase()}</div>
+                    )}
+
+                    <div class="ss-sidebar-hero__overlay"></div>
+                    <div class="ss-sidebar-hero__body">
+                      <div class="ss-sidebar-hero__chips">
+                        <span>{entry.attribute}</span>
+                        <span>{entry.unitClass}</span>
+                        <span>{entry.rarity}</span>
+                      </div>
+                      <h2>{entry.name}</h2>
+                      <p>{entry.mode}</p>
+                    </div>
+                  </div>
+
+                  <section class="ss-sidebar-section">
+                    <div class="ss-sidebar-section__head">
+                      <h3>Build Guide</h3>
+                      {entry.buildHref && <a href={entry.buildHref}>Open build</a>}
+                    </div>
+
+                    {entry.build ? (
+                      <div class="ss-guide-stack">
+                        <a class="ss-guide-card" href={entry.buildHref}>
+                          <span class="ss-guide-card__label">Recommended sets</span>
+                          <strong>{entry.coreSet?.sets.join(" + ") || "Open build page"}</strong>
+                          {entry.coreSet && <small>{entry.coreSet.neckMain} neck · {entry.coreSet.ringMain} ring</small>}
+                        </a>
+
+                        <div class="ss-guide-card ss-guide-card--static">
+                          <span class="ss-guide-card__label">Arcana</span>
+                          <strong>{entry.build.arcana.slice(0, 2).join(" / ") || "Open build page"}</strong>
+                          <small>{entry.build.skillLevels.endgame} endgame skill line</small>
+                        </div>
+
+                        {entry.alternateSet && (
+                          <div class="ss-guide-card ss-guide-card--static">
+                            <span class="ss-guide-card__label">{entry.alternateSet.label}</span>
+                            <strong>{entry.alternateSet.sets.join(" + ")}</strong>
+                            <small>{entry.alternateSet.neckMain} neck · {entry.alternateSet.ringMain} ring</small>
+                          </div>
+                        )}
+                      </div>
+                    ) : (
+                      <div class="ss-guide-empty">
+                        <strong>No linked build page yet.</strong>
+                        <p>This entry is still kept on the board so the roster stays complete even when a dedicated build write-up is not published yet.</p>
+                      </div>
+                    )}
+                  </section>
+
+                  <section class="ss-sidebar-section">
+                    <div class="ss-sidebar-section__head">
+                      <h3>Roster Pairings</h3>
+                      <span>Suggested coverage</span>
+                    </div>
+                    <p class="ss-sidebar-copy">Suggested using shared attribute pressure and complementary role coverage, not a fixed published team list.</p>
+
+                    <div class="ss-pairing-grid">
+                      {entry.pairings.map((pairing) => (
+                        <button
+                          class="ss-pairing-tile"
+                          type="button"
+                          title={`Select ${pairing.name}`}
+                          data-pairing-target={pairing.slug}
+                          data-mode={board.value}
+                        >
+                          {pairing.avatarImage ? (
+                            <img src={pairing.avatarImage} alt="" loading="lazy" />
+                          ) : (
+                            <span>{pairing.name.slice(0, 2).toUpperCase()}</span>
+                          )}
+                          <strong>{pairing.name}</strong>
+                          <small>{pairing.roleLabel}</small>
+                        </button>
+                      ))}
+                    </div>
+                  </section>
+
+                  <section class="ss-sidebar-section">
+                    <div class="ss-sidebar-section__head">
+                      <h3>{board.label} Notes</h3>
+                      <span>{board.label} {currentTier}</span>
+                    </div>
+                    <p class="ss-sidebar-copy">{entry.summaryText}</p>
+                    <p class="ss-sidebar-copy ss-sidebar-copy--caption">{currentSourceNote}</p>
+                    <div class="ss-rating-pill-row">
+                      <span class:list={["ss-inline-rating", board.value === "pve" && "is-active"]}>PvE {entry.pveTier}</span>
+                      <span class:list={["ss-inline-rating", board.value === "pvp" && "is-active"]}>PvP {entry.pvpTier}</span>
+                    </div>
+                    <div class="ss-tag-row">
+                      {entry.tags.slice(0, 6).map((tag) => (
+                        <span class="ss-tag">{tag}</span>
+                      ))}
+                    </div>
+                  </section>
+                </article>
+              );
+            })}
+
+            <article class="ss-sidebar-empty" data-sidebar-empty-mode={board.value} hidden>
+              <h2>No matching Savior</h2>
+              <p>There isn&apos;t a selected result because the current filters hide the full roster.</p>
+            </article>
+          </aside>
+        </div>
+      ))}
+    </section>
+  </div>
+
+  <script is:inline define:vars={{ defaultSlug: defaultFeatured?.slug ?? "" }}>
+    const searchInput = document.querySelector("#savior-tier-search");
+    const modeButtons = Array.from(document.querySelectorAll("[data-mode-toggle]"));
+    const modeLayouts = Array.from(document.querySelectorAll("[data-mode-layout]"));
+    const filterButtons = Array.from(document.querySelectorAll("[data-filter-group]"));
+    const saviorButtons = Array.from(document.querySelectorAll("[data-savior-button]"));
+    const saviorPanels = Array.from(document.querySelectorAll("[data-savior-panel]"));
+    const tierGroups = Array.from(document.querySelectorAll("[data-tier-group]"));
+    const emptyStates = Array.from(document.querySelectorAll("[data-empty-state-mode]"));
+    const sidebarEmpties = Array.from(document.querySelectorAll("[data-sidebar-empty-mode]"));
+    const pairingButtons = Array.from(document.querySelectorAll("[data-pairing-target]"));
+
+    const state = {
+      mode: "pve",
+      attribute: "all",
+      role: "all",
+      rarity: "all",
+      selected: window.location.hash.slice(1) || defaultSlug,
+    };
+
+    function getModeSaviorButtons() {
+      return saviorButtons.filter((button) => button.dataset.mode === state.mode);
     }
 
-    const getFocusValues = (element) =>
-      (element.dataset.focus || "")
-        .split(",")
-        .map((value) => value.trim())
-        .filter(Boolean);
+    function getModeSaviorPanels() {
+      return saviorPanels.filter((panel) => panel.dataset.mode === state.mode);
+    }
 
-    const matches = (element) => {
-      const query = searchInput?.value.toLowerCase().trim() ?? "";
-      const searchable = (element.dataset.search || element.textContent || "").toLowerCase();
-      const matchesQuery = !query || searchable.includes(query);
-      const matchesTier = activeTier === "all" || element.dataset.tier === activeTier;
-      const focusValues = getFocusValues(element);
-      const matchesFocus = activeFocus === "all" || focusValues.includes(activeFocus);
-      return matchesQuery && matchesTier && matchesFocus;
-    };
+    function getModeTierGroups() {
+      return tierGroups.filter((group) => group.dataset.mode === state.mode);
+    }
 
-    const syncButtons = () => {
-      tierButtons.forEach((button) => {
-        button.classList.toggle("is-active", button.dataset.tierFilter === activeTier);
+    function getModeEmptyState() {
+      return emptyStates.find((element) => element.dataset.emptyStateMode === state.mode);
+    }
+
+    function getModeSidebarEmpty() {
+      return sidebarEmpties.find((element) => element.dataset.sidebarEmptyMode === state.mode);
+    }
+
+    function getVisibleButtons() {
+      return getModeSaviorButtons().filter((button) => !button.hidden);
+    }
+
+    function syncModeButtons() {
+      modeButtons.forEach((button) => {
+        const active = button.dataset.modeValue === state.mode;
+        button.classList.toggle("is-active", active);
+        button.setAttribute("aria-pressed", active ? "true" : "false");
+      });
+    }
+
+    function syncModeLayouts() {
+      modeLayouts.forEach((layout) => {
+        const active = layout.dataset.modeLayout === state.mode;
+        layout.hidden = !active;
+        layout.classList.toggle("is-hidden", !active);
+      });
+    }
+
+    function syncFilterButtons() {
+      filterButtons.forEach((button) => {
+        const group = button.dataset.filterGroup;
+        const value = button.dataset.filterValue;
+        const active = state[group] === value;
+        button.classList.toggle("is-active", active);
+        button.setAttribute("aria-pressed", active ? "true" : "false");
+      });
+    }
+
+    function matches(button) {
+      const query = (searchInput?.value || "").trim().toLowerCase();
+      const attributeMatch = state.attribute === "all" || button.dataset.attribute === state.attribute;
+      const rarityMatch = state.rarity === "all" || button.dataset.rarity === state.rarity;
+      const roleValues = (button.dataset.role || "").split(",").filter(Boolean);
+      const roleMatch = state.role === "all" || roleValues.includes(state.role);
+      const searchMatch = !query || (button.dataset.search || "").includes(query);
+      return attributeMatch && rarityMatch && roleMatch && searchMatch;
+    }
+
+    function activateSelected(slug) {
+      saviorButtons.forEach((button) => {
+        const active = button.dataset.mode === state.mode && button.dataset.saviorSlug === slug && !button.hidden;
+        button.classList.toggle("is-selected", active);
+        button.setAttribute("aria-pressed", active ? "true" : "false");
       });
 
-      focusButtons.forEach((button) => {
-        button.classList.toggle("is-active", button.dataset.focusFilter === activeFocus);
-      });
-    };
-
-    const syncUrl = () => {
-      const nextParams = new URLSearchParams(window.location.search);
-      const query = searchInput?.value.trim() ?? "";
-
-      if (query) {
-        nextParams.set("q", query);
-      } else {
-        nextParams.delete("q");
-      }
-
-      if (activeTier !== "all") {
-        nextParams.set("tier", activeTier);
-      } else {
-        nextParams.delete("tier");
-      }
-
-      if (activeFocus !== "all") {
-        nextParams.set("focus", activeFocus);
-      } else {
-        nextParams.delete("focus");
-      }
-
-      const nextUrl = `${window.location.pathname}${nextParams.toString() ? `?${nextParams.toString()}` : ""}${window.location.hash}`;
-      window.history.replaceState({}, "", nextUrl);
-    };
-
-    const update = () => {
-      tiles.forEach((tile) => tile.classList.toggle("hidden", !matches(tile)));
-      notes.forEach((note) => note.classList.toggle("hidden", !matches(note)));
-
-      groups.forEach((group) => {
-        const visibleTiles = [...group.querySelectorAll(".tier-tile")].filter((tile) => !tile.classList.contains("hidden"));
-        group.classList.toggle("hidden", visibleTiles.length === 0);
+      saviorPanels.forEach((panel) => {
+        const active = panel.dataset.mode === state.mode && panel.dataset.saviorSlug === slug;
+        panel.classList.toggle("is-active", active);
+        panel.setAttribute("aria-hidden", active ? "false" : "true");
       });
 
-      syncButtons();
-      syncUrl();
-    };
+      state.selected = slug;
+      if (slug) history.replaceState(null, "", `#${slug}`);
+    }
 
-    tierButtons.forEach((button) => {
+    function updateBoard() {
+      getModeSaviorButtons().forEach((button) => {
+        button.hidden = !matches(button);
+      });
+
+      getModeTierGroups().forEach((group) => {
+        const visibleCount = group.querySelectorAll(`[data-savior-button][data-mode="${state.mode}"]:not([hidden])`).length;
+        group.hidden = visibleCount === 0;
+      });
+
+      const visibleButtons = getVisibleButtons();
+      const hasVisible = visibleButtons.length > 0;
+      const emptyState = getModeEmptyState();
+      const sidebarEmpty = getModeSidebarEmpty();
+
+      if (emptyState) emptyState.hidden = hasVisible;
+      if (sidebarEmpty) sidebarEmpty.hidden = hasVisible;
+
+      if (!hasVisible) {
+        getModeSaviorPanels().forEach((panel) => {
+          panel.classList.remove("is-active");
+          panel.setAttribute("aria-hidden", "true");
+        });
+      } else if (!visibleButtons.some((button) => button.dataset.saviorSlug === state.selected)) {
+        activateSelected(visibleButtons[0].dataset.saviorSlug);
+      } else {
+        activateSelected(state.selected);
+      }
+
+      syncFilterButtons();
+      syncModeButtons();
+      syncModeLayouts();
+    }
+
+    modeButtons.forEach((button) => {
       button.addEventListener("click", () => {
-        activeTier = button.dataset.tierFilter || "all";
-        update();
+        state.mode = button.dataset.modeValue || "pve";
+        updateBoard();
       });
     });
 
-    focusButtons.forEach((button) => {
+    filterButtons.forEach((button) => {
       button.addEventListener("click", () => {
-        activeFocus = button.dataset.focusFilter || "all";
-        update();
+        state[button.dataset.filterGroup] = button.dataset.filterValue;
+        updateBoard();
       });
     });
 
-    resetButton?.addEventListener("click", () => {
-      activeTier = "all";
-      activeFocus = "all";
-      if (searchInput) {
-        searchInput.value = "";
-      }
-      update();
+    saviorButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        const slug = button.dataset.saviorSlug;
+        if (slug) activateSelected(slug);
+      });
     });
 
-    searchInput?.addEventListener("input", update);
-    syncButtons();
-    update();
+    pairingButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        const slug = button.dataset.pairingTarget;
+        const nextButton = getModeSaviorButtons().find((candidate) => candidate.dataset.saviorSlug === slug && !candidate.hidden);
+        if (slug && nextButton) {
+          activateSelected(slug);
+          nextButton.scrollIntoView({ block: "nearest", inline: "nearest", behavior: "smooth" });
+        }
+      });
+    });
+
+    searchInput?.addEventListener("input", updateBoard);
+
+    window.addEventListener("hashchange", () => {
+      const slug = window.location.hash.slice(1);
+      const nextButton = getModeSaviorButtons().find((button) => button.dataset.saviorSlug === slug && !button.hidden);
+      if (slug && nextButton) activateSelected(slug);
+    });
+
+    if (!getModeSaviorButtons().some((button) => button.dataset.saviorSlug === state.selected)) {
+      state.selected = defaultSlug;
+    }
+
+    updateBoard();
   </script>
+
+  <style>
+    .ss-tier-shell {
+      --ss-bg: #050913;
+      --ss-panel: rgba(7, 16, 31, 0.88);
+      --ss-panel-soft: rgba(11, 23, 42, 0.92);
+      --ss-line: rgba(135, 175, 245, 0.14);
+      --ss-text: #f4f8ff;
+      --ss-soft: rgba(197, 217, 243, 0.72);
+      position: relative;
+      min-height: 100vh;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at 12% 20%, rgba(200, 160, 78, 0.18), transparent 28%),
+        radial-gradient(circle at 88% 16%, rgba(123, 175, 212, 0.18), transparent 24%),
+        linear-gradient(180deg, #0a1020 0%, #040914 100%);
+    }
+
+    .ss-tier-shell__noise {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      opacity: 0.45;
+      background:
+        radial-gradient(circle at top left, rgba(255, 255, 255, 0.06), transparent 40%),
+        repeating-linear-gradient(180deg, rgba(255, 255, 255, 0.02) 0 1px, transparent 1px 4px);
+    }
+
+    .ss-tier-stage {
+      position: relative;
+      z-index: 1;
+      padding-top: 2.4rem;
+      padding-bottom: 4rem;
+    }
+
+    .ss-tier-head {
+      text-align: center;
+      margin-bottom: 1.6rem;
+    }
+
+    .ss-tier-kicker,
+    .ss-filter-group__label,
+    .ss-section-label,
+    .ss-guide-card__label {
+      margin: 0;
+      color: rgba(240, 221, 180, 0.76);
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+    }
+
+    .ss-tier-head h1,
+    .ss-board-panel__head h2,
+    .ss-sidebar-hero__body h2 {
+      margin: 0;
+      color: var(--ss-text);
+      font-family: "Rajdhani", "Space Grotesk", sans-serif;
+      line-height: 1.04;
+      font-weight: 800;
+    }
+
+    .ss-tier-head h1 {
+      font-size: clamp(2rem, 4.2vw, 3.3rem);
+      margin-top: 0.5rem;
+    }
+
+    .ss-tier-summary,
+    .ss-board-panel__note,
+    .ss-source-note p,
+    .ss-sidebar-copy,
+    .ss-guide-empty p {
+      margin: 0;
+      color: var(--ss-soft);
+      line-height: 1.6;
+    }
+
+    .ss-tier-summary {
+      max-width: 56rem;
+      margin: 0.8rem auto 0;
+    }
+
+    .ss-filter-stack {
+      display: grid;
+      gap: 0.85rem;
+      padding: 1.15rem;
+      margin-bottom: 1.2rem;
+      border-radius: 1.3rem;
+      background: rgba(13, 21, 41, 0.68);
+      border: 1px solid rgba(139, 173, 242, 0.12);
+      backdrop-filter: blur(18px);
+    }
+
+    .ss-filter-group {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.55rem;
+    }
+
+    .ss-filter-group__label {
+      min-width: 5.5rem;
+    }
+
+    .ss-chip,
+    .ss-search-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      min-height: 2.35rem;
+      padding: 0.42rem 0.9rem;
+      border-radius: 0.9rem;
+      border: 1px solid rgba(194, 168, 109, 0.14);
+      background: rgba(17, 30, 50, 0.88);
+      color: #edf6ff;
+      font: inherit;
+      font-size: 0.92rem;
+      cursor: pointer;
+      transition: border-color 160ms ease, transform 160ms ease, box-shadow 160ms ease;
+    }
+
+    .ss-chip:hover,
+    .ss-chip.is-active {
+      border-color: rgba(212, 188, 132, 0.3);
+      box-shadow: 0 0 0 1px rgba(123, 175, 212, 0.08), 0 12px 28px rgba(0, 0, 0, 0.22);
+      transform: translateY(-1px);
+    }
+
+    .ss-chip.is-active {
+      background: linear-gradient(90deg, rgba(123, 175, 212, 0.18), rgba(200, 160, 78, 0.18));
+    }
+
+    .ss-chip--mode.is-active {
+      background: linear-gradient(90deg, rgba(255, 185, 121, 0.26), rgba(123, 175, 212, 0.18));
+    }
+
+    .ss-search-chip {
+      width: 100%;
+      justify-content: space-between;
+      cursor: text;
+    }
+
+    .ss-search-chip span {
+      color: rgba(240, 221, 180, 0.74);
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .ss-search-chip input {
+      width: min(100%, 18rem);
+      border: 0;
+      outline: 0;
+      background: transparent;
+      color: #f6fbff;
+      font: inherit;
+    }
+
+    .ss-search-chip input::placeholder {
+      color: rgba(176, 200, 228, 0.48);
+    }
+
+    .ss-tier-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 20rem;
+      gap: 1.2rem;
+      align-items: start;
+    }
+
+    .ss-tier-layout[hidden],
+    .ss-tier-layout.is-hidden {
+      display: none;
+    }
+
+    .ss-board-panel,
+    .ss-sidebar-panel,
+    .ss-sidebar-empty {
+      position: relative;
+      overflow: hidden;
+      border-radius: 1.3rem;
+      background: var(--ss-panel);
+      border: 1px solid var(--ss-line);
+      backdrop-filter: blur(18px);
+      box-shadow: 0 24px 60px rgba(0, 0, 0, 0.34);
+    }
+
+    .ss-board-panel {
+      padding: 1.2rem;
+    }
+
+    .ss-board-panel__head,
+    .ss-sidebar-section__head {
+      display: flex;
+      justify-content: space-between;
+      gap: 0.9rem;
+      align-items: flex-start;
+    }
+
+    .ss-board-panel__head {
+      margin-bottom: 1rem;
+    }
+
+    .ss-section-label {
+      display: inline-flex;
+      margin-bottom: 0.35rem;
+    }
+
+    .ss-tier-board {
+      display: grid;
+      gap: 0.8rem;
+    }
+
+    .ss-tier-row {
+      display: grid;
+      grid-template-columns: 7.2rem minmax(0, 1fr);
+      gap: 1rem;
+      padding: 0.85rem;
+      border-radius: 1.1rem;
+      background:
+        linear-gradient(90deg, rgba(255, 255, 255, 0.02), transparent),
+        rgba(9, 18, 35, 0.82);
+      border: 1px solid rgba(137, 173, 244, 0.1);
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.03);
+    }
+
+    .ss-tier-row__label {
+      display: grid;
+      align-content: center;
+      gap: 0.35rem;
+      padding: 0.8rem 0.75rem;
+      border-radius: 1rem;
+      background:
+        linear-gradient(135deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0)),
+        rgba(13, 26, 47, 0.92);
+      border: 1px solid rgba(137, 173, 244, 0.12);
+    }
+
+    .ss-tier-row__label strong {
+      font-family: "Rajdhani", "Space Grotesk", sans-serif;
+      font-size: 2.55rem;
+      line-height: 0.9;
+      color: #fff3f7;
+      text-shadow: 0 0 18px rgba(255, 255, 255, 0.12);
+    }
+
+    .ss-tier-row__label p {
+      margin: 0;
+      color: rgba(194, 216, 243, 0.62);
+      font-size: 0.78rem;
+      line-height: 1.45;
+    }
+
+    .ss-tier-row__track {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.65rem;
+      align-items: center;
+    }
+
+    .ss-avatar-tile {
+      position: relative;
+      width: 4.55rem;
+      aspect-ratio: 1;
+      padding: 0;
+      border-radius: 1rem;
+      overflow: hidden;
+      border: 1px solid rgba(142, 180, 241, 0.16);
+      background: var(--tier-tile);
+      cursor: pointer;
+      box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, 0.08),
+        0 14px 28px rgba(0, 0, 0, 0.24);
+      transition: transform 160ms ease, border-color 160ms ease, box-shadow 160ms ease;
+    }
+
+    .ss-avatar-tile:hover,
+    .ss-avatar-tile.is-selected {
+      transform: translateY(-2px);
+      border-color: rgba(197, 236, 255, 0.42);
+      box-shadow:
+        0 0 0 1px rgba(171, 226, 255, 0.1),
+        0 18px 34px rgba(0, 0, 0, 0.3);
+    }
+
+    .ss-avatar-tile img,
+    .ss-pairing-tile img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+    }
+
+    .ss-avatar-tile > span:not(.ss-avatar-tile__meta) {
+      display: grid;
+      place-items: center;
+      width: 100%;
+      height: 100%;
+      color: white;
+      font-weight: 800;
+      letter-spacing: 0.06em;
+    }
+
+    .ss-avatar-tile__meta {
+      position: absolute;
+      inset-inline: 0.3rem;
+      bottom: 0.3rem;
+      display: flex;
+      justify-content: space-between;
+      gap: 0.3rem;
+      pointer-events: none;
+    }
+
+    .ss-avatar-tile__meta small {
+      display: inline-flex;
+      align-items: center;
+      min-height: 1.2rem;
+      padding: 0.08rem 0.32rem;
+      border-radius: 999px;
+      background: rgba(7, 15, 29, 0.8);
+      border: 1px solid rgba(181, 219, 255, 0.15);
+      color: rgba(236, 245, 255, 0.78);
+      font-size: 0.56rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    .ss-empty-state,
+    .ss-source-note {
+      margin-top: 1rem;
+      padding: 1rem 1.05rem;
+      border-radius: 1rem;
+      background: var(--ss-panel-soft);
+      border: 1px solid rgba(137, 173, 244, 0.1);
+    }
+
+    .ss-empty-state strong,
+    .ss-source-note strong,
+    .ss-guide-empty strong {
+      color: var(--ss-text);
+    }
+
+    .ss-empty-state p {
+      margin: 0.35rem 0 0;
+      color: var(--ss-soft);
+    }
+
+    .ss-sidebar {
+      position: sticky;
+      top: 5.5rem;
+      display: grid;
+      gap: 1rem;
+    }
+
+    .ss-sidebar-panel {
+      display: none;
+    }
+
+    .ss-sidebar-panel.is-active {
+      display: block;
+    }
+
+    .ss-sidebar-hero {
+      position: relative;
+      min-height: 15rem;
+      overflow: hidden;
+      border-bottom: 1px solid rgba(135, 175, 245, 0.12);
+      background: linear-gradient(135deg, rgba(20, 29, 51, 0.98), rgba(8, 14, 27, 0.98));
+    }
+
+    .ss-sidebar-hero img,
+    .ss-sidebar-hero__fallback {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+    }
+
+    .ss-sidebar-hero__fallback {
+      display: grid;
+      place-items: center;
+      color: white;
+      font-size: 2rem;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      background: var(--hero-accent);
+    }
+
+    .ss-sidebar-hero__overlay {
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(180deg, rgba(5, 10, 22, 0.1), rgba(5, 10, 22, 0.88)),
+        linear-gradient(135deg, transparent 35%, rgba(5, 10, 22, 0.7));
+    }
+
+    .ss-sidebar-hero__body {
+      position: absolute;
+      inset-inline: 1rem;
+      bottom: 1rem;
+      display: grid;
+      gap: 0.45rem;
+    }
+
+    .ss-sidebar-hero__chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+    }
+
+    .ss-sidebar-hero__chips span,
+    .ss-tag {
+      display: inline-flex;
+      align-items: center;
+      min-height: 1.75rem;
+      padding: 0.2rem 0.55rem;
+      border-radius: 999px;
+      background: rgba(11, 25, 46, 0.74);
+      border: 1px solid rgba(176, 213, 255, 0.15);
+      color: rgba(234, 243, 255, 0.9);
+      font-size: 0.72rem;
+      font-weight: 600;
+    }
+
+    .ss-sidebar-hero__body p {
+      margin: 0;
+      color: rgba(213, 229, 249, 0.76);
+    }
+
+    .ss-sidebar-section {
+      padding: 1rem;
+      border-top: 1px solid rgba(135, 175, 245, 0.08);
+    }
+
+    .ss-sidebar-section__head h3 {
+      margin: 0;
+      color: var(--ss-text);
+      font-size: 1.1rem;
+    }
+
+    .ss-sidebar-section__head a,
+    .ss-sidebar-section__head span {
+      color: rgba(185, 219, 239, 0.78);
+      font-size: 0.78rem;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .ss-sidebar-section__head a:hover {
+      color: #ffffff;
+    }
+
+    .ss-guide-stack,
+    .ss-tag-row,
+    .ss-pairing-grid {
+      display: grid;
+      gap: 0.7rem;
+    }
+
+    .ss-guide-stack {
+      margin-top: 0.85rem;
+    }
+
+    .ss-guide-card,
+    .ss-guide-empty {
+      display: grid;
+      gap: 0.35rem;
+      padding: 0.9rem;
+      border-radius: 1rem;
+      background: rgba(12, 25, 45, 0.92);
+      border: 1px solid rgba(134, 173, 238, 0.12);
+      text-decoration: none;
+    }
+
+    .ss-guide-card strong {
+      color: var(--ss-text);
+      line-height: 1.35;
+    }
+
+    .ss-guide-card small,
+    .ss-guide-empty p,
+    .ss-pairing-tile small {
+      color: rgba(191, 214, 241, 0.68);
+      line-height: 1.5;
+    }
+
+    .ss-guide-card:hover {
+      border-color: rgba(165, 220, 255, 0.25);
+    }
+
+    .ss-pairing-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      margin-top: 0.85rem;
+    }
+
+    .ss-pairing-tile {
+      display: grid;
+      gap: 0.38rem;
+      padding: 0.55rem;
+      border-radius: 0.95rem;
+      border: 1px solid rgba(134, 173, 238, 0.12);
+      background: rgba(12, 25, 45, 0.92);
+      color: inherit;
+      text-align: left;
+      cursor: pointer;
+      font: inherit;
+      transition: transform 160ms ease, border-color 160ms ease;
+    }
+
+    .ss-pairing-tile:hover {
+      transform: translateY(-1px);
+      border-color: rgba(165, 220, 255, 0.25);
+    }
+
+    .ss-pairing-tile img,
+    .ss-pairing-tile > span {
+      width: 100%;
+      aspect-ratio: 1;
+      border-radius: 0.8rem;
+      overflow: hidden;
+    }
+
+    .ss-pairing-tile > span {
+      display: grid;
+      place-items: center;
+      background: rgba(33, 49, 78, 0.8);
+      color: white;
+      font-weight: 800;
+    }
+
+    .ss-pairing-tile strong {
+      color: var(--ss-text);
+      font-size: 0.84rem;
+      line-height: 1.25;
+    }
+
+    .ss-tag-row {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      margin-top: 0.85rem;
+    }
+
+    .ss-sidebar-copy--caption {
+      margin-top: 0.8rem;
+      color: rgba(185, 219, 239, 0.66);
+      font-size: 0.88rem;
+    }
+
+    .ss-rating-pill-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 0.85rem;
+    }
+
+    .ss-inline-rating {
+      display: inline-flex;
+      align-items: center;
+      min-height: 1.75rem;
+      padding: 0.2rem 0.55rem;
+      border-radius: 999px;
+      background: rgba(11, 25, 46, 0.74);
+      border: 1px solid rgba(176, 213, 255, 0.15);
+      color: rgba(234, 243, 255, 0.9);
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+    }
+
+    .ss-inline-rating.is-active {
+      border-color: rgba(240, 221, 180, 0.34);
+      background: linear-gradient(90deg, rgba(255, 185, 121, 0.16), rgba(123, 175, 212, 0.14));
+      color: #fff8ef;
+    }
+
+    .ss-sidebar-empty {
+      padding: 1.1rem;
+    }
+
+    .ss-sidebar-empty h2 {
+      margin: 0 0 0.45rem;
+      color: var(--ss-text);
+      font-family: "Rajdhani", "Space Grotesk", sans-serif;
+    }
+
+    .ss-sidebar-empty p {
+      margin: 0;
+      color: var(--ss-soft);
+    }
+
+    @media (max-width: 1100px) {
+      .ss-tier-layout {
+        grid-template-columns: 1fr;
+      }
+
+      .ss-sidebar {
+        position: static;
+      }
+    }
+
+    @media (max-width: 720px) {
+      .ss-tier-stage {
+        padding-top: 2rem;
+      }
+
+      .ss-tier-row {
+        grid-template-columns: 1fr;
+      }
+
+      .ss-tier-row__label {
+        text-align: center;
+      }
+
+      .ss-filter-group__label {
+        min-width: auto;
+        width: 100%;
+      }
+
+      .ss-search-chip input {
+        width: 100%;
+      }
+
+      .ss-pairing-grid,
+      .ss-tag-row {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 560px) {
+      .ss-board-panel,
+      .ss-filter-stack {
+        padding: 0.9rem;
+      }
+
+      .ss-avatar-tile {
+        width: 4rem;
+      }
+
+      .ss-pairing-grid,
+      .ss-tag-row {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
 </GameLayout>

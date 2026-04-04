@@ -3,8 +3,16 @@
   "slug": "muriel",
   "tier": "S",
   "mode": "PvE AoE DPS",
-  "tags": ["AoE DPS", "ATK Down", "Debuff Extension", "Ignition"],
+  "tags": [
+    "AoE DPS",
+    "ATK Down",
+    "Debuff Extension",
+    "Ignition"
+  ],
   "summary": "Muriel brings meaningful AoE damage and one of the better debuff-support packages in the launch slice, making her more valuable than raw damage numbers alone suggest.",
   "updatedAt": "2026-03-30",
-  "sourceTabs": ["Savior Tier list (ENG)"]
+  "sourceTabs": [
+    "Savior Tier list (ENG)"
+  ],
+  "status": "needs-review"
 }

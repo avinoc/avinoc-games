@@ -3,8 +3,17 @@
   "slug": "seira",
   "tier": "A",
   "mode": "PvE Single-target DPS",
-  "tags": ["Single-target DPS", "ATK Up", "Action Gauge Up", "SPD Down", "PvP Core"],
+  "tags": [
+    "Single-target DPS",
+    "ATK Up",
+    "Action Gauge Up",
+    "SPD Down",
+    "PvP Core"
+  ],
   "summary": "Seira's value is not only damage. She also accelerates allies and contributes tempo control, which is why the sheet keeps her relevant in both PvE matchups and PvP conversations.",
   "updatedAt": "2026-03-30",
-  "sourceTabs": ["Savior Tier list (ENG)"]
+  "sourceTabs": [
+    "Savior Tier list (ENG)"
+  ],
+  "status": "needs-review"
 }

@@ -5,7 +5,14 @@
   "class": "All",
   "specialPotential": "Unyielding Destruction - Crit DMG +12%, HP +4%",
   "summary": "Universal Tier 0 Strength Arcana for damage dealers and bruisers that scale especially well from crit damage.",
-  "tags": ["Strength", "Crit DMG", "Universal"],
+  "tags": [
+    "Strength",
+    "Crit DMG",
+    "Universal"
+  ],
   "updatedAt": "2026-03-30",
-  "sourceTabs": ["Arcana Tier List"]
+  "sourceTabs": [
+    "Arcana Tier List"
+  ],
+  "status": "needs-review"
 }

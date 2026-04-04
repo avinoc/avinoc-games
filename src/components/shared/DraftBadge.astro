@@ -1,0 +1,105 @@
+---
+interface Props {
+  status?: string;
+  class?: string;
+  placement?: "corner" | "inline";
+}
+
+const {
+  status = "published",
+  class: className = "",
+  placement = "corner",
+} = Astro.props;
+
+const showBadge = !import.meta.env.PROD && status !== "published";
+const badgeLabel =
+  status === "draft" ? "DRAFT" : status === "needs-review" ? "NEEDS REVIEW" : "PUBLISHED";
+---
+
+{
+  Astro.slots.has("default") ? (
+    <div
+      class:list={[
+        "draft-frame",
+        `draft-frame--${placement}`,
+        className,
+        { "draft-frame--preview": showBadge },
+      ]}
+    >
+      {showBadge && <span class={`draft-badge draft-badge--${status}`}>{badgeLabel}</span>}
+      <slot />
+    </div>
+  ) : showBadge ? (
+    <span class={`draft-badge draft-badge--${status} draft-badge--inline-only`}>
+      {badgeLabel}
+    </span>
+  ) : null
+}
+
+<style>
+  .draft-frame {
+    position: relative;
+    display: block;
+    height: 100%;
+  }
+
+  .draft-frame:has(> .hidden) {
+    display: none !important;
+  }
+
+  .draft-frame--inline {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    height: auto;
+  }
+
+  .draft-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 2rem;
+    padding: 0.26rem 0.7rem;
+    border-radius: 999px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    background: rgba(12, 21, 35, 0.88);
+    color: #f8fbff;
+    font-size: 0.72rem;
+    font-weight: 800;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    box-shadow: 0 10px 24px rgba(2, 7, 16, 0.24);
+  }
+
+  .draft-frame--corner .draft-badge {
+    position: absolute;
+    top: 0.8rem;
+    left: 0.8rem;
+    z-index: 4;
+  }
+
+  .draft-badge--draft {
+    border-color: rgba(255, 195, 98, 0.32);
+    background: linear-gradient(135deg, rgba(194, 122, 18, 0.88), rgba(255, 184, 72, 0.86));
+    color: #120b01;
+  }
+
+  .draft-badge--needs-review {
+    border-color: rgba(255, 111, 168, 0.3);
+    background: linear-gradient(135deg, rgba(160, 49, 102, 0.92), rgba(232, 94, 180, 0.92));
+  }
+
+  .draft-badge--inline-only {
+    margin-bottom: 0.5rem;
+  }
+
+  @media (max-width: 720px) {
+    .draft-frame--corner .draft-badge {
+      top: 0.7rem;
+      left: 0.7rem;
+      min-height: 1.8rem;
+      padding-inline: 0.62rem;
+      font-size: 0.66rem;
+    }
+  }
+</style>

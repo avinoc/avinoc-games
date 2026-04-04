@@ -1,0 +1,248 @@
+{
+  "slug": "harley",
+  "updatedAt": "2026-04-03",
+  "status": "published",
+  "sourceTabs": [
+    "Kamigame Harley guide"
+  ],
+  "sourceContext": {
+    "url": "https://kamigame.jp/starsavior/page/396886820433990832.html",
+    "lead": "Translated and adapted from Kamigame's Harley guide.",
+    "citationText": "Source page: Harley Guide - Star Savior | Kamigame.",
+    "reviewedAgainst": [
+      "Kamigame Harley guide",
+      "STUDIOBSIDE official game art"
+    ],
+    "attributionNote": "© 2025 STUDIOBSIDE Co. Ltd"
+  },
+  "hero": {
+    "title": "Harley",
+    "subhead": "Sun | Defender | PvE / PvP | Impact",
+    "summary": "Harley starts best on HP (4pc) + Hit (2pc) with Speed necklace and HP% ring. From there, branch into the High-end route and the PvP route as your gear options widen.",
+    "image": "/assets/starsavior/starsavior/premium/harley/hero.png",
+    "ratings": [
+      {
+        "label": "Overall",
+        "value": "S"
+      },
+      {
+        "label": "Reroll",
+        "value": "A"
+      },
+      {
+        "label": "Campaign",
+        "value": "S"
+      },
+      {
+        "label": "Boss",
+        "value": "A"
+      },
+      {
+        "label": "Ranked",
+        "value": "B"
+      },
+      {
+        "label": "Strategy",
+        "value": "A"
+      }
+    ],
+    "actions": [
+      {
+        "href": "#harley-builds",
+        "label": "Build Planner",
+        "tone": "primary"
+      },
+      {
+        "href": "#harley-stats",
+        "label": "Target Stats",
+        "tone": "secondary"
+      },
+      {
+        "href": "#harley-hard-journey",
+        "label": "Journey: Hard",
+        "tone": "secondary"
+      }
+    ]
+  },
+  "combatIdentity": {
+    "title": "Combat Identity",
+    "summary": "Harley feels best once Speed, Crit Rate, and Crit DMG are online, giving the first rotation a much steadier payoff.",
+    "bullets": [
+      "Baseline set line: HP (4pc) + Hit (2pc).",
+      "Main stats stay on Speed necklace and HP% ring.",
+      "Substat focus: Speed, Crit Rate, Crit DMG, and HP%.",
+      "Journey: Hard route leans toward CRIT - EX5."
+    ]
+  },
+  "skillRotation": {
+    "title": "Skill Rotation",
+    "summary": "Skill investment is cleanest as Ultimate >= Special >= Basic, with the first cooldown setting the pace for the full rotation.",
+    "steps": [
+      {
+        "step": "1",
+        "title": "Open with Ultimate",
+        "detail": "Lead with the highest-invested cooldown so the opener starts on the strongest possible breakpoint."
+      },
+      {
+        "step": "2",
+        "title": "Cash in on Special",
+        "detail": "Special is usually the next meaningful breakpoint once the opener lands and should carry the mid-cycle payoff."
+      },
+      {
+        "step": "3",
+        "title": "Fill with Basic",
+        "detail": "Use Basic between cooldowns while you keep Speed and Crit Rate stable on gear."
+      },
+      {
+        "step": "4",
+        "title": "Upgrade toward the final target",
+        "detail": "Budget target is 3 / 3 / 3, with 7 / 7 / 8 as the long-term skill finish."
+      }
+    ]
+  },
+  "buildPlanner": {
+    "id": "harley-builds",
+    "title": "Build Planner",
+    "summary": "Start on the PvE / PvP line with HP (4pc) + Hit (2pc) and Speed necklace and HP% ring. Move into the High-end route and the PvP route once the baseline is stable.",
+    "tag": "PvE / PvP",
+    "sets": [
+      {
+        "label": "PvE / PvP",
+        "value": "HP (4pc) + Hit (2pc)",
+        "note": "PvE / PvP keeps SPD on the necklace and HP% on the ring."
+      },
+      {
+        "label": "High-end",
+        "value": "Insight (4pc) + Effect Hit (2pc)",
+        "note": "High-end keeps SPD on the necklace and HP% on the ring."
+      },
+      {
+        "label": "PvP",
+        "value": "Speed (4pc) + Hit (2pc)",
+        "note": "PvP keeps SPD on the necklace and HP% on the ring."
+      }
+    ],
+    "priorities": [
+      "Necklace: SPD",
+      "Ring: HP(%)",
+      "Substats: SPD, Crit Rate, Crit DMG, HP(%)"
+    ]
+  },
+  "targetStats": {
+    "id": "harley-stats",
+    "kicker": "Target Stats",
+    "summary": "Lock Speed necklace and HP% ring, then stack Speed, Crit Rate, Crit DMG, and HP% through substats.",
+    "stats": [
+      {
+        "label": "Necklace",
+        "value": "SPD"
+      },
+      {
+        "label": "Ring",
+        "value": "HP(%)"
+      },
+      {
+        "label": "Focus 1",
+        "value": "SPD"
+      },
+      {
+        "label": "Focus 2",
+        "value": "Crit Rate"
+      },
+      {
+        "label": "Focus 3",
+        "value": "Crit DMG"
+      },
+      {
+        "label": "Focus 4",
+        "value": "HP(%)"
+      }
+    ]
+  },
+  "upgradePath": {
+    "kicker": "Upgrade Path",
+    "title": "Priority",
+    "items": [
+      "Skill order: Ultimate >= Special >= Basic",
+      "Budget target: 3 / 3 / 3",
+      "Recommended target: 7 / 7 / 8",
+      "Breakthrough priority: ★☆☆ Works fine at base copy",
+      "Substat focus: Speed, Crit Rate, Crit DMG, and HP%",
+      "Journey: Hard route: CRIT - EX5"
+    ]
+  },
+  "journeyHard": {
+    "id": "harley-hard-journey",
+    "kicker": "Journey: Hard",
+    "title": "Recommended Cards",
+    "summary": "Core line: Charlotte and Emilly. Fill the remaining slots with Waltz Asherah or Lacy, Bunny Claire, and Petra or Naru.",
+    "cards": [
+      {
+        "name": "Charlotte",
+        "slot": "Core",
+        "image": "/assets/starsavior/starsavior/premium/charlotte/hero.png"
+      },
+      {
+        "name": "Emilly",
+        "slot": "Core",
+        "image": "/assets/starsavior/starsavior/premium/emilly/hero.webp"
+      },
+      {
+        "name": "Waltz Asherah",
+        "slot": "Flex 1",
+        "image": "/assets/starsavior/starsavior/premium/waltz-asherah/hero.webp"
+      },
+      {
+        "name": "Lacy",
+        "slot": "Flex 1",
+        "image": "/assets/starsavior/starsavior/premium/lacy/hero.png"
+      },
+      {
+        "name": "Bunny Claire",
+        "slot": "Flex 2",
+        "image": "/assets/starsavior/starsavior/premium/bunnygirl-claire/hero.png"
+      },
+      {
+        "name": "Petra",
+        "slot": "Flex 3",
+        "image": "/assets/starsavior/starsavior/premium/petra/hero.png"
+      },
+      {
+        "name": "Naru",
+        "slot": "Flex 3",
+        "image": "/assets/starsavior/starsavior/premium/naru/hero.webp"
+      }
+    ]
+  },
+  "skillCards": {
+    "id": "harley-skills",
+    "kicker": "Skill Cards",
+    "defaultTabId": "ultimate",
+    "items": [
+      {
+        "id": "passive",
+        "label": "Passive",
+        "title": "You Bullying My Boys?",
+        "summary": "Harley's passive matters more once the core stat line is online and the rotation is already stable."
+      },
+      {
+        "id": "basic",
+        "label": "Basic",
+        "title": "Let's Go, Dave!",
+        "summary": "Use the basic to bridge cooldowns; it should stay behind the two higher-impact skills in upgrade priority."
+      },
+      {
+        "id": "special",
+        "label": "Special",
+        "title": "You Wanna Go?",
+        "summary": "Special is the next major breakpoint after the opener and usually carries the mid-cycle payoff."
+      },
+      {
+        "id": "ultimate",
+        "label": "Ultimate",
+        "title": "Chicken Race!",
+        "summary": "Ultimate anchors the opener and stays at the top of the investment order for this build."
+      }
+    ]
+  }
+}

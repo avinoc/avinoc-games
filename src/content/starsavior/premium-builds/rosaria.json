@@ -1,0 +1,268 @@
+{
+  "slug": "rosaria",
+  "updatedAt": "2026-04-03",
+  "status": "published",
+  "sourceTabs": [
+    "Kamigame Rosaria guide"
+  ],
+  "sourceContext": {
+    "url": "https://kamigame.jp/starsavior/page/414193105168780591.html",
+    "lead": "Translated and adapted from Kamigame's Rosaria guide.",
+    "citationText": "Source page: Rosaria Guide - Star Savior | Kamigame.",
+    "reviewedAgainst": [
+      "Kamigame Rosaria guide",
+      "STUDIOBSIDE official game art"
+    ],
+    "attributionNote": "© 2025 STUDIOBSIDE Co. Ltd"
+  },
+  "hero": {
+    "title": "Rosaria",
+    "subhead": "Chaos Ranger | Counter:Side collaboration | explosive crit-based opener",
+    "summary": "Rosaria is a fast Chaos Ranger burst DPS who turns crits on her ultimate into Inferno stacks, then cashes those stacks into a lethal special.",
+    "image": "/assets/starsavior/starsavior/premium/rosaria/rosaria.webp",
+    "ratings": [
+      {
+        "label": "Overall",
+        "value": "SSS"
+      },
+      {
+        "label": "Reroll",
+        "value": "SSS"
+      },
+      {
+        "label": "PvE",
+        "value": "SSS"
+      },
+      {
+        "label": "PvP",
+        "value": "SS"
+      }
+    ],
+    "actions": [
+      {
+        "href": "#rosaria-builds",
+        "label": "Build Planner",
+        "tone": "primary"
+      },
+      {
+        "href": "#rosaria-stats",
+        "label": "Target Stats",
+        "tone": "secondary"
+      },
+      {
+        "href": "#rosaria-hard-journey",
+        "label": "Journey: Hard",
+        "tone": "secondary"
+      }
+    ]
+  },
+  "combatIdentity": {
+    "title": "Combat Identity",
+    "summary": "Fast burst Ranger that turns crits into a lethal special while also giving the team AoE Defense Down.",
+    "bullets": [
+      "Ultimate applies Defense Down to all enemies and gives Rosaria +50% action gauge.",
+      "Crit Rate is both her damage stat and her Inferno stack engine.",
+      "Inferno x3 converts the special into a finisher with a follow-up basic.",
+      "Her one-time 40% HP floor lets her survive burst and convert that hit into Attack Up."
+    ]
+  },
+  "skillRotation": {
+    "title": "Skill Rotation",
+    "summary": "Her entire kit is designed around a fast opener into a stacked special.",
+    "steps": [
+      {
+        "step": "1",
+        "title": "Open with the ultimate",
+        "detail": "AoE hit, Defense Down on all enemies, and +50% action gauge."
+      },
+      {
+        "step": "2",
+        "title": "Crit to build Inferno",
+        "detail": "Each crit target can add a stack, up to Inferno x3."
+      },
+      {
+        "step": "3",
+        "title": "Spend it on the special",
+        "detail": "Inferno raises special damage and x3 adds a follow-up basic."
+      },
+      {
+        "step": "4",
+        "title": "Snowball the fight",
+        "detail": "As Upheaval builds, basics keep feeding later burst cycles."
+      }
+    ]
+  },
+  "buildPlanner": {
+    "id": "rosaria-builds",
+    "title": "Build Planner",
+    "summary": "Use the safer crit-stable baseline first, then pivot into raw damage once Rosaria is already landing Inferno x3 reliably.",
+    "tag": "Safer progression build",
+    "sets": [
+      {
+        "label": "Primary sets",
+        "value": "Insight (4pc) + Fighting Spirit (2pc)",
+        "note": "Best first stop when Crit Rate still needs help."
+      },
+      {
+        "label": "Burst swap",
+        "value": "Destruction (4pc) + Fighting Spirit (2pc)",
+        "note": "Once Crit Rate is already solved, this gives better special damage payoff."
+      }
+    ],
+    "priorities": [
+      "Necklace: Speed",
+      "Ring: Attack %",
+      "Substats: Crit Rate, Speed, ATK%, Crit DMG, Effect Hit"
+    ]
+  },
+  "teamDrafts": {
+    "id": "rosaria-teams",
+    "title": "Team Drafts",
+    "summary": "Rosaria fits comfortably into safer PvE teams because her opener improves the entire team's damage.",
+    "label": "Recommended team",
+    "team": "Rosaria / Waltz Asherah / Emily / Bunny Charlotte",
+    "note": "Waltz Asherah and Emily help Rosaria convert her opener into a stable burst window while Bunny Charlotte rounds out the team.",
+    "members": [
+      {
+        "name": "Rosaria",
+        "image": "/assets/starsavior/starsavior/premium/rosaria/rosaria.webp"
+      },
+      {
+        "name": "Waltz Asherah",
+        "image": "/assets/starsavior/starsavior/premium/rosaria/waltz-asherah.webp"
+      },
+      {
+        "name": "Emily",
+        "image": "/assets/starsavior/starsavior/premium/rosaria/emily.webp"
+      },
+      {
+        "name": "Bunny Charlotte",
+        "image": "/assets/starsavior/starsavior/premium/rosaria/bunny-charlotte.webp"
+      }
+    ]
+  },
+  "targetStats": {
+    "id": "rosaria-stats",
+    "kicker": "Target Stats",
+    "summary": "Destruction Set / CRIT DMG Rosaria target tuned to maximize Crit Rate while keeping strong opener speed and useful Effect Hit.",
+    "stats": [
+      {
+        "label": "ATK",
+        "value": "11,398"
+      },
+      {
+        "label": "HP",
+        "value": "41,872"
+      },
+      {
+        "label": "DEF",
+        "value": "3,131"
+      },
+      {
+        "label": "Speed",
+        "value": "190"
+      },
+      {
+        "label": "Crit Rate",
+        "value": "89%"
+      },
+      {
+        "label": "Crit DMG",
+        "value": "117%"
+      },
+      {
+        "label": "Effect Hit",
+        "value": "139%"
+      },
+      {
+        "label": "Effect RES",
+        "value": "4%"
+      }
+    ]
+  },
+  "upgradePath": {
+    "kicker": "Upgrade Path",
+    "title": "Priority",
+    "items": [
+      "Skill order: Ultimate >= Special >= Basic",
+      "Budget target: Basic 3 / Special 6 / Ultimate 6",
+      "Recommended target: Basic 7 / Special 6 / Ultimate 8",
+      "Breakthrough urgency is low because Rosaria is already strong at base copy.",
+      "Travel Hard: EX if Crit Rate is missing, FX if Crit Rate is already solved."
+    ]
+  },
+  "journeyHard": {
+    "id": "rosaria-hard-journey",
+    "kicker": "Journey: Hard",
+    "title": "Recommended Cards",
+    "summary": "Core line: Rosaria, Lacy, and Charlotte. Fill the flex slots with Bunny Frey or Bunny Claire, then Petra or Naru.",
+    "cards": [
+      {
+        "name": "Rosaria",
+        "slot": "Lead",
+        "image": "/assets/starsavior/starsavior/premium/rosaria/rosaria.webp"
+      },
+      {
+        "name": "Lacy",
+        "slot": "Core",
+        "image": "/assets/starsavior/starsavior/premium/rosaria/journey-hard/lacy.webp"
+      },
+      {
+        "name": "Bunny Frey",
+        "slot": "Flex A",
+        "image": "/assets/starsavior/starsavior/premium/rosaria/journey-hard/bunny-frey.webp"
+      },
+      {
+        "name": "Bunny Claire",
+        "slot": "Flex A",
+        "image": "/assets/starsavior/starsavior/premium/rosaria/journey-hard/bunny-claire.webp"
+      },
+      {
+        "name": "Charlotte",
+        "slot": "Core",
+        "image": "/assets/starsavior/starsavior/premium/rosaria/journey-hard/charlotte.webp"
+      },
+      {
+        "name": "Petra",
+        "slot": "Flex B",
+        "image": "/assets/starsavior/starsavior/premium/rosaria/journey-hard/petra.webp"
+      },
+      {
+        "name": "Naru",
+        "slot": "Flex B",
+        "image": "/assets/starsavior/starsavior/premium/rosaria/journey-hard/naru.webp"
+      }
+    ]
+  },
+  "skillCards": {
+    "id": "rosaria-skills",
+    "kicker": "Skill Cards",
+    "defaultTabId": "ultimate",
+    "items": [
+      {
+        "id": "passive",
+        "label": "Passive",
+        "title": "Tyrant of the North",
+        "summary": "More Inferno generation after basics as Upheaval climbs, plus a one-time 40% HP floor that grants Attack Up."
+      },
+      {
+        "id": "basic",
+        "label": "Basic",
+        "title": "Ashen Flame",
+        "summary": "Single-target elemental hit that grants 1 stack of Upheaval."
+      },
+      {
+        "id": "special",
+        "label": "Special",
+        "title": "King's Judgment",
+        "summary": "Consumes Inferno for burst damage. Inferno x3 adds an extra Ashen Flame follow-up."
+      },
+      {
+        "id": "ultimate",
+        "label": "Ultimate",
+        "title": "Gap in Power",
+        "summary": "AoE Defense Down, +50% action gauge, Lord of the Throne, and up to 3 Inferno based on crit targets."
+      }
+    ]
+  }
+}

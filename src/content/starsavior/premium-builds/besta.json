@@ -1,0 +1,184 @@
+{
+  "slug": "besta",
+  "updatedAt": "2026-04-03",
+  "status": "published",
+  "sourceTabs": [
+    "Kamigame Besta guide"
+  ],
+  "sourceContext": {
+    "url": "https://kamigame.jp/starsavior/page/396886820668860556.html",
+    "lead": "Translated and adapted from Kamigame's Besta guide.",
+    "citationText": "Source page: Besta Guide - Star Savior | Kamigame.",
+    "reviewedAgainst": [
+      "Kamigame Besta guide",
+      "STUDIOBSIDE official game art"
+    ],
+    "attributionNote": "© 2025 STUDIOBSIDE Co. Ltd"
+  },
+  "hero": {
+    "title": "Besta",
+    "subhead": "Star | Defender | HP-scaling Tank | Impact",
+    "summary": "Both the basic and special scale from Max HP, which keeps HP sets ahead of pure defense stacking. From there, branch into the Bruiser tank route and the Fast utility route as your gear options widen.",
+    "image": "/assets/starsavior/starsavior/premium/besta/hero.webp",
+    "ratings": [
+      {
+        "label": "Overall",
+        "value": "B"
+      },
+      {
+        "label": "Reroll",
+        "value": "C"
+      },
+      {
+        "label": "Campaign",
+        "value": "B"
+      },
+      {
+        "label": "Boss",
+        "value": "B"
+      },
+      {
+        "label": "Ranked",
+        "value": "C"
+      },
+      {
+        "label": "Strategy",
+        "value": "C"
+      }
+    ],
+    "actions": [
+      {
+        "href": "#besta-builds",
+        "label": "Build Planner",
+        "tone": "primary"
+      },
+      {
+        "href": "#besta-stats",
+        "label": "Target Stats",
+        "tone": "secondary"
+      }
+    ]
+  },
+  "combatIdentity": {
+    "title": "Combat Identity",
+    "summary": "Besta feels best once Speed, HP%, and DEF% are online, giving the first rotation a much steadier payoff.",
+    "bullets": [
+      "Baseline set line: HP (4pc) + Barrier (2pc).",
+      "Main stats stay on Speed necklace and HP% ring.",
+      "Substat focus: Speed, HP%, DEF%, and Effect RES.",
+      "Endgame skill target: 4 / 7 / 7."
+    ]
+  },
+  "skillRotation": {
+    "title": "Skill Rotation",
+    "summary": "Skill investment is cleanest as Ultimate >= Special >= Basic, with the first cooldown setting the pace for the full rotation.",
+    "steps": [
+      {
+        "step": "1",
+        "title": "Open with Ultimate",
+        "detail": "Lead with the highest-invested cooldown so the opener starts on the strongest possible breakpoint."
+      },
+      {
+        "step": "2",
+        "title": "Cash in on Special",
+        "detail": "Special is usually the next meaningful breakpoint once the opener lands and should carry the mid-cycle payoff."
+      },
+      {
+        "step": "3",
+        "title": "Fill with Basic",
+        "detail": "Use Basic between cooldowns while you keep Speed and HP% stable on gear."
+      },
+      {
+        "step": "4",
+        "title": "Upgrade toward the final target",
+        "detail": "Budget target is 3 / 3 / 3, with 4 / 7 / 7 as the long-term skill finish."
+      }
+    ]
+  },
+  "buildPlanner": {
+    "id": "besta-builds",
+    "title": "Build Planner",
+    "summary": "Start on the Core line with HP (4pc) + Barrier (2pc) and Speed necklace and HP% ring. Move into the Bruiser tank route and the Fast utility route once the baseline is stable.",
+    "tag": "Core",
+    "sets": [
+      {
+        "label": "Core",
+        "value": "HP (4pc) + Barrier (2pc)",
+        "note": "Core keeps SPD on the necklace and HP% on the ring."
+      },
+      {
+        "label": "Bruiser tank",
+        "value": "HP (4pc) + DEF (2pc)",
+        "note": "Bruiser tank keeps SPD on the necklace and HP% on the ring."
+      },
+      {
+        "label": "Fast utility",
+        "value": "Speed (4pc) + Barrier (2pc)",
+        "note": "Fast utility keeps SPD on the necklace and HP% on the ring."
+      }
+    ],
+    "priorities": [
+      "Necklace: SPD",
+      "Ring: HP(%)",
+      "Substats: SPD, HP%, DEF%, Effect Res, Flat HP"
+    ]
+  },
+  "targetStats": {
+    "id": "besta-stats",
+    "kicker": "Target Stats",
+    "summary": "Lock Speed necklace and HP% ring, then stack  through substats.",
+    "stats": [
+      {
+        "label": "Necklace",
+        "value": "SPD"
+      },
+      {
+        "label": "Ring",
+        "value": "HP(%)"
+      }
+    ]
+  },
+  "upgradePath": {
+    "kicker": "Upgrade Path",
+    "title": "Priority",
+    "items": [
+      "Skill order: Ultimate >= Special >= Basic",
+      "Budget target: 3 / 3 / 3",
+      "Recommended target: 4 / 7 / 7",
+      "Breakthrough priority: raise copies after the main skill breakpoints are online.",
+      "Substat focus: Speed, HP%, DEF%, and Effect RES"
+    ]
+  },
+  "journeyHard": null,
+  "skillCards": {
+    "id": "besta-skills",
+    "kicker": "Skill Cards",
+    "defaultTabId": "ultimate",
+    "items": [
+      {
+        "id": "passive",
+        "label": "Passive",
+        "title": "Faint Emotions",
+        "summary": "Besta's passive matters more once the core stat line is online and the rotation is already stable."
+      },
+      {
+        "id": "basic",
+        "label": "Basic",
+        "title": "Steadfast Lance",
+        "summary": "Use the basic to bridge cooldowns; it should stay behind the two higher-impact skills in upgrade priority."
+      },
+      {
+        "id": "special",
+        "label": "Special",
+        "title": "Repel",
+        "summary": "Special is the next major breakpoint after the opener and usually carries the mid-cycle payoff."
+      },
+      {
+        "id": "ultimate",
+        "label": "Ultimate",
+        "title": "Unstoppable Charge",
+        "summary": "Ultimate anchors the opener and stays at the top of the investment order for this build."
+      }
+    ]
+  }
+}

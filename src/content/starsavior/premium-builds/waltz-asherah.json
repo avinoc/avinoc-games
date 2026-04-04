@@ -1,0 +1,252 @@
+{
+  "slug": "waltz-asherah",
+  "updatedAt": "2026-04-03",
+  "status": "published",
+  "sourceTabs": [
+    "Kamigame Asherah Waltz of Starlight guide"
+  ],
+  "sourceContext": {
+    "url": "https://kamigame.jp/starsavior/page/401682569558530569.html",
+    "lead": "Translated and adapted from Kamigame's Asherah Waltz of Starlight guide.",
+    "citationText": "Source page: Asherah Waltz of Starlight Guide - Star Savior | Kamigame.",
+    "reviewedAgainst": [
+      "Kamigame Asherah Waltz of Starlight guide",
+      "STUDIOBSIDE official game art"
+    ],
+    "attributionNote": "© 2025 STUDIOBSIDE Co. Ltd"
+  },
+  "hero": {
+    "title": "Asherah Waltz of Starlight",
+    "subhead": "Order | Supporter | PvE / PvP | Slash",
+    "summary": "Asherah Waltz of Starlight starts best on HP (4pc) + Barrier (2pc) with Speed necklace and HP% ring. From there, branch into the High-end route and the PvP route as your gear options widen.",
+    "image": "/assets/starsavior/starsavior/premium/waltz-asherah/hero.webp",
+    "ratings": [
+      {
+        "label": "Overall",
+        "value": "SSS"
+      },
+      {
+        "label": "Reroll",
+        "value": "SSS"
+      },
+      {
+        "label": "Campaign",
+        "value": "SSS"
+      },
+      {
+        "label": "Boss",
+        "value": "SSS"
+      },
+      {
+        "label": "Ranked",
+        "value": "SSS"
+      },
+      {
+        "label": "Strategy",
+        "value": "SSS"
+      }
+    ],
+    "actions": [
+      {
+        "href": "#waltz-asherah-builds",
+        "label": "Build Planner",
+        "tone": "primary"
+      },
+      {
+        "href": "#waltz-asherah-stats",
+        "label": "Target Stats",
+        "tone": "secondary"
+      },
+      {
+        "href": "#waltz-asherah-hard-journey",
+        "label": "Journey: Hard",
+        "tone": "secondary"
+      }
+    ]
+  },
+  "combatIdentity": {
+    "title": "Combat Identity",
+    "summary": "Asherah Waltz of Starlight feels best once HP%, ATK%, and Speed are online, giving the first rotation a much steadier payoff.",
+    "bullets": [
+      "Baseline set line: HP (4pc) + Barrier (2pc).",
+      "Main stats stay on Speed necklace and HP% ring.",
+      "Substat focus: HP%, ATK%, Speed, and Crit Rate.",
+      "Journey: Hard route leans toward DPS - AX5."
+    ]
+  },
+  "skillRotation": {
+    "title": "Skill Rotation",
+    "summary": "Skill investment is cleanest as Ultimate >= Special >= Basic, with the first cooldown setting the pace for the full rotation.",
+    "steps": [
+      {
+        "step": "1",
+        "title": "Open with Ultimate",
+        "detail": "Lead with the highest-invested cooldown so the opener starts on the strongest possible breakpoint."
+      },
+      {
+        "step": "2",
+        "title": "Cash in on Special",
+        "detail": "Special is usually the next meaningful breakpoint once the opener lands and should carry the mid-cycle payoff."
+      },
+      {
+        "step": "3",
+        "title": "Fill with Basic",
+        "detail": "Use Basic between cooldowns while you keep HP% and ATK% stable on gear."
+      },
+      {
+        "step": "4",
+        "title": "Upgrade toward the final target",
+        "detail": "Budget target is 3 / 3 / 3, with 10 / 10 / 7 as the long-term skill finish."
+      }
+    ]
+  },
+  "buildPlanner": {
+    "id": "waltz-asherah-builds",
+    "title": "Build Planner",
+    "summary": "Start on the PvE / PvP line with HP (4pc) + Barrier (2pc) and Speed necklace and HP% ring. Move into the High-end route and the PvP route once the baseline is stable.",
+    "tag": "PvE / PvP",
+    "sets": [
+      {
+        "label": "PvE / PvP",
+        "value": "HP (4pc) + Barrier (2pc)",
+        "note": "PvE / PvP keeps SPD on the necklace and HP% on the ring."
+      },
+      {
+        "label": "High-end",
+        "value": "Insight (4pc) + Barrier (2pc)",
+        "note": "High-end keeps SPD on the necklace and HP% on the ring."
+      },
+      {
+        "label": "PvP",
+        "value": "Speed (4pc) + Barrier (2pc)",
+        "note": "PvP keeps SPD on the necklace and HP% on the ring."
+      }
+    ],
+    "priorities": [
+      "Necklace: SPD",
+      "Ring: HP(%)",
+      "Substats: HP(%), ATK(%), SPD, Crit Rate, Effect RES"
+    ]
+  },
+  "targetStats": {
+    "id": "waltz-asherah-stats",
+    "kicker": "Target Stats",
+    "summary": "Lock Speed necklace and HP% ring, then stack HP%, ATK%, Speed, and Crit Rate through substats.",
+    "stats": [
+      {
+        "label": "Necklace",
+        "value": "SPD"
+      },
+      {
+        "label": "Ring",
+        "value": "HP(%)"
+      },
+      {
+        "label": "Focus 1",
+        "value": "HP(%)"
+      },
+      {
+        "label": "Focus 2",
+        "value": "ATK(%)"
+      },
+      {
+        "label": "Focus 3",
+        "value": "SPD"
+      },
+      {
+        "label": "Focus 4",
+        "value": "Crit Rate"
+      },
+      {
+        "label": "Focus 5",
+        "value": "Effect RES"
+      }
+    ]
+  },
+  "upgradePath": {
+    "kicker": "Upgrade Path",
+    "title": "Priority",
+    "items": [
+      "Skill order: Ultimate >= Special >= Basic",
+      "Budget target: 3 / 3 / 3",
+      "Recommended target: 10 / 10 / 7",
+      "Breakthrough priority: ★★★ High breakthrough value",
+      "Substat focus: HP%, ATK%, Speed, and Crit Rate",
+      "Journey: Hard route: DPS - AX5"
+    ]
+  },
+  "journeyHard": {
+    "id": "waltz-asherah-hard-journey",
+    "kicker": "Journey: Hard",
+    "title": "Recommended Cards",
+    "summary": "Core line: Charlotte and Waltz Asherah. Fill the remaining slots with Frey or Lacy, Bunny Claire, and Petra or Naru.",
+    "cards": [
+      {
+        "name": "Charlotte",
+        "slot": "Core",
+        "image": "/assets/starsavior/starsavior/premium/charlotte/hero.png"
+      },
+      {
+        "name": "Waltz Asherah",
+        "slot": "Core",
+        "image": "/assets/starsavior/starsavior/premium/waltz-asherah/hero.webp"
+      },
+      {
+        "name": "Frey",
+        "slot": "Flex 1",
+        "image": "/assets/starsavior/starsavior/premium/frey/hero.png"
+      },
+      {
+        "name": "Lacy",
+        "slot": "Flex 1",
+        "image": "/assets/starsavior/starsavior/premium/lacy/hero.png"
+      },
+      {
+        "name": "Bunny Claire",
+        "slot": "Flex 2",
+        "image": "/assets/starsavior/starsavior/premium/bunnygirl-claire/hero.png"
+      },
+      {
+        "name": "Petra",
+        "slot": "Flex 3",
+        "image": "/assets/starsavior/starsavior/premium/petra/hero.png"
+      },
+      {
+        "name": "Naru",
+        "slot": "Flex 3",
+        "image": "/assets/starsavior/starsavior/premium/naru/hero.webp"
+      }
+    ]
+  },
+  "skillCards": {
+    "id": "waltz-asherah-skills",
+    "kicker": "Skill Cards",
+    "defaultTabId": "ultimate",
+    "items": [
+      {
+        "id": "passive",
+        "label": "Passive",
+        "title": "Passive Skill",
+        "summary": "Asherah Waltz of Starlight's passive matters more once the core stat line is online and the rotation is already stable."
+      },
+      {
+        "id": "basic",
+        "label": "Basic",
+        "title": "Basic Skill",
+        "summary": "Use the basic to bridge cooldowns; it should stay behind the two higher-impact skills in upgrade priority."
+      },
+      {
+        "id": "special",
+        "label": "Special",
+        "title": "Special Skill",
+        "summary": "Special is the next major breakpoint after the opener and usually carries the mid-cycle payoff."
+      },
+      {
+        "id": "ultimate",
+        "label": "Ultimate",
+        "title": "Ultimate Skill",
+        "summary": "Ultimate anchors the opener and stays at the top of the investment order for this build."
+      }
+    ]
+  }
+}

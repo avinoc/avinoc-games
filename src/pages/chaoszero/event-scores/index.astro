@@ -1,0 +1,812 @@
+---
+import GameLayout from "../../../layouts/GameLayout.astro";
+import {
+  currentEvent,
+  getAllBuilds,
+  getEventTotal,
+  getTeamTotal,
+} from "../../../data/chaoszero/event-scores";
+
+const base = import.meta.env.BASE_URL;
+const teams = currentEvent.teams.map((team) => ({
+  ...team,
+  total: getTeamTotal(team),
+}));
+const allBuilds = getAllBuilds(currentEvent).map((build) => {
+  const team = teams.find((entry) => entry.id === build.teamId);
+
+  return {
+    ...build,
+    teamLabel: team?.label ?? "Team",
+    teamSummary: team?.summary ?? "",
+  };
+});
+const eventTotal = getEventTotal(currentEvent);
+const topBuild = allBuilds.reduce((best, build) => (build.score > best.score ? build : best), allBuilds[0]);
+const defaultBuildId = topBuild.id;
+
+const repeatedCardMap = new Map<string, number>();
+
+for (const build of allBuilds) {
+  for (const card of build.cards) {
+    const current = repeatedCardMap.get(card.name) ?? 0;
+    repeatedCardMap.set(card.name, Math.max(current, card.count));
+  }
+}
+
+const stackHighlights = [...repeatedCardMap.entries()]
+  .filter(([, count]) => count > 1)
+  .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))
+  .slice(0, 4)
+  .map(([name, count]) => `${name} ×${count}`);
+
+function formatScore(score: number): string {
+  return score.toLocaleString("en-US");
+}
+---
+
+<GameLayout
+  title="Event Scores | Chaos Zero Nightmare"
+  description="Screenshot-driven Great Rift top-score build viewer for Chaos Zero Nightmare."
+  game="chaoszero"
+  hideSubnav={true}
+>
+  <div class="cz-page">
+    <div class="cz-page__noise" aria-hidden="true"></div>
+
+    <section class="container cz-overview">
+      <a class="cz-back-link" href={`${base}chaoszero/`}>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round">
+          <path d="m15 18-6-6 6-6" />
+        </svg>
+        Chaos Zero hub
+      </a>
+
+      <p class="cz-kicker">Great Rift top-score viewer</p>
+      <h1>{currentEvent.name}</h1>
+      <p class="cz-overview__summary">
+        Imported from your six build screenshots. Select any build below to inspect the original sheet, card counts, and team totals without placeholder event data.
+      </p>
+
+      <div class="cz-overview__totals">
+        {teams.map((team) => (
+          <div class="cz-total-pill">
+            <span>{team.label}</span>
+            <strong>{formatScore(team.total)} TB</strong>
+          </div>
+        ))}
+        <div class="cz-total-pill cz-total-pill--combined">
+          <span>Combined</span>
+          <strong>{formatScore(eventTotal)} TB</strong>
+        </div>
+      </div>
+    </section>
+
+    <section class="container cz-top-grid">
+      <div class="cz-feature-stack">
+        {allBuilds.map((build) => (
+          <article
+            class:list={["cz-feature-card", { "is-active": build.id === defaultBuildId }]}
+            data-feature-card
+            data-build-id={build.id}
+            aria-hidden={build.id === defaultBuildId ? "false" : "true"}
+          >
+            <div class="cz-feature-card__copy">
+              <div class="cz-feature-card__meta">
+                <span>{build.teamLabel}</span>
+                <span>{build.label}</span>
+              </div>
+              <h2>{build.focus}</h2>
+              <p>{build.summary}</p>
+
+              <div class="cz-score-pill">{formatScore(build.score)} TB</div>
+
+              <div class="cz-stat-grid">
+                <div>
+                  <span>Save date</span>
+                  <strong>{build.saveDate}</strong>
+                </div>
+                <div>
+                  <span>Card count</span>
+                  <strong>{build.cardCount}</strong>
+                </div>
+                <div>
+                  <span>Faint memory</span>
+                  <strong>{build.faintMemory} pts</strong>
+                </div>
+                <div>
+                  <span>Copy / Remove</span>
+                  <strong>{build.copyCount} / {build.removeCount}</strong>
+                </div>
+              </div>
+
+              <div class="cz-card-chip-row">
+                {build.cards.map((card) => (
+                  <span class="cz-card-chip">{card.name}{card.count > 1 ? ` ×${card.count}` : ""}</span>
+                ))}
+              </div>
+            </div>
+
+            <div class="cz-feature-card__media">
+              <img
+                src={build.previewImage}
+                alt={`${build.teamLabel} ${build.label} screenshot`}
+                width="1024"
+                height="768"
+                loading="lazy"
+              />
+            </div>
+          </article>
+        ))}
+      </div>
+
+      <aside class="cz-side-stack">
+        <div class="cz-side-card">
+          <span class="cz-side-card__label">Top single build</span>
+          <strong>{topBuild.teamLabel} {topBuild.label}</strong>
+          <p>{topBuild.focus}</p>
+          <div class="cz-score-pill">{formatScore(topBuild.score)} TB</div>
+        </div>
+
+        <div class="cz-side-card">
+          <span class="cz-side-card__label">Most repeated stacks</span>
+          <div class="cz-card-chip-row">
+            {stackHighlights.map((card) => (
+              <span class="cz-card-chip">{card}</span>
+            ))}
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <section class="container cz-panels">
+      <article class="cz-panel">
+        <div class="cz-panel__header">
+          <div>
+            <span class="cz-kicker">Current Meta Breakdown</span>
+            <h2>Build selector</h2>
+          </div>
+        </div>
+
+        <div class="cz-selector-groups">
+          {teams.map((team) => (
+            <section class="cz-selector-group">
+              <header class="cz-selector-group__header">
+                <div>
+                  <span>{team.label}</span>
+                  <p>{team.summary}</p>
+                </div>
+                <strong>{formatScore(team.total)} TB</strong>
+              </header>
+
+              <div class="cz-selector-list">
+                {team.builds.map((build) => (
+                  <button
+                    class:list={["cz-selector-button", { "is-active": build.id === defaultBuildId }]}
+                    data-build-button
+                    data-build-id={build.id}
+                    id={build.id}
+                    type="button"
+                    aria-pressed={build.id === defaultBuildId ? "true" : "false"}
+                  >
+                    <img
+                      src={build.previewImage}
+                      alt=""
+                      width="256"
+                      height="144"
+                      loading="lazy"
+                    />
+
+                    <div class="cz-selector-button__body">
+                      <div class="cz-selector-button__top">
+                        <strong>{build.label}</strong>
+                        <span>{formatScore(build.score)} TB</span>
+                      </div>
+                      <h3>{build.focus}</h3>
+                      <p>{build.saveDate} · {build.cardCount} cards · {build.faintMemory} FM</p>
+                      <div class="cz-card-chip-row">
+                        {build.cards.map((card) => (
+                          <span class="cz-card-chip">{card.name}{card.count > 1 ? ` ×${card.count}` : ""}</span>
+                        ))}
+                      </div>
+                    </div>
+                  </button>
+                ))}
+              </div>
+            </section>
+          ))}
+        </div>
+      </article>
+
+      <article class="cz-panel">
+        <div class="cz-panel__header">
+          <div>
+            <span class="cz-kicker">Imported Build Sheet</span>
+            <h2>Original screenshot and parsed data</h2>
+          </div>
+        </div>
+
+        <div class="cz-sheet-stack">
+          {allBuilds.map((build) => (
+            <article
+              class:list={["cz-sheet", { "is-active": build.id === defaultBuildId }]}
+              data-build-sheet
+              data-build-id={build.id}
+              aria-hidden={build.id === defaultBuildId ? "false" : "true"}
+            >
+              <div class="cz-sheet__image">
+                <img
+                  src={build.previewImage}
+                  alt={`${build.teamLabel} ${build.label} full build screenshot`}
+                  width="1024"
+                  height="768"
+                  loading="lazy"
+                />
+              </div>
+
+              <div class="cz-sheet__meta">
+                <div class="cz-sheet__heading">
+                  <span>{build.teamLabel} · {build.label}</span>
+                  <h3>{build.focus}</h3>
+                  <p>{build.summary}</p>
+                </div>
+
+                <div class="cz-sheet__stats">
+                  <div>
+                    <span>Score</span>
+                    <strong>{formatScore(build.score)} TB</strong>
+                  </div>
+                  <div>
+                    <span>Save date</span>
+                    <strong>{build.saveDate}</strong>
+                  </div>
+                  <div>
+                    <span>Card count</span>
+                    <strong>{build.cardCount}</strong>
+                  </div>
+                  <div>
+                    <span>Faint memory</span>
+                    <strong>{build.faintMemory}</strong>
+                  </div>
+                  <div>
+                    <span>Copy</span>
+                    <strong>{build.copyCount}</strong>
+                  </div>
+                  <div>
+                    <span>Remove</span>
+                    <strong>{build.removeCount}</strong>
+                  </div>
+                </div>
+
+                <div class="cz-sheet__cards">
+                  {build.cards.map((card) => (
+                    <div class="cz-sheet-card">
+                      <strong>{card.name}</strong>
+                      <span>{card.count > 1 ? `${card.count} copies` : "1 copy"}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </article>
+          ))}
+        </div>
+      </article>
+    </section>
+  </div>
+</GameLayout>
+
+<script is:inline define:vars={{ defaultBuildId }}>
+  const buttons = Array.from(document.querySelectorAll("[data-build-button]"));
+  const featureCards = Array.from(document.querySelectorAll("[data-feature-card]"));
+  const sheets = Array.from(document.querySelectorAll("[data-build-sheet]"));
+
+  function activateBuild(id) {
+    buttons.forEach((button) => {
+      const active = button.dataset.buildId === id;
+      button.classList.toggle("is-active", active);
+      button.setAttribute("aria-pressed", active ? "true" : "false");
+    });
+
+    featureCards.forEach((card) => {
+      const active = card.dataset.buildId === id;
+      card.classList.toggle("is-active", active);
+      card.setAttribute("aria-hidden", active ? "false" : "true");
+    });
+
+    sheets.forEach((sheet) => {
+      const active = sheet.dataset.buildId === id;
+      sheet.classList.toggle("is-active", active);
+      sheet.setAttribute("aria-hidden", active ? "false" : "true");
+    });
+
+    if (history.replaceState) {
+      history.replaceState(null, "", `#${id}`);
+    }
+  }
+
+  const initialId = window.location.hash.slice(1);
+  const hasInitialBuild = initialId && buttons.some((button) => button.dataset.buildId === initialId);
+  activateBuild(hasInitialBuild ? initialId : defaultBuildId);
+
+  buttons.forEach((button) => {
+    button.addEventListener("click", () => {
+      const id = button.dataset.buildId;
+      if (id) activateBuild(id);
+    });
+  });
+
+  window.addEventListener("hashchange", () => {
+    const nextId = window.location.hash.slice(1);
+    if (nextId && buttons.some((button) => button.dataset.buildId === nextId)) {
+      activateBuild(nextId);
+    }
+  });
+</script>
+
+<style>
+  .cz-page {
+    --cz-cyan: #3cf4ff;
+    --cz-pink: #ff3daf;
+    --cz-blue: #80abff;
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
+    background:
+      radial-gradient(circle at top center, rgba(78, 118, 255, 0.22), transparent 34%),
+      radial-gradient(circle at right center, rgba(255, 61, 175, 0.14), transparent 28%),
+      linear-gradient(180deg, #040914 0%, #02050b 100%);
+  }
+
+  .cz-page__noise {
+    position: absolute;
+    inset: 0;
+    background:
+      linear-gradient(90deg, transparent 0 8%, rgba(60, 244, 255, 0.08) 8.2% 8.6%, transparent 8.8% 100%),
+      linear-gradient(90deg, transparent 0 67%, rgba(255, 61, 175, 0.1) 67.3% 68.1%, transparent 68.2% 100%),
+      repeating-linear-gradient(180deg, rgba(255, 255, 255, 0.02) 0 1px, transparent 1px 4px);
+    opacity: 0.58;
+    pointer-events: none;
+  }
+
+  .cz-overview,
+  .cz-top-grid,
+  .cz-panels {
+    position: relative;
+    z-index: 1;
+  }
+
+  .cz-overview {
+    padding-top: 2.3rem;
+    padding-bottom: 1.4rem;
+  }
+
+  .cz-back-link,
+  .cz-kicker,
+  .cz-side-card__label,
+  .cz-selector-group__header span,
+  .cz-sheet__heading span,
+  .cz-stat-grid span,
+  .cz-sheet__stats span,
+  .cz-total-pill span {
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+  }
+
+  .cz-back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    color: rgba(193, 226, 255, 0.74);
+    text-decoration: none;
+    margin-bottom: 0.9rem;
+  }
+
+  .cz-kicker {
+    display: inline-flex;
+    color: rgba(183, 228, 255, 0.76);
+    margin: 0 0 0.8rem;
+  }
+
+  .cz-overview h1,
+  .cz-feature-card__copy h2,
+  .cz-panel__header h2,
+  .cz-sheet__heading h3 {
+    margin: 0;
+    color: #f8fcff;
+    font-family: "Rajdhani", "Space Grotesk", sans-serif;
+    font-weight: 800;
+    line-height: 1.04;
+  }
+
+  .cz-overview h1 {
+    font-size: clamp(2rem, 4vw, 3.35rem);
+  }
+
+  .cz-overview__summary,
+  .cz-feature-card__copy p,
+  .cz-selector-group__header p,
+  .cz-selector-button__body p,
+  .cz-sheet__heading p,
+  .cz-side-card p {
+    margin: 0;
+    color: rgba(195, 220, 246, 0.74);
+    line-height: 1.58;
+  }
+
+  .cz-overview__summary {
+    max-width: 56rem;
+    margin-top: 0.8rem;
+  }
+
+  .cz-overview__totals {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    margin-top: 1.1rem;
+  }
+
+  .cz-total-pill,
+  .cz-score-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.55rem;
+    min-height: 2.45rem;
+    padding: 0.5rem 0.9rem;
+    border-radius: 999px;
+    background: rgba(10, 24, 42, 0.92);
+    border: 1px solid rgba(126, 178, 245, 0.18);
+    color: #f4fbff;
+  }
+
+  .cz-total-pill strong,
+  .cz-score-pill {
+    font-size: 0.95rem;
+    font-weight: 800;
+  }
+
+  .cz-total-pill--combined {
+    border-color: rgba(255, 61, 175, 0.26);
+  }
+
+  .cz-top-grid,
+  .cz-panels {
+    display: grid;
+    gap: 1.3rem;
+  }
+
+  .cz-top-grid {
+    grid-template-columns: minmax(0, 1fr) 18rem;
+    align-items: start;
+  }
+
+  .cz-feature-stack,
+  .cz-sheet-stack {
+    min-width: 0;
+  }
+
+  .cz-feature-card,
+  .cz-panel,
+  .cz-side-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 1.25rem;
+    background: rgba(7, 16, 31, 0.88);
+    backdrop-filter: blur(18px);
+    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.35);
+  }
+
+  .cz-feature-card::before,
+  .cz-panel::before,
+  .cz-side-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    padding: 1px;
+    border-radius: inherit;
+    background: linear-gradient(90deg, rgba(60, 244, 255, 0.95), rgba(128, 171, 255, 0.72), rgba(255, 61, 175, 0.92));
+    -webkit-mask:
+      linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+  }
+
+  .cz-feature-card,
+  .cz-sheet {
+    display: none;
+  }
+
+  .cz-feature-card.is-active,
+  .cz-sheet.is-active {
+    display: grid;
+  }
+
+  .cz-feature-card {
+    grid-template-columns: minmax(18rem, 0.92fr) minmax(0, 1.08fr);
+    min-height: 25rem;
+  }
+
+  .cz-feature-card__copy,
+  .cz-panel {
+    padding: 1.25rem;
+  }
+
+  .cz-feature-card__copy {
+    display: grid;
+    align-content: center;
+    gap: 0.95rem;
+  }
+
+  .cz-feature-card__meta {
+    display: flex;
+    gap: 0.6rem;
+    flex-wrap: wrap;
+  }
+
+  .cz-feature-card__meta span,
+  .cz-sheet__heading span {
+    display: inline-flex;
+    align-items: center;
+    min-height: 1.9rem;
+    padding: 0.25rem 0.6rem;
+    border-radius: 999px;
+    background: rgba(11, 27, 46, 0.86);
+    border: 1px solid rgba(127, 179, 246, 0.16);
+    color: rgba(202, 231, 255, 0.82);
+  }
+
+  .cz-score-pill {
+    width: fit-content;
+    justify-content: center;
+    color: #ffffff;
+  }
+
+  .cz-stat-grid,
+  .cz-sheet__stats {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.75rem;
+  }
+
+  .cz-stat-grid div,
+  .cz-sheet__stats div,
+  .cz-sheet-card {
+    padding: 0.8rem 0.9rem;
+    border-radius: 1rem;
+    background: rgba(11, 25, 42, 0.88);
+    border: 1px solid rgba(126, 176, 239, 0.14);
+  }
+
+  .cz-stat-grid span,
+  .cz-sheet__stats span,
+  .cz-sheet-card span {
+    display: block;
+    color: rgba(183, 221, 255, 0.58);
+    margin-bottom: 0.35rem;
+  }
+
+  .cz-stat-grid strong,
+  .cz-sheet__stats strong,
+  .cz-sheet-card strong {
+    color: #f7fbff;
+    font-size: 1rem;
+  }
+
+  .cz-feature-card__media img,
+  .cz-sheet__image img,
+  .cz-selector-button img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .cz-feature-card__media,
+  .cz-sheet__image {
+    min-height: 100%;
+  }
+
+  .cz-side-stack {
+    display: grid;
+    gap: 1rem;
+  }
+
+  .cz-side-card {
+    padding: 1.1rem;
+    min-height: 11.8rem;
+    display: grid;
+    align-content: start;
+    gap: 0.75rem;
+  }
+
+  .cz-side-card__label,
+  .cz-selector-group__header span {
+    color: rgba(183, 228, 255, 0.72);
+  }
+
+  .cz-card-chip-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.45rem;
+  }
+
+  .cz-card-chip {
+    display: inline-flex;
+    align-items: center;
+    min-height: 1.9rem;
+    padding: 0.25rem 0.65rem;
+    border-radius: 999px;
+    background: rgba(14, 30, 49, 0.92);
+    border: 1px solid rgba(130, 179, 242, 0.16);
+    color: rgba(214, 235, 255, 0.82);
+    font-size: 0.78rem;
+    font-weight: 600;
+  }
+
+  .cz-panels {
+    grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+    padding-top: 1.3rem;
+    padding-bottom: 4rem;
+  }
+
+  .cz-panel__header {
+    margin-bottom: 1rem;
+  }
+
+  .cz-selector-groups {
+    display: grid;
+    gap: 1rem;
+  }
+
+  .cz-selector-group {
+    border-radius: 1rem;
+    background: rgba(4, 11, 22, 0.78);
+    border: 1px solid rgba(126, 176, 239, 0.12);
+    padding: 1rem;
+  }
+
+  .cz-selector-group__header {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    align-items: flex-start;
+    margin-bottom: 0.9rem;
+  }
+
+  .cz-selector-group__header strong {
+    color: #ffffff;
+    font-size: 1.05rem;
+    white-space: nowrap;
+  }
+
+  .cz-selector-list {
+    display: grid;
+    gap: 0.85rem;
+  }
+
+  .cz-selector-button {
+    display: grid;
+    grid-template-columns: 9rem minmax(0, 1fr);
+    gap: 0.9rem;
+    padding: 0.75rem;
+    border-radius: 1rem;
+    text-align: left;
+    cursor: pointer;
+    color: inherit;
+    background: rgba(9, 19, 35, 0.82);
+    border: 1px solid rgba(118, 170, 238, 0.14);
+    transition: transform 160ms ease, border-color 160ms ease, box-shadow 160ms ease;
+    font: inherit;
+  }
+
+  .cz-selector-button:hover,
+  .cz-selector-button.is-active {
+    transform: translateY(-1px);
+    border-color: rgba(151, 211, 255, 0.28);
+    box-shadow: 0 18px 36px rgba(0, 0, 0, 0.28);
+  }
+
+  .cz-selector-button.is-active {
+    background: rgba(12, 28, 48, 0.92);
+  }
+
+  .cz-selector-button img {
+    border-radius: 0.85rem;
+  }
+
+  .cz-selector-button__body {
+    display: grid;
+    gap: 0.35rem;
+    min-width: 0;
+  }
+
+  .cz-selector-button__top {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.8rem;
+    color: rgba(193, 224, 255, 0.7);
+    font-size: 0.86rem;
+  }
+
+  .cz-selector-button__top strong {
+    color: #ffffff;
+  }
+
+  .cz-selector-button__body h3 {
+    margin: 0;
+    color: #f8fcff;
+    font-size: 1rem;
+    line-height: 1.12;
+  }
+
+  .cz-sheet-stack {
+    min-width: 0;
+  }
+
+  .cz-sheet {
+    gap: 1rem;
+  }
+
+  .cz-sheet__image img {
+    border-radius: 1rem;
+  }
+
+  .cz-sheet__meta {
+    display: grid;
+    gap: 1rem;
+  }
+
+  .cz-sheet__cards {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.8rem;
+  }
+
+  .cz-sheet-card span {
+    margin-bottom: 0;
+    font-size: 0.8rem;
+  }
+
+  @media (max-width: 1120px) {
+    .cz-top-grid,
+    .cz-panels,
+    .cz-feature-card {
+      grid-template-columns: 1fr;
+    }
+
+    .cz-side-stack {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  @media (max-width: 760px) {
+    .cz-overview {
+      padding-top: 2rem;
+    }
+
+    .cz-side-stack,
+    .cz-stat-grid,
+    .cz-sheet__stats,
+    .cz-sheet__cards {
+      grid-template-columns: 1fr;
+    }
+
+    .cz-selector-button {
+      grid-template-columns: 1fr;
+    }
+
+    .cz-selector-group__header,
+    .cz-selector-button__top {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .cz-feature-card__copy,
+    .cz-panel {
+      padding: 1rem;
+    }
+  }
+</style>

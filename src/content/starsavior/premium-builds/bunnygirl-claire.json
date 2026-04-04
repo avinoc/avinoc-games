@@ -1,0 +1,243 @@
+{
+  "slug": "bunnygirl-claire",
+  "updatedAt": "2026-04-03",
+  "status": "published",
+  "sourceTabs": [
+    "Kamigame Bunnygirl Claire guide"
+  ],
+  "sourceContext": {
+    "url": "https://kamigame.jp/starsavior/page/397920957945133323.html",
+    "lead": "Translated and adapted from Kamigame's Bunnygirl Claire guide.",
+    "citationText": "Source page: Bunnygirl Claire Guide - Star Savior | Kamigame.",
+    "reviewedAgainst": [
+      "Kamigame Bunnygirl Claire guide",
+      "STUDIOBSIDE official game art"
+    ],
+    "attributionNote": "© 2025 STUDIOBSIDE Co. Ltd"
+  },
+  "hero": {
+    "title": "Bunnygirl Claire",
+    "subhead": "Moon | Striker | Single-target DPS | Impact",
+    "summary": "The launch build card treats BG Claire as a premier Moon single-target finisher that scales hard with better crit infrastructure. From there, move into the Endgame route once the core stat line is stable.",
+    "image": "/assets/starsavior/starsavior/premium/bunnygirl-claire/hero.png",
+    "ratings": [
+      {
+        "label": "Overall",
+        "value": "SS"
+      },
+      {
+        "label": "Reroll",
+        "value": "SS"
+      },
+      {
+        "label": "Campaign",
+        "value": "SS"
+      },
+      {
+        "label": "Boss",
+        "value": "SSS"
+      },
+      {
+        "label": "Ranked",
+        "value": "S+"
+      },
+      {
+        "label": "Strategy",
+        "value": "SS"
+      }
+    ],
+    "actions": [
+      {
+        "href": "#bunnygirl-claire-builds",
+        "label": "Build Planner",
+        "tone": "primary"
+      },
+      {
+        "href": "#bunnygirl-claire-stats",
+        "label": "Target Stats",
+        "tone": "secondary"
+      },
+      {
+        "href": "#bunnygirl-claire-hard-journey",
+        "label": "Journey: Hard",
+        "tone": "secondary"
+      }
+    ]
+  },
+  "combatIdentity": {
+    "title": "Combat Identity",
+    "summary": "Bunnygirl Claire feels best once ATK%, Speed, and Crit Rate are online, giving the first rotation a much steadier payoff.",
+    "bullets": [
+      "Baseline set line: Destruction (4pc) + Valor (2pc).",
+      "Main stats stay on Speed necklace and ATK% ring.",
+      "Substat focus: ATK%, Speed, Crit Rate, and Crit DMG.",
+      "Journey: Hard route leans toward DPS - AX6."
+    ]
+  },
+  "skillRotation": {
+    "title": "Skill Rotation",
+    "summary": "Skill investment is cleanest as Ultimate >= Special >= Basic, with the first cooldown setting the pace for the full rotation.",
+    "steps": [
+      {
+        "step": "1",
+        "title": "Open with Ultimate",
+        "detail": "Lead with the highest-invested cooldown so the opener starts on the strongest possible breakpoint."
+      },
+      {
+        "step": "2",
+        "title": "Cash in on Special",
+        "detail": "Special is usually the next meaningful breakpoint once the opener lands and should carry the mid-cycle payoff."
+      },
+      {
+        "step": "3",
+        "title": "Fill with Basic",
+        "detail": "Use Basic between cooldowns while you keep ATK% and Speed stable on gear."
+      },
+      {
+        "step": "4",
+        "title": "Upgrade toward the final target",
+        "detail": "Budget target is 3 / 3 / 3, with 7 / 7 / 7 as the long-term skill finish."
+      }
+    ]
+  },
+  "buildPlanner": {
+    "id": "bunnygirl-claire-builds",
+    "title": "Build Planner",
+    "summary": "Start on the Budget line with Destruction (4pc) + Valor (2pc) and Speed necklace and ATK% ring. Move into the Endgame route once the baseline is stable.",
+    "tag": "Budget",
+    "sets": [
+      {
+        "label": "Budget",
+        "value": "Destruction (4pc) + Valor (2pc)",
+        "note": "The build page favors a direct crit-damage package immediately."
+      },
+      {
+        "label": "Endgame",
+        "value": "Insight (4pc) + Valor (2pc)",
+        "note": "High-end route pivots into a more stable crit-rate shell."
+      }
+    ],
+    "priorities": [
+      "Necklace: SPD",
+      "Ring: Crit Rate",
+      "Substats: ATK(%), SPD, Crit Rate, Crit DMG"
+    ]
+  },
+  "targetStats": {
+    "id": "bunnygirl-claire-stats",
+    "kicker": "Target Stats",
+    "summary": "Lock Speed necklace and ATK% ring, then stack ATK%, Speed, Crit Rate, and Crit DMG through substats.",
+    "stats": [
+      {
+        "label": "Necklace",
+        "value": "SPD"
+      },
+      {
+        "label": "Ring",
+        "value": "Crit Rate"
+      },
+      {
+        "label": "Focus 1",
+        "value": "ATK(%)"
+      },
+      {
+        "label": "Focus 2",
+        "value": "SPD"
+      },
+      {
+        "label": "Focus 3",
+        "value": "Crit Rate"
+      },
+      {
+        "label": "Focus 4",
+        "value": "Crit DMG"
+      }
+    ]
+  },
+  "upgradePath": {
+    "kicker": "Upgrade Path",
+    "title": "Priority",
+    "items": [
+      "Skill order: Ultimate >= Special >= Basic",
+      "Budget target: 3 / 3 / 3",
+      "Recommended target: 7 / 7 / 7",
+      "Breakthrough priority: ★★☆ Strong gains from extra copies",
+      "Substat focus: ATK%, Speed, Crit Rate, and Crit DMG",
+      "Journey: Hard route: DPS - AX6"
+    ]
+  },
+  "journeyHard": {
+    "id": "bunnygirl-claire-hard-journey",
+    "kicker": "Journey: Hard",
+    "title": "Recommended Cards",
+    "summary": "Core line: Lacy and Bunny Frey. Fill the remaining slots with Lyn Card or Bunny Claire, Charlotte, and Petra or Naru.",
+    "cards": [
+      {
+        "name": "Lacy",
+        "slot": "Core",
+        "image": "/assets/starsavior/starsavior/premium/lacy/hero.png"
+      },
+      {
+        "name": "Bunny Frey",
+        "slot": "Core",
+        "image": "/assets/starsavior/starsavior/premium/noble-princess-frey/hero.png"
+      },
+      {
+        "name": "Lyn Card",
+        "slot": "Flex 1",
+        "image": "/assets/starsavior/starsavior/premium/cards/lyn-card.webp"
+      },
+      {
+        "name": "Bunny Claire",
+        "slot": "Flex 1",
+        "image": "/assets/starsavior/starsavior/premium/bunnygirl-claire/hero.png"
+      },
+      {
+        "name": "Charlotte",
+        "slot": "Flex 2",
+        "image": "/assets/starsavior/starsavior/premium/charlotte/hero.png"
+      },
+      {
+        "name": "Petra",
+        "slot": "Flex 3",
+        "image": "/assets/starsavior/starsavior/premium/petra/hero.png"
+      },
+      {
+        "name": "Naru",
+        "slot": "Flex 3",
+        "image": "/assets/starsavior/starsavior/premium/naru/hero.webp"
+      }
+    ]
+  },
+  "skillCards": {
+    "id": "bunnygirl-claire-skills",
+    "kicker": "Skill Cards",
+    "defaultTabId": "ultimate",
+    "items": [
+      {
+        "id": "passive",
+        "label": "Passive",
+        "title": "Passive Skill",
+        "summary": "Bunnygirl Claire's passive matters more once the core stat line is online and the rotation is already stable."
+      },
+      {
+        "id": "basic",
+        "label": "Basic",
+        "title": "Basic Skill",
+        "summary": "Use the basic to bridge cooldowns; it should stay behind the two higher-impact skills in upgrade priority."
+      },
+      {
+        "id": "special",
+        "label": "Special",
+        "title": "Special Skill",
+        "summary": "Special is the next major breakpoint after the opener and usually carries the mid-cycle payoff."
+      },
+      {
+        "id": "ultimate",
+        "label": "Ultimate",
+        "title": "Ultimate Skill",
+        "summary": "Ultimate anchors the opener and stays at the top of the investment order for this build."
+      }
+    ]
+  }
+}

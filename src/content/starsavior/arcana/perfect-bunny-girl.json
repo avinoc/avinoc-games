@@ -5,7 +5,14 @@
   "class": "All",
   "specialPotential": "Sharp Growth - HP +6%, Crit Rate +6%",
   "summary": "Universal Tier 1 HP Arcana that remains especially attractive for bruisers and hybrid damage dealers that still want crit rate.",
-  "tags": ["HP", "Crit Rate", "Bruiser"],
+  "tags": [
+    "HP",
+    "Crit Rate",
+    "Bruiser"
+  ],
   "updatedAt": "2026-03-30",
-  "sourceTabs": ["Arcana Tier List"]
+  "sourceTabs": [
+    "Arcana Tier List"
+  ],
+  "status": "needs-review"
 }

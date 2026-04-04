@@ -1,0 +1,243 @@
+{
+  "slug": "roberta",
+  "updatedAt": "2026-04-03",
+  "status": "published",
+  "sourceTabs": [
+    "Kamigame Roberta guide"
+  ],
+  "sourceContext": {
+    "url": "https://kamigame.jp/starsavior/page/412112754560767802.html",
+    "lead": "Translated and adapted from Kamigame's Roberta guide.",
+    "citationText": "Source page: Roberta Guide - Star Savior | Kamigame.",
+    "reviewedAgainst": [
+      "Kamigame Roberta guide",
+      "STUDIOBSIDE official game art"
+    ],
+    "attributionNote": "© 2025 STUDIOBSIDE Co. Ltd"
+  },
+  "hero": {
+    "title": "Roberta",
+    "subhead": "Star | Striker | Bruiser DPS | Impact",
+    "summary": "The build keeps SPD neck plus ATK% ring while letting the two-piece set carry the defensive adjustment. From there, move into the Late survival route once the core stat line is stable.",
+    "image": "/assets/starsavior/starsavior/premium/roberta/hero.png",
+    "ratings": [
+      {
+        "label": "Overall",
+        "value": "S+"
+      },
+      {
+        "label": "Reroll",
+        "value": "SS"
+      },
+      {
+        "label": "Campaign",
+        "value": "S+"
+      },
+      {
+        "label": "Boss",
+        "value": "SS"
+      },
+      {
+        "label": "Ranked",
+        "value": "SS"
+      },
+      {
+        "label": "Strategy",
+        "value": "SS"
+      }
+    ],
+    "actions": [
+      {
+        "href": "#roberta-builds",
+        "label": "Build Planner",
+        "tone": "primary"
+      },
+      {
+        "href": "#roberta-stats",
+        "label": "Target Stats",
+        "tone": "secondary"
+      },
+      {
+        "href": "#roberta-hard-journey",
+        "label": "Journey: Hard",
+        "tone": "secondary"
+      }
+    ]
+  },
+  "combatIdentity": {
+    "title": "Combat Identity",
+    "summary": "Roberta feels best once Speed, Crit Rate, and Crit DMG are online, giving the first rotation a much steadier payoff.",
+    "bullets": [
+      "Baseline set line: Destruction (4pc) + Valor (2pc).",
+      "Main stats stay on Speed necklace and ATK% ring.",
+      "Substat focus: Speed, Crit Rate, Crit DMG, and ATK%.",
+      "Journey: Hard route leans toward DPS - AX6."
+    ]
+  },
+  "skillRotation": {
+    "title": "Skill Rotation",
+    "summary": "Skill investment is cleanest as Ultimate >= Special >= Basic, with the first cooldown setting the pace for the full rotation.",
+    "steps": [
+      {
+        "step": "1",
+        "title": "Open with Ultimate",
+        "detail": "Lead with the highest-invested cooldown so the opener starts on the strongest possible breakpoint."
+      },
+      {
+        "step": "2",
+        "title": "Cash in on Special",
+        "detail": "Special is usually the next meaningful breakpoint once the opener lands and should carry the mid-cycle payoff."
+      },
+      {
+        "step": "3",
+        "title": "Fill with Basic",
+        "detail": "Use Basic between cooldowns while you keep Speed and Crit Rate stable on gear."
+      },
+      {
+        "step": "4",
+        "title": "Upgrade toward the final target",
+        "detail": "Budget target is 3 / 4 / 6, with 7 / 8 / 8 as the long-term skill finish."
+      }
+    ]
+  },
+  "buildPlanner": {
+    "id": "roberta-builds",
+    "title": "Build Planner",
+    "summary": "Start on the Core bruiser line with Destruction (4pc) + Valor (2pc) and Speed necklace and ATK% ring. Move into the Late survival route once the baseline is stable.",
+    "tag": "Core bruiser",
+    "sets": [
+      {
+        "label": "Core bruiser",
+        "value": "Destruction (4pc) + Valor (2pc)",
+        "note": "Core bruiser keeps SPD on the necklace and ATK% on the ring."
+      },
+      {
+        "label": "Late survival",
+        "value": "Destruction (4pc) + Barrier (2pc)",
+        "note": "The tab also shows a defensive two-piece fallback for sturdier bruiser play."
+      }
+    ],
+    "priorities": [
+      "Necklace: SPD",
+      "Ring: Crit DMG",
+      "Substats: SPD, Crit Rate, Crit DMG, ATK(%)"
+    ]
+  },
+  "targetStats": {
+    "id": "roberta-stats",
+    "kicker": "Target Stats",
+    "summary": "Lock Speed necklace and ATK% ring, then stack Speed, Crit Rate, Crit DMG, and ATK% through substats.",
+    "stats": [
+      {
+        "label": "Necklace",
+        "value": "SPD"
+      },
+      {
+        "label": "Ring",
+        "value": "Crit DMG"
+      },
+      {
+        "label": "Focus 1",
+        "value": "SPD"
+      },
+      {
+        "label": "Focus 2",
+        "value": "Crit Rate"
+      },
+      {
+        "label": "Focus 3",
+        "value": "Crit DMG"
+      },
+      {
+        "label": "Focus 4",
+        "value": "ATK(%)"
+      }
+    ]
+  },
+  "upgradePath": {
+    "kicker": "Upgrade Path",
+    "title": "Priority",
+    "items": [
+      "Skill order: Ultimate >= Special >= Basic",
+      "Budget target: 3 / 4 / 6",
+      "Recommended target: 7 / 8 / 8",
+      "Breakthrough priority: ★☆☆ Works fine at base copy",
+      "Substat focus: Speed, Crit Rate, Crit DMG, and ATK%",
+      "Journey: Hard route: DPS - AX6"
+    ]
+  },
+  "journeyHard": {
+    "id": "roberta-hard-journey",
+    "kicker": "Journey: Hard",
+    "title": "Recommended Cards",
+    "summary": "Core line: Lacy and Bunny Frey. Fill the remaining slots with Roberta or Harley, Charlotte, and Petra or Naru.",
+    "cards": [
+      {
+        "name": "Lacy",
+        "slot": "Core",
+        "image": "/assets/starsavior/starsavior/premium/lacy/hero.png"
+      },
+      {
+        "name": "Bunny Frey",
+        "slot": "Core",
+        "image": "/assets/starsavior/starsavior/premium/noble-princess-frey/hero.png"
+      },
+      {
+        "name": "Roberta",
+        "slot": "Flex 1",
+        "image": "/assets/starsavior/starsavior/premium/roberta/hero.png"
+      },
+      {
+        "name": "Harley",
+        "slot": "Flex 1",
+        "image": "/assets/starsavior/starsavior/premium/harley/hero.png"
+      },
+      {
+        "name": "Charlotte",
+        "slot": "Flex 2",
+        "image": "/assets/starsavior/starsavior/premium/charlotte/hero.png"
+      },
+      {
+        "name": "Petra",
+        "slot": "Flex 3",
+        "image": "/assets/starsavior/starsavior/premium/petra/hero.png"
+      },
+      {
+        "name": "Naru",
+        "slot": "Flex 3",
+        "image": "/assets/starsavior/starsavior/premium/naru/hero.webp"
+      }
+    ]
+  },
+  "skillCards": {
+    "id": "roberta-skills",
+    "kicker": "Skill Cards",
+    "defaultTabId": "ultimate",
+    "items": [
+      {
+        "id": "passive",
+        "label": "Passive",
+        "title": "Veteran's Instinct",
+        "summary": "Roberta's passive matters more once the core stat line is online and the rotation is already stable."
+      },
+      {
+        "id": "basic",
+        "label": "Basic",
+        "title": "Commence Operation",
+        "summary": "Use the basic to bridge cooldowns; it should stay behind the two higher-impact skills in upgrade priority."
+      },
+      {
+        "id": "special",
+        "label": "Special",
+        "title": "Fast Track",
+        "summary": "Special is the next major breakpoint after the opener and usually carries the mid-cycle payoff."
+      },
+      {
+        "id": "ultimate",
+        "label": "Ultimate",
+        "title": "On-Site Emergency Judgment",
+        "summary": "Ultimate anchors the opener and stays at the top of the investment order for this build."
+      }
+    ]
+  }
+}

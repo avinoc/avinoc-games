@@ -5,7 +5,14 @@
   "class": "Assassin",
   "specialPotential": "Elastic Acceleration - SPD ramps at turn start",
   "summary": "Assassin-exclusive speed Arcana that solves slow openers and helps initiative-focused assassins reach useful action thresholds much faster.",
-  "tags": ["Assassin", "Speed", "Tempo"],
+  "tags": [
+    "Assassin",
+    "Speed",
+    "Tempo"
+  ],
   "updatedAt": "2026-03-30",
-  "sourceTabs": ["Arcana Tier List"]
+  "sourceTabs": [
+    "Arcana Tier List"
+  ],
+  "status": "needs-review"
 }

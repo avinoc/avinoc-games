@@ -1,8 +1,10 @@
 ---
 import GameLayout from "../../../layouts/GameLayout.astro";
 import Hero from "../../../components/starsavior/Hero.astro";
+import PremiumBuildGuide from "../../../components/starsavior/PremiumBuildGuide.astro";
 import CitationBanner from "../../../components/starsavior/CitationBanner.astro";
-import { builds } from "../../../data/starsavior/content";
+import DraftBadge from "../../../components/shared/DraftBadge.astro";
+import { builds, getPremiumBuildGuide } from "../../../data/starsavior/content";
 import { buildToTierSearchQuery, getGuideUrl, getRelatedGuidesForBuild, getRelatedTierEntryForBuild } from "../../../data/starsavior/relations";
 
 export async function getStaticPaths() {
@@ -13,6 +15,7 @@ export async function getStaticPaths() {
 }
 
 const { build } = Astro.props;
+const premiumGuide = getPremiumBuildGuide(build.slug);
 const base = import.meta.env.BASE_URL;
 const resolveAsset = (src?: string | null) =>
   !src ? undefined : /^https?:\/\//i.test(src) ? src : `${base}${src.replace(/^\/+/, "")}`;
@@ -22,6 +25,9 @@ const hardCards = build.journeyHard?.cards ?? [];
 const relatedGuides = getRelatedGuidesForBuild(build.slug);
 const relatedTierEntry = getRelatedTierEntryForBuild(build.slug);
 const tierSearchQuery = buildToTierSearchQuery[build.slug] || build.name;
+const activeSourceTabs = premiumGuide?.sourceTabs ?? build.sourceTabs;
+const activeSourceContext = premiumGuide?.sourceContext ?? build.sourceContext;
+const activeUpdatedAt = premiumGuide?.updatedAt ?? build.updatedAt;
 
 const tocItems = [
   { id: "recommended-sets", label: "Sets" },
@@ -32,8 +38,8 @@ const tocItems = [
 ];
 ---
 
-<GameLayout title={`${build.name} Build | StarSavior Atlas`} description={build.notes[0]} game="starsavior">
-  <nav class="container breadcrumb" aria-label="Breadcrumb">
+<GameLayout title={`${build.name} Build | Project Avinoc`} description={premiumGuide?.hero.summary ?? build.notes[0]} game="starsavior">
+  <nav class:list={["container breadcrumb", premiumGuide && "breadcrumb--premium"]} aria-label="Breadcrumb">
     <a href={base}>Home</a>
     <span class="breadcrumb-sep">/</span>
     <a href={`${base}starsavior/builds/`}>Builds</a>
@@ -41,260 +47,282 @@ const tocItems = [
     <span>{build.name}</span>
   </nav>
 
-  <Hero
-    title={build.name}
-    summary={build.notes[0]}
-  />
+  {premiumGuide ? (
+    <section class="container stack premium-build-page">
+      <DraftBadge status={build.status} placement="inline" />
+      <PremiumBuildGuide build={build} guide={premiumGuide} />
+      <CitationBanner sourceTabs={activeSourceTabs} updatedAt={activeUpdatedAt} variant="full" sourceContext={activeSourceContext} />
+    </section>
+  ) : (
+    <>
+      <Hero
+        title={build.name}
+        summary={build.notes[0]}
+      />
 
-  <nav class="container build-toc" aria-label="Page sections">
-    {tocItems.map((item) => (
-      <a href={`#${item.id}`} class="build-toc-link">{item.label}</a>
-    ))}
-  </nav>
+      <nav class="container build-toc" aria-label="Page sections">
+        {tocItems.map((item) => (
+          <a href={`#${item.id}`} class="build-toc-link">{item.label}</a>
+        ))}
+      </nav>
 
-  <section class="container stack">
-    <div class="build-page-grid">
-      <div class="stack">
-        <div id="recommended-sets" class="panel build-overview-panel">
-          {build.image && (
-            <figure class="build-portrait">
-              <img src={resolveAsset(build.image)} alt={`${build.name} portrait`} loading="eager" />
-            </figure>
-          )}
+      <section class="container stack">
+        <DraftBadge status={build.status} placement="inline" />
 
-          <div class="build-overview-copy">
-            <div class="section-heading">
-              <div>
-                <p class="eyebrow">Recommended Sets</p>
-                <h2>Neck, ring, and set routing</h2>
-              </div>
-            </div>
+        <div class="build-page-grid">
+          <div class="stack">
+            <div id="recommended-sets" class="panel build-overview-panel">
+              {build.image && (
+                <figure class="build-portrait">
+                  <img src={resolveAsset(build.image)} alt={`${build.name} portrait`} loading="eager" />
+                </figure>
+              )}
 
-            <div class="data-list">
-              {build.recommendedSets.map((set, index) => (
-                <article class="content-card">
-                  <h3>{set.label}</h3>
-                  {setIconGroups[index]?.length > 0 && (
-                    <div class="icon-row">
-                      {setIconGroups[index].map((icon, iconIndex) => (
-                        <img
-                          src={resolveAsset(icon)}
-                          alt={`${build.name} ${set.label.toLowerCase()} set icon ${iconIndex + 1}`}
-                          loading="lazy"
-                        />
-                      ))}
-                    </div>
-                  )}
-                  <p>
-                    <strong>Sets:</strong> {set.sets.join(" + ")}
-                  </p>
-                  <p>
-                    <strong>Neck:</strong> {set.neckMain}
-                  </p>
-                  <p>
-                    <strong>Ring:</strong> {set.ringMain}
-                  </p>
-                  {set.notes && <p class="muted">{set.notes}</p>}
-                </article>
-              ))}
-            </div>
-          </div>
-        </div>
-
-        {build.journeyNormal && (
-          <div id="journey-normal" class="panel panel--normal" style="padding: 1.4rem;">
-            <div class="section-heading">
-              <div>
-                <p class="eyebrow">Journey Normal</p>
-                <h2>Card route from the source sheet</h2>
-              </div>
-            </div>
-
-            {build.journeyNormal.training && (
-              <div class="recommendation-strip">
-                {build.journeyNormal.training.image && (
-                  <img
-                    src={resolveAsset(build.journeyNormal.training.image)}
-                    alt={`${build.journeyNormal.training.name} training recommendation`}
-                    loading="lazy"
-                  />
-                )}
-                <div>
-                  <strong>Training pick:</strong> {build.journeyNormal.training.name}
+              <div class="build-overview-copy">
+                <div class="section-heading">
+                  <div>
+                    <p class="eyebrow">Recommended Sets</p>
+                    <h2>Neck, ring, and set routing</h2>
+                  </div>
                 </div>
-              </div>
-            )}
 
-            {normalCards.length > 0 && (
-              <div class="media-grid">
-                {normalCards.map((card) => (
-                  <article class="media-card">
-                    {card.image && (
-                      <img src={resolveAsset(card.image)} alt={`${card.name} Journey Normal card`} loading="lazy" />
-                    )}
-                    <h3>{card.name}</h3>
-                  </article>
-                ))}
-              </div>
-            )}
-          </div>
-        )}
-
-        {build.journeyHard && (
-          <div id="journey-hard" class="panel panel--hard" style="padding: 1.4rem;">
-            <div class="section-heading">
-              <div>
-                <p class="eyebrow">Journey Hard</p>
-                <h2>Card recommendations for this build</h2>
-              </div>
-            </div>
-
-            {build.journeyHard.talisman && (
-              <div class="talisman-card">
-                <div class="talisman-copy">
-                  <p class="eyebrow">Hard Talisman</p>
-                  <h3>{build.journeyHard.talisman.label}</h3>
-                  {build.journeyHard.talisman.owner && <p class="muted">Sheet owner lane: {build.journeyHard.talisman.owner}</p>}
-                </div>
-                <div class="icon-row">
-                  {build.journeyHard.talisman.guideIcon && (
-                    <img
-                      src={resolveAsset(build.journeyHard.talisman.guideIcon)}
-                      alt={`${build.name} Hard Journey talisman guide icon`}
-                      loading="lazy"
-                    />
-                  )}
-                  {build.journeyHard.talisman.pieces.map((piece) => (
-                    <div class="piece-chip">
-                      {piece.image && (
-                        <img src={resolveAsset(piece.image)} alt={`${piece.name} talisman piece`} loading="lazy" />
+                <div class="data-list">
+                  {build.recommendedSets.map((set, index) => (
+                    <article class="content-card">
+                      <h3>{set.label}</h3>
+                      {setIconGroups[index]?.length > 0 && (
+                        <div class="icon-row">
+                          {setIconGroups[index].map((icon, iconIndex) => (
+                            <img
+                              src={resolveAsset(icon)}
+                              alt={`${build.name} ${set.label.toLowerCase()} set icon ${iconIndex + 1}`}
+                              loading="lazy"
+                            />
+                          ))}
+                        </div>
                       )}
-                      <span>{piece.name}</span>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            )}
-
-            {hardCards.length > 0 && (
-              <div class="media-grid">
-                {hardCards.map((card) => (
-                  <article class="media-card">
-                    {card.image && (
-                      <img src={resolveAsset(card.image)} alt={`${card.name} Journey Hard card`} loading="lazy" />
-                    )}
-                    <h3>{card.name}</h3>
-                  </article>
-                ))}
-              </div>
-            )}
-
-            {build.journeyHard.alternate && (
-              <div class="stack" style="margin-top: 1rem;">
-                <p class="eyebrow">{build.journeyHard.alternate.label}</p>
-                <div class="media-grid">
-                  {build.journeyHard.alternate.cards.map((card) => (
-                    <article class="media-card">
-                      {card.image && (
-                        <img src={resolveAsset(card.image)} alt={`${card.name} alternate Journey Hard card`} loading="lazy" />
-                      )}
-                      <h3>{card.name}</h3>
+                      <p>
+                        <strong>Sets:</strong> {set.sets.join(" + ")}
+                      </p>
+                      <p>
+                        <strong>Neck:</strong> {set.neckMain}
+                      </p>
+                      <p>
+                        <strong>Ring:</strong> {set.ringMain}
+                      </p>
+                      {set.notes && <p class="muted">{set.notes}</p>}
                     </article>
                   ))}
                 </div>
               </div>
-            )}
-          </div>
-        )}
-      </div>
-
-      <div class="stack">
-        <div id="skill-levels" class="panel" style="padding: 1.4rem;">
-          <div class="section-heading">
-            <div>
-              <p class="eyebrow">Skill Levels</p>
-              <h2>Upgrade path</h2>
             </div>
-          </div>
-          <div class="prose">
-            <div class="progression-chain">
-              {build.skillLevels.progression.map((step, i) => (
-                <div class="progression-step">
-                  {i === 0 && <span class="progression-label">Budget</span>}
-                  {i === build.skillLevels.progression.length - 1 && <span class="progression-label">Endgame</span>}
-                  <span class="progression-value">{step}</span>
+
+            {build.journeyNormal && (
+              <div id="journey-normal" class="panel panel--normal" style="padding: 1.4rem;">
+                <div class="section-heading">
+                  <div>
+                    <p class="eyebrow">Journey Normal</p>
+                    <h2>Card route from the source sheet</h2>
+                  </div>
                 </div>
-              ))}
-            </div>
-          </div>
-        </div>
 
-        <div id="priorities" class="panel" style="padding: 1.4rem;">
-          <div class="section-heading">
-            <div>
-              <p class="eyebrow">Priorities</p>
-              <h2>Substats and Journey notes</h2>
-            </div>
-          </div>
-          <div class="prose">
-            <p><strong>Substats:</strong> {build.subStats.join(", ")}</p>
-            <p><strong>Arcana:</strong> {build.arcana.join(", ")}</p>
-            {build.talismans && (
-              <ul>
-                {build.talismans.journeyNormal && (
-                  <li><strong>Journey Normal:</strong> {build.talismans.journeyNormal}</li>
+                {build.journeyNormal.training && (
+                  <div class="recommendation-strip">
+                    {build.journeyNormal.training.image && (
+                      <img
+                        src={resolveAsset(build.journeyNormal.training.image)}
+                        alt={`${build.journeyNormal.training.name} training recommendation`}
+                        loading="lazy"
+                      />
+                    )}
+                    <div>
+                      <strong>Training pick:</strong> {build.journeyNormal.training.name}
+                    </div>
+                  </div>
                 )}
-                {build.talismans.journeyHard && (
-                  <li><strong>Journey Hard:</strong> {build.talismans.journeyHard}</li>
-                )}
-              </ul>
-            )}
-            <ul>
-              {build.notes.slice(1).map((note) => (
-                <li>{note}</li>
-              ))}
-            </ul>
-          </div>
-        </div>
 
-        <div class="panel" style="padding: 1.4rem;">
-          <div class="section-heading">
-            <div>
-              <p class="eyebrow">Related Pages</p>
-              <h2>Ranking and system context</h2>
+                {normalCards.length > 0 && (
+                  <div class="media-grid">
+                    {normalCards.map((card) => (
+                      <article class="media-card">
+                        {card.image && (
+                          <img src={resolveAsset(card.image)} alt={`${card.name} Journey Normal card`} loading="lazy" />
+                        )}
+                        <h3>{card.name}</h3>
+                      </article>
+                    ))}
+                  </div>
+                )}
+              </div>
+            )}
+
+            {build.journeyHard && (
+              <div id="journey-hard" class="panel panel--hard" style="padding: 1.4rem;">
+                <div class="section-heading">
+                  <div>
+                    <p class="eyebrow">Journey Hard</p>
+                    <h2>Card recommendations for this build</h2>
+                  </div>
+                </div>
+
+                {build.journeyHard.talisman && (
+                  <div class="talisman-card">
+                    <div class="talisman-copy">
+                      <p class="eyebrow">Hard Talisman</p>
+                      <h3>{build.journeyHard.talisman.label}</h3>
+                      {build.journeyHard.talisman.owner && <p class="muted">Sheet owner lane: {build.journeyHard.talisman.owner}</p>}
+                    </div>
+                    <div class="icon-row">
+                      {build.journeyHard.talisman.guideIcon && (
+                        <img
+                          src={resolveAsset(build.journeyHard.talisman.guideIcon)}
+                          alt={`${build.name} Hard Journey talisman guide icon`}
+                          loading="lazy"
+                        />
+                      )}
+                      {build.journeyHard.talisman.pieces.map((piece) => (
+                        <div class="piece-chip">
+                          {piece.image && (
+                            <img src={resolveAsset(piece.image)} alt={`${piece.name} talisman piece`} loading="lazy" />
+                          )}
+                          <span>{piece.name}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                )}
+
+                {hardCards.length > 0 && (
+                  <div class="media-grid">
+                    {hardCards.map((card) => (
+                      <article class="media-card">
+                        {card.image && (
+                          <img src={resolveAsset(card.image)} alt={`${card.name} Journey Hard card`} loading="lazy" />
+                        )}
+                        <h3>{card.name}</h3>
+                      </article>
+                    ))}
+                  </div>
+                )}
+
+                {build.journeyHard.alternate && (
+                  <div class="stack" style="margin-top: 1rem;">
+                    <p class="eyebrow">{build.journeyHard.alternate.label}</p>
+                    <div class="media-grid">
+                      {build.journeyHard.alternate.cards.map((card) => (
+                        <article class="media-card">
+                          {card.image && (
+                            <img src={resolveAsset(card.image)} alt={`${card.name} alternate Journey Hard card`} loading="lazy" />
+                          )}
+                          <h3>{card.name}</h3>
+                        </article>
+                      ))}
+                    </div>
+                  </div>
+                )}
+              </div>
+            )}
+          </div>
+
+          <div class="stack">
+            <div id="skill-levels" class="panel" style="padding: 1.4rem;">
+              <div class="section-heading">
+                <div>
+                  <p class="eyebrow">Skill Levels</p>
+                  <h2>Upgrade path</h2>
+                </div>
+              </div>
+              <div class="prose">
+                <div class="progression-chain">
+                  {build.skillLevels.progression.map((step, i) => (
+                    <div class="progression-step">
+                      {i === 0 && <span class="progression-label">Budget</span>}
+                      {i === build.skillLevels.progression.length - 1 && <span class="progression-label">Endgame</span>}
+                      <span class="progression-value">{step}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+
+            <div id="priorities" class="panel" style="padding: 1.4rem;">
+              <div class="section-heading">
+                <div>
+                  <p class="eyebrow">Priorities</p>
+                  <h2>Substats and Journey notes</h2>
+                </div>
+              </div>
+              <div class="prose">
+                <p><strong>Substats:</strong> {build.subStats.join(", ")}</p>
+                <p><strong>Arcana:</strong> {build.arcana.join(", ")}</p>
+                {build.talismans && (
+                  <ul>
+                    {build.talismans.journeyNormal && (
+                      <li><strong>Journey Normal:</strong> {build.talismans.journeyNormal}</li>
+                    )}
+                    {build.talismans.journeyHard && (
+                      <li><strong>Journey Hard:</strong> {build.talismans.journeyHard}</li>
+                    )}
+                  </ul>
+                )}
+                <ul>
+                  {build.notes.slice(1).map((note) => (
+                    <li>{note}</li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+
+            <div class="panel" style="padding: 1.4rem;">
+              <div class="section-heading">
+                <div>
+                  <p class="eyebrow">Related Pages</p>
+                  <h2>Ranking and system context</h2>
+                </div>
+              </div>
+
+              <div class="related-links">
+                {relatedTierEntry ? (
+                  <a class="related-link-card" href={`${base}starsavior/tier-lists/saviors/#${relatedTierEntry.slug}`}>
+                    <div>
+                      <strong>View the matching tier entry</strong>
+                      <span>Jump to {relatedTierEntry.name} on the Savior tier list.</span>
+                    </div>
+                  </a>
+                ) : (
+                  <a class="related-link-card" href={`${base}starsavior/tier-lists/saviors/?q=${encodeURIComponent(tierSearchQuery)}`}>
+                    <div>
+                      <strong>Search the Savior tier list</strong>
+                      <span>Filter the rankings for {tierSearchQuery} and nearby matches.</span>
+                    </div>
+                  </a>
+                )}
+
+                {relatedGuides.map((guide) => (
+                  <a class="related-link-card" href={`${base}${getGuideUrl(guide).replace(/^\//, "")}`}>
+                    <div>
+                      <strong>{guide.title}</strong>
+                      <span>{guide.summary}</span>
+                    </div>
+                  </a>
+                ))}
+              </div>
             </div>
           </div>
-
-          <div class="related-links">
-            {relatedTierEntry ? (
-              <a class="related-link-card" href={`${base}starsavior/tier-lists/saviors/#${relatedTierEntry.slug}`}>
-                <div>
-                  <strong>View the matching tier entry</strong>
-                  <span>Jump to {relatedTierEntry.name} on the Savior tier list.</span>
-                </div>
-              </a>
-            ) : (
-              <a class="related-link-card" href={`${base}starsavior/tier-lists/saviors/?q=${encodeURIComponent(tierSearchQuery)}`}>
-                <div>
-                  <strong>Search the Savior tier list</strong>
-                  <span>Filter the rankings for {tierSearchQuery} and nearby matches.</span>
-                </div>
-              </a>
-            )}
-
-            {relatedGuides.map((guide) => (
-              <a class="related-link-card" href={`${base}${getGuideUrl(guide).replace(/^\//, "")}`}>
-                <div>
-                  <strong>{guide.title}</strong>
-                  <span>{guide.summary}</span>
-                </div>
-              </a>
-            ))}
-          </div>
         </div>
-      </div>
-    </div>
 
-    <CitationBanner sourceTabs={build.sourceTabs} updatedAt={build.updatedAt} sourceContext={build.sourceContext} />
-  </section>
+        <CitationBanner sourceTabs={activeSourceTabs} updatedAt={activeUpdatedAt} sourceContext={activeSourceContext} />
+      </section>
+    </>
+  )}
 </GameLayout>
+
+<style>
+  .premium-build-page {
+    padding-bottom: 2rem;
+  }
+
+  .breadcrumb--premium {
+    padding-bottom: 0.55rem;
+  }
+</style>

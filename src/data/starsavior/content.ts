@@ -17,10 +17,97 @@ export interface GuideMeta {
   slug: string;
   summary: string;
   updatedAt: string;
+  status: ContentStatus;
   category: "starter" | "progression" | "combat" | "systems" | "journey";
   routeGroup: "guides" | "journey";
   sourceTabs: string[];
   sections: { id: string; title: string }[];
+}
+
+
+
+export type ContentStatus = "draft" | "published" | "needs-review";
+
+export interface SourceContext {
+  url: string;
+  lead: string;
+  citationText: string;
+  reviewedAgainst?: string[];
+  attributionNote?: string;
+  permissionNote?: string;
+}
+
+export interface PremiumBuildAction {
+  href: string;
+  label: string;
+  tone?: "primary" | "secondary";
+}
+
+export interface PremiumBuildGuide {
+  slug: string;
+  updatedAt: string;
+  status: ContentStatus;
+  sourceTabs: string[];
+  sourceContext?: SourceContext | null;
+  hero: {
+    title: string;
+    subhead?: string;
+    summary: string;
+    image?: string;
+    ratings: { label: string; value: string }[];
+    actions: PremiumBuildAction[];
+  };
+  combatIdentity: {
+    title: string;
+    summary: string;
+    bullets: string[];
+  };
+  skillRotation: {
+    title: string;
+    summary: string;
+    steps: { step: string; title: string; detail: string }[];
+  };
+  buildPlanner: {
+    id: string;
+    title: string;
+    summary: string;
+    tag?: string;
+    sets: { label: string; value: string; note: string }[];
+    priorities: string[];
+  };
+  teamDrafts?: {
+    id: string;
+    title: string;
+    summary: string;
+    label: string;
+    team: string;
+    note: string;
+    members: { name: string; image: string }[];
+  };
+  targetStats?: {
+    id: string;
+    kicker: string;
+    summary: string;
+    stats: { label: string; value: string }[];
+  };
+  upgradePath?: {
+    kicker: string;
+    title: string;
+    items: string[];
+  };
+  journeyHard?: {
+    id: string;
+    kicker: string;
+    title: string;
+    summary: string;
+    cards: { name: string; slot: string; image: string }[];
+  };
+  skillCards?: {
+    id: string;
+    kicker: string;
+    defaultTabId?: string;
+    items: { id: string; label: string; title: string; summary: string }[];
+  };
 }
 
 export interface BuildEntry {
@@ -58,13 +145,9 @@ export interface BuildEntry {
     } | null;
   };
   talismans?: { journeyNormal?: string; journeyHard?: string };
-  sourceContext?: {
-    url: string;
-    lead: string;
-    citationText: string;
-    permissionNote?: string;
-  } | null;
+  sourceContext?: SourceContext | null;
   notes: string[];
+  status: ContentStatus;
 }
 
 export interface TierEntry {
@@ -77,6 +160,7 @@ export interface TierEntry {
   image?: string;
   updatedAt: string;
   sourceTabs: string[];
+  status: ContentStatus;
 }
 
 export interface ArcanaEntry {
@@ -90,6 +174,11 @@ export interface ArcanaEntry {
   tags: string[];
   updatedAt: string;
   sourceTabs: string[];
+  status: ContentStatus;
+}
+
+function filterPublished<T extends { status: ContentStatus }>(entries: T[]): T[] {
+  return import.meta.env.PROD ? entries.filter((entry) => entry.status === "published") : entries;
 }
 
 export const sourceMeta = {
@@ -101,13 +190,14 @@ export const sourceMeta = {
     "If you plan to include content from this Google Sheet in another guide, you must obtain permission through Discord and clearly cite the source."
 } as const;
 
-export const guides: GuideMeta[] = [
+const guideEntries: GuideMeta[] = [
   {
     title: "Reroll Guide",
     slug: "reroll",
     summary:
       "A cleaner English reroll route built from the published guide sheet, focused on realistic targets and what actually matters on a fresh global account.",
     updatedAt: "2026-03-30",
+    status: "needs-review",
     category: "starter",
     routeGroup: "guides",
     sourceTabs: ["Reroll Guide"],
@@ -124,6 +214,7 @@ export const guides: GuideMeta[] = [
     summary:
       "A clean first-week route through the starter tab, covering mileage, selectors, early task order, and the account decisions that are easiest to get wrong.",
     updatedAt: "2026-03-30",
+    status: "needs-review",
     category: "starter",
     routeGroup: "guides",
     sourceTabs: ["Starter's Guide"],
@@ -141,6 +232,7 @@ export const guides: GuideMeta[] = [
     summary:
       "The launch translation of the team-building tab, cleaned into role rules, attribute shells, and early-game roster limits that are easier to act on.",
     updatedAt: "2026-03-30",
+    status: "needs-review",
     category: "combat",
     routeGroup: "guides",
     sourceTabs: ["Team Building"],
@@ -158,6 +250,7 @@ export const guides: GuideMeta[] = [
     summary:
       "A cleaned English version of the gear tab, focused on what to farm, what to enhance, and which set families matter for early and mid-game accounts.",
     updatedAt: "2026-03-30",
+    status: "needs-review",
     category: "systems",
     routeGroup: "guides",
     sourceTabs: ["Gear Guide (ENG)"],
@@ -175,6 +268,7 @@ export const guides: GuideMeta[] = [
     summary:
       "A cleaned progression page based on the CP tab, focused on which upgrades give the biggest returns and which ones are mostly marginal.",
     updatedAt: "2026-03-30",
+    status: "needs-review",
     category: "progression",
     routeGroup: "guides",
     sourceTabs: ["How to increase CP (ENG)"],
@@ -191,6 +285,7 @@ export const guides: GuideMeta[] = [
     summary:
       "The main English Journey: Hard tab, rewritten into practical checkpoints for resonance, training, shop routing, hunt execution, and condition management.",
     updatedAt: "2026-03-30",
+    status: "needs-review",
     category: "journey",
     routeGroup: "journey",
     sourceTabs: ["Journey(Hard) Guide"],
@@ -208,6 +303,7 @@ export const guides: GuideMeta[] = [
     summary:
       "The dense strategy tab translated into a cleaner reference for special potential crafting, charm reward choices, and character-specific Journey planning.",
     updatedAt: "2026-03-30",
+    status: "needs-review",
     category: "journey",
     routeGroup: "journey",
     sourceTabs: ["Journey(Hard) Strategy Guide"],
@@ -221,11 +317,29 @@ export const guides: GuideMeta[] = [
   }
 ];
 
-export const builds: BuildEntry[] = buildRoster;
+export const guides: GuideMeta[] = filterPublished(guideEntries);
 
-export const saviors: TierEntry[] = saviorRoster;
 
-export const arcana: ArcanaEntry[] = [
+export const builds: BuildEntry[] = filterPublished(buildRoster as BuildEntry[]);
+
+const premiumBuildModules = import.meta.glob("../../content/starsavior/premium-builds/*.json", {
+  eager: true,
+  import: "default"
+});
+
+const premiumBuildEntries = Object.values(premiumBuildModules) as PremiumBuildGuide[];
+
+export const premiumBuilds: PremiumBuildGuide[] = filterPublished(premiumBuildEntries);
+
+const premiumBuildsBySlug = new Map(premiumBuilds.map((entry) => [entry.slug, entry]));
+
+export function getPremiumBuildGuide(slug: string): PremiumBuildGuide | undefined {
+  return premiumBuildsBySlug.get(slug);
+}
+
+export const saviors: TierEntry[] = filterPublished(saviorRoster as TierEntry[]);
+
+const arcanaEntries = [
   aKnightsOath,
   asCuteAsKyra,
   divineJudgement,
@@ -235,4 +349,6 @@ export const arcana: ArcanaEntry[] = [
   nostalgiaStrikesBack,
   perfectBunnyGirl,
   underTheGlassMoon
-];
+] as ArcanaEntry[];
+
+export const arcana: ArcanaEntry[] = filterPublished(arcanaEntries);
