@@ -2,33 +2,59 @@
   "name": "Lacy",
   "slug": "lacy",
   "role": "Bruiser DPS",
-  "modes": ["PvE", "PvP"],
+  "modes": [
+    "PvE",
+    "PvP"
+  ],
   "updatedAt": "2026-03-30",
-  "sourceTabs": ["All Character Build Guide"],
+  "sourceTabs": [
+    "All Character Build Guide"
+  ],
   "recommendedSets": [
     {
       "label": "Budget",
-      "sets": ["Insight (4pc)", "Hit (2pc)"],
+      "sets": [
+        "Insight (4pc)",
+        "Hit (2pc)"
+      ],
       "neckMain": "SPD",
       "ringMain": "ATK%"
     },
     {
       "label": "Endgame",
-      "sets": ["ATK (4pc)", "Hit (2pc)"],
+      "sets": [
+        "ATK (4pc)",
+        "Hit (2pc)"
+      ],
       "neckMain": "SPD",
       "ringMain": "ATK%",
       "notes": "The sheet also shows a Precision-based route, but the attack shell is the clearest late target."
     }
   ],
-  "subStats": ["SPD", "ATK%", "Crit Rate", "Crit DMG", "Effect Hit%"],
+  "subStats": [
+    "SPD",
+    "ATK%",
+    "Crit Rate",
+    "Crit DMG",
+    "Effect Hit%"
+  ],
   "skillLevels": {
     "budget": "3 / 3 / 6",
     "endgame": "7 / 7 / 8",
-    "progression": ["3 / 3 / 3", "3 / 3 / 6", "3 / 6 / 8", "7 / 7 / 8"]
+    "progression": [
+      "3 / 3 / 3",
+      "3 / 3 / 6",
+      "3 / 6 / 8",
+      "7 / 7 / 8"
+    ]
   },
-  "arcana": ["ATK Strength Arcana", "Crit-rate Focus Arcana"],
+  "arcana": [
+    "ATK Strength Arcana",
+    "Crit-rate Focus Arcana"
+  ],
   "notes": [
     "Lacy is treated across the source sheet as a premium all-purpose unit, so her build aims for both damage and utility consistency.",
     "The source row keeps Effect Hit% in the recommended substat package rather than stripping her down to pure crit stats."
-  ]
+  ],
+  "status": "needs-review"
 }

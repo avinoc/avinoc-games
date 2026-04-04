@@ -1,0 +1,243 @@
+{
+  "slug": "tanya",
+  "updatedAt": "2026-04-03",
+  "status": "published",
+  "sourceTabs": [
+    "Kamigame Tanya guide"
+  ],
+  "sourceContext": {
+    "url": "https://kamigame.jp/starsavior/page/396886820215887024.html",
+    "lead": "Translated and adapted from Kamigame's Tanya guide.",
+    "citationText": "Source page: Tanya Guide - Star Savior | Kamigame.",
+    "reviewedAgainst": [
+      "Kamigame Tanya guide",
+      "STUDIOBSIDE official game art"
+    ],
+    "attributionNote": "© 2025 STUDIOBSIDE Co. Ltd"
+  },
+  "hero": {
+    "title": "Tanya",
+    "subhead": "Star | Striker | Single-target DPS | Impact",
+    "summary": "Tanya keeps the same speed and attack stat line but flexes her set package depending on whether you need raw damage or faster initiative. From there, move into the PvP pressure route once the core stat line is stable.",
+    "image": "/assets/starsavior/starsavior/premium/tanya/hero.png",
+    "ratings": [
+      {
+        "label": "Overall",
+        "value": "S+"
+      },
+      {
+        "label": "Reroll",
+        "value": "S"
+      },
+      {
+        "label": "Campaign",
+        "value": "S+"
+      },
+      {
+        "label": "Boss",
+        "value": "S+"
+      },
+      {
+        "label": "Ranked",
+        "value": "A"
+      },
+      {
+        "label": "Strategy",
+        "value": "S"
+      }
+    ],
+    "actions": [
+      {
+        "href": "#tanya-builds",
+        "label": "Build Planner",
+        "tone": "primary"
+      },
+      {
+        "href": "#tanya-stats",
+        "label": "Target Stats",
+        "tone": "secondary"
+      },
+      {
+        "href": "#tanya-hard-journey",
+        "label": "Journey: Hard",
+        "tone": "secondary"
+      }
+    ]
+  },
+  "combatIdentity": {
+    "title": "Combat Identity",
+    "summary": "Tanya feels best once ATK%, Speed, and Crit Rate are online, giving the first rotation a much steadier payoff.",
+    "bullets": [
+      "Baseline set line: Insight (4pc) + Valor (2pc).",
+      "Main stats stay on Speed necklace and ATK% ring.",
+      "Substat focus: ATK%, Speed, Crit Rate, and Crit DMG.",
+      "Journey: Hard route leans toward DPS - AX5."
+    ]
+  },
+  "skillRotation": {
+    "title": "Skill Rotation",
+    "summary": "Skill investment is cleanest as Ultimate >= Special >= Basic, with the first cooldown setting the pace for the full rotation.",
+    "steps": [
+      {
+        "step": "1",
+        "title": "Open with Ultimate",
+        "detail": "Lead with the highest-invested cooldown so the opener starts on the strongest possible breakpoint."
+      },
+      {
+        "step": "2",
+        "title": "Cash in on Special",
+        "detail": "Special is usually the next meaningful breakpoint once the opener lands and should carry the mid-cycle payoff."
+      },
+      {
+        "step": "3",
+        "title": "Fill with Basic",
+        "detail": "Use Basic between cooldowns while you keep ATK% and Speed stable on gear."
+      },
+      {
+        "step": "4",
+        "title": "Upgrade toward the final target",
+        "detail": "Budget target is 3 / 6 / 6, with 7 / 8 / 7 as the long-term skill finish."
+      }
+    ]
+  },
+  "buildPlanner": {
+    "id": "tanya-builds",
+    "title": "Build Planner",
+    "summary": "Start on the Core line with Insight (4pc) + Valor (2pc) and Speed necklace and ATK% ring. Move into the PvP pressure route once the baseline is stable.",
+    "tag": "Core",
+    "sets": [
+      {
+        "label": "Core",
+        "value": "Insight (4pc) + Valor (2pc)",
+        "note": "Core keeps SPD on the necklace and ATK% on the ring."
+      },
+      {
+        "label": "PvP pressure",
+        "value": "Speed (4pc) + Valor (2pc)",
+        "note": "The current build includes a speed-heavy lane for PvP pressure and turn tempo."
+      }
+    ],
+    "priorities": [
+      "Necklace: SPD",
+      "Ring: ATK(%)",
+      "Substats: ATK(%), SPD, Crit Rate, Crit DMG"
+    ]
+  },
+  "targetStats": {
+    "id": "tanya-stats",
+    "kicker": "Target Stats",
+    "summary": "Lock Speed necklace and ATK% ring, then stack ATK%, Speed, Crit Rate, and Crit DMG through substats.",
+    "stats": [
+      {
+        "label": "Necklace",
+        "value": "SPD"
+      },
+      {
+        "label": "Ring",
+        "value": "ATK(%)"
+      },
+      {
+        "label": "Focus 1",
+        "value": "ATK(%)"
+      },
+      {
+        "label": "Focus 2",
+        "value": "SPD"
+      },
+      {
+        "label": "Focus 3",
+        "value": "Crit Rate"
+      },
+      {
+        "label": "Focus 4",
+        "value": "Crit DMG"
+      }
+    ]
+  },
+  "upgradePath": {
+    "kicker": "Upgrade Path",
+    "title": "Priority",
+    "items": [
+      "Skill order: Ultimate >= Special >= Basic",
+      "Budget target: 3 / 6 / 6",
+      "Recommended target: 7 / 8 / 7",
+      "Breakthrough priority: ★★☆ Strong gains from extra copies",
+      "Substat focus: ATK%, Speed, Crit Rate, and Crit DMG",
+      "Journey: Hard route: DPS - AX5"
+    ]
+  },
+  "journeyHard": {
+    "id": "tanya-hard-journey",
+    "kicker": "Journey: Hard",
+    "title": "Recommended Cards",
+    "summary": "Core line: Lacy and Bunny Frey. Fill the remaining slots with Charlotte, Tanya or Bunny Claire, and Petra or Naru.",
+    "cards": [
+      {
+        "name": "Lacy",
+        "slot": "Core",
+        "image": "/assets/starsavior/starsavior/premium/lacy/hero.png"
+      },
+      {
+        "name": "Bunny Frey",
+        "slot": "Core",
+        "image": "/assets/starsavior/starsavior/premium/noble-princess-frey/hero.png"
+      },
+      {
+        "name": "Charlotte",
+        "slot": "Flex 1",
+        "image": "/assets/starsavior/starsavior/premium/charlotte/hero.png"
+      },
+      {
+        "name": "Tanya",
+        "slot": "Flex 2",
+        "image": "/assets/starsavior/starsavior/premium/tanya/hero.png"
+      },
+      {
+        "name": "Bunny Claire",
+        "slot": "Flex 2",
+        "image": "/assets/starsavior/starsavior/premium/bunnygirl-claire/hero.png"
+      },
+      {
+        "name": "Petra",
+        "slot": "Flex 3",
+        "image": "/assets/starsavior/starsavior/premium/petra/hero.png"
+      },
+      {
+        "name": "Naru",
+        "slot": "Flex 3",
+        "image": "/assets/starsavior/starsavior/premium/naru/hero.webp"
+      }
+    ]
+  },
+  "skillCards": {
+    "id": "tanya-skills",
+    "kicker": "Skill Cards",
+    "defaultTabId": "ultimate",
+    "items": [
+      {
+        "id": "passive",
+        "label": "Passive",
+        "title": "Demolition Work",
+        "summary": "Tanya's passive matters more once the core stat line is online and the rotation is already stable."
+      },
+      {
+        "id": "basic",
+        "label": "Basic",
+        "title": "Boom-Boom Tool",
+        "summary": "Use the basic to bridge cooldowns; it should stay behind the two higher-impact skills in upgrade priority."
+      },
+      {
+        "id": "special",
+        "label": "Special",
+        "title": "Buzz-Buzz Chainsaw",
+        "summary": "Special is the next major breakpoint after the opener and usually carries the mid-cycle payoff."
+      },
+      {
+        "id": "ultimate",
+        "label": "Ultimate",
+        "title": "Bang-Bang Bunker",
+        "summary": "Ultimate anchors the opener and stays at the top of the investment order for this build."
+      }
+    ]
+  }
+}

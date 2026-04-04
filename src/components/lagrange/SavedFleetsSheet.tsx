@@ -11,7 +11,7 @@ import { Badge } from "./ui/badge";
 import { Card, CardContent } from "./ui/card";
 import { Trash2, Upload } from "lucide-react";
 import { getSavedFleets, removeSavedFleet } from "../../data/lagrange/savedFleets";
-import { SavedFleetMeta } from "../../data/lagrange/savedFleet";
+import { type SavedFleetMeta } from "../../data/lagrange/savedFleet";
 
 interface SavedFleetsSheetProps {
   open: boolean;

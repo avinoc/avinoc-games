@@ -1,4 +1,6 @@
 ---
+import DraftBadge from "../shared/DraftBadge.astro";
+
 interface Props {
   href: string;
   tier: string;
@@ -8,6 +10,7 @@ interface Props {
   badge?: string;
   searchText?: string;
   filterValues?: string[];
+  status?: string;
 }
 
 const {
@@ -18,7 +21,8 @@ const {
   image,
   badge,
   searchText = `${title} ${subtitle || ""}`,
-  filterValues = []
+  filterValues = [],
+  status = "published"
 } = Astro.props;
 
 const base = import.meta.env.BASE_URL;
@@ -35,25 +39,27 @@ const initials = title
   .join("");
 ---
 
-<a
-  class="tier-tile"
-  href={href}
-  data-tier={tier}
-  data-search={searchText}
-  data-focus={filterValues.join(",")}
->
-  <span class:list={["tier-tile__avatar", !image && "tier-tile__avatar--fallback"]} aria-hidden={image ? "false" : "true"}>
-    {image ? (
-      <img src={resolveAsset(image)} alt={`${title} artwork`} loading="lazy" />
-    ) : (
-      <span>{initials}</span>
-    )}
-  </span>
+<DraftBadge status={status}>
+  <a
+    class="tier-tile"
+    href={href}
+    data-tier={tier}
+    data-search={searchText}
+    data-focus={filterValues.join(",")}
+  >
+    <span class:list={["tier-tile__avatar", !image && "tier-tile__avatar--fallback"]} aria-hidden={image ? "false" : "true"}>
+      {image ? (
+        <img src={resolveAsset(image)} alt={`${title} artwork`} loading="lazy" />
+      ) : (
+        <span>{initials}</span>
+      )}
+    </span>
 
-  <span class="tier-tile__copy">
-    <strong>{title}</strong>
-    {subtitle && <small>{subtitle}</small>}
-  </span>
+    <span class="tier-tile__copy">
+      <strong>{title}</strong>
+      {subtitle && <small>{subtitle}</small>}
+    </span>
 
-  {badge && <span class="tier-tile__badge">{badge}</span>}
-</a>
+    {badge && <span class="tier-tile__badge">{badge}</span>}
+  </a>
+</DraftBadge>

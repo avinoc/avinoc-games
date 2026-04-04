@@ -5,7 +5,14 @@
   "class": "All",
   "specialPotential": "Stigma of Insight - Crit Rate +18%",
   "summary": "Universal Tier 0 Focus Arcana used by many DPS and bruiser characters that need a large crit-rate injection.",
-  "tags": ["Focus", "Crit Rate", "Universal"],
+  "tags": [
+    "Focus",
+    "Crit Rate",
+    "Universal"
+  ],
   "updatedAt": "2026-03-30",
-  "sourceTabs": ["Arcana Tier List"]
+  "sourceTabs": [
+    "Arcana Tier List"
+  ],
+  "status": "needs-review"
 }

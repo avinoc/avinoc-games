@@ -1,0 +1,256 @@
+{
+  "slug": "emilly",
+  "updatedAt": "2026-04-03",
+  "status": "published",
+  "sourceTabs": [
+    "Kamigame Emilly guide"
+  ],
+  "sourceContext": {
+    "url": "https://kamigame.jp/starsavior/page/406024895697311511.html",
+    "lead": "Translated and adapted from Kamigame's Emilly guide.",
+    "citationText": "Source page: Emilly Guide - Star Savior | Kamigame.",
+    "reviewedAgainst": [
+      "Kamigame Emilly guide",
+      "STUDIOBSIDE official game art"
+    ],
+    "attributionNote": "© 2025 STUDIOBSIDE Co. Ltd"
+  },
+  "hero": {
+    "title": "Emilly",
+    "subhead": "Moon | Defender | PvE / PvP | Slash",
+    "summary": "Emilly starts best on HP (4pc) + Barrier (2pc) with Speed necklace and HP% ring. From there, branch into the High-end route and the PvP route as your gear options widen.",
+    "image": "/assets/starsavior/starsavior/premium/emilly/hero.webp",
+    "ratings": [
+      {
+        "label": "Overall",
+        "value": "SSS"
+      },
+      {
+        "label": "Reroll",
+        "value": "SSS"
+      },
+      {
+        "label": "Campaign",
+        "value": "SSS"
+      },
+      {
+        "label": "Boss",
+        "value": "SS"
+      },
+      {
+        "label": "Ranked",
+        "value": "SSS"
+      },
+      {
+        "label": "Strategy",
+        "value": "SSS"
+      }
+    ],
+    "actions": [
+      {
+        "href": "#emilly-builds",
+        "label": "Build Planner",
+        "tone": "primary"
+      },
+      {
+        "href": "#emilly-stats",
+        "label": "Target Stats",
+        "tone": "secondary"
+      },
+      {
+        "href": "#emilly-hard-journey",
+        "label": "Journey: Hard",
+        "tone": "secondary"
+      }
+    ]
+  },
+  "combatIdentity": {
+    "title": "Combat Identity",
+    "summary": "Emilly feels best once HP%, DEF%, and Crit Rate are online, giving the first rotation a much steadier payoff.",
+    "bullets": [
+      "Baseline set line: HP (4pc) + Barrier (2pc).",
+      "Main stats stay on Speed necklace and HP% ring.",
+      "Substat focus: HP%, DEF%, Crit Rate, and Crit DMG.",
+      "Journey: Hard route leans toward CRIT - EX5."
+    ]
+  },
+  "skillRotation": {
+    "title": "Skill Rotation",
+    "summary": "Skill investment is cleanest as Special >= Ultimate >= Basic, with the first cooldown setting the pace for the full rotation.",
+    "steps": [
+      {
+        "step": "1",
+        "title": "Open with Special",
+        "detail": "Lead with the highest-invested cooldown so the opener starts on the strongest possible breakpoint."
+      },
+      {
+        "step": "2",
+        "title": "Cash in on Ultimate",
+        "detail": "Ultimate is usually the next meaningful breakpoint once the opener lands and should carry the mid-cycle payoff."
+      },
+      {
+        "step": "3",
+        "title": "Fill with Basic",
+        "detail": "Use Basic between cooldowns while you keep HP% and DEF% stable on gear."
+      },
+      {
+        "step": "4",
+        "title": "Upgrade toward the final target",
+        "detail": "Budget target is 3 / 3 / 3, with 7 / 10 / 7 as the long-term skill finish."
+      }
+    ]
+  },
+  "buildPlanner": {
+    "id": "emilly-builds",
+    "title": "Build Planner",
+    "summary": "Start on the PvE / PvP line with HP (4pc) + Barrier (2pc) and Speed necklace and HP% ring. Move into the High-end route and the PvP route once the baseline is stable.",
+    "tag": "PvE / PvP",
+    "sets": [
+      {
+        "label": "PvE / PvP",
+        "value": "HP (4pc) + Barrier (2pc)",
+        "note": "PvE / PvP keeps SPD on the necklace and HP% on the ring."
+      },
+      {
+        "label": "High-end",
+        "value": "Insight (4pc) + Barrier (2pc)",
+        "note": "High-end keeps SPD on the necklace and HP% on the ring."
+      },
+      {
+        "label": "PvP",
+        "value": "Speed (4pc) + Barrier (2pc)",
+        "note": "PvP keeps SPD on the necklace and HP% on the ring."
+      }
+    ],
+    "priorities": [
+      "Necklace: SPD",
+      "Ring: HP(%)",
+      "Substats: HP(%), DEF(%), Crit Rate, Crit DMG, Effect RES, SPD"
+    ]
+  },
+  "targetStats": {
+    "id": "emilly-stats",
+    "kicker": "Target Stats",
+    "summary": "Lock Speed necklace and HP% ring, then stack HP%, DEF%, Crit Rate, and Crit DMG through substats.",
+    "stats": [
+      {
+        "label": "Necklace",
+        "value": "SPD"
+      },
+      {
+        "label": "Ring",
+        "value": "HP(%)"
+      },
+      {
+        "label": "Focus 1",
+        "value": "HP(%)"
+      },
+      {
+        "label": "Focus 2",
+        "value": "DEF(%)"
+      },
+      {
+        "label": "Focus 3",
+        "value": "Crit Rate"
+      },
+      {
+        "label": "Focus 4",
+        "value": "Crit DMG"
+      },
+      {
+        "label": "Focus 5",
+        "value": "Effect RES"
+      },
+      {
+        "label": "Focus 6",
+        "value": "SPD"
+      }
+    ]
+  },
+  "upgradePath": {
+    "kicker": "Upgrade Path",
+    "title": "Priority",
+    "items": [
+      "Skill order: Special >= Ultimate >= Basic",
+      "Budget target: 3 / 3 / 3",
+      "Recommended target: 7 / 10 / 7",
+      "Breakthrough priority: ★☆☆ Works fine at base copy",
+      "Substat focus: HP%, DEF%, Crit Rate, and Crit DMG",
+      "Journey: Hard route: CRIT - EX5"
+    ]
+  },
+  "journeyHard": {
+    "id": "emilly-hard-journey",
+    "kicker": "Journey: Hard",
+    "title": "Recommended Cards",
+    "summary": "Core line: Charlotte and Emilly. Fill the remaining slots with Waltz Asherah or Lacy, Bunny Claire, and Petra or Naru.",
+    "cards": [
+      {
+        "name": "Charlotte",
+        "slot": "Core",
+        "image": "/assets/starsavior/starsavior/premium/charlotte/hero.png"
+      },
+      {
+        "name": "Emilly",
+        "slot": "Core",
+        "image": "/assets/starsavior/starsavior/premium/emilly/hero.webp"
+      },
+      {
+        "name": "Waltz Asherah",
+        "slot": "Flex 1",
+        "image": "/assets/starsavior/starsavior/premium/waltz-asherah/hero.webp"
+      },
+      {
+        "name": "Lacy",
+        "slot": "Flex 1",
+        "image": "/assets/starsavior/starsavior/premium/lacy/hero.png"
+      },
+      {
+        "name": "Bunny Claire",
+        "slot": "Flex 2",
+        "image": "/assets/starsavior/starsavior/premium/bunnygirl-claire/hero.png"
+      },
+      {
+        "name": "Petra",
+        "slot": "Flex 3",
+        "image": "/assets/starsavior/starsavior/premium/petra/hero.png"
+      },
+      {
+        "name": "Naru",
+        "slot": "Flex 3",
+        "image": "/assets/starsavior/starsavior/premium/naru/hero.webp"
+      }
+    ]
+  },
+  "skillCards": {
+    "id": "emilly-skills",
+    "kicker": "Skill Cards",
+    "defaultTabId": "ultimate",
+    "items": [
+      {
+        "id": "passive",
+        "label": "Passive",
+        "title": "Ready Maid",
+        "summary": "Emilly's passive matters more once the core stat line is online and the rotation is already stable."
+      },
+      {
+        "id": "basic",
+        "label": "Basic",
+        "title": "Commence Combat Cleanup",
+        "summary": "Use the basic to bridge cooldowns; it should stay behind the two higher-impact skills in upgrade priority."
+      },
+      {
+        "id": "special",
+        "label": "Special",
+        "title": "Cleaning Service",
+        "summary": "Special is the first real investment breakpoint for this build and usually defines the early payoff window."
+      },
+      {
+        "id": "ultimate",
+        "label": "Ultimate",
+        "title": "Turn-Down Service",
+        "summary": "Ultimate still helps anchor the opener, even when the build upgrades Special first."
+      }
+    ]
+  }
+}

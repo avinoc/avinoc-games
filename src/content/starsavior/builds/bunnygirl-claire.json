@@ -2,34 +2,57 @@
   "name": "Bunnygirl Claire",
   "slug": "bunnygirl-claire",
   "role": "Single-target DPS",
-  "modes": ["PvE", "PvP"],
+  "modes": [
+    "PvE",
+    "PvP"
+  ],
   "updatedAt": "2026-03-30",
-  "sourceTabs": ["All Character Build Guide"],
+  "sourceTabs": [
+    "All Character Build Guide"
+  ],
   "recommendedSets": [
     {
       "label": "Budget",
-      "sets": ["Destruction (4pc)", "Valor (2pc)"],
+      "sets": [
+        "Destruction (4pc)",
+        "Valor (2pc)"
+      ],
       "neckMain": "SPD",
       "ringMain": "ATK%",
       "notes": "The source sheet favors a direct crit-damage package immediately."
     },
     {
       "label": "Endgame",
-      "sets": ["Insight (4pc)", "Valor (2pc)"],
+      "sets": [
+        "Insight (4pc)",
+        "Valor (2pc)"
+      ],
       "neckMain": "SPD",
       "ringMain": "ATK%",
       "notes": "High-end route pivots into a more stable crit-rate shell."
     }
   ],
-  "subStats": ["SPD", "Crit Rate", "Crit DMG", "ATK%"],
+  "subStats": [
+    "SPD",
+    "Crit Rate",
+    "Crit DMG",
+    "ATK%"
+  ],
   "skillLevels": {
     "budget": "3 / 3 / 3",
     "endgame": "7 / 7 / 7",
-    "progression": ["3 / 3 / 3", "7 / 7 / 7"]
+    "progression": [
+      "3 / 3 / 3",
+      "7 / 7 / 7"
+    ]
   },
-  "arcana": ["Crit-damage Strength Arcana", "Crit-rate Focus Arcana"],
+  "arcana": [
+    "Crit-damage Strength Arcana",
+    "Crit-rate Focus Arcana"
+  ],
   "notes": [
     "The launch build card treats BG Claire as a premier Moon single-target finisher that scales hard with better crit infrastructure.",
     "The source explicitly preserves SPD neck plus ATK% ring across the main recommendations."
-  ]
+  ],
+  "status": "needs-review"
 }

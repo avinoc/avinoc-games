@@ -1,0 +1,8 @@
+[
+  {
+    "slug": "{{SLUG}}/example",
+    "title": "{{NAME}} Example Entry",
+    "summary": "Replace this placeholder with reviewed content before publishing.",
+    "status": "needs-review"
+  }
+]

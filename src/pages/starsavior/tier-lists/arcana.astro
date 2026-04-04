@@ -147,6 +147,7 @@ const grouped = arcanaTierOrder
                   subtitle={entry.class}
                   searchText={entry.searchText}
                   filterValues={[...entry.classFilters, ...entry.focusFilters]}
+                  status={entry.status}
                 />
               ))}
             </div>
@@ -175,6 +176,7 @@ const grouped = arcanaTierOrder
               tags={entry.tags}
               searchText={entry.searchText}
               filterValues={[...entry.classFilters, ...entry.focusFilters]}
+              status={entry.status}
             />
           ))}
         </div>

@@ -3,8 +3,17 @@
   "slug": "smile",
   "tier": "B",
   "mode": "PvE Single-target DPS",
-  "tags": ["Single-target DPS", "DEF Down", "Ignition", "Trigger Skill"],
+  "tags": [
+    "Single-target DPS",
+    "DEF Down",
+    "Ignition",
+    "Trigger Skill"
+  ],
   "summary": "Smile is more conditional than the upper-tier units, but the source still values the unit in Journey because healing or stability-adjacent kits can dramatically smooth early hard-mode waves.",
   "updatedAt": "2026-03-30",
-  "sourceTabs": ["Savior Tier list (ENG)", "Journey(Hard) Guide"]
+  "sourceTabs": [
+    "Savior Tier list (ENG)",
+    "Journey(Hard) Guide"
+  ],
+  "status": "needs-review"
 }

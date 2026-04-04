@@ -1,0 +1,32 @@
+---
+// @ts-nocheck
+import GameLayout from "../../layouts/GameLayout.astro";
+import ExampleCard from "../../components/{{SLUG}}/ExampleCard.astro";
+import { exampleEntries } from "../../data/{{SLUG}}/content";
+import "../../styles/{{SLUG}}.css";
+---
+
+<GameLayout
+  title="{{NAME}}"
+  description="Landing page skeleton for {{NAME}}."
+  game="{{SLUG}}"
+  hideSubnav={true}
+>
+  <section class="{{SLUG}}-landing">
+    <div class="container {{SLUG}}-landing__inner">
+      <header class="{{SLUG}}-landing__hero">
+        <p class="{{SLUG}}-landing__eyebrow">{"{{NAME}} Section"}</p>
+        <h1>{"{{NAME}}"}</h1>
+        <p class="{{SLUG}}-landing__summary">
+          Replace this copy with reviewed, game-specific text before publishing.
+        </p>
+      </header>
+
+      <div class="{{SLUG}}-landing__grid">
+        {exampleEntries.map((entry) => (
+          <ExampleCard entry={entry} />
+        ))}
+      </div>
+    </div>
+  </section>
+</GameLayout>

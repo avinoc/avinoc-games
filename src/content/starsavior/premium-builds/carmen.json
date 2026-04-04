@@ -1,0 +1,247 @@
+{
+  "slug": "carmen",
+  "updatedAt": "2026-04-03",
+  "status": "published",
+  "sourceTabs": [
+    "Kamigame Carmen guide"
+  ],
+  "sourceContext": {
+    "url": "https://kamigame.jp/starsavior/page/396886819410563358.html",
+    "lead": "Translated and adapted from Kamigame's Carmen guide.",
+    "citationText": "Source page: Carmen Guide - Star Savior | Kamigame.",
+    "reviewedAgainst": [
+      "Kamigame Carmen guide",
+      "STUDIOBSIDE official game art"
+    ],
+    "attributionNote": "© 2025 STUDIOBSIDE Co. Ltd"
+  },
+  "hero": {
+    "title": "Carmen",
+    "subhead": "Moon | Defender | PvE / PvP | Impact",
+    "summary": "Carmen starts best on Speed (4pc) + Hit (2pc) with Speed necklace and HP% ring. From there, branch into the High-end route and the PvP route as your gear options widen.",
+    "image": "/assets/starsavior/starsavior/premium/carmen/hero.png",
+    "ratings": [
+      {
+        "label": "Overall",
+        "value": "A"
+      },
+      {
+        "label": "Reroll",
+        "value": "B"
+      },
+      {
+        "label": "Campaign",
+        "value": "A"
+      },
+      {
+        "label": "Boss",
+        "value": "A"
+      },
+      {
+        "label": "Ranked",
+        "value": "S+"
+      },
+      {
+        "label": "Strategy",
+        "value": "A"
+      }
+    ],
+    "actions": [
+      {
+        "href": "#carmen-builds",
+        "label": "Build Planner",
+        "tone": "primary"
+      },
+      {
+        "href": "#carmen-stats",
+        "label": "Target Stats",
+        "tone": "secondary"
+      },
+      {
+        "href": "#carmen-hard-journey",
+        "label": "Journey: Hard",
+        "tone": "secondary"
+      }
+    ]
+  },
+  "combatIdentity": {
+    "title": "Combat Identity",
+    "summary": "Carmen feels best once Speed, DEF%, and HP% are online, giving the first rotation a much steadier payoff.",
+    "bullets": [
+      "Baseline set line: Speed (4pc) + Hit (2pc).",
+      "Main stats stay on Speed necklace and HP% ring.",
+      "Substat focus: Speed, DEF%, HP%, and Effect Hit.",
+      "Journey: Hard route leans toward PVP - DX4."
+    ]
+  },
+  "skillRotation": {
+    "title": "Skill Rotation",
+    "summary": "Skill investment is cleanest as Special >= Ultimate >= Basic, with the first cooldown setting the pace for the full rotation.",
+    "steps": [
+      {
+        "step": "1",
+        "title": "Open with Special",
+        "detail": "Lead with the highest-invested cooldown so the opener starts on the strongest possible breakpoint."
+      },
+      {
+        "step": "2",
+        "title": "Cash in on Ultimate",
+        "detail": "Ultimate is usually the next meaningful breakpoint once the opener lands and should carry the mid-cycle payoff."
+      },
+      {
+        "step": "3",
+        "title": "Fill with Basic",
+        "detail": "Use Basic between cooldowns while you keep Speed and DEF% stable on gear."
+      },
+      {
+        "step": "4",
+        "title": "Upgrade toward the final target",
+        "detail": "Budget target is 3 / 3 / 3, with 7 / 8 / 8 as the long-term skill finish."
+      }
+    ]
+  },
+  "buildPlanner": {
+    "id": "carmen-builds",
+    "title": "Build Planner",
+    "summary": "Start on the PvE / PvP line with Speed (4pc) + Hit (2pc) and Speed necklace and HP% ring. Move into the High-end route and the PvP route once the baseline is stable.",
+    "tag": "PvE / PvP",
+    "sets": [
+      {
+        "label": "PvE / PvP",
+        "value": "Speed (4pc) + Hit (2pc)",
+        "note": "PvE / PvP keeps SPD on the necklace and HP% on the ring."
+      },
+      {
+        "label": "High-end",
+        "value": "Speed (4pc) + Barrier (2pc)",
+        "note": "High-end keeps SPD on the necklace and HP% on the ring."
+      },
+      {
+        "label": "PvP",
+        "value": "Speed (4pc) + DEF (2pc)",
+        "note": "PvP keeps SPD on the necklace and HP% on the ring."
+      }
+    ],
+    "priorities": [
+      "Necklace: SPD",
+      "Ring: HP(%)",
+      "Substats: SPD, DEF(%), HP(%), Effect Hit, Effect RES"
+    ]
+  },
+  "targetStats": {
+    "id": "carmen-stats",
+    "kicker": "Target Stats",
+    "summary": "Lock Speed necklace and HP% ring, then stack Speed, DEF%, HP%, and Effect Hit through substats.",
+    "stats": [
+      {
+        "label": "Necklace",
+        "value": "SPD"
+      },
+      {
+        "label": "Ring",
+        "value": "HP(%)"
+      },
+      {
+        "label": "Focus 1",
+        "value": "SPD"
+      },
+      {
+        "label": "Focus 2",
+        "value": "DEF(%)"
+      },
+      {
+        "label": "Focus 3",
+        "value": "HP(%)"
+      },
+      {
+        "label": "Focus 4",
+        "value": "Effect Hit"
+      },
+      {
+        "label": "Focus 5",
+        "value": "Effect RES"
+      }
+    ]
+  },
+  "upgradePath": {
+    "kicker": "Upgrade Path",
+    "title": "Priority",
+    "items": [
+      "Skill order: Special >= Ultimate >= Basic",
+      "Budget target: 3 / 3 / 3",
+      "Recommended target: 7 / 8 / 8",
+      "Breakthrough priority: ★☆☆ Works fine at base copy",
+      "Substat focus: Speed, DEF%, HP%, and Effect Hit",
+      "Journey: Hard route: PVP - DX4"
+    ]
+  },
+  "journeyHard": {
+    "id": "carmen-hard-journey",
+    "kicker": "Journey: Hard",
+    "title": "Recommended Cards",
+    "summary": "Core line: Charlotte and Emilly. Fill the remaining slots with Waltz Asherah or Bunny Claire, Hilde, and Carmen.",
+    "cards": [
+      {
+        "name": "Charlotte",
+        "slot": "Core",
+        "image": "/assets/starsavior/starsavior/premium/charlotte/hero.png"
+      },
+      {
+        "name": "Emilly",
+        "slot": "Core",
+        "image": "/assets/starsavior/starsavior/premium/emilly/hero.webp"
+      },
+      {
+        "name": "Waltz Asherah",
+        "slot": "Flex 1",
+        "image": "/assets/starsavior/starsavior/premium/waltz-asherah/hero.webp"
+      },
+      {
+        "name": "Bunny Claire",
+        "slot": "Flex 1",
+        "image": "/assets/starsavior/starsavior/premium/bunnygirl-claire/hero.png"
+      },
+      {
+        "name": "Hilde",
+        "slot": "Flex 2",
+        "image": "/assets/starsavior/starsavior/premium/hilde/hero.png"
+      },
+      {
+        "name": "Carmen",
+        "slot": "Flex 3",
+        "image": "/assets/starsavior/starsavior/premium/carmen/hero.png"
+      }
+    ]
+  },
+  "skillCards": {
+    "id": "carmen-skills",
+    "kicker": "Skill Cards",
+    "defaultTabId": "ultimate",
+    "items": [
+      {
+        "id": "passive",
+        "label": "Passive",
+        "title": "Knights' Shield",
+        "summary": "Carmen's passive matters more once the core stat line is online and the rotation is already stable."
+      },
+      {
+        "id": "basic",
+        "label": "Basic",
+        "title": "Knights Standard Swordsmanship",
+        "summary": "Use the basic to bridge cooldowns; it should stay behind the two higher-impact skills in upgrade priority."
+      },
+      {
+        "id": "special",
+        "label": "Special",
+        "title": "Shock Therapy",
+        "summary": "Special is the first real investment breakpoint for this build and usually defines the early payoff window."
+      },
+      {
+        "id": "ultimate",
+        "label": "Ultimate",
+        "title": "Monastir Mobile Bulwark",
+        "summary": "Ultimate still helps anchor the opener, even when the build upgrades Special first."
+      }
+    ]
+  }
+}

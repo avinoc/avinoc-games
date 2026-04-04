@@ -1,0 +1,184 @@
+{
+  "slug": "clarissa",
+  "updatedAt": "2026-04-03",
+  "status": "published",
+  "sourceTabs": [
+    "Kamigame Clarissa guide"
+  ],
+  "sourceContext": {
+    "url": "https://kamigame.jp/starsavior/page/396886819561558302.html",
+    "lead": "Translated and adapted from Kamigame's Clarissa guide.",
+    "citationText": "Source page: Clarissa Guide - Star Savior | Kamigame.",
+    "reviewedAgainst": [
+      "Kamigame Clarissa guide",
+      "STUDIOBSIDE official game art"
+    ],
+    "attributionNote": "© 2025 STUDIOBSIDE Co. Ltd"
+  },
+  "hero": {
+    "title": "Clarissa",
+    "subhead": "Star | Ranger | Control DPS | Impact",
+    "summary": "Her special already brings SPD Down and Action Gauge control, which makes Effect Hit the cleanest flex stat after speed. From there, branch into the Damage route and the Tempo route as your gear options widen.",
+    "image": "/assets/starsavior/starsavior/premium/clarissa/hero.webp",
+    "ratings": [
+      {
+        "label": "Overall",
+        "value": "B"
+      },
+      {
+        "label": "Reroll",
+        "value": "C"
+      },
+      {
+        "label": "Campaign",
+        "value": "B"
+      },
+      {
+        "label": "Boss",
+        "value": "B"
+      },
+      {
+        "label": "Ranked",
+        "value": "C"
+      },
+      {
+        "label": "Strategy",
+        "value": "C"
+      }
+    ],
+    "actions": [
+      {
+        "href": "#clarissa-builds",
+        "label": "Build Planner",
+        "tone": "primary"
+      },
+      {
+        "href": "#clarissa-stats",
+        "label": "Target Stats",
+        "tone": "secondary"
+      }
+    ]
+  },
+  "combatIdentity": {
+    "title": "Combat Identity",
+    "summary": "Clarissa feels best once Speed, Effect Hit, and Crit Rate are online, giving the first rotation a much steadier payoff.",
+    "bullets": [
+      "Baseline set line: Insight (4pc) + Hit (2pc).",
+      "Main stats stay on Speed necklace and ATK% ring.",
+      "Substat focus: Speed, Effect Hit, Crit Rate, and Crit DMG.",
+      "Endgame skill target: 7 / 8 / 8."
+    ]
+  },
+  "skillRotation": {
+    "title": "Skill Rotation",
+    "summary": "Skill investment is cleanest as Ultimate >= Special >= Basic, with the first cooldown setting the pace for the full rotation.",
+    "steps": [
+      {
+        "step": "1",
+        "title": "Open with Ultimate",
+        "detail": "Lead with the highest-invested cooldown so the opener starts on the strongest possible breakpoint."
+      },
+      {
+        "step": "2",
+        "title": "Cash in on Special",
+        "detail": "Special is usually the next meaningful breakpoint once the opener lands and should carry the mid-cycle payoff."
+      },
+      {
+        "step": "3",
+        "title": "Fill with Basic",
+        "detail": "Use Basic between cooldowns while you keep Speed and Effect Hit stable on gear."
+      },
+      {
+        "step": "4",
+        "title": "Upgrade toward the final target",
+        "detail": "Budget target is 3 / 3 / 3, with 7 / 8 / 8 as the long-term skill finish."
+      }
+    ]
+  },
+  "buildPlanner": {
+    "id": "clarissa-builds",
+    "title": "Build Planner",
+    "summary": "Start on the Core line with Insight (4pc) + Hit (2pc) and Speed necklace and ATK% ring. Move into the Damage route and the Tempo route once the baseline is stable.",
+    "tag": "Core",
+    "sets": [
+      {
+        "label": "Core",
+        "value": "Insight (4pc) + Hit (2pc)",
+        "note": "Core keeps SPD on the necklace and ATK% on the ring."
+      },
+      {
+        "label": "Damage",
+        "value": "Destruction (4pc) + Valor (2pc)",
+        "note": "Damage keeps SPD on the necklace and ATK% on the ring."
+      },
+      {
+        "label": "Tempo",
+        "value": "Speed (4pc) + Hit (2pc)",
+        "note": "Tempo keeps SPD on the necklace and ATK% on the ring."
+      }
+    ],
+    "priorities": [
+      "Necklace: SPD",
+      "Ring: ATK(%)",
+      "Substats: SPD, Effect Hit%, Crit Rate, Crit DMG, ATK%"
+    ]
+  },
+  "targetStats": {
+    "id": "clarissa-stats",
+    "kicker": "Target Stats",
+    "summary": "Lock Speed necklace and ATK% ring, then stack  through substats.",
+    "stats": [
+      {
+        "label": "Necklace",
+        "value": "SPD"
+      },
+      {
+        "label": "Ring",
+        "value": "ATK(%)"
+      }
+    ]
+  },
+  "upgradePath": {
+    "kicker": "Upgrade Path",
+    "title": "Priority",
+    "items": [
+      "Skill order: Ultimate >= Special >= Basic",
+      "Budget target: 3 / 3 / 3",
+      "Recommended target: 7 / 8 / 8",
+      "Breakthrough priority: raise copies after the main skill breakpoints are online.",
+      "Substat focus: Speed, Effect Hit, Crit Rate, and Crit DMG"
+    ]
+  },
+  "journeyHard": null,
+  "skillCards": {
+    "id": "clarissa-skills",
+    "kicker": "Skill Cards",
+    "defaultTabId": "ultimate",
+    "items": [
+      {
+        "id": "passive",
+        "label": "Passive",
+        "title": "Winding Windpath",
+        "summary": "Clarissa's passive matters more once the core stat line is online and the rotation is already stable."
+      },
+      {
+        "id": "basic",
+        "label": "Basic",
+        "title": "Step Back a Bit",
+        "summary": "Use the basic to bridge cooldowns; it should stay behind the two higher-impact skills in upgrade priority."
+      },
+      {
+        "id": "special",
+        "label": "Special",
+        "title": "Shooting by Instinct",
+        "summary": "Special is the next major breakpoint after the opener and usually carries the mid-cycle payoff."
+      },
+      {
+        "id": "ultimate",
+        "label": "Ultimate",
+        "title": "This Is How You Shoot a Gun",
+        "summary": "Ultimate anchors the opener and stays at the top of the investment order for this build."
+      }
+    ]
+  }
+}

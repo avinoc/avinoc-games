@@ -5,7 +5,14 @@
   "class": "All",
   "specialPotential": "Stigma of Attack - ATK +8%",
   "summary": "Universal Tier 1 Strength Arcana. The source notes that its pick rate dropped after newer premium Arcana released, but it remains a solid broad-use choice.",
-  "tags": ["Strength", "ATK", "Universal"],
+  "tags": [
+    "Strength",
+    "ATK",
+    "Universal"
+  ],
   "updatedAt": "2026-03-30",
-  "sourceTabs": ["Arcana Tier List"]
+  "sourceTabs": [
+    "Arcana Tier List"
+  ],
+  "status": "needs-review"
 }

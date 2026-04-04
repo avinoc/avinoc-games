@@ -2,33 +2,59 @@
   "name": "Noble Princess Frey",
   "slug": "noble-princess-frey",
   "role": "Single-target DPS",
-  "modes": ["PvE", "PvP"],
+  "modes": [
+    "PvE",
+    "PvP"
+  ],
   "updatedAt": "2026-03-30",
-  "sourceTabs": ["All Character Build Guide"],
+  "sourceTabs": [
+    "All Character Build Guide"
+  ],
   "recommendedSets": [
     {
       "label": "Budget",
-      "sets": ["Destruction (4pc)", "Valor (2pc)"],
+      "sets": [
+        "Destruction (4pc)",
+        "Valor (2pc)"
+      ],
       "neckMain": "SPD",
       "ringMain": "ATK%"
     },
     {
       "label": "Endgame",
-      "sets": ["Insight (4pc)", "Valor (2pc)"],
+      "sets": [
+        "Insight (4pc)",
+        "Valor (2pc)"
+      ],
       "neckMain": "SPD",
       "ringMain": "ATK%",
       "notes": "The source keeps both crit-damage and crit-rate routes alive depending on account quality."
     }
   ],
-  "subStats": ["SPD", "Crit Rate", "Crit DMG", "ATK%"],
+  "subStats": [
+    "SPD",
+    "Crit Rate",
+    "Crit DMG",
+    "ATK%"
+  ],
   "skillLevels": {
     "budget": "3 / 3 / 3",
     "endgame": "7 / 7 / 8",
-    "progression": ["3 / 3 / 3", "3 / 6 / 3", "3 / 6 / 6", "3 / 6 / 8", "7 / 7 / 8"]
+    "progression": [
+      "3 / 3 / 3",
+      "3 / 6 / 3",
+      "3 / 6 / 6",
+      "3 / 6 / 8",
+      "7 / 7 / 8"
+    ]
   },
-  "arcana": ["Crit-damage Strength Arcana", "Crit-rate Strength Arcana"],
+  "arcana": [
+    "Crit-damage Strength Arcana",
+    "Crit-rate Strength Arcana"
+  ],
   "notes": [
     "The sheet treats Noble Princess Frey as a premium damage dealer with more than one viable crit shell.",
     "Her progression path is gradual and worth following because the source explicitly lists multiple midpoints."
-  ]
+  ],
+  "status": "needs-review"
 }

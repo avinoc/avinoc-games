@@ -1,4 +1,4 @@
-import { Ship, CLASS_ICONS } from "../../data/lagrange/ships";
+import { type Ship, CLASS_ICONS } from "../../data/lagrange/ships";
 import { Card, CardContent } from "./ui/card";
 import { Badge } from "./ui/badge";
 import { Button } from "./ui/button";

@@ -1,0 +1,184 @@
+{
+  "slug": "annah",
+  "updatedAt": "2026-04-03",
+  "status": "published",
+  "sourceTabs": [
+    "Kamigame Annah guide"
+  ],
+  "sourceContext": {
+    "url": "https://kamigame.jp/starsavior/page/396886819108573470.html",
+    "lead": "Translated and adapted from Kamigame's Annah guide.",
+    "citationText": "Source page: Annah Guide - Star Savior | Kamigame.",
+    "reviewedAgainst": [
+      "Kamigame Annah guide",
+      "STUDIOBSIDE official game art"
+    ],
+    "attributionNote": "© 2025 STUDIOBSIDE Co. Ltd"
+  },
+  "hero": {
+    "title": "Annah",
+    "subhead": "Sun | Defender | Self-sustain Tank | Impact",
+    "summary": "Her self-healing special and Max HP scaling point cleanly toward a speed-first HP tank shell. From there, branch into the Durability route and the Fast utility route as your gear options widen.",
+    "image": "/assets/starsavior/starsavior/premium/annah/hero.png",
+    "ratings": [
+      {
+        "label": "Overall",
+        "value": "C"
+      },
+      {
+        "label": "Reroll",
+        "value": "C"
+      },
+      {
+        "label": "Campaign",
+        "value": "C"
+      },
+      {
+        "label": "Boss",
+        "value": "C"
+      },
+      {
+        "label": "Ranked",
+        "value": "C"
+      },
+      {
+        "label": "Strategy",
+        "value": "C"
+      }
+    ],
+    "actions": [
+      {
+        "href": "#annah-builds",
+        "label": "Build Planner",
+        "tone": "primary"
+      },
+      {
+        "href": "#annah-stats",
+        "label": "Target Stats",
+        "tone": "secondary"
+      }
+    ]
+  },
+  "combatIdentity": {
+    "title": "Combat Identity",
+    "summary": "Annah feels best once Speed, HP%, and DEF% are online, giving the first rotation a much steadier payoff.",
+    "bullets": [
+      "Baseline set line: HP (4pc) + Barrier (2pc).",
+      "Main stats stay on Speed necklace and HP% ring.",
+      "Substat focus: Speed, HP%, DEF%, and Effect RES.",
+      "Endgame skill target: 4 / 7 / 7."
+    ]
+  },
+  "skillRotation": {
+    "title": "Skill Rotation",
+    "summary": "Skill investment is cleanest as Special >= Ultimate >= Basic, with the first cooldown setting the pace for the full rotation.",
+    "steps": [
+      {
+        "step": "1",
+        "title": "Open with Special",
+        "detail": "Lead with the highest-invested cooldown so the opener starts on the strongest possible breakpoint."
+      },
+      {
+        "step": "2",
+        "title": "Cash in on Ultimate",
+        "detail": "Ultimate is usually the next meaningful breakpoint once the opener lands and should carry the mid-cycle payoff."
+      },
+      {
+        "step": "3",
+        "title": "Fill with Basic",
+        "detail": "Use Basic between cooldowns while you keep Speed and HP% stable on gear."
+      },
+      {
+        "step": "4",
+        "title": "Upgrade toward the final target",
+        "detail": "Budget target is 3 / 3 / 3, with 4 / 7 / 7 as the long-term skill finish."
+      }
+    ]
+  },
+  "buildPlanner": {
+    "id": "annah-builds",
+    "title": "Build Planner",
+    "summary": "Start on the Core line with HP (4pc) + Barrier (2pc) and Speed necklace and HP% ring. Move into the Durability route and the Fast utility route once the baseline is stable.",
+    "tag": "Core",
+    "sets": [
+      {
+        "label": "Core",
+        "value": "HP (4pc) + Barrier (2pc)",
+        "note": "Core keeps SPD on the necklace and HP% on the ring."
+      },
+      {
+        "label": "Durability",
+        "value": "HP (4pc) + DEF (2pc)",
+        "note": "Durability keeps SPD on the necklace and HP% on the ring."
+      },
+      {
+        "label": "Fast utility",
+        "value": "Speed (4pc) + Barrier (2pc)",
+        "note": "Fast utility keeps SPD on the necklace and HP% on the ring."
+      }
+    ],
+    "priorities": [
+      "Necklace: SPD",
+      "Ring: HP(%)",
+      "Substats: SPD, HP%, DEF%, Effect Res, Flat HP"
+    ]
+  },
+  "targetStats": {
+    "id": "annah-stats",
+    "kicker": "Target Stats",
+    "summary": "Lock Speed necklace and HP% ring, then stack  through substats.",
+    "stats": [
+      {
+        "label": "Necklace",
+        "value": "SPD"
+      },
+      {
+        "label": "Ring",
+        "value": "HP(%)"
+      }
+    ]
+  },
+  "upgradePath": {
+    "kicker": "Upgrade Path",
+    "title": "Priority",
+    "items": [
+      "Skill order: Special >= Ultimate >= Basic",
+      "Budget target: 3 / 3 / 3",
+      "Recommended target: 4 / 7 / 7",
+      "Breakthrough priority: raise copies after the main skill breakpoints are online.",
+      "Substat focus: Speed, HP%, DEF%, and Effect RES"
+    ]
+  },
+  "journeyHard": null,
+  "skillCards": {
+    "id": "annah-skills",
+    "kicker": "Skill Cards",
+    "defaultTabId": "ultimate",
+    "items": [
+      {
+        "id": "passive",
+        "label": "Passive",
+        "title": "Something Smells Delicious!",
+        "summary": "Annah's passive matters more once the core stat line is online and the rotation is already stable."
+      },
+      {
+        "id": "basic",
+        "label": "Basic",
+        "title": "Please Stop Resisting!",
+        "summary": "Use the basic to bridge cooldowns; it should stay behind the two higher-impact skills in upgrade priority."
+      },
+      {
+        "id": "special",
+        "label": "Special",
+        "title": "Quick Bite Before We Start!",
+        "summary": "Special is the first real investment breakpoint for this build and usually defines the early payoff window."
+      },
+      {
+        "id": "ultimate",
+        "label": "Ultimate",
+        "title": "Arrest Them All!",
+        "summary": "Ultimate still helps anchor the opener, even when the build upgrades Special first."
+      }
+    ]
+  }
+}

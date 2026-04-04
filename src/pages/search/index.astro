@@ -1,10 +1,11 @@
 ---
 import HubLayout from "../../layouts/HubLayout.astro";
 const base = import.meta.env.BASE_URL;
+const initialQuery = Astro.url.searchParams.get("q")?.trim() ?? "";
 ---
 
 <HubLayout
-  title="Search | Avinoc Games"
+  title="Search | Project Avinoc"
   description="Search across all games, guides, builds, and tools."
 >
   <section class="hero">
@@ -38,16 +39,23 @@ const base = import.meta.env.BASE_URL;
   </section>
 
   <link rel="stylesheet" href={`${base}pagefind/pagefind-ui.css`} />
-  <script is:inline define:vars={{ base }}>
+  <script is:inline define:vars={{ base, initialQuery }}>
     window.addEventListener("DOMContentLoaded", () => {
-      if (typeof PagefindUI !== "undefined") {
-        new PagefindUI({
+      const Pagefind = window["PagefindUI"];
+
+      if (typeof Pagefind !== "undefined") {
+        const pagefind = new Pagefind({
           element: "#search",
           showSubResults: true,
           baseUrl: base,
+          autofocus: !initialQuery,
         });
+
+        if (initialQuery) {
+          pagefind.triggerSearch(initialQuery);
+        }
       }
     });
   </script>
-  <script src={`${base}pagefind/pagefind-ui.js`} type="text/javascript"></script>
+  <script is:inline src={`${base}pagefind/pagefind-ui.js`} type="text/javascript"></script>
 </HubLayout>

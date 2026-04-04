@@ -1,0 +1,184 @@
+{
+  "slug": "claire",
+  "updatedAt": "2026-04-03",
+  "status": "published",
+  "sourceTabs": [
+    "Kamigame Claire guide"
+  ],
+  "sourceContext": {
+    "url": "https://kamigame.jp/starsavior/page/396886819645444382.html",
+    "lead": "Translated and adapted from Kamigame's Claire guide.",
+    "citationText": "Source page: Claire Guide - Star Savior | Kamigame.",
+    "reviewedAgainst": [
+      "Kamigame Claire guide",
+      "STUDIOBSIDE official game art"
+    ],
+    "attributionNote": "© 2025 STUDIOBSIDE Co. Ltd"
+  },
+  "hero": {
+    "title": "Claire",
+    "subhead": "Moon | Assassin | Single-target DPS | Slash",
+    "summary": "Her passive and ultimate both lean into self-crit scaling, so standard crit damage shells fit naturally. From there, branch into the Tempo route and the Budget route as your gear options widen.",
+    "image": "/assets/starsavior/starsavior/premium/claire/hero.webp",
+    "ratings": [
+      {
+        "label": "Overall",
+        "value": "B"
+      },
+      {
+        "label": "Reroll",
+        "value": "C"
+      },
+      {
+        "label": "Campaign",
+        "value": "B"
+      },
+      {
+        "label": "Boss",
+        "value": "B"
+      },
+      {
+        "label": "Ranked",
+        "value": "C"
+      },
+      {
+        "label": "Strategy",
+        "value": "C"
+      }
+    ],
+    "actions": [
+      {
+        "href": "#claire-builds",
+        "label": "Build Planner",
+        "tone": "primary"
+      },
+      {
+        "href": "#claire-stats",
+        "label": "Target Stats",
+        "tone": "secondary"
+      }
+    ]
+  },
+  "combatIdentity": {
+    "title": "Combat Identity",
+    "summary": "Claire feels best once Speed, Crit Rate, and Crit DMG are online, giving the first rotation a much steadier payoff.",
+    "bullets": [
+      "Baseline set line: Destruction (4pc) + Valor (2pc).",
+      "Main stats stay on Speed necklace and ATK% ring.",
+      "Substat focus: Speed, Crit Rate, Crit DMG, and ATK%.",
+      "Endgame skill target: 7 / 7 / 8."
+    ]
+  },
+  "skillRotation": {
+    "title": "Skill Rotation",
+    "summary": "Skill investment is cleanest as Ultimate >= Special >= Basic, with the first cooldown setting the pace for the full rotation.",
+    "steps": [
+      {
+        "step": "1",
+        "title": "Open with Ultimate",
+        "detail": "Lead with the highest-invested cooldown so the opener starts on the strongest possible breakpoint."
+      },
+      {
+        "step": "2",
+        "title": "Cash in on Special",
+        "detail": "Special is usually the next meaningful breakpoint once the opener lands and should carry the mid-cycle payoff."
+      },
+      {
+        "step": "3",
+        "title": "Fill with Basic",
+        "detail": "Use Basic between cooldowns while you keep Speed and Crit Rate stable on gear."
+      },
+      {
+        "step": "4",
+        "title": "Upgrade toward the final target",
+        "detail": "Budget target is 3 / 3 / 3, with 7 / 7 / 8 as the long-term skill finish."
+      }
+    ]
+  },
+  "buildPlanner": {
+    "id": "claire-builds",
+    "title": "Build Planner",
+    "summary": "Start on the Core line with Destruction (4pc) + Valor (2pc) and Speed necklace and ATK% ring. Move into the Tempo route and the Budget route once the baseline is stable.",
+    "tag": "Core",
+    "sets": [
+      {
+        "label": "Core",
+        "value": "Destruction (4pc) + Valor (2pc)",
+        "note": "Core keeps SPD on the necklace and ATK% on the ring."
+      },
+      {
+        "label": "Tempo",
+        "value": "Speed (4pc) + Valor (2pc)",
+        "note": "Tempo keeps SPD on the necklace and ATK% on the ring."
+      },
+      {
+        "label": "Budget",
+        "value": "ATK (4pc) + Valor (2pc)",
+        "note": "Budget keeps SPD on the necklace and ATK% on the ring."
+      }
+    ],
+    "priorities": [
+      "Necklace: SPD",
+      "Ring: ATK(%)",
+      "Substats: SPD, Crit Rate, Crit DMG, ATK%, Flat ATK"
+    ]
+  },
+  "targetStats": {
+    "id": "claire-stats",
+    "kicker": "Target Stats",
+    "summary": "Lock Speed necklace and ATK% ring, then stack  through substats.",
+    "stats": [
+      {
+        "label": "Necklace",
+        "value": "SPD"
+      },
+      {
+        "label": "Ring",
+        "value": "ATK(%)"
+      }
+    ]
+  },
+  "upgradePath": {
+    "kicker": "Upgrade Path",
+    "title": "Priority",
+    "items": [
+      "Skill order: Ultimate >= Special >= Basic",
+      "Budget target: 3 / 3 / 3",
+      "Recommended target: 7 / 7 / 8",
+      "Breakthrough priority: raise copies after the main skill breakpoints are online.",
+      "Substat focus: Speed, Crit Rate, Crit DMG, and ATK%"
+    ]
+  },
+  "journeyHard": null,
+  "skillCards": {
+    "id": "claire-skills",
+    "kicker": "Skill Cards",
+    "defaultTabId": "ultimate",
+    "items": [
+      {
+        "id": "passive",
+        "label": "Passive",
+        "title": "Conviction Toward Victory",
+        "summary": "Claire's passive matters more once the core stat line is online and the rotation is already stable."
+      },
+      {
+        "id": "basic",
+        "label": "Basic",
+        "title": "Faster Than Sight",
+        "summary": "Use the basic to bridge cooldowns; it should stay behind the two higher-impact skills in upgrade priority."
+      },
+      {
+        "id": "special",
+        "label": "Special",
+        "title": "Where Are You Looking?",
+        "summary": "Special is the next major breakpoint after the opener and usually carries the mid-cycle payoff."
+      },
+      {
+        "id": "ultimate",
+        "label": "Ultimate",
+        "title": "Bunny Jackpot",
+        "summary": "Ultimate anchors the opener and stays at the top of the investment order for this build."
+      }
+    ]
+  }
+}

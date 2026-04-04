@@ -1,0 +1,247 @@
+{
+  "slug": "lydia",
+  "updatedAt": "2026-04-03",
+  "status": "published",
+  "sourceTabs": [
+    "Kamigame Lydia guide"
+  ],
+  "sourceContext": {
+    "url": "https://kamigame.jp/starsavior/page/396886821088290956.html",
+    "lead": "Translated and adapted from Kamigame's Lydia guide.",
+    "citationText": "Source page: Lydia Guide - Star Savior | Kamigame.",
+    "reviewedAgainst": [
+      "Kamigame Lydia guide",
+      "STUDIOBSIDE official game art"
+    ],
+    "attributionNote": "© 2025 STUDIOBSIDE Co. Ltd"
+  },
+  "hero": {
+    "title": "Lydia",
+    "subhead": "Chaos | Ranger | Debuff DPS | Mental",
+    "summary": "She rewards players who build for speed and control rather than only raw damage. From there, move into the Endgame route once the core stat line is stable.",
+    "image": "/assets/starsavior/starsavior/premium/lydia/hero.png",
+    "ratings": [
+      {
+        "label": "Overall",
+        "value": "A"
+      },
+      {
+        "label": "Reroll",
+        "value": "A"
+      },
+      {
+        "label": "Campaign",
+        "value": "A"
+      },
+      {
+        "label": "Boss",
+        "value": "A"
+      },
+      {
+        "label": "Ranked",
+        "value": "A"
+      },
+      {
+        "label": "Strategy",
+        "value": "A"
+      }
+    ],
+    "actions": [
+      {
+        "href": "#lydia-builds",
+        "label": "Build Planner",
+        "tone": "primary"
+      },
+      {
+        "href": "#lydia-stats",
+        "label": "Target Stats",
+        "tone": "secondary"
+      },
+      {
+        "href": "#lydia-hard-journey",
+        "label": "Journey: Hard",
+        "tone": "secondary"
+      }
+    ]
+  },
+  "combatIdentity": {
+    "title": "Combat Identity",
+    "summary": "Lydia feels best once ATK%, Crit Rate, and Crit DMG are online, giving the first rotation a much steadier payoff.",
+    "bullets": [
+      "Baseline set line: Insight (4pc) + Hit (2pc).",
+      "Main stats stay on Speed necklace and ATK% ring.",
+      "Substat focus: ATK%, Crit Rate, Crit DMG, and Speed.",
+      "Journey: Hard route leans toward DPS - AX5."
+    ]
+  },
+  "skillRotation": {
+    "title": "Skill Rotation",
+    "summary": "Skill investment is cleanest as Ultimate >= Special >= Basic, with the first cooldown setting the pace for the full rotation.",
+    "steps": [
+      {
+        "step": "1",
+        "title": "Open with Ultimate",
+        "detail": "Lead with the highest-invested cooldown so the opener starts on the strongest possible breakpoint."
+      },
+      {
+        "step": "2",
+        "title": "Cash in on Special",
+        "detail": "Special is usually the next meaningful breakpoint once the opener lands and should carry the mid-cycle payoff."
+      },
+      {
+        "step": "3",
+        "title": "Fill with Basic",
+        "detail": "Use Basic between cooldowns while you keep ATK% and Crit Rate stable on gear."
+      },
+      {
+        "step": "4",
+        "title": "Upgrade toward the final target",
+        "detail": "Budget target is 3 / 3 / 6, with 7 / 7 / 10 as the long-term skill finish."
+      }
+    ]
+  },
+  "buildPlanner": {
+    "id": "lydia-builds",
+    "title": "Build Planner",
+    "summary": "Start on the Core line with Insight (4pc) + Hit (2pc) and Speed necklace and ATK% ring. Move into the Endgame route once the baseline is stable.",
+    "tag": "Core",
+    "sets": [
+      {
+        "label": "Core",
+        "value": "Insight (4pc) + Hit (2pc)",
+        "note": "Core keeps SPD on the necklace and ATK% on the ring."
+      },
+      {
+        "label": "Endgame",
+        "value": "Precision (4pc) + Hit (2pc)",
+        "note": "The endgame version doubles down on debuff reliability and action control."
+      }
+    ],
+    "priorities": [
+      "Necklace: SPD",
+      "Ring: ATK(%)",
+      "Substats: ATK(%), Crit Rate, Crit DMG, SPD, Effect Hit"
+    ]
+  },
+  "targetStats": {
+    "id": "lydia-stats",
+    "kicker": "Target Stats",
+    "summary": "Lock Speed necklace and ATK% ring, then stack ATK%, Crit Rate, Crit DMG, and Speed through substats.",
+    "stats": [
+      {
+        "label": "Necklace",
+        "value": "SPD"
+      },
+      {
+        "label": "Ring",
+        "value": "ATK(%)"
+      },
+      {
+        "label": "Focus 1",
+        "value": "ATK(%)"
+      },
+      {
+        "label": "Focus 2",
+        "value": "Crit Rate"
+      },
+      {
+        "label": "Focus 3",
+        "value": "Crit DMG"
+      },
+      {
+        "label": "Focus 4",
+        "value": "SPD"
+      },
+      {
+        "label": "Focus 5",
+        "value": "Effect Hit"
+      }
+    ]
+  },
+  "upgradePath": {
+    "kicker": "Upgrade Path",
+    "title": "Priority",
+    "items": [
+      "Skill order: Ultimate >= Special >= Basic",
+      "Budget target: 3 / 3 / 6",
+      "Recommended target: 7 / 7 / 10",
+      "Breakthrough priority: ★☆☆ Works fine at base copy",
+      "Substat focus: ATK%, Crit Rate, Crit DMG, and Speed",
+      "Journey: Hard route: DPS - AX5"
+    ]
+  },
+  "journeyHard": {
+    "id": "lydia-hard-journey",
+    "kicker": "Journey: Hard",
+    "title": "Recommended Cards",
+    "summary": "Core line: Lacy and Bunny Frey. Fill the remaining slots with Lyn Card or Bunny Claire, Charlotte, and Petra or Naru.",
+    "cards": [
+      {
+        "name": "Lacy",
+        "slot": "Core",
+        "image": "/assets/starsavior/starsavior/premium/lacy/hero.png"
+      },
+      {
+        "name": "Bunny Frey",
+        "slot": "Core",
+        "image": "/assets/starsavior/starsavior/premium/noble-princess-frey/hero.png"
+      },
+      {
+        "name": "Lyn Card",
+        "slot": "Flex 1",
+        "image": "/assets/starsavior/starsavior/premium/cards/lyn-card.webp"
+      },
+      {
+        "name": "Bunny Claire",
+        "slot": "Flex 1",
+        "image": "/assets/starsavior/starsavior/premium/bunnygirl-claire/hero.png"
+      },
+      {
+        "name": "Charlotte",
+        "slot": "Flex 2",
+        "image": "/assets/starsavior/starsavior/premium/charlotte/hero.png"
+      },
+      {
+        "name": "Petra",
+        "slot": "Flex 3",
+        "image": "/assets/starsavior/starsavior/premium/petra/hero.png"
+      },
+      {
+        "name": "Naru",
+        "slot": "Flex 3",
+        "image": "/assets/starsavior/starsavior/premium/naru/hero.webp"
+      }
+    ]
+  },
+  "skillCards": {
+    "id": "lydia-skills",
+    "kicker": "Skill Cards",
+    "defaultTabId": "ultimate",
+    "items": [
+      {
+        "id": "passive",
+        "label": "Passive",
+        "title": "Seeker of the Void",
+        "summary": "Lydia's passive matters more once the core stat line is online and the rotation is already stable."
+      },
+      {
+        "id": "basic",
+        "label": "Basic",
+        "title": "Touch of the Void",
+        "summary": "Use the basic to bridge cooldowns; it should stay behind the two higher-impact skills in upgrade priority."
+      },
+      {
+        "id": "special",
+        "label": "Special",
+        "title": "Invitation Beyond the Stars",
+        "summary": "Special is the next major breakpoint after the opener and usually carries the mid-cycle payoff."
+      },
+      {
+        "id": "ultimate",
+        "label": "Ultimate",
+        "title": "Void Within the Tome",
+        "summary": "Ultimate anchors the opener and stays at the top of the investment order for this build."
+      }
+    ]
+  }
+}

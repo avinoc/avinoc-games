@@ -1,0 +1,251 @@
+{
+  "slug": "hilde",
+  "updatedAt": "2026-04-03",
+  "status": "published",
+  "sourceTabs": [
+    "Kamigame Hilde guide"
+  ],
+  "sourceContext": {
+    "url": "https://kamigame.jp/starsavior/page/414169647332518533.html",
+    "lead": "Translated and adapted from Kamigame's Hilde guide.",
+    "citationText": "Source page: Hilde Guide - Star Savior | Kamigame.",
+    "reviewedAgainst": [
+      "Kamigame Hilde guide",
+      "STUDIOBSIDE official game art"
+    ],
+    "attributionNote": "© 2025 STUDIOBSIDE Co. Ltd"
+  },
+  "hero": {
+    "title": "Hilde",
+    "subhead": "Sun | Defender | PvE / PvP | Impact",
+    "summary": "Hilde starts best on HP (4pc) + Barrier (2pc) with Speed necklace and HP% ring. From there, branch into the High-end route and the PvP route as your gear options widen.",
+    "image": "/assets/starsavior/starsavior/premium/hilde/hero.png",
+    "ratings": [
+      {
+        "label": "Overall",
+        "value": "SS"
+      },
+      {
+        "label": "Reroll",
+        "value": "SS"
+      },
+      {
+        "label": "Campaign",
+        "value": "S+"
+      },
+      {
+        "label": "Boss",
+        "value": "S"
+      },
+      {
+        "label": "Ranked",
+        "value": "SSS"
+      },
+      {
+        "label": "Strategy",
+        "value": "SSS"
+      }
+    ],
+    "actions": [
+      {
+        "href": "#hilde-builds",
+        "label": "Build Planner",
+        "tone": "primary"
+      },
+      {
+        "href": "#hilde-stats",
+        "label": "Target Stats",
+        "tone": "secondary"
+      },
+      {
+        "href": "#hilde-hard-journey",
+        "label": "Journey: Hard",
+        "tone": "secondary"
+      }
+    ]
+  },
+  "combatIdentity": {
+    "title": "Combat Identity",
+    "summary": "Hilde feels best once HP%, DEF%, and Crit Rate are online, giving the first rotation a much steadier payoff.",
+    "bullets": [
+      "Baseline set line: HP (4pc) + Barrier (2pc).",
+      "Main stats stay on Speed necklace and HP% ring.",
+      "Substat focus: HP%, DEF%, Crit Rate, and Crit DMG.",
+      "Journey: Hard route leans toward Tank - BX4."
+    ]
+  },
+  "skillRotation": {
+    "title": "Skill Rotation",
+    "summary": "Skill investment is cleanest as Ultimate >= Special >= Basic, with the first cooldown setting the pace for the full rotation.",
+    "steps": [
+      {
+        "step": "1",
+        "title": "Open with Ultimate",
+        "detail": "Lead with the highest-invested cooldown so the opener starts on the strongest possible breakpoint."
+      },
+      {
+        "step": "2",
+        "title": "Cash in on Special",
+        "detail": "Special is usually the next meaningful breakpoint once the opener lands and should carry the mid-cycle payoff."
+      },
+      {
+        "step": "3",
+        "title": "Fill with Basic",
+        "detail": "Use Basic between cooldowns while you keep HP% and DEF% stable on gear."
+      },
+      {
+        "step": "4",
+        "title": "Upgrade toward the final target",
+        "detail": "Budget target is 3 / 3 / 3, with 7 / 7 / 8 as the long-term skill finish."
+      }
+    ]
+  },
+  "buildPlanner": {
+    "id": "hilde-builds",
+    "title": "Build Planner",
+    "summary": "Start on the PvE / PvP line with HP (4pc) + Barrier (2pc) and Speed necklace and HP% ring. Move into the High-end route and the PvP route once the baseline is stable.",
+    "tag": "PvE / PvP",
+    "sets": [
+      {
+        "label": "PvE / PvP",
+        "value": "HP (4pc) + Barrier (2pc)",
+        "note": "PvE / PvP keeps SPD on the necklace and HP% on the ring."
+      },
+      {
+        "label": "High-end",
+        "value": "HP (4pc) + Hit (2pc)",
+        "note": "High-end keeps SPD on the necklace and HP% on the ring."
+      },
+      {
+        "label": "PvP",
+        "value": "Speed (4pc) + Barrier (2pc)",
+        "note": "PvP keeps SPD on the necklace and HP% on the ring."
+      }
+    ],
+    "priorities": [
+      "Necklace: SPD",
+      "Ring: HP(%)",
+      "Substats: HP(%), DEF(%), Crit Rate, Crit DMG, Effect RES, SPD"
+    ]
+  },
+  "targetStats": {
+    "id": "hilde-stats",
+    "kicker": "Target Stats",
+    "summary": "Lock Speed necklace and HP% ring, then stack HP%, DEF%, Crit Rate, and Crit DMG through substats.",
+    "stats": [
+      {
+        "label": "Necklace",
+        "value": "SPD"
+      },
+      {
+        "label": "Ring",
+        "value": "HP(%)"
+      },
+      {
+        "label": "Focus 1",
+        "value": "HP(%)"
+      },
+      {
+        "label": "Focus 2",
+        "value": "DEF(%)"
+      },
+      {
+        "label": "Focus 3",
+        "value": "Crit Rate"
+      },
+      {
+        "label": "Focus 4",
+        "value": "Crit DMG"
+      },
+      {
+        "label": "Focus 5",
+        "value": "Effect RES"
+      },
+      {
+        "label": "Focus 6",
+        "value": "SPD"
+      }
+    ]
+  },
+  "upgradePath": {
+    "kicker": "Upgrade Path",
+    "title": "Priority",
+    "items": [
+      "Skill order: Ultimate >= Special >= Basic",
+      "Budget target: 3 / 3 / 3",
+      "Recommended target: 7 / 7 / 8",
+      "Breakthrough priority: ★★☆ Strong gains from extra copies",
+      "Substat focus: HP%, DEF%, Crit Rate, and Crit DMG",
+      "Journey: Hard route: Tank - BX4"
+    ]
+  },
+  "journeyHard": {
+    "id": "hilde-hard-journey",
+    "kicker": "Journey: Hard",
+    "title": "Recommended Cards",
+    "summary": "Core line: Charlotte and Emilly. Fill the remaining slots with Waltz Asherah or Bunny Claire, Hilde, and Besta.",
+    "cards": [
+      {
+        "name": "Charlotte",
+        "slot": "Core",
+        "image": "/assets/starsavior/starsavior/premium/charlotte/hero.png"
+      },
+      {
+        "name": "Emilly",
+        "slot": "Core",
+        "image": "/assets/starsavior/starsavior/premium/emilly/hero.webp"
+      },
+      {
+        "name": "Waltz Asherah",
+        "slot": "Flex 1",
+        "image": "/assets/starsavior/starsavior/premium/waltz-asherah/hero.webp"
+      },
+      {
+        "name": "Bunny Claire",
+        "slot": "Flex 1",
+        "image": "/assets/starsavior/starsavior/premium/bunnygirl-claire/hero.png"
+      },
+      {
+        "name": "Hilde",
+        "slot": "Flex 2",
+        "image": "/assets/starsavior/starsavior/premium/hilde/hero.png"
+      },
+      {
+        "name": "Besta",
+        "slot": "Flex 3",
+        "image": "/assets/starsavior/starsavior/premium/besta/hero.webp"
+      }
+    ]
+  },
+  "skillCards": {
+    "id": "hilde-skills",
+    "kicker": "Skill Cards",
+    "defaultTabId": "ultimate",
+    "items": [
+      {
+        "id": "passive",
+        "label": "Passive",
+        "title": "Valkyrie's Will",
+        "summary": "Hilde's passive matters more once the core stat line is online and the rotation is already stable."
+      },
+      {
+        "id": "basic",
+        "label": "Basic",
+        "title": "Twin Blade",
+        "summary": "Use the basic to bridge cooldowns; it should stay behind the two higher-impact skills in upgrade priority."
+      },
+      {
+        "id": "special",
+        "label": "Special",
+        "title": "Dragon Buster",
+        "summary": "Special is the next major breakpoint after the opener and usually carries the mid-cycle payoff."
+      },
+      {
+        "id": "ultimate",
+        "label": "Ultimate",
+        "title": "Buster Overdrive",
+        "summary": "Ultimate anchors the opener and stays at the top of the investment order for this build."
+      }
+    ]
+  }
+}

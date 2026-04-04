@@ -2,32 +2,57 @@
   "name": "Asherah",
   "slug": "asherah",
   "role": "Single-target DPS",
-  "modes": ["PvE", "PvP"],
+  "modes": [
+    "PvE",
+    "PvP"
+  ],
   "updatedAt": "2026-03-30",
-  "sourceTabs": ["All Character Build Guide"],
+  "sourceTabs": [
+    "All Character Build Guide"
+  ],
   "recommendedSets": [
     {
       "label": "Budget",
-      "sets": ["Insight (4pc)", "Valor (2pc)"],
+      "sets": [
+        "Insight (4pc)",
+        "Valor (2pc)"
+      ],
       "neckMain": "SPD",
       "ringMain": "ATK%"
     },
     {
       "label": "Endgame",
-      "sets": ["Destruction (4pc)", "Valor (2pc)"],
+      "sets": [
+        "Destruction (4pc)",
+        "Valor (2pc)"
+      ],
       "neckMain": "SPD",
       "ringMain": "ATK%"
     }
   ],
-  "subStats": ["SPD", "Crit Rate", "Crit DMG", "ATK%"],
+  "subStats": [
+    "SPD",
+    "Crit Rate",
+    "Crit DMG",
+    "ATK%"
+  ],
   "skillLevels": {
     "budget": "3 / 3 / 3",
     "endgame": "7 / 7 / 7",
-    "progression": ["3 / 3 / 3", "3 / 3 / 6", "3 / 6 / 6", "7 / 7 / 7"]
+    "progression": [
+      "3 / 3 / 3",
+      "3 / 3 / 6",
+      "3 / 6 / 6",
+      "7 / 7 / 7"
+    ]
   },
-  "arcana": ["Crit-rate Strength Arcana", "ATK Strength Arcana"],
+  "arcana": [
+    "Crit-rate Strength Arcana",
+    "ATK Strength Arcana"
+  ],
   "notes": [
     "Asherah follows a straightforward speed-plus-attack structure in the source build tab.",
     "The intermediate 3/3/6 and 3/6/6 stops are preserved because they are explicitly shown in the sheet."
-  ]
+  ],
+  "status": "needs-review"
 }

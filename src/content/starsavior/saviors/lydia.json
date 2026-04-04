@@ -3,8 +3,16 @@
   "slug": "lydia",
   "tier": "A",
   "mode": "PvE AoE DPS",
-  "tags": ["ST & AoE", "SPD Down", "Debuff Specialist", "Long fights"],
+  "tags": [
+    "ST & AoE",
+    "SPD Down",
+    "Debuff Specialist",
+    "Long fights"
+  ],
   "summary": "Lydia's dual speed-down identity makes her valuable in content that rewards turn control as much as raw damage. The sheet also calls out her ability to help overcome rank deficits in Journey.",
   "updatedAt": "2026-03-30",
-  "sourceTabs": ["Savior Tier list (ENG)"]
+  "sourceTabs": [
+    "Savior Tier list (ENG)"
+  ],
+  "status": "needs-review"
 }

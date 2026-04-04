@@ -7,17 +7,20 @@
       "PvE",
       "PvP"
     ],
-    "image": "/assets/starsavior/tychara/69947d4d2c0b21248dd7e23a8f79c03e969f8743.png",
-    "updatedAt": "2026-03-30",
+    "image": "/assets/starsavior/starsavior/premium/annah/hero.png",
+    "updatedAt": "2026-04-02",
     "sourceTabs": [
-      "Tychara character guide",
-      "Fallback build profile"
+      "Kamigame Annah guide"
     ],
     "sourceContext": {
-      "url": "https://tychara.com/StarSavior/characters/annah",
-      "lead": "Fallback build profile based on Tychara's character guide.",
-      "citationText": "Source page: Annah Guide - Star Savior | Tychara.",
-      "permissionNote": "Tychara does not currently publish a dedicated build section for this unit, so this build uses the Tychara stat line and skill kit as its source."
+      "url": "https://kamigame.jp/starsavior/page/396886819108573470.html",
+      "lead": "Translated and adapted from Kamigame's Annah guide.",
+      "citationText": "Source page: Annah Guide - Star Savior | Kamigame.",
+      "reviewedAgainst": [
+        "Kamigame Annah guide",
+        "STUDIOBSIDE official game art"
+      ],
+      "attributionNote": "© 2025 STUDIOBSIDE Co. Ltd"
     },
     "recommendedSets": [
       {
@@ -72,7 +75,8 @@
       "Annah does not have a published build section on Tychara yet, so this page uses her Tychara stat line and kit details as a fallback build profile.",
       "Her self-healing special and Max HP scaling point cleanly toward a speed-first HP tank shell.",
       "ATK Down on the ultimate makes faster cycling more valuable than forcing extra damage stats."
-    ]
+    ],
+    "status": "published"
   },
   {
     "name": "Asherah",
@@ -82,7 +86,7 @@
       "PvE",
       "PvP"
     ],
-    "image": "/assets/starsavior/sheet/6319edbe734417d33855a4c6633913a8cc2c26c1.png",
+    "image": "/assets/starsavior/starsavior/premium/asherah/hero.png",
     "setIcons": {
       "budget": [
         "/assets/starsavior/sheet/b413c56e8429fc358939010b6155036c43af1820.png",
@@ -97,12 +101,20 @@
         "/assets/starsavior/sheet/efec4b74fa3b43df579bfa0f9c9a7003905758a9.png"
       ]
     },
-    "updatedAt": "2026-03-30",
+    "updatedAt": "2026-04-02",
     "sourceTabs": [
-      "All Character Build Guide",
-      "Tychara character guide"
+      "Kamigame Asherah guide"
     ],
-    "sourceContext": null,
+    "sourceContext": {
+      "url": "https://kamigame.jp/starsavior/page/396886819007910174.html",
+      "lead": "Translated and adapted from Kamigame's Asherah guide.",
+      "citationText": "Source page: Asherah Guide - Star Savior | Kamigame.",
+      "reviewedAgainst": [
+        "Kamigame Asherah guide",
+        "STUDIOBSIDE official game art"
+      ],
+      "attributionNote": "© 2025 STUDIOBSIDE Co. Ltd"
+    },
     "recommendedSets": [
       {
         "label": "Budget",
@@ -197,7 +209,7 @@
           "image": "/assets/starsavior/sheet/de78e666bfe8a1df69ef4501ebf662dc4f9beb4f.png"
         },
         {
-          "name": "Lyn or BG Claire",
+          "name": "Lyn Card or BG Claire",
           "image": "/assets/starsavior/sheet/c381ad05202c655936b55e33f9686edcee53dcf7.png"
         },
         {
@@ -218,7 +230,8 @@
     "notes": [
       "Asherah follows a straightforward speed-plus-attack structure in the source build tab.",
       "The intermediate 3/3/6 and 3/6/6 stops are preserved because they are explicitly shown in the sheet."
-    ]
+    ],
+    "status": "published"
   },
   {
     "name": "Asherah Waltz of Starlight",
@@ -228,7 +241,7 @@
       "PvE",
       "PvP"
     ],
-    "image": "/assets/starsavior/sheet/6916a29bd468e8ecac94edc2fe28b1cdb43499c2.png",
+    "image": "/assets/starsavior/starsavior/premium/waltz-asherah/hero.webp",
     "setIcons": {
       "budget": [
         "/assets/starsavior/sheet/044e06d4cf81bcaf65709cb735e2f334988d77d6.png",
@@ -243,11 +256,20 @@
         "/assets/starsavior/sheet/f185b864bb5d24221e81d13cb8b761d357d763ae.png"
       ]
     },
-    "updatedAt": "2026-03-30",
+    "updatedAt": "2026-04-02",
     "sourceTabs": [
-      "All Character Build Guide"
+      "Kamigame Asherah Waltz of Starlight guide"
     ],
-    "sourceContext": null,
+    "sourceContext": {
+      "url": "https://kamigame.jp/starsavior/page/401682569558530569.html",
+      "lead": "Translated and adapted from Kamigame's Asherah Waltz of Starlight guide.",
+      "citationText": "Source page: Asherah Waltz of Starlight Guide - Star Savior | Kamigame.",
+      "reviewedAgainst": [
+        "Kamigame Asherah Waltz of Starlight guide",
+        "STUDIOBSIDE official game art"
+      ],
+      "attributionNote": "© 2025 STUDIOBSIDE Co. Ltd"
+    },
     "recommendedSets": [
       {
         "label": "PvE / PvP",
@@ -373,7 +395,8 @@
       "Asherah Waltz of Starlight keeps a SPD necklace and HP% ring in the published build sheet, with HP (4pc) + Barrier (2pc) as the first stop.",
       "The source sheet highlights ATK% as the standout roll target on top of the usual SPD and HP% shell.",
       "Journey Hard routing in the sheet points toward DPS - AX5."
-    ]
+    ],
+    "status": "published"
   },
   {
     "name": "Bell Rhys",
@@ -383,7 +406,7 @@
       "PvE",
       "PvP"
     ],
-    "image": "/assets/starsavior/sheet/03ea382b33d48f4a773cbaa7f1b2093196904ffa.png",
+    "image": "/assets/starsavior/starsavior/premium/bell-rhys/hero.png",
     "setIcons": {
       "budget": [
         "/assets/starsavior/sheet/b413c56e8429fc358939010b6155036c43af1820.png",
@@ -398,11 +421,20 @@
         "/assets/starsavior/sheet/95bb620610231a6272439e099ae070b8d70171eb.png"
       ]
     },
-    "updatedAt": "2026-03-30",
+    "updatedAt": "2026-04-02",
     "sourceTabs": [
-      "All Character Build Guide"
+      "Kamigame Bell Rhys guide"
     ],
-    "sourceContext": null,
+    "sourceContext": {
+      "url": "https://kamigame.jp/starsavior/page/403991946411913538.html",
+      "lead": "Translated and adapted from Kamigame's Bell Rhys guide.",
+      "citationText": "Source page: Bell Rhys Guide - Star Savior | Kamigame.",
+      "reviewedAgainst": [
+        "Kamigame Bell Rhys guide",
+        "STUDIOBSIDE official game art"
+      ],
+      "attributionNote": "© 2025 STUDIOBSIDE Co. Ltd"
+    },
     "recommendedSets": [
       {
         "label": "PvE / PvP",
@@ -510,7 +542,7 @@
           "image": "/assets/starsavior/sheet/de78e666bfe8a1df69ef4501ebf662dc4f9beb4f.png"
         },
         {
-          "name": "Lyn or BG Claire",
+          "name": "Lyn Card or BG Claire",
           "image": "/assets/starsavior/sheet/c381ad05202c655936b55e33f9686edcee53dcf7.png"
         },
         {
@@ -532,7 +564,8 @@
       "Bell Rhys keeps a SPD necklace and ATK% ring in the published build sheet, with Insight (4pc) + Hit (2pc) as the first stop.",
       "The source sheet highlights Effect Hit% as the standout roll target on top of the usual SPD and Effect Hit% shell.",
       "Journey Hard routing in the sheet points toward DPS - AX5."
-    ]
+    ],
+    "status": "published"
   },
   {
     "name": "Besta",
@@ -542,17 +575,20 @@
       "PvE",
       "PvP"
     ],
-    "image": "/assets/starsavior/tychara/972a42523cd7095228d9b0ac3eb35bfa97a1aca7.webp",
-    "updatedAt": "2026-03-30",
+    "image": "/assets/starsavior/starsavior/premium/besta/hero.webp",
+    "updatedAt": "2026-04-02",
     "sourceTabs": [
-      "Tychara character guide",
-      "Fallback build profile"
+      "Kamigame Besta guide"
     ],
     "sourceContext": {
-      "url": "https://tychara.com/StarSavior/characters/besta",
-      "lead": "Fallback build profile based on Tychara's character guide.",
-      "citationText": "Source page: Besta Guide - Star Savior | Tychara.",
-      "permissionNote": "Tychara does not currently publish a dedicated build section for this unit, so this build uses the Tychara stat line and skill kit as its source."
+      "url": "https://kamigame.jp/starsavior/page/396886820668860556.html",
+      "lead": "Translated and adapted from Kamigame's Besta guide.",
+      "citationText": "Source page: Besta Guide - Star Savior | Kamigame.",
+      "reviewedAgainst": [
+        "Kamigame Besta guide",
+        "STUDIOBSIDE official game art"
+      ],
+      "attributionNote": "© 2025 STUDIOBSIDE Co. Ltd"
     },
     "recommendedSets": [
       {
@@ -607,7 +643,8 @@
       "Besta does not have a published build section on Tychara yet, so this page uses her Tychara stat line and kit details as a fallback build profile.",
       "Both the basic and special scale from Max HP, which keeps HP sets ahead of pure defense stacking.",
       "DEF Up on the ultimate and ATK Down on the special make her a straightforward frontline lane anchor."
-    ]
+    ],
+    "status": "published"
   },
   {
     "name": "Bunnygirl Charlotte",
@@ -617,7 +654,7 @@
       "PvE",
       "PvP"
     ],
-    "image": "/assets/starsavior/sheet/32f9f0eb6442b3e3a3456315f42c57e737f5c3bc.png",
+    "image": "/assets/starsavior/starsavior/premium/bg-charlotte/hero.webp",
     "setIcons": {
       "budget": [
         "/assets/starsavior/sheet/b413c56e8429fc358939010b6155036c43af1820.png",
@@ -632,11 +669,20 @@
         "/assets/starsavior/sheet/efec4b74fa3b43df579bfa0f9c9a7003905758a9.png"
       ]
     },
-    "updatedAt": "2026-03-30",
+    "updatedAt": "2026-04-02",
     "sourceTabs": [
-      "All Character Build Guide"
+      "Kamigame Bunnygirl Charlotte guide"
     ],
-    "sourceContext": null,
+    "sourceContext": {
+      "url": "https://kamigame.jp/starsavior/page/408060532088672896.html",
+      "lead": "Translated and adapted from Kamigame's Bunnygirl Charlotte guide.",
+      "citationText": "Source page: Bunnygirl Charlotte Guide - Star Savior | Kamigame.",
+      "reviewedAgainst": [
+        "Kamigame Bunnygirl Charlotte guide",
+        "STUDIOBSIDE official game art"
+      ],
+      "attributionNote": "© 2025 STUDIOBSIDE Co. Ltd"
+    },
     "recommendedSets": [
       {
         "label": "PvE / PvP",
@@ -766,7 +812,8 @@
     "notes": [
       "Bunnygirl Charlotte keeps a SPD necklace and ATK% ring in the published build sheet, with Insight (4pc) + Valor (2pc) as the first stop.",
       "Journey Hard routing in the sheet points toward DPS - AX5."
-    ]
+    ],
+    "status": "published"
   },
   {
     "name": "Bunnygirl Claire",
@@ -776,7 +823,7 @@
       "PvE",
       "PvP"
     ],
-    "image": "/assets/starsavior/sheet/df484e14609d8e4735c6f173954719a3634c4607.png",
+    "image": "/assets/starsavior/starsavior/premium/bunnygirl-claire/hero.png",
     "setIcons": {
       "budget": [
         "/assets/starsavior/sheet/b41733d67d33ac888f0393e951dd1d7b582086a0.png",
@@ -791,11 +838,20 @@
         "/assets/starsavior/sheet/efec4b74fa3b43df579bfa0f9c9a7003905758a9.png"
       ]
     },
-    "updatedAt": "2026-03-30",
+    "updatedAt": "2026-04-02",
     "sourceTabs": [
-      "All Character Build Guide"
+      "Kamigame Bunnygirl Claire guide"
     ],
-    "sourceContext": null,
+    "sourceContext": {
+      "url": "https://kamigame.jp/starsavior/page/397920957945133323.html",
+      "lead": "Translated and adapted from Kamigame's Bunnygirl Claire guide.",
+      "citationText": "Source page: Bunnygirl Claire Guide - Star Savior | Kamigame.",
+      "reviewedAgainst": [
+        "Kamigame Bunnygirl Claire guide",
+        "STUDIOBSIDE official game art"
+      ],
+      "attributionNote": "© 2025 STUDIOBSIDE Co. Ltd"
+    },
     "recommendedSets": [
       {
         "label": "Budget",
@@ -890,7 +946,7 @@
           "image": "/assets/starsavior/sheet/de78e666bfe8a1df69ef4501ebf662dc4f9beb4f.png"
         },
         {
-          "name": "Lyn or BG Claire",
+          "name": "Lyn Card or BG Claire",
           "image": "/assets/starsavior/sheet/c381ad05202c655936b55e33f9686edcee53dcf7.png"
         },
         {
@@ -911,7 +967,8 @@
     "notes": [
       "The launch build card treats BG Claire as a premier Moon single-target finisher that scales hard with better crit infrastructure.",
       "The source explicitly preserves SPD neck plus ATK% ring across the main recommendations."
-    ]
+    ],
+    "status": "published"
   },
   {
     "name": "Bunnygirl Scarlet",
@@ -921,7 +978,7 @@
       "PvE",
       "PvP"
     ],
-    "image": "/assets/starsavior/sheet/3738e7a52e1c103fbc85f5a98a4c9524b22779ca.png",
+    "image": "/assets/starsavior/starsavior/premium/bunnygirl-scarlet/hero.png",
     "setIcons": {
       "budget": [
         "/assets/starsavior/sheet/b413c56e8429fc358939010b6155036c43af1820.png",
@@ -936,11 +993,20 @@
         "/assets/starsavior/sheet/95bb620610231a6272439e099ae070b8d70171eb.png"
       ]
     },
-    "updatedAt": "2026-03-30",
+    "updatedAt": "2026-04-02",
     "sourceTabs": [
-      "All Character Build Guide"
+      "Kamigame Bunnygirl Scarlet guide"
     ],
-    "sourceContext": null,
+    "sourceContext": {
+      "url": "https://kamigame.jp/starsavior/page/397920896037208139.html",
+      "lead": "Translated and adapted from Kamigame's Bunnygirl Scarlet guide.",
+      "citationText": "Source page: Bunnygirl Scarlet Guide - Star Savior | Kamigame.",
+      "reviewedAgainst": [
+        "Kamigame Bunnygirl Scarlet guide",
+        "STUDIOBSIDE official game art"
+      ],
+      "attributionNote": "© 2025 STUDIOBSIDE Co. Ltd"
+    },
     "recommendedSets": [
       {
         "label": "PvE / PvP",
@@ -1068,7 +1134,8 @@
       "Bunnygirl Scarlet keeps a SPD necklace and ATK% ring in the published build sheet, with Insight (4pc) + Hit (2pc) as the first stop.",
       "The source sheet highlights Effect Hit% as the standout roll target on top of the usual SPD and Effect Hit% shell.",
       "Journey Hard routing in the sheet points toward DPS - AX5."
-    ]
+    ],
+    "status": "published"
   },
   {
     "name": "Carmen",
@@ -1078,7 +1145,7 @@
       "PvE",
       "PvP"
     ],
-    "image": "/assets/starsavior/sheet/71d3031c6a5a2977d14432cf1210ba04353beeff.png",
+    "image": "/assets/starsavior/starsavior/premium/carmen/hero.png",
     "setIcons": {
       "budget": [
         "/assets/starsavior/sheet/6a30ee6d70a7c919289a33883852244a6140010f.png",
@@ -1093,12 +1160,20 @@
         "/assets/starsavior/sheet/bdf6e0e3e41894af1ba91e0059e13d6667eb4e48.png"
       ]
     },
-    "updatedAt": "2026-03-30",
+    "updatedAt": "2026-04-02",
     "sourceTabs": [
-      "All Character Build Guide",
-      "Tychara character guide"
+      "Kamigame Carmen guide"
     ],
-    "sourceContext": null,
+    "sourceContext": {
+      "url": "https://kamigame.jp/starsavior/page/396886819410563358.html",
+      "lead": "Translated and adapted from Kamigame's Carmen guide.",
+      "citationText": "Source page: Carmen Guide - Star Savior | Kamigame.",
+      "reviewedAgainst": [
+        "Kamigame Carmen guide",
+        "STUDIOBSIDE official game art"
+      ],
+      "attributionNote": "© 2025 STUDIOBSIDE Co. Ltd"
+    },
     "recommendedSets": [
       {
         "label": "PvE / PvP",
@@ -1251,7 +1326,8 @@
     "notes": [
       "Carmen keeps a SPD necklace and HP% ring in the published build sheet, with Speed (4pc) + Hit (2pc) as the first stop.",
       "Journey Hard routing in the sheet points toward PVP - DX4."
-    ]
+    ],
+    "status": "published"
   },
   {
     "name": "Charlotte",
@@ -1261,7 +1337,7 @@
       "PvE",
       "PvP"
     ],
-    "image": "/assets/starsavior/sheet/a5a1dae1bb523bfe6add1588693909e51e060e3b.png",
+    "image": "/assets/starsavior/starsavior/premium/charlotte/hero.png",
     "setIcons": {
       "budget": [
         "/assets/starsavior/sheet/b413c56e8429fc358939010b6155036c43af1820.png",
@@ -1276,12 +1352,20 @@
         "/assets/starsavior/sheet/efec4b74fa3b43df579bfa0f9c9a7003905758a9.png"
       ]
     },
-    "updatedAt": "2026-03-30",
+    "updatedAt": "2026-04-02",
     "sourceTabs": [
-      "All Character Build Guide",
-      "Tychara character guide"
+      "Kamigame Charlotte guide"
     ],
-    "sourceContext": null,
+    "sourceContext": {
+      "url": "https://kamigame.jp/starsavior/page/396886819712553246.html",
+      "lead": "Translated and adapted from Kamigame's Charlotte guide.",
+      "citationText": "Source page: Charlotte Guide - Star Savior | Kamigame.",
+      "reviewedAgainst": [
+        "Kamigame Charlotte guide",
+        "STUDIOBSIDE official game art"
+      ],
+      "attributionNote": "© 2025 STUDIOBSIDE Co. Ltd"
+    },
     "recommendedSets": [
       {
         "label": "Budget",
@@ -1378,7 +1462,7 @@
           "image": "/assets/starsavior/sheet/de78e666bfe8a1df69ef4501ebf662dc4f9beb4f.png"
         },
         {
-          "name": "Lyn or BG Claire",
+          "name": "Lyn Card or BG Claire",
           "image": "/assets/starsavior/sheet/c381ad05202c655936b55e33f9686edcee53dcf7.png"
         },
         {
@@ -1399,7 +1483,8 @@
     "notes": [
       "Charlotte sits in the hybrid support-DPS lane, so speed and utility substats still matter even when you upgrade into higher damage sets.",
       "The sheet keeps Charlotte on SPD neck and ATK% ring across both budget and late-game routes."
-    ]
+    ],
+    "status": "published"
   },
   {
     "name": "Claire",
@@ -1409,17 +1494,20 @@
       "PvE",
       "PvP"
     ],
-    "image": "/assets/starsavior/tychara/208d63044f78e296868e9383553ea4227648b809.webp",
-    "updatedAt": "2026-03-30",
+    "image": "/assets/starsavior/starsavior/premium/claire/hero.webp",
+    "updatedAt": "2026-04-02",
     "sourceTabs": [
-      "Tychara character guide",
-      "Fallback build profile"
+      "Kamigame Claire guide"
     ],
     "sourceContext": {
-      "url": "https://tychara.com/StarSavior/characters/claire",
-      "lead": "Fallback build profile based on Tychara's character guide.",
-      "citationText": "Source page: Claire Guide - Star Savior | Tychara.",
-      "permissionNote": "Tychara does not currently publish a dedicated build section for this unit, so this build uses the Tychara stat line and skill kit as its source."
+      "url": "https://kamigame.jp/starsavior/page/396886819645444382.html",
+      "lead": "Translated and adapted from Kamigame's Claire guide.",
+      "citationText": "Source page: Claire Guide - Star Savior | Kamigame.",
+      "reviewedAgainst": [
+        "Kamigame Claire guide",
+        "STUDIOBSIDE official game art"
+      ],
+      "attributionNote": "© 2025 STUDIOBSIDE Co. Ltd"
     },
     "recommendedSets": [
       {
@@ -1475,7 +1563,8 @@
       "Claire does not have a published build section on Tychara yet, so this page uses her Tychara stat line and kit details as a fallback build profile.",
       "Her passive and ultimate both lean into self-crit scaling, so standard crit damage shells fit naturally.",
       "Action Gauge gain on the special keeps SPD valuable even on a pure single-target setup."
-    ]
+    ],
+    "status": "published"
   },
   {
     "name": "Clarissa",
@@ -1485,17 +1574,20 @@
       "PvE",
       "PvP"
     ],
-    "image": "/assets/starsavior/tychara/ef88ab29622d77227a30b33cfdbf430055a51274.webp",
-    "updatedAt": "2026-03-30",
+    "image": "/assets/starsavior/starsavior/premium/clarissa/hero.webp",
+    "updatedAt": "2026-04-02",
     "sourceTabs": [
-      "Tychara character guide",
-      "Fallback build profile"
+      "Kamigame Clarissa guide"
     ],
     "sourceContext": {
-      "url": "https://tychara.com/StarSavior/characters/clarissa",
-      "lead": "Fallback build profile based on Tychara's character guide.",
-      "citationText": "Source page: Clarissa Guide - Star Savior | Tychara.",
-      "permissionNote": "Tychara does not currently publish a dedicated build section for this unit, so this build uses the Tychara stat line and skill kit as its source."
+      "url": "https://kamigame.jp/starsavior/page/396886819561558302.html",
+      "lead": "Translated and adapted from Kamigame's Clarissa guide.",
+      "citationText": "Source page: Clarissa Guide - Star Savior | Kamigame.",
+      "reviewedAgainst": [
+        "Kamigame Clarissa guide",
+        "STUDIOBSIDE official game art"
+      ],
+      "attributionNote": "© 2025 STUDIOBSIDE Co. Ltd"
     },
     "recommendedSets": [
       {
@@ -1551,7 +1643,8 @@
       "Clarissa does not have a published build section on Tychara yet, so this page uses her Tychara stat line and kit details as a fallback build profile.",
       "Her special already brings SPD Down and Action Gauge control, which makes Effect Hit the cleanest flex stat after speed.",
       "The kit is still primarily single-target damage, so crit stats stay relevant even on the control route."
-    ]
+    ],
+    "status": "published"
   },
   {
     "name": "Dana",
@@ -1561,7 +1654,7 @@
       "PvE",
       "PvP"
     ],
-    "image": "/assets/starsavior/sheet/26bd481005ded8584ea85e383dc1cf66eea025c4.png",
+    "image": "/assets/starsavior/starsavior/premium/dana/hero.png",
     "setIcons": {
       "budget": [
         "/assets/starsavior/sheet/b413c56e8429fc358939010b6155036c43af1820.png",
@@ -1576,12 +1669,20 @@
         "/assets/starsavior/sheet/efec4b74fa3b43df579bfa0f9c9a7003905758a9.png"
       ]
     },
-    "updatedAt": "2026-03-30",
+    "updatedAt": "2026-04-02",
     "sourceTabs": [
-      "All Character Build Guide",
-      "Tychara character guide"
+      "Kamigame Dana guide"
     ],
-    "sourceContext": null,
+    "sourceContext": {
+      "url": "https://kamigame.jp/starsavior/page/396886820148778160.html",
+      "lead": "Translated and adapted from Kamigame's Dana guide.",
+      "citationText": "Source page: Dana Guide - Star Savior | Kamigame.",
+      "reviewedAgainst": [
+        "Kamigame Dana guide",
+        "STUDIOBSIDE official game art"
+      ],
+      "attributionNote": "© 2025 STUDIOBSIDE Co. Ltd"
+    },
     "recommendedSets": [
       {
         "label": "PvE / PvP",
@@ -1734,7 +1835,8 @@
     "notes": [
       "Dana keeps a SPD necklace and ATK% ring in the published build sheet, with Insight (4pc) + Valor (2pc) as the first stop.",
       "Journey Hard routing in the sheet points toward DPS - AX5."
-    ]
+    ],
+    "status": "published"
   },
   {
     "name": "Elisa",
@@ -1744,7 +1846,7 @@
       "PvE",
       "PvP"
     ],
-    "image": "/assets/starsavior/sheet/ac90e122207b8cabae7ca61317349e9683f37b56.png",
+    "image": "/assets/starsavior/starsavior/premium/elisa/hero.png",
     "setIcons": {
       "budget": [
         "/assets/starsavior/sheet/044e06d4cf81bcaf65709cb735e2f334988d77d6.png",
@@ -1759,12 +1861,20 @@
         "/assets/starsavior/sheet/dd5d6de1f9a842846fda617a6155efa3bb029471.png"
       ]
     },
-    "updatedAt": "2026-03-30",
+    "updatedAt": "2026-04-02",
     "sourceTabs": [
-      "All Character Build Guide",
-      "Tychara character guide"
+      "Kamigame Elisa guide"
     ],
-    "sourceContext": null,
+    "sourceContext": {
+      "url": "https://kamigame.jp/starsavior/page/396886819326677278.html",
+      "lead": "Translated and adapted from Kamigame's Elisa guide.",
+      "citationText": "Source page: Elisa Guide - Star Savior | Kamigame.",
+      "reviewedAgainst": [
+        "Kamigame Elisa guide",
+        "STUDIOBSIDE official game art"
+      ],
+      "attributionNote": "© 2025 STUDIOBSIDE Co. Ltd"
+    },
     "recommendedSets": [
       {
         "label": "PvE / PvP",
@@ -1893,7 +2003,8 @@
     "notes": [
       "Elisa keeps a SPD necklace and HP% ring in the published build sheet, with HP (4pc) + Barrier (2pc) as the first stop.",
       "Journey Hard routing in the sheet points toward Tank - BX2."
-    ]
+    ],
+    "status": "published"
   },
   {
     "name": "Emilly",
@@ -1903,7 +2014,7 @@
       "PvE",
       "PvP"
     ],
-    "image": "/assets/starsavior/sheet/2f7a5eb015835c70fd92cdc281bc2061144a4e38.png",
+    "image": "/assets/starsavior/starsavior/premium/emilly/hero.webp",
     "setIcons": {
       "budget": [
         "/assets/starsavior/sheet/044e06d4cf81bcaf65709cb735e2f334988d77d6.png",
@@ -1918,12 +2029,20 @@
         "/assets/starsavior/sheet/f185b864bb5d24221e81d13cb8b761d357d763ae.png"
       ]
     },
-    "updatedAt": "2026-03-30",
+    "updatedAt": "2026-04-02",
     "sourceTabs": [
-      "All Character Build Guide",
-      "Tychara character guide"
+      "Kamigame Emilly guide"
     ],
-    "sourceContext": null,
+    "sourceContext": {
+      "url": "https://kamigame.jp/starsavior/page/406024895697311511.html",
+      "lead": "Translated and adapted from Kamigame's Emilly guide.",
+      "citationText": "Source page: Emilly Guide - Star Savior | Kamigame.",
+      "reviewedAgainst": [
+        "Kamigame Emilly guide",
+        "STUDIOBSIDE official game art"
+      ],
+      "attributionNote": "© 2025 STUDIOBSIDE Co. Ltd"
+    },
     "recommendedSets": [
       {
         "label": "PvE / PvP",
@@ -2078,7 +2197,8 @@
       "Emilly keeps a SPD necklace and HP% ring in the published build sheet, with HP (4pc) + Barrier (2pc) as the first stop.",
       "The source sheet highlights ATK% as the standout roll target on top of the usual Speed and HP shell.",
       "Journey Hard routing in the sheet points toward CRIT - EX5."
-    ]
+    ],
+    "status": "published"
   },
   {
     "name": "Epindel",
@@ -2088,7 +2208,7 @@
       "PvE",
       "PvP"
     ],
-    "image": "/assets/starsavior/sheet/f93f0f9016989b8b8f07d41d99d31528d5a25097.png",
+    "image": "/assets/starsavior/starsavior/premium/epindel/hero.png",
     "setIcons": {
       "budget": [
         "/assets/starsavior/sheet/b413c56e8429fc358939010b6155036c43af1820.png",
@@ -2103,12 +2223,20 @@
         "/assets/starsavior/sheet/efec4b74fa3b43df579bfa0f9c9a7003905758a9.png"
       ]
     },
-    "updatedAt": "2026-03-30",
+    "updatedAt": "2026-04-02",
     "sourceTabs": [
-      "All Character Build Guide",
-      "Tychara character guide"
+      "Kamigame Epindel guide"
     ],
-    "sourceContext": null,
+    "sourceContext": {
+      "url": "https://kamigame.jp/starsavior/page/396886819242791198.html",
+      "lead": "Translated and adapted from Kamigame's Epindel guide.",
+      "citationText": "Source page: Epindel Guide - Star Savior | Kamigame.",
+      "reviewedAgainst": [
+        "Kamigame Epindel guide",
+        "STUDIOBSIDE official game art"
+      ],
+      "attributionNote": "© 2025 STUDIOBSIDE Co. Ltd"
+    },
     "recommendedSets": [
       {
         "label": "PvE / PvP",
@@ -2237,7 +2365,8 @@
     "notes": [
       "Epindel keeps a SPD necklace and ATK% ring in the published build sheet, with Insight (4pc) + Valor (2pc) as the first stop.",
       "Journey Hard routing in the sheet points toward DPS - AX5."
-    ]
+    ],
+    "status": "published"
   },
   {
     "name": "Frey",
@@ -2247,7 +2376,7 @@
       "PvE",
       "PvP"
     ],
-    "image": "/assets/starsavior/sheet/17610034a6bf830c4deae70baa570c0a0adc598c.png",
+    "image": "/assets/starsavior/starsavior/premium/frey/hero.png",
     "setIcons": {
       "budget": [
         "/assets/starsavior/sheet/044e06d4cf81bcaf65709cb735e2f334988d77d6.png",
@@ -2262,12 +2391,20 @@
         "/assets/starsavior/sheet/f185b864bb5d24221e81d13cb8b761d357d763ae.png"
       ]
     },
-    "updatedAt": "2026-03-30",
+    "updatedAt": "2026-04-02",
     "sourceTabs": [
-      "All Character Build Guide",
-      "Tychara character guide"
+      "Kamigame Frey guide"
     ],
-    "sourceContext": null,
+    "sourceContext": {
+      "url": "https://kamigame.jp/starsavior/page/396886820501099696.html",
+      "lead": "Translated and adapted from Kamigame's Frey guide.",
+      "citationText": "Source page: Frey Guide - Star Savior | Kamigame.",
+      "reviewedAgainst": [
+        "Kamigame Frey guide",
+        "STUDIOBSIDE official game art"
+      ],
+      "attributionNote": "© 2025 STUDIOBSIDE Co. Ltd"
+    },
     "recommendedSets": [
       {
         "label": "PvE / PvP",
@@ -2394,7 +2531,8 @@
     "notes": [
       "Frey keeps a SPD necklace and HP% ring in the published build sheet, with HP (4pc) + Barrier (2pc) as the first stop.",
       "Journey Hard routing in the sheet points toward Tank - BX2."
-    ]
+    ],
+    "status": "published"
   },
   {
     "name": "Noble Princess Frey",
@@ -2404,7 +2542,7 @@
       "PvE",
       "PvP"
     ],
-    "image": "/assets/starsavior/sheet/2d43552f89a910ffbfecef704d0dde0324c17010.png",
+    "image": "/assets/starsavior/starsavior/premium/noble-princess-frey/hero.png",
     "setIcons": {
       "budget": [
         "/assets/starsavior/sheet/b41733d67d33ac888f0393e951dd1d7b582086a0.png",
@@ -2419,11 +2557,20 @@
         "/assets/starsavior/sheet/efec4b74fa3b43df579bfa0f9c9a7003905758a9.png"
       ]
     },
-    "updatedAt": "2026-03-30",
+    "updatedAt": "2026-04-02",
     "sourceTabs": [
-      "All Character Build Guide"
+      "Kamigame Noble Princess Frey guide"
     ],
-    "sourceContext": null,
+    "sourceContext": {
+      "url": "https://kamigame.jp/starsavior/page/410240805077302236.html",
+      "lead": "Translated and adapted from Kamigame's Noble Princess Frey guide.",
+      "citationText": "Source page: Noble Princess Frey Guide - Star Savior | Kamigame.",
+      "reviewedAgainst": [
+        "Kamigame Noble Princess Frey guide",
+        "STUDIOBSIDE official game art"
+      ],
+      "attributionNote": "© 2025 STUDIOBSIDE Co. Ltd"
+    },
     "recommendedSets": [
       {
         "label": "Budget",
@@ -2541,7 +2688,8 @@
     "notes": [
       "The sheet treats Noble Princess Frey as a premium damage dealer with more than one viable crit shell.",
       "Her progression path is gradual and worth following because the source explicitly lists multiple midpoints."
-    ]
+    ],
+    "status": "published"
   },
   {
     "name": "Harley",
@@ -2551,7 +2699,7 @@
       "PvE",
       "PvP"
     ],
-    "image": "/assets/starsavior/sheet/aed1e20536171d767b20ea1069f5d51b6a849ca9.png",
+    "image": "/assets/starsavior/starsavior/premium/harley/hero.png",
     "setIcons": {
       "budget": [
         "/assets/starsavior/sheet/044e06d4cf81bcaf65709cb735e2f334988d77d6.png",
@@ -2566,12 +2714,20 @@
         "/assets/starsavior/sheet/95bb620610231a6272439e099ae070b8d70171eb.png"
       ]
     },
-    "updatedAt": "2026-03-30",
+    "updatedAt": "2026-04-02",
     "sourceTabs": [
-      "All Character Build Guide",
-      "Tychara character guide"
+      "Kamigame Harley guide"
     ],
-    "sourceContext": null,
+    "sourceContext": {
+      "url": "https://kamigame.jp/starsavior/page/396886820433990832.html",
+      "lead": "Translated and adapted from Kamigame's Harley guide.",
+      "citationText": "Source page: Harley Guide - Star Savior | Kamigame.",
+      "reviewedAgainst": [
+        "Kamigame Harley guide",
+        "STUDIOBSIDE official game art"
+      ],
+      "attributionNote": "© 2025 STUDIOBSIDE Co. Ltd"
+    },
     "recommendedSets": [
       {
         "label": "PvE / PvP",
@@ -2726,7 +2882,8 @@
       "Harley keeps a SPD necklace and HP% ring in the published build sheet, with HP (4pc) + Hit (2pc) as the first stop.",
       "The source sheet highlights Effect Hit% as the standout roll target on top of the usual Speed and Critical Rate shell.",
       "Journey Hard routing in the sheet points toward CRIT - EX5."
-    ]
+    ],
+    "status": "published"
   },
   {
     "name": "Haydee",
@@ -2736,7 +2893,7 @@
       "PvE",
       "PvP"
     ],
-    "image": "/assets/starsavior/sheet/43bd18749c168ae36fdb1f6c6e302017ade3f198.png",
+    "image": "/assets/starsavior/starsavior/premium/haydee/hero.png",
     "setIcons": {
       "budget": [
         "/assets/starsavior/sheet/bdf6e0e3e41894af1ba91e0059e13d6667eb4e48.png",
@@ -2751,12 +2908,20 @@
         "/assets/starsavior/sheet/f185b864bb5d24221e81d13cb8b761d357d763ae.png"
       ]
     },
-    "updatedAt": "2026-03-30",
+    "updatedAt": "2026-04-02",
     "sourceTabs": [
-      "All Character Build Guide",
-      "Tychara character guide"
+      "Kamigame Haydee guide"
     ],
-    "sourceContext": null,
+    "sourceContext": {
+      "url": "https://kamigame.jp/starsavior/page/396886819192459550.html",
+      "lead": "Translated and adapted from Kamigame's Haydee guide.",
+      "citationText": "Source page: Haydee Guide - Star Savior | Kamigame.",
+      "reviewedAgainst": [
+        "Kamigame Haydee guide",
+        "STUDIOBSIDE official game art"
+      ],
+      "attributionNote": "© 2025 STUDIOBSIDE Co. Ltd"
+    },
     "recommendedSets": [
       {
         "label": "PvE / PvP",
@@ -2911,7 +3076,8 @@
       "Haydee keeps a SPD necklace and DEF% ring in the published build sheet, with DEF (2pc) + DEF (2pc) as the first stop.",
       "The source sheet highlights Effect Hit% as the standout roll target on top of the usual Speed and Defense shell.",
       "Journey Hard routing in the sheet points toward Tank CX3."
-    ]
+    ],
+    "status": "published"
   },
   {
     "name": "Hilde",
@@ -2921,7 +3087,7 @@
       "PvE",
       "PvP"
     ],
-    "image": "/assets/starsavior/sheet/79eef4cd69c6c52f6382098496f8b7b03f72d44e.jpg",
+    "image": "/assets/starsavior/starsavior/premium/hilde/hero.png",
     "setIcons": {
       "budget": [
         "/assets/starsavior/sheet/044e06d4cf81bcaf65709cb735e2f334988d77d6.png",
@@ -2936,12 +3102,20 @@
         "/assets/starsavior/sheet/f185b864bb5d24221e81d13cb8b761d357d763ae.png"
       ]
     },
-    "updatedAt": "2026-03-30",
+    "updatedAt": "2026-04-03",
     "sourceTabs": [
-      "All Character Build Guide",
-      "Tychara character guide"
+      "Kamigame Hilde guide"
     ],
-    "sourceContext": null,
+    "sourceContext": {
+      "url": "https://kamigame.jp/starsavior/page/414169647332518533.html",
+      "lead": "Translated and adapted from Kamigame's Hilde guide.",
+      "citationText": "Source page: Hilde Guide - Star Savior | Kamigame.",
+      "reviewedAgainst": [
+        "Kamigame Hilde guide",
+        "STUDIOBSIDE official game art"
+      ],
+      "attributionNote": "© 2025 STUDIOBSIDE Co. Ltd"
+    },
     "recommendedSets": [
       {
         "label": "PvE / PvP",
@@ -3096,7 +3270,8 @@
       "Hilde keeps a SPD necklace and HP% ring in the published build sheet, with HP (4pc) + Barrier (2pc) as the first stop.",
       "The source sheet highlights Effect Hit% as the standout roll target on top of the usual Speed and HP shell.",
       "Journey Hard routing in the sheet points toward Tank - BX4."
-    ]
+    ],
+    "status": "published"
   },
   {
     "name": "Kyra",
@@ -3106,7 +3281,7 @@
       "PvE",
       "PvP"
     ],
-    "image": "/assets/starsavior/sheet/0c7c4676deae3ff8a92c7cb2c116c429044a5f54.png",
+    "image": "/assets/starsavior/starsavior/premium/kyra/hero.png",
     "setIcons": {
       "budget": [
         "/assets/starsavior/sheet/b413c56e8429fc358939010b6155036c43af1820.png",
@@ -3121,12 +3296,20 @@
         "/assets/starsavior/sheet/efec4b74fa3b43df579bfa0f9c9a7003905758a9.png"
       ]
     },
-    "updatedAt": "2026-03-30",
+    "updatedAt": "2026-04-02",
     "sourceTabs": [
-      "All Character Build Guide",
-      "Tychara character guide"
+      "Kamigame Kyra guide"
     ],
-    "sourceContext": null,
+    "sourceContext": {
+      "url": "https://kamigame.jp/starsavior/page/396886819494449438.html",
+      "lead": "Translated and adapted from Kamigame's Kyra guide.",
+      "citationText": "Source page: Kyra Guide - Star Savior | Kamigame.",
+      "reviewedAgainst": [
+        "Kamigame Kyra guide",
+        "STUDIOBSIDE official game art"
+      ],
+      "attributionNote": "© 2025 STUDIOBSIDE Co. Ltd"
+    },
     "recommendedSets": [
       {
         "label": "PvE / PvP",
@@ -3257,7 +3440,8 @@
       "Kyra keeps a SPD necklace and ATK% ring in the published build sheet, with Insight (4pc) + Hit (2pc) as the first stop.",
       "The source sheet highlights Effect Hit% as the standout roll target on top of the usual Speed and Critical Rate shell.",
       "Journey Hard routing in the sheet points toward DPS - AX5."
-    ]
+    ],
+    "status": "published"
   },
   {
     "name": "Lacy",
@@ -3267,7 +3451,7 @@
       "PvE",
       "PvP"
     ],
-    "image": "/assets/starsavior/sheet/3823764a5f34af0b7275445317c1f876fa4e59af.png",
+    "image": "/assets/starsavior/starsavior/premium/lacy/hero.png",
     "setIcons": {
       "budget": [
         "/assets/starsavior/sheet/b413c56e8429fc358939010b6155036c43af1820.png",
@@ -3282,12 +3466,20 @@
         "/assets/starsavior/sheet/95bb620610231a6272439e099ae070b8d70171eb.png"
       ]
     },
-    "updatedAt": "2026-03-30",
+    "updatedAt": "2026-04-02",
     "sourceTabs": [
-      "All Character Build Guide",
-      "Tychara character guide"
+      "Kamigame Lacy guide"
     ],
-    "sourceContext": null,
+    "sourceContext": {
+      "url": "https://kamigame.jp/starsavior/page/396886821356726412.html",
+      "lead": "Translated and adapted from Kamigame's Lacy guide.",
+      "citationText": "Source page: Lacy Guide - Star Savior | Kamigame.",
+      "reviewedAgainst": [
+        "Kamigame Lacy guide",
+        "STUDIOBSIDE official game art"
+      ],
+      "attributionNote": "© 2025 STUDIOBSIDE Co. Ltd"
+    },
     "recommendedSets": [
       {
         "label": "Budget",
@@ -3384,7 +3576,7 @@
           "image": "/assets/starsavior/sheet/de78e666bfe8a1df69ef4501ebf662dc4f9beb4f.png"
         },
         {
-          "name": "Lyn or BG Claire",
+          "name": "Lyn Card or BG Claire",
           "image": "/assets/starsavior/sheet/c381ad05202c655936b55e33f9686edcee53dcf7.png"
         },
         {
@@ -3405,7 +3597,8 @@
     "notes": [
       "Lacy is treated across the source sheet as a premium all-purpose unit, so her build aims for both damage and utility consistency.",
       "The source row keeps Effect Hit% in the recommended substat package rather than stripping her down to pure crit stats."
-    ]
+    ],
+    "status": "published"
   },
   {
     "name": "Lily",
@@ -3415,7 +3608,7 @@
       "PvE",
       "PvP"
     ],
-    "image": "/assets/starsavior/sheet/c6056745de826eca97eef41117befa80680bb318.png",
+    "image": "/assets/starsavior/starsavior/premium/lily/hero.png",
     "setIcons": {
       "budget": [
         "/assets/starsavior/sheet/b413c56e8429fc358939010b6155036c43af1820.png",
@@ -3430,12 +3623,20 @@
         "/assets/starsavior/sheet/efec4b74fa3b43df579bfa0f9c9a7003905758a9.png"
       ]
     },
-    "updatedAt": "2026-03-30",
+    "updatedAt": "2026-04-02",
     "sourceTabs": [
-      "All Character Build Guide",
-      "Tychara character guide"
+      "Kamigame Lily guide"
     ],
-    "sourceContext": null,
+    "sourceContext": {
+      "url": "https://kamigame.jp/starsavior/page/396886821155399820.html",
+      "lead": "Translated and adapted from Kamigame's Lily guide.",
+      "citationText": "Source page: Lily Guide - Star Savior | Kamigame.",
+      "reviewedAgainst": [
+        "Kamigame Lily guide",
+        "STUDIOBSIDE official game art"
+      ],
+      "attributionNote": "© 2025 STUDIOBSIDE Co. Ltd"
+    },
     "recommendedSets": [
       {
         "label": "PvE / PvP",
@@ -3565,7 +3766,8 @@
       "Lily keeps a SPD necklace and ATK% ring in the published build sheet, with Insight (4pc) + Hit (2pc) as the first stop.",
       "The source sheet highlights Effect Hit% as the standout roll target on top of the usual Speed and ATK% shell.",
       "Journey Hard routing in the sheet points toward DPS - AX5."
-    ]
+    ],
+    "status": "published"
   },
   {
     "name": "Lugh",
@@ -3575,7 +3777,7 @@
       "PvE",
       "PvP"
     ],
-    "image": "/assets/starsavior/sheet/3984f2d40f6d49aa762d09fd3cfb483ac894f453.png",
+    "image": "/assets/starsavior/starsavior/premium/lugh/hero.png",
     "setIcons": {
       "budget": [
         "/assets/starsavior/sheet/b413c56e8429fc358939010b6155036c43af1820.png",
@@ -3590,12 +3792,20 @@
         "/assets/starsavior/sheet/95bb620610231a6272439e099ae070b8d70171eb.png"
       ]
     },
-    "updatedAt": "2026-03-30",
+    "updatedAt": "2026-04-02",
     "sourceTabs": [
-      "All Character Build Guide",
-      "Tychara character guide"
+      "Kamigame Lugh guide"
     ],
-    "sourceContext": null,
+    "sourceContext": {
+      "url": "https://kamigame.jp/starsavior/page/396886821222508684.html",
+      "lead": "Translated and adapted from Kamigame's Lugh guide.",
+      "citationText": "Source page: Lugh Guide - Star Savior | Kamigame.",
+      "reviewedAgainst": [
+        "Kamigame Lugh guide",
+        "STUDIOBSIDE official game art"
+      ],
+      "attributionNote": "© 2025 STUDIOBSIDE Co. Ltd"
+    },
     "recommendedSets": [
       {
         "label": "PvE / PvP",
@@ -3704,7 +3914,7 @@
           "image": "/assets/starsavior/sheet/de78e666bfe8a1df69ef4501ebf662dc4f9beb4f.png"
         },
         {
-          "name": "Lyn or BG Claire",
+          "name": "Lyn Card or BG Claire",
           "image": "/assets/starsavior/sheet/c381ad05202c655936b55e33f9686edcee53dcf7.png"
         },
         {
@@ -3726,7 +3936,8 @@
       "Lugh keeps a SPD necklace and ATK% ring in the published build sheet, with Insight (4pc) + Hit (2pc) as the first stop.",
       "The source sheet highlights Effect Hit% as the standout roll target on top of the usual Speed and Critical Rate shell.",
       "Journey Hard routing in the sheet points toward DPS - AX5."
-    ]
+    ],
+    "status": "published"
   },
   {
     "name": "Luna",
@@ -3736,7 +3947,7 @@
       "PvE",
       "PvP"
     ],
-    "image": "/assets/starsavior/sheet/9957fd9915490b322e4326a18f450a0ae020336b.png",
+    "image": "/assets/starsavior/starsavior/premium/luna/hero.png",
     "setIcons": {
       "budget": [
         "/assets/starsavior/sheet/b413c56e8429fc358939010b6155036c43af1820.png",
@@ -3751,12 +3962,20 @@
         "/assets/starsavior/sheet/efec4b74fa3b43df579bfa0f9c9a7003905758a9.png"
       ]
     },
-    "updatedAt": "2026-03-30",
+    "updatedAt": "2026-04-02",
     "sourceTabs": [
-      "All Character Build Guide",
-      "Tychara character guide"
+      "Kamigame Luna guide"
     ],
-    "sourceContext": null,
+    "sourceContext": {
+      "url": "https://kamigame.jp/starsavior/page/396886821289617548.html",
+      "lead": "Translated and adapted from Kamigame's Luna guide.",
+      "citationText": "Source page: Luna Guide - Star Savior | Kamigame.",
+      "reviewedAgainst": [
+        "Kamigame Luna guide",
+        "STUDIOBSIDE official game art"
+      ],
+      "attributionNote": "© 2025 STUDIOBSIDE Co. Ltd"
+    },
     "recommendedSets": [
       {
         "label": "PvE / PvP",
@@ -3910,7 +4129,8 @@
     "notes": [
       "Luna keeps a SPD necklace and ATK% ring in the published build sheet, with Insight (4pc) + Valor (2pc) as the first stop.",
       "Journey Hard routing in the sheet points toward DPS - AX5."
-    ]
+    ],
+    "status": "published"
   },
   {
     "name": "Lydia",
@@ -3920,7 +4140,7 @@
       "PvE",
       "PvP"
     ],
-    "image": "/assets/starsavior/sheet/0b5b70ac9d61e9253595436fa101dd302e29e11a.png",
+    "image": "/assets/starsavior/starsavior/premium/lydia/hero.png",
     "setIcons": {
       "budget": [
         "/assets/starsavior/sheet/b413c56e8429fc358939010b6155036c43af1820.png",
@@ -3935,12 +4155,20 @@
         "/assets/starsavior/sheet/95bb620610231a6272439e099ae070b8d70171eb.png"
       ]
     },
-    "updatedAt": "2026-03-30",
+    "updatedAt": "2026-04-02",
     "sourceTabs": [
-      "All Character Build Guide",
-      "Tychara character guide"
+      "Kamigame Lydia guide"
     ],
-    "sourceContext": null,
+    "sourceContext": {
+      "url": "https://kamigame.jp/starsavior/page/396886821088290956.html",
+      "lead": "Translated and adapted from Kamigame's Lydia guide.",
+      "citationText": "Source page: Lydia Guide - Star Savior | Kamigame.",
+      "reviewedAgainst": [
+        "Kamigame Lydia guide",
+        "STUDIOBSIDE official game art"
+      ],
+      "attributionNote": "© 2025 STUDIOBSIDE Co. Ltd"
+    },
     "recommendedSets": [
       {
         "label": "Core",
@@ -4036,7 +4264,7 @@
           "image": "/assets/starsavior/sheet/de78e666bfe8a1df69ef4501ebf662dc4f9beb4f.png"
         },
         {
-          "name": "Lyn or BG Claire",
+          "name": "Lyn Card or BG Claire",
           "image": "/assets/starsavior/sheet/c381ad05202c655936b55e33f9686edcee53dcf7.png"
         },
         {
@@ -4057,7 +4285,8 @@
     "notes": [
       "Lydia’s gear path in the source guide strongly preserves hit-rate support because her value depends on debuff uptime.",
       "She rewards players who build for speed and control rather than only raw damage."
-    ]
+    ],
+    "status": "published"
   },
   {
     "name": "Marcille",
@@ -4067,17 +4296,20 @@
       "PvE",
       "PvP"
     ],
-    "image": "/assets/starsavior/tychara/69947d4d2c0b21248dd7e23a8f79c03e969f8743.png",
-    "updatedAt": "2026-03-30",
+    "image": "/assets/starsavior/starsavior/premium/marcille/hero.png",
+    "updatedAt": "2026-04-02",
     "sourceTabs": [
-      "Tychara character guide",
-      "Fallback build profile"
+      "Kamigame Marcille guide"
     ],
     "sourceContext": {
-      "url": "https://tychara.com/StarSavior/characters/marcille",
-      "lead": "Fallback build profile based on Tychara's character guide.",
-      "citationText": "Source page: Marcille Guide - Star Savior | Tychara.",
-      "permissionNote": "Tychara does not currently publish a dedicated build section for this unit, so this build uses the Tychara stat line and skill kit as its source."
+      "url": "https://kamigame.jp/starsavior/page/396886820970850444.html",
+      "lead": "Translated and adapted from Kamigame's Marcille guide.",
+      "citationText": "Source page: Marcille Guide - Star Savior | Kamigame.",
+      "reviewedAgainst": [
+        "Kamigame Marcille guide",
+        "STUDIOBSIDE official game art"
+      ],
+      "attributionNote": "© 2025 STUDIOBSIDE Co. Ltd"
     },
     "recommendedSets": [
       {
@@ -4133,7 +4365,8 @@
       "Marcille does not have a published build section on Tychara yet, so this page uses her Tychara stat line and kit details as a fallback build profile.",
       "Burn and Recovery Down are both attached to her damage buttons, so she benefits from a mixed crit-plus-hit stat line.",
       "Her high base crit rate lets her reach a stable damage shell earlier than most SR casters."
-    ]
+    ],
+    "status": "published"
   },
   {
     "name": "Muriel",
@@ -4143,7 +4376,7 @@
       "PvE",
       "PvP"
     ],
-    "image": "/assets/starsavior/sheet/b4958d26b3c6e503d234b4f9a85b039ed7d6c435.png",
+    "image": "/assets/starsavior/starsavior/premium/muriel/hero.png",
     "setIcons": {
       "budget": [
         "/assets/starsavior/sheet/b413c56e8429fc358939010b6155036c43af1820.png",
@@ -4158,12 +4391,20 @@
         "/assets/starsavior/sheet/95bb620610231a6272439e099ae070b8d70171eb.png"
       ]
     },
-    "updatedAt": "2026-03-30",
+    "updatedAt": "2026-04-02",
     "sourceTabs": [
-      "All Character Build Guide",
-      "Tychara character guide"
+      "Kamigame Muriel guide"
     ],
-    "sourceContext": null,
+    "sourceContext": {
+      "url": "https://kamigame.jp/starsavior/page/396886821037959308.html",
+      "lead": "Translated and adapted from Kamigame's Muriel guide.",
+      "citationText": "Source page: Muriel Guide - Star Savior | Kamigame.",
+      "reviewedAgainst": [
+        "Kamigame Muriel guide",
+        "STUDIOBSIDE official game art"
+      ],
+      "attributionNote": "© 2025 STUDIOBSIDE Co. Ltd"
+    },
     "recommendedSets": [
       {
         "label": "Core",
@@ -4303,7 +4544,8 @@
     "notes": [
       "Muriel’s source build is another clear example of the sheet favoring Hit support on units whose identity is tied to debuff value.",
       "Keep her fast enough to extend and recycle debuffs instead of chasing a pure glass-cannon setup."
-    ]
+    ],
+    "status": "published"
   },
   {
     "name": "Naru",
@@ -4313,17 +4555,20 @@
       "PvE",
       "PvP"
     ],
-    "image": "/assets/starsavior/tychara/6f486facee2cdc9969a2c10ffd6fd4f51e647683.webp",
-    "updatedAt": "2026-03-30",
+    "image": "/assets/starsavior/starsavior/premium/naru/hero.webp",
+    "updatedAt": "2026-04-02",
     "sourceTabs": [
-      "Tychara character guide",
-      "Fallback build profile"
+      "Kamigame Naru guide"
     ],
     "sourceContext": {
-      "url": "https://tychara.com/StarSavior/characters/naru",
-      "lead": "Fallback build profile based on Tychara's character guide.",
-      "citationText": "Source page: Naru Guide - Star Savior | Tychara.",
-      "permissionNote": "Tychara does not currently publish a dedicated build section for this unit, so this build uses the Tychara stat line and skill kit as its source."
+      "url": "https://kamigame.jp/starsavior/page/396886820350104752.html",
+      "lead": "Translated and adapted from Kamigame's Naru guide.",
+      "citationText": "Source page: Naru Guide - Star Savior | Kamigame.",
+      "reviewedAgainst": [
+        "Kamigame Naru guide",
+        "STUDIOBSIDE official game art"
+      ],
+      "attributionNote": "© 2025 STUDIOBSIDE Co. Ltd"
     },
     "recommendedSets": [
       {
@@ -4379,7 +4624,8 @@
       "Naru does not have a published build section on Tychara yet, so this page uses her Tychara stat line and kit details as a fallback build profile.",
       "Her ultimate adds both SPD Down and Effect RES Down, so Hit-focused sets give her the clearest team value.",
       "She still carries attack-scaling single-target skills, so ATK% and crit remain worthwhile once speed and hit are covered."
-    ]
+    ],
+    "status": "published"
   },
   {
     "name": "Omega",
@@ -4389,7 +4635,7 @@
       "PvE",
       "PvP"
     ],
-    "image": "/assets/starsavior/sheet/afdc12b580c6ec3c98404904734b1ee9f7ceb7e2.png",
+    "image": "/assets/starsavior/starsavior/premium/omega/hero.png",
     "setIcons": {
       "budget": [
         "/assets/starsavior/sheet/b413c56e8429fc358939010b6155036c43af1820.png",
@@ -4404,12 +4650,20 @@
         "/assets/starsavior/sheet/efec4b74fa3b43df579bfa0f9c9a7003905758a9.png"
       ]
     },
-    "updatedAt": "2026-03-30",
+    "updatedAt": "2026-04-02",
     "sourceTabs": [
-      "All Character Build Guide",
-      "Tychara character guide"
+      "Kamigame Omega guide"
     ],
-    "sourceContext": null,
+    "sourceContext": {
+      "url": "https://kamigame.jp/starsavior/page/399948542581465094.html",
+      "lead": "Translated and adapted from Kamigame's Omega guide.",
+      "citationText": "Source page: Omega Guide - Star Savior | Kamigame.",
+      "reviewedAgainst": [
+        "Kamigame Omega guide",
+        "STUDIOBSIDE official game art"
+      ],
+      "attributionNote": "© 2025 STUDIOBSIDE Co. Ltd"
+    },
     "recommendedSets": [
       {
         "label": "PvE / PvP",
@@ -4537,7 +4791,8 @@
     "notes": [
       "Omega keeps a SPD necklace and ATK% ring in the published build sheet, with Insight (4pc) + Valor (2pc) as the first stop.",
       "Journey Hard routing in the sheet points toward DPS - AX5."
-    ]
+    ],
+    "status": "published"
   },
   {
     "name": "Petra",
@@ -4547,7 +4802,7 @@
       "PvE",
       "PvP"
     ],
-    "image": "/assets/starsavior/sheet/a60ec88674e6674d0b9e75dd8938d8f7b0f391b7.png",
+    "image": "/assets/starsavior/starsavior/premium/petra/hero.png",
     "setIcons": {
       "budget": [
         "/assets/starsavior/sheet/b413c56e8429fc358939010b6155036c43af1820.png",
@@ -4562,12 +4817,20 @@
         "/assets/starsavior/sheet/95bb620610231a6272439e099ae070b8d70171eb.png"
       ]
     },
-    "updatedAt": "2026-03-30",
+    "updatedAt": "2026-04-02",
     "sourceTabs": [
-      "All Character Build Guide",
-      "Tychara character guide"
+      "Kamigame Petra guide"
     ],
-    "sourceContext": null,
+    "sourceContext": {
+      "url": "https://kamigame.jp/starsavior/page/396886820786301068.html",
+      "lead": "Translated and adapted from Kamigame's Petra guide.",
+      "citationText": "Source page: Petra Guide - Star Savior | Kamigame.",
+      "reviewedAgainst": [
+        "Kamigame Petra guide",
+        "STUDIOBSIDE official game art"
+      ],
+      "attributionNote": "© 2025 STUDIOBSIDE Co. Ltd"
+    },
     "recommendedSets": [
       {
         "label": "PvE / PvP",
@@ -4675,7 +4938,7 @@
           "image": "/assets/starsavior/sheet/de78e666bfe8a1df69ef4501ebf662dc4f9beb4f.png"
         },
         {
-          "name": "Lyn or BG Claire",
+          "name": "Lyn Card or BG Claire",
           "image": "/assets/starsavior/sheet/c381ad05202c655936b55e33f9686edcee53dcf7.png"
         },
         {
@@ -4697,7 +4960,8 @@
       "Petra keeps a SPD necklace and ATK% ring in the published build sheet, with Insight (4pc) + Hit (2pc) as the first stop.",
       "The source sheet highlights Effect Hit% as the standout roll target on top of the usual Speed and Critical Rate shell.",
       "Journey Hard routing in the sheet points toward DPS - AX5."
-    ]
+    ],
+    "status": "published"
   },
   {
     "name": "Roberta",
@@ -4707,7 +4971,7 @@
       "PvE",
       "PvP"
     ],
-    "image": "/assets/starsavior/sheet/8f2fe100be6cdb912aabcfca3420181fd563bb87.png",
+    "image": "/assets/starsavior/starsavior/premium/roberta/hero.png",
     "setIcons": {
       "budget": [
         "/assets/starsavior/sheet/b41733d67d33ac888f0393e951dd1d7b582086a0.png",
@@ -4722,12 +4986,20 @@
         "/assets/starsavior/sheet/bdf6e0e3e41894af1ba91e0059e13d6667eb4e48.png"
       ]
     },
-    "updatedAt": "2026-03-30",
+    "updatedAt": "2026-04-02",
     "sourceTabs": [
-      "All Character Build Guide",
-      "Tychara character guide"
+      "Kamigame Roberta guide"
     ],
-    "sourceContext": null,
+    "sourceContext": {
+      "url": "https://kamigame.jp/starsavior/page/412112754560767802.html",
+      "lead": "Translated and adapted from Kamigame's Roberta guide.",
+      "citationText": "Source page: Roberta Guide - Star Savior | Kamigame.",
+      "reviewedAgainst": [
+        "Kamigame Roberta guide",
+        "STUDIOBSIDE official game art"
+      ],
+      "attributionNote": "© 2025 STUDIOBSIDE Co. Ltd"
+    },
     "recommendedSets": [
       {
         "label": "Core bruiser",
@@ -4843,7 +5115,8 @@
     "notes": [
       "Roberta’s source row is one of the few that visibly mixes damage with survival pairings.",
       "The build keeps SPD neck plus ATK% ring while letting the two-piece set carry the defensive adjustment."
-    ]
+    ],
+    "status": "published"
   },
   {
     "name": "Rosaria",
@@ -4853,73 +5126,81 @@
       "PvE",
       "PvP"
     ],
-    "image": "/assets/starsavior/tychara/ac911446295dc6c5ed72b8071ef3297cb91255d3.webp",
-    "updatedAt": "2026-03-30",
+    "image": "/assets/starsavior/starsavior/premium/rosaria/rosaria.webp",
+    "updatedAt": "2026-04-03",
     "sourceTabs": [
-      "Tychara character guide",
-      "Fallback build profile"
+      "Kamigame Rosaria guide"
     ],
     "sourceContext": {
-      "url": "https://tychara.com/StarSavior/characters/rosaria",
-      "lead": "Fallback build profile based on Tychara's character guide.",
-      "citationText": "Source page: Rosaria Guide - Star Savior | Tychara.",
-      "permissionNote": "Tychara does not currently publish a dedicated build section for this unit, so this build uses the Tychara stat line and skill kit as its source."
+      "url": "https://kamigame.jp/starsavior/page/414193105168780591.html",
+      "lead": "Translated and adapted from Kamigame's Rosaria guide.",
+      "citationText": "Source page: Rosaria Guide - Star Savior | Kamigame.",
+      "reviewedAgainst": [
+        "Kamigame Rosaria guide",
+        "STUDIOBSIDE official game art"
+      ],
+      "attributionNote": "© 2025 STUDIOBSIDE Co. Ltd"
     },
     "recommendedSets": [
       {
-        "label": "Core",
+        "label": "PvE core",
         "sets": [
           "Insight (4pc)",
-          "Hit (2pc)"
+          "Fighting Spirit (2pc)"
         ],
         "neckMain": "SPD",
         "ringMain": "ATK%"
       },
       {
-        "label": "Damage",
+        "label": "Burst swap",
         "sets": [
           "Destruction (4pc)",
-          "Valor (2pc)"
+          "Fighting Spirit (2pc)"
         ],
         "neckMain": "SPD",
-        "ringMain": "ATK%"
+        "ringMain": "ATK%",
+        "notes": "Use this once Crit Rate is already stable from substats, arcana, or other account pieces."
       },
       {
-        "label": "Tempo",
+        "label": "PvP opener",
         "sets": [
           "Speed (4pc)",
-          "Hit (2pc)"
+          "Fighting Spirit (2pc)"
         ],
         "neckMain": "SPD",
         "ringMain": "ATK%"
       }
     ],
     "subStats": [
-      "SPD",
       "Crit Rate",
-      "Crit DMG",
+      "SPD",
       "ATK%",
-      "Effect Hit%"
+      "Crit DMG",
+      "Effect Hit"
     ],
     "skillLevels": {
-      "budget": "3 / 3 / 3",
-      "endgame": "7 / 8 / 10",
+      "budget": "3 / 6 / 6",
+      "endgame": "7 / 6 / 8",
       "progression": [
         "3 / 3 / 3",
         "3 / 6 / 6",
-        "7 / 8 / 10"
+        "7 / 6 / 8"
       ]
     },
     "arcana": [
       "No Pain, No Gain",
+      "Perfect Bunny Girl",
+      "Made by Petra",
       "The Indomitable Masterpiece",
       "A Knight's Oath"
     ],
     "notes": [
-      "Rosaria does not have a published build section on Tychara yet, so this page uses her Tychara stat line and kit details as a fallback build profile.",
-      "Her kit mixes personal damage ramping with teamwide DEF Down, which makes an Insight shell the safest first route.",
-      "Once crit quality is stable, a Destruction swap gives her much stronger payoff on the inferno burst loop."
-    ]
+      "Rosaria is a fast Chaos Ranger burst DPS who turns crits on her ultimate into Inferno stacks, then cashes those stacks into a lethal special.",
+      "Her ultimate applies teamwide Defense Down, gives Rosaria +50% action gauge, and is the centerpiece of both her PvE burst shell and her PvP rush opener.",
+      "Build Crit Rate first. Once that is secure, Destruction-style burst setups scale harder than the safer Insight baseline.",
+      "She works especially well with turn-gauge supports because her own opener already pushes her forward into a second action."
+    ],
+    "status": "published"
   },
   {
     "name": "Scarlet",
@@ -4929,17 +5210,20 @@
       "PvE",
       "PvP"
     ],
-    "image": "/assets/starsavior/tychara/079a443f5d9fb1d0e8967ffdbaa0d43ece56955f.webp",
-    "updatedAt": "2026-03-30",
+    "image": "/assets/starsavior/starsavior/premium/scarlet/hero.webp",
+    "updatedAt": "2026-04-02",
     "sourceTabs": [
-      "Tychara character guide",
-      "Fallback build profile"
+      "Kamigame Scarlet guide"
     ],
     "sourceContext": {
-      "url": "https://tychara.com/StarSavior/characters/scarlet",
-      "lead": "Fallback build profile based on Tychara's character guide.",
-      "citationText": "Source page: Scarlet Guide - Star Savior | Tychara.",
-      "permissionNote": "Tychara does not currently publish a dedicated build section for this unit, so this build uses the Tychara stat line and skill kit as its source."
+      "url": "https://kamigame.jp/starsavior/page/396886819880342704.html",
+      "lead": "Translated and adapted from Kamigame's Scarlet guide.",
+      "citationText": "Source page: Scarlet Guide - Star Savior | Kamigame.",
+      "reviewedAgainst": [
+        "Kamigame Scarlet guide",
+        "STUDIOBSIDE official game art"
+      ],
+      "attributionNote": "© 2025 STUDIOBSIDE Co. Ltd"
     },
     "recommendedSets": [
       {
@@ -4995,7 +5279,8 @@
       "Scarlet does not have a published build section on Tychara yet, so this page uses her Tychara stat line and kit details as a fallback build profile.",
       "Extra turns on the special and speed ramping in the passive reward a true SPD-first setup.",
       "Her AoE ultimate carries SPD Down, so Hit remains a high-value secondary stat instead of a throwaway roll."
-    ]
+    ],
+    "status": "published"
   },
   {
     "name": "Seira",
@@ -5005,7 +5290,7 @@
       "PvE",
       "PvP"
     ],
-    "image": "/assets/starsavior/sheet/cdf8747b0f16eeb849d99a67bb3325d132789136.png",
+    "image": "/assets/starsavior/starsavior/premium/seira/hero.png",
     "setIcons": {
       "budget": [
         "/assets/starsavior/sheet/b413c56e8429fc358939010b6155036c43af1820.png",
@@ -5020,12 +5305,20 @@
         "/assets/starsavior/sheet/efec4b74fa3b43df579bfa0f9c9a7003905758a9.png"
       ]
     },
-    "updatedAt": "2026-03-30",
+    "updatedAt": "2026-04-02",
     "sourceTabs": [
-      "All Character Build Guide",
-      "Tychara character guide"
+      "Kamigame Seira guide"
     ],
-    "sourceContext": null,
+    "sourceContext": {
+      "url": "https://kamigame.jp/starsavior/page/396886820014560432.html",
+      "lead": "Translated and adapted from Kamigame's Seira guide.",
+      "citationText": "Source page: Seira Guide - Star Savior | Kamigame.",
+      "reviewedAgainst": [
+        "Kamigame Seira guide",
+        "STUDIOBSIDE official game art"
+      ],
+      "attributionNote": "© 2025 STUDIOBSIDE Co. Ltd"
+    },
     "recommendedSets": [
       {
         "label": "Control support",
@@ -5121,7 +5414,7 @@
           "image": "/assets/starsavior/sheet/de78e666bfe8a1df69ef4501ebf662dc4f9beb4f.png"
         },
         {
-          "name": "Lyn or BG Claire",
+          "name": "Lyn Card or BG Claire",
           "image": "/assets/starsavior/sheet/c381ad05202c655936b55e33f9686edcee53dcf7.png"
         },
         {
@@ -5142,7 +5435,8 @@
     "notes": [
       "Seira’s sheet row clearly preserves Effect Hit% as part of her substat package.",
       "Treat her as a fast control-oriented damage piece rather than a pure finisher."
-    ]
+    ],
+    "status": "published"
   },
   {
     "name": "Serpang",
@@ -5152,7 +5446,7 @@
       "PvE",
       "PvP"
     ],
-    "image": "/assets/starsavior/sheet/6925c98f19ed1ce54920a0f44a5bf7d6bac26d87.png",
+    "image": "/assets/starsavior/starsavior/premium/serpang/hero.png",
     "setIcons": {
       "budget": [
         "/assets/starsavior/sheet/044e06d4cf81bcaf65709cb735e2f334988d77d6.png",
@@ -5167,12 +5461,20 @@
         "/assets/starsavior/sheet/f185b864bb5d24221e81d13cb8b761d357d763ae.png"
       ]
     },
-    "updatedAt": "2026-03-30",
+    "updatedAt": "2026-04-02",
     "sourceTabs": [
-      "All Character Build Guide",
-      "Tychara character guide"
+      "Kamigame Serpang guide"
     ],
-    "sourceContext": null,
+    "sourceContext": {
+      "url": "https://kamigame.jp/starsavior/page/396886820081669296.html",
+      "lead": "Translated and adapted from Kamigame's Serpang guide.",
+      "citationText": "Source page: Serpang Guide - Star Savior | Kamigame.",
+      "reviewedAgainst": [
+        "Kamigame Serpang guide",
+        "STUDIOBSIDE official game art"
+      ],
+      "attributionNote": "© 2025 STUDIOBSIDE Co. Ltd"
+    },
     "recommendedSets": [
       {
         "label": "PvE / PvP",
@@ -5298,7 +5600,8 @@
     "notes": [
       "Serpang keeps a SPD necklace and HP% ring in the published build sheet, with HP (4pc) + Barrier (2pc) as the first stop.",
       "Journey Hard routing in the sheet points toward Tank - BX2."
-    ]
+    ],
+    "status": "published"
   },
   {
     "name": "Smile",
@@ -5308,7 +5611,7 @@
       "PvE",
       "PvP"
     ],
-    "image": "/assets/starsavior/sheet/92f76970f99d8f3e32c9cee6ab1ef6041d7cf3df.png",
+    "image": "/assets/starsavior/starsavior/premium/smile/hero.png",
     "setIcons": {
       "budget": [
         "/assets/starsavior/sheet/b413c56e8429fc358939010b6155036c43af1820.png",
@@ -5323,12 +5626,20 @@
         "/assets/starsavior/sheet/95bb620610231a6272439e099ae070b8d70171eb.png"
       ]
     },
-    "updatedAt": "2026-03-30",
+    "updatedAt": "2026-04-02",
     "sourceTabs": [
-      "All Character Build Guide",
-      "Tychara character guide"
+      "Kamigame Smile guide"
     ],
-    "sourceContext": null,
+    "sourceContext": {
+      "url": "https://kamigame.jp/starsavior/page/396886819947451568.html",
+      "lead": "Translated and adapted from Kamigame's Smile guide.",
+      "citationText": "Source page: Smile Guide - Star Savior | Kamigame.",
+      "reviewedAgainst": [
+        "Kamigame Smile guide",
+        "STUDIOBSIDE official game art"
+      ],
+      "attributionNote": "© 2025 STUDIOBSIDE Co. Ltd"
+    },
     "recommendedSets": [
       {
         "label": "PvE / PvP",
@@ -5436,7 +5747,7 @@
           "image": "/assets/starsavior/sheet/de78e666bfe8a1df69ef4501ebf662dc4f9beb4f.png"
         },
         {
-          "name": "Lyn or BG Claire",
+          "name": "Lyn Card or BG Claire",
           "image": "/assets/starsavior/sheet/c381ad05202c655936b55e33f9686edcee53dcf7.png"
         },
         {
@@ -5458,7 +5769,8 @@
       "Smile keeps a SPD necklace and ATK% ring in the published build sheet, with Insight (4pc) + Effect Hit (2pc) as the first stop.",
       "The source sheet highlights Effect Hit% as the standout roll target on top of the usual Speed and Critical Rate shell.",
       "Journey Hard routing in the sheet points toward DPS - AX5."
-    ]
+    ],
+    "status": "published"
   },
   {
     "name": "Tanya",
@@ -5468,7 +5780,7 @@
       "PvE",
       "PvP"
     ],
-    "image": "/assets/starsavior/sheet/9bf4ff803239e9204f9e224951453b4fe0da83e8.png",
+    "image": "/assets/starsavior/starsavior/premium/tanya/hero.png",
     "setIcons": {
       "budget": [
         "/assets/starsavior/sheet/b413c56e8429fc358939010b6155036c43af1820.png",
@@ -5483,12 +5795,20 @@
         "/assets/starsavior/sheet/efec4b74fa3b43df579bfa0f9c9a7003905758a9.png"
       ]
     },
-    "updatedAt": "2026-03-30",
+    "updatedAt": "2026-04-02",
     "sourceTabs": [
-      "All Character Build Guide",
-      "Tychara character guide"
+      "Kamigame Tanya guide"
     ],
-    "sourceContext": null,
+    "sourceContext": {
+      "url": "https://kamigame.jp/starsavior/page/396886820215887024.html",
+      "lead": "Translated and adapted from Kamigame's Tanya guide.",
+      "citationText": "Source page: Tanya Guide - Star Savior | Kamigame.",
+      "reviewedAgainst": [
+        "Kamigame Tanya guide",
+        "STUDIOBSIDE official game art"
+      ],
+      "attributionNote": "© 2025 STUDIOBSIDE Co. Ltd"
+    },
     "recommendedSets": [
       {
         "label": "Core",
@@ -5605,7 +5925,8 @@
     "notes": [
       "Tanya keeps the same speed and attack stat line but flexes her set package depending on whether you need raw damage or faster initiative.",
       "The source build path is one of the more explicit skill-roadmap entries in the sheet."
-    ]
+    ],
+    "status": "published"
   },
   {
     "name": "Trish",
@@ -5615,7 +5936,7 @@
       "PvE",
       "PvP"
     ],
-    "image": "/assets/starsavior/sheet/29e4bba22580593c57d2395295cd8b5c07ab168b.png",
+    "image": "/assets/starsavior/starsavior/premium/trish/hero.png",
     "setIcons": {
       "budget": [
         "/assets/starsavior/sheet/b413c56e8429fc358939010b6155036c43af1820.png",
@@ -5630,12 +5951,20 @@
         "/assets/starsavior/sheet/efec4b74fa3b43df579bfa0f9c9a7003905758a9.png"
       ]
     },
-    "updatedAt": "2026-03-30",
+    "updatedAt": "2026-04-02",
     "sourceTabs": [
-      "All Character Build Guide",
-      "Tychara character guide"
+      "Kamigame Trish guide"
     ],
-    "sourceContext": null,
+    "sourceContext": {
+      "url": "https://kamigame.jp/starsavior/page/396886820282995888.html",
+      "lead": "Translated and adapted from Kamigame's Trish guide.",
+      "citationText": "Source page: Trish Guide - Star Savior | Kamigame.",
+      "reviewedAgainst": [
+        "Kamigame Trish guide",
+        "STUDIOBSIDE official game art"
+      ],
+      "attributionNote": "© 2025 STUDIOBSIDE Co. Ltd"
+    },
     "recommendedSets": [
       {
         "label": "PvE / PvP",
@@ -5762,7 +6091,8 @@
     "notes": [
       "Trish keeps a SPD necklace and ATK% ring in the published build sheet, with Insight (4pc) + Valor (2pc) as the first stop.",
       "Journey Hard routing in the sheet points toward DPS - AX5."
-    ]
+    ],
+    "status": "published"
   },
   {
     "name": "Vera",
@@ -5772,17 +6102,20 @@
       "PvE",
       "PvP"
     ],
-    "image": "/assets/starsavior/tychara/ef3c71dbfca389638ddd94632ccc04fd61e87148.webp",
-    "updatedAt": "2026-03-30",
+    "image": "/assets/starsavior/starsavior/premium/vera/hero.webp",
+    "updatedAt": "2026-04-02",
     "sourceTabs": [
-      "Tychara character guide",
-      "Fallback build profile"
+      "Kamigame Vera guide"
     ],
     "sourceContext": {
-      "url": "https://tychara.com/StarSavior/characters/vera",
-      "lead": "Fallback build profile based on Tychara's character guide.",
-      "citationText": "Source page: Vera Guide - Star Savior | Tychara.",
-      "permissionNote": "Tychara does not currently publish a dedicated build section for this unit, so this build uses the Tychara stat line and skill kit as its source."
+      "url": "https://kamigame.jp/starsavior/page/396886820853409932.html",
+      "lead": "Translated and adapted from Kamigame's Vera guide.",
+      "citationText": "Source page: Vera Guide - Star Savior | Kamigame.",
+      "reviewedAgainst": [
+        "Kamigame Vera guide",
+        "STUDIOBSIDE official game art"
+      ],
+      "attributionNote": "© 2025 STUDIOBSIDE Co. Ltd"
     },
     "recommendedSets": [
       {
@@ -5838,7 +6171,8 @@
       "Vera does not have a published build section on Tychara yet, so this page uses her Tychara stat line and kit details as a fallback build profile.",
       "Both of her healing buttons scale from Max HP, so HP sets stay ahead of attack-oriented support shells.",
       "Her special removes debuffs and the ultimate is full-team recovery, which makes speed and effect resistance the cleanest supporting rolls."
-    ]
+    ],
+    "status": "published"
   },
   {
     "name": "Yoo Mina",
@@ -5848,7 +6182,7 @@
       "PvE",
       "PvP"
     ],
-    "image": "/assets/starsavior/sheet/2a7515e5cf888cede44f85b2feea668f496ea972.jpg",
+    "image": "/assets/starsavior/starsavior/premium/yoo-mina/hero.png",
     "setIcons": {
       "budget": [
         "/assets/starsavior/sheet/b41733d67d33ac888f0393e951dd1d7b582086a0.png",
@@ -5863,11 +6197,20 @@
         "/assets/starsavior/sheet/efec4b74fa3b43df579bfa0f9c9a7003905758a9.png"
       ]
     },
-    "updatedAt": "2026-03-30",
+    "updatedAt": "2026-04-03",
     "sourceTabs": [
-      "All Character Build Guide"
+      "Kamigame Yoo Mina guide"
     ],
-    "sourceContext": null,
+    "sourceContext": {
+      "url": "https://kamigame.jp/starsavior/page/414169703519388152.html",
+      "lead": "Translated and adapted from Kamigame's Yoo Mina guide.",
+      "citationText": "Source page: Yoo Mina Guide - Star Savior | Kamigame.",
+      "reviewedAgainst": [
+        "Kamigame Yoo Mina guide",
+        "STUDIOBSIDE official game art"
+      ],
+      "attributionNote": "© 2025 STUDIOBSIDE Co. Ltd"
+    },
     "recommendedSets": [
       {
         "label": "PvE / PvP",
@@ -5998,6 +6341,7 @@
       "Yoo Mina keeps a SPD necklace and ATK% ring in the published build sheet, with Destruction (4pc) + Hit (2pc) as the first stop.",
       "The source sheet highlights Effect Hit% as the standout roll target on top of the usual SPD and Effect Hit% shell.",
       "Journey Hard routing in the sheet points toward DPS - AX5."
-    ]
+    ],
+    "status": "published"
   }
 ]

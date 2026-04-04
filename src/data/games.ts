@@ -40,6 +40,18 @@ export const games: GameEntry[] = [
       { label: "Fleet Builder", href: "/lagrange/fleet-builder" },
     ],
   },
+  {
+    id: "chaoszero",
+    name: "Chaos Zero",
+    slug: "chaoszero",
+    description: "Nightmare mode high scores, character builds, and event archives",
+    status: "active",
+    accentColor: "pink",
+    icon: "/assets/chaoszero/icon.png",
+    routes: [
+      { label: "Event Scores", href: "/chaoszero/event-scores/" },
+    ],
+  },
 ];
 
 export function getGameBySlug(slug: string): GameEntry | undefined {

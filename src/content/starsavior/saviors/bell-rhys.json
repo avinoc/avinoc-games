@@ -3,8 +3,16 @@
   "slug": "bell-rhys",
   "tier": "S",
   "mode": "PvE AoE DPS",
-  "tags": ["ST & AoE", "Accuracy Down", "Dispel", "Silence"],
+  "tags": [
+    "ST & AoE",
+    "Accuracy Down",
+    "Dispel",
+    "Silence"
+  ],
   "summary": "A mechanics-friendly damage dealer whose dispel and silence tools matter in content where simply hitting harder is not enough.",
   "updatedAt": "2026-03-30",
-  "sourceTabs": ["Savior Tier list (ENG)"]
+  "sourceTabs": [
+    "Savior Tier list (ENG)"
+  ],
+  "status": "needs-review"
 }

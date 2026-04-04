@@ -1,0 +1,21 @@
+{
+  "name": "Project Avinoc",
+  "short_name": "Avinoc",
+  "description": "Tools, guides, and resources for the games I play.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#07111d",
+  "theme_color": "#07111d",
+  "icons": [
+    {
+      "src": "/assets/brand/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/brand/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

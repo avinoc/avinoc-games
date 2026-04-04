@@ -1,6 +1,6 @@
-{
+﻿{
   "charlotte": {
-    "image": "/assets/starsavior/sheet/a5a1dae1bb523bfe6add1588693909e51e060e3b.png",
+    "image": "https://cdn.sanity.io/images/1olr33nh/production/75448a140e071c8b6338fe7e2a5282a5d2c83762-80x80.webp?w=120&h=120&fit=crop&auto=format",
     "setIcons": {
       "budget": [
         "/assets/starsavior/sheet/b413c56e8429fc358939010b6155036c43af1820.png",
@@ -85,7 +85,7 @@
     }
   },
   "bunnygirl-claire": {
-    "image": "/assets/starsavior/sheet/df484e14609d8e4735c6f173954719a3634c4607.png",
+    "image": "https://cdn.sanity.io/images/1olr33nh/production/fc2ba2c16fda9de57759314e0729f725b6e94540-80x80.webp?w=120&h=120&fit=crop&auto=format",
     "setIcons": {
       "budget": [
         "/assets/starsavior/sheet/b41733d67d33ac888f0393e951dd1d7b582086a0.png",
@@ -170,7 +170,7 @@
     }
   },
   "asherah": {
-    "image": "/assets/starsavior/sheet/6319edbe734417d33855a4c6633913a8cc2c26c1.png",
+    "image": "https://cdn.sanity.io/images/1olr33nh/production/00e8755b10b596c96acffab9ab34781223b8fddc-80x80.webp?w=120&h=120&fit=crop&auto=format",
     "setIcons": {
       "budget": [
         "/assets/starsavior/sheet/b413c56e8429fc358939010b6155036c43af1820.png",
@@ -255,7 +255,7 @@
     }
   },
   "tanya": {
-    "image": "/assets/starsavior/sheet/9bf4ff803239e9204f9e224951453b4fe0da83e8.png",
+    "image": "https://cdn.sanity.io/images/1olr33nh/production/8a83a8a7acfe9c6e7dfc7ae640bcb22151ae277f-80x80.webp?w=120&h=120&fit=crop&auto=format",
     "setIcons": {
       "budget": [
         "/assets/starsavior/sheet/b413c56e8429fc358939010b6155036c43af1820.png",
@@ -340,7 +340,7 @@
     }
   },
   "roberta": {
-    "image": "/assets/starsavior/sheet/8f2fe100be6cdb912aabcfca3420181fd563bb87.png",
+    "image": "https://cdn.sanity.io/images/1olr33nh/production/0f3426bf1289fbc88a26474c9317985ae26abc3b-256x256.webp?w=120&h=120&fit=crop&auto=format",
     "setIcons": {
       "budget": [
         "/assets/starsavior/sheet/b41733d67d33ac888f0393e951dd1d7b582086a0.png",
@@ -425,7 +425,7 @@
     }
   },
   "seira": {
-    "image": "/assets/starsavior/sheet/cdf8747b0f16eeb849d99a67bb3325d132789136.png",
+    "image": "https://cdn.sanity.io/images/1olr33nh/production/bfcb7e5c248ee45999492967dcf426414150b384-80x80.webp?w=120&h=120&fit=crop&auto=format",
     "setIcons": {
       "budget": [
         "/assets/starsavior/sheet/b413c56e8429fc358939010b6155036c43af1820.png",
@@ -510,7 +510,7 @@
     }
   },
   "lacy": {
-    "image": "/assets/starsavior/sheet/3823764a5f34af0b7275445317c1f876fa4e59af.png",
+    "image": "https://cdn.sanity.io/images/1olr33nh/production/386b9003dccc03042fa005222670727042ee7533-80x80.webp?w=120&h=120&fit=crop&auto=format",
     "setIcons": {
       "budget": [
         "/assets/starsavior/sheet/b413c56e8429fc358939010b6155036c43af1820.png",
@@ -595,7 +595,7 @@
     }
   },
   "lydia": {
-    "image": "/assets/starsavior/sheet/0b5b70ac9d61e9253595436fa101dd302e29e11a.png",
+    "image": "https://cdn.sanity.io/images/1olr33nh/production/2127bcf2d1df0108faa31ca28d91696c4599102e-80x80.webp?w=120&h=120&fit=crop&auto=format",
     "setIcons": {
       "budget": [
         "/assets/starsavior/sheet/b413c56e8429fc358939010b6155036c43af1820.png",
@@ -680,7 +680,7 @@
     }
   },
   "muriel": {
-    "image": "/assets/starsavior/sheet/b4958d26b3c6e503d234b4f9a85b039ed7d6c435.png",
+    "image": "https://cdn.sanity.io/images/1olr33nh/production/9ac4e935a3642f107c4cd151cb76002f549c49a2-80x80.webp?w=120&h=120&fit=crop&auto=format",
     "setIcons": {
       "budget": [
         "/assets/starsavior/sheet/b413c56e8429fc358939010b6155036c43af1820.png",
@@ -789,7 +789,7 @@
     }
   },
   "noble-princess-frey": {
-    "image": "/assets/starsavior/sheet/2d43552f89a910ffbfecef704d0dde0324c17010.png",
+    "image": "https://cdn.sanity.io/images/1olr33nh/production/3258fc97fb8084eae2b44a690bc25af2b25467ef-256x256.webp?w=120&h=120&fit=crop&auto=format",
     "setIcons": {
       "budget": [
         "/assets/starsavior/sheet/b41733d67d33ac888f0393e951dd1d7b582086a0.png",

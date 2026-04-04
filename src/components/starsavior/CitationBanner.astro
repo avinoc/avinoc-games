@@ -10,6 +10,8 @@ interface Props {
     url: string;
     lead: string;
     citationText: string;
+    reviewedAgainst?: string[];
+    attributionNote?: string;
     permissionNote?: string;
   } | null;
 }
@@ -19,7 +21,9 @@ const reviewedAt = formatDisplayDate(updatedAt || sourceMeta.lastReviewed);
 const citationLead = sourceContext?.lead || "Adapted from Bullet's published guide sheet.";
 const citationText = sourceContext?.citationText || sourceMeta.citationText;
 const citationUrl = sourceContext?.url || sourceMeta.sheetUrl;
-const permissionNote = sourceContext?.permissionNote || sourceMeta.permissionNote;
+const reviewedAgainst = sourceContext?.reviewedAgainst ?? sourceTabs;
+const attributionNote = sourceContext?.attributionNote;
+const permissionNote = sourceContext ? sourceContext.permissionNote : sourceMeta.permissionNote;
 ---
 
 {
@@ -29,8 +33,9 @@ const permissionNote = sourceContext?.permissionNote || sourceMeta.permissionNot
       <div class="citation-note__body">
         <p><strong>{citationText}</strong></p>
         <p><strong>Last reviewed:</strong> {reviewedAt}</p>
-        <p><strong>Reviewed against:</strong> {sourceTabs.join(", ")}</p>
-        <p>{permissionNote}</p>
+        <p><strong>Reviewed against:</strong> {reviewedAgainst.join(", ")}</p>
+        {attributionNote && <p><strong>Art attribution:</strong> {attributionNote}</p>}
+        {permissionNote && <p>{permissionNote}</p>}
         <p>
           <a href={citationUrl}>Open the source page</a>
         </p>
@@ -44,7 +49,7 @@ const permissionNote = sourceContext?.permissionNote || sourceMeta.permissionNot
         <span class="citation-note__toggle">Details</span>
       </summary>
       <div class="citation-note__body">
-        <p><strong>Reviewed against:</strong> {sourceTabs.join(", ")}</p>
+        <p><strong>Reviewed against:</strong> {reviewedAgainst.join(", ")}</p>
         <p>
           <a href={citationUrl}>Open the source page</a>
         </p>

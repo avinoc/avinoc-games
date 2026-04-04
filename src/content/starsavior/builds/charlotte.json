@@ -2,34 +2,59 @@
   "name": "Charlotte",
   "slug": "charlotte",
   "role": "Support DPS",
-  "modes": ["PvE", "PvP"],
+  "modes": [
+    "PvE",
+    "PvP"
+  ],
   "updatedAt": "2026-03-30",
-  "sourceTabs": ["All Character Build Guide"],
+  "sourceTabs": [
+    "All Character Build Guide"
+  ],
   "recommendedSets": [
     {
       "label": "Budget",
-      "sets": ["Insight (4pc)", "Hit (2pc)"],
+      "sets": [
+        "Insight (4pc)",
+        "Hit (2pc)"
+      ],
       "neckMain": "SPD",
       "ringMain": "ATK%",
       "notes": "The source build leans on Effect Hit support value while keeping Charlotte fast."
     },
     {
       "label": "Endgame",
-      "sets": ["Destruction (4pc)", "Valor (2pc)"],
+      "sets": [
+        "Destruction (4pc)",
+        "Valor (2pc)"
+      ],
       "neckMain": "SPD",
       "ringMain": "ATK%",
       "notes": "Swap into a harder damage shell once crit and gear quality are stable."
     }
   ],
-  "subStats": ["SPD", "Crit Rate", "Crit DMG", "ATK%", "Effect Hit%"],
+  "subStats": [
+    "SPD",
+    "Crit Rate",
+    "Crit DMG",
+    "ATK%",
+    "Effect Hit%"
+  ],
   "skillLevels": {
     "budget": "3 / 6 / 6",
     "endgame": "7 / 7 / 10",
-    "progression": ["3 / 6 / 6", "7 / 7 / 7", "7 / 7 / 10"]
+    "progression": [
+      "3 / 6 / 6",
+      "7 / 7 / 7",
+      "7 / 7 / 10"
+    ]
   },
-  "arcana": ["Crit-rate Strength Arcana", "Speed HP Arcana"],
+  "arcana": [
+    "Crit-rate Strength Arcana",
+    "Speed HP Arcana"
+  ],
   "notes": [
     "Charlotte sits in the hybrid support-DPS lane, so speed and utility substats still matter even when you upgrade into higher damage sets.",
     "The sheet keeps Charlotte on SPD neck and ATK% ring across both budget and late-game routes."
-  ]
+  ],
+  "status": "needs-review"
 }

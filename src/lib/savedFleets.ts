@@ -1,4 +1,4 @@
-import { SavedFleetMeta } from "@/types/savedFleet";
+import { type SavedFleetMeta } from "@/types/savedFleet";
 
 const STORAGE_KEY = "savedFleets";
 

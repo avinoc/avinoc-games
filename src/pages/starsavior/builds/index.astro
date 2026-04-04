@@ -1,6 +1,5 @@
 ---
 import GameLayout from "../../../layouts/GameLayout.astro";
-import Hero from "../../../components/starsavior/Hero.astro";
 import BuildCard from "../../../components/starsavior/BuildCard.astro";
 import { builds } from "../../../data/starsavior/content";
 
@@ -9,11 +8,6 @@ const roles = [...new Set(sortedBuilds.map((entry) => entry.role))].sort((a, b) 
 ---
 
 <GameLayout title="Builds | StarSavior Atlas" description="Curated Savior build cards with set recommendations, skill breakpoints, and Journey notes." game="starsavior">
-  <Hero
-    title="Curated build cards for launch units."
-    summary="The build pages now pull portraits and recommendation art from the published sheet while keeping the routing advice readable in English: sets, substats, skill breakpoints, and Journey card plans."
-  />
-
   <section class="container stack">
     <div class="panel" style="padding: 1.4rem;">
       <div class="filter-bar sticky-filter-bar">

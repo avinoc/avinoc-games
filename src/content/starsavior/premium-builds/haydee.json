@@ -1,0 +1,248 @@
+{
+  "slug": "haydee",
+  "updatedAt": "2026-04-03",
+  "status": "published",
+  "sourceTabs": [
+    "Kamigame Haydee guide"
+  ],
+  "sourceContext": {
+    "url": "https://kamigame.jp/starsavior/page/396886819192459550.html",
+    "lead": "Translated and adapted from Kamigame's Haydee guide.",
+    "citationText": "Source page: Haydee Guide - Star Savior | Kamigame.",
+    "reviewedAgainst": [
+      "Kamigame Haydee guide",
+      "STUDIOBSIDE official game art"
+    ],
+    "attributionNote": "© 2025 STUDIOBSIDE Co. Ltd"
+  },
+  "hero": {
+    "title": "Haydee",
+    "subhead": "Star | Defender | PvE / PvP | Slash",
+    "summary": "Haydee starts best on DEF (2pc) + DEF (2pc) with Speed necklace and DEF% ring. From there, branch into the High-end route and the PvP route as your gear options widen.",
+    "image": "/assets/starsavior/starsavior/premium/haydee/hero.png",
+    "ratings": [
+      {
+        "label": "Overall",
+        "value": "S+"
+      },
+      {
+        "label": "Reroll",
+        "value": "B"
+      },
+      {
+        "label": "Campaign",
+        "value": "SS"
+      },
+      {
+        "label": "Boss",
+        "value": "A"
+      },
+      {
+        "label": "Ranked",
+        "value": "S+"
+      },
+      {
+        "label": "Strategy",
+        "value": "SS"
+      }
+    ],
+    "actions": [
+      {
+        "href": "#haydee-builds",
+        "label": "Build Planner",
+        "tone": "primary"
+      },
+      {
+        "href": "#haydee-stats",
+        "label": "Target Stats",
+        "tone": "secondary"
+      },
+      {
+        "href": "#haydee-hard-journey",
+        "label": "Journey: Hard",
+        "tone": "secondary"
+      }
+    ]
+  },
+  "combatIdentity": {
+    "title": "Combat Identity",
+    "summary": "Haydee feels best once HP%, DEF%, and Effect RES are online, giving the first rotation a much steadier payoff.",
+    "bullets": [
+      "Baseline set line: DEF (2pc) + DEF (2pc).",
+      "Main stats stay on Speed necklace and DEF% ring.",
+      "Substat focus: HP%, DEF%, Effect RES, and Speed.",
+      "Journey: Hard route leans toward Tank CX3."
+    ]
+  },
+  "skillRotation": {
+    "title": "Skill Rotation",
+    "summary": "Skill investment is cleanest as Ultimate >= Special >= Basic, with the first cooldown setting the pace for the full rotation.",
+    "steps": [
+      {
+        "step": "1",
+        "title": "Open with Ultimate",
+        "detail": "Lead with the highest-invested cooldown so the opener starts on the strongest possible breakpoint."
+      },
+      {
+        "step": "2",
+        "title": "Cash in on Special",
+        "detail": "Special is usually the next meaningful breakpoint once the opener lands and should carry the mid-cycle payoff."
+      },
+      {
+        "step": "3",
+        "title": "Fill with Basic",
+        "detail": "Use Basic between cooldowns while you keep HP% and DEF% stable on gear."
+      },
+      {
+        "step": "4",
+        "title": "Upgrade toward the final target",
+        "detail": "Budget target is 3 / 3 / 3, with 7 / 10 / 7 as the long-term skill finish."
+      }
+    ]
+  },
+  "buildPlanner": {
+    "id": "haydee-builds",
+    "title": "Build Planner",
+    "summary": "Start on the PvE / PvP line with DEF (2pc) + DEF (2pc) and Speed necklace and DEF% ring. Move into the High-end route and the PvP route once the baseline is stable.",
+    "tag": "PvE / PvP",
+    "sets": [
+      {
+        "label": "PvE / PvP",
+        "value": "DEF (2pc) + DEF (2pc)",
+        "note": "PvE / PvP keeps SPD on the necklace and DEF% on the ring."
+      },
+      {
+        "label": "High-end",
+        "value": "HP (4pc) + DEF (2pc)",
+        "note": "High-end keeps SPD on the necklace and DEF% on the ring."
+      },
+      {
+        "label": "PvP",
+        "value": "HP (4pc) + Barrier (2pc)",
+        "note": "PvP keeps SPD on the necklace and DEF% on the ring."
+      }
+    ],
+    "priorities": [
+      "Necklace: DEF(%)",
+      "Ring: DEF(%)",
+      "Substats: HP(%), DEF(%), Effect RES, SPD"
+    ]
+  },
+  "targetStats": {
+    "id": "haydee-stats",
+    "kicker": "Target Stats",
+    "summary": "Lock Speed necklace and DEF% ring, then stack HP%, DEF%, Effect RES, and Speed through substats.",
+    "stats": [
+      {
+        "label": "Necklace",
+        "value": "DEF(%)"
+      },
+      {
+        "label": "Ring",
+        "value": "DEF(%)"
+      },
+      {
+        "label": "Focus 1",
+        "value": "HP(%)"
+      },
+      {
+        "label": "Focus 2",
+        "value": "DEF(%)"
+      },
+      {
+        "label": "Focus 3",
+        "value": "Effect RES"
+      },
+      {
+        "label": "Focus 4",
+        "value": "SPD"
+      }
+    ]
+  },
+  "upgradePath": {
+    "kicker": "Upgrade Path",
+    "title": "Priority",
+    "items": [
+      "Skill order: Ultimate >= Special >= Basic",
+      "Budget target: 3 / 3 / 3",
+      "Recommended target: 7 / 10 / 7",
+      "Breakthrough priority: ★★☆ Strong gains from extra copies",
+      "Substat focus: HP%, DEF%, Effect RES, and Speed",
+      "Journey: Hard route: Tank CX3"
+    ]
+  },
+  "journeyHard": {
+    "id": "haydee-hard-journey",
+    "kicker": "Journey: Hard",
+    "title": "Recommended Cards",
+    "summary": "Core line: Charlotte and Emilly. Fill the remaining slots with Elisa or Waltz Asherah, Hilde, and Besta or Harley.",
+    "cards": [
+      {
+        "name": "Charlotte",
+        "slot": "Core",
+        "image": "/assets/starsavior/starsavior/premium/charlotte/hero.png"
+      },
+      {
+        "name": "Emilly",
+        "slot": "Core",
+        "image": "/assets/starsavior/starsavior/premium/emilly/hero.webp"
+      },
+      {
+        "name": "Elisa",
+        "slot": "Flex 1",
+        "image": "/assets/starsavior/starsavior/premium/elisa/hero.png"
+      },
+      {
+        "name": "Waltz Asherah",
+        "slot": "Flex 1",
+        "image": "/assets/starsavior/starsavior/premium/waltz-asherah/hero.webp"
+      },
+      {
+        "name": "Hilde",
+        "slot": "Flex 2",
+        "image": "/assets/starsavior/starsavior/premium/hilde/hero.png"
+      },
+      {
+        "name": "Besta",
+        "slot": "Flex 3",
+        "image": "/assets/starsavior/starsavior/premium/besta/hero.webp"
+      },
+      {
+        "name": "Harley",
+        "slot": "Flex 3",
+        "image": "/assets/starsavior/starsavior/premium/harley/hero.png"
+      }
+    ]
+  },
+  "skillCards": {
+    "id": "haydee-skills",
+    "kicker": "Skill Cards",
+    "defaultTabId": "ultimate",
+    "items": [
+      {
+        "id": "passive",
+        "label": "Passive",
+        "title": "Eroded Emotions",
+        "summary": "Haydee's passive matters more once the core stat line is online and the rotation is already stable."
+      },
+      {
+        "id": "basic",
+        "label": "Basic",
+        "title": "Steel Hail",
+        "summary": "Use the basic to bridge cooldowns; it should stay behind the two higher-impact skills in upgrade priority."
+      },
+      {
+        "id": "special",
+        "label": "Special",
+        "title": "Spiked Armor",
+        "summary": "Special is the next major breakpoint after the opener and usually carries the mid-cycle payoff."
+      },
+      {
+        "id": "ultimate",
+        "label": "Ultimate",
+        "title": "Thorned Grave",
+        "summary": "Ultimate anchors the opener and stays at the top of the investment order for this build."
+      }
+    ]
+  }
+}

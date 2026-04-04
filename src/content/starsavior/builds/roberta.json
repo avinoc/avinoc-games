@@ -2,33 +2,57 @@
   "name": "Roberta",
   "slug": "roberta",
   "role": "Bruiser DPS",
-  "modes": ["PvE", "PvP"],
+  "modes": [
+    "PvE",
+    "PvP"
+  ],
   "updatedAt": "2026-03-30",
-  "sourceTabs": ["All Character Build Guide"],
+  "sourceTabs": [
+    "All Character Build Guide"
+  ],
   "recommendedSets": [
     {
       "label": "Core bruiser",
-      "sets": ["Destruction (4pc)", "Valor (2pc)"],
+      "sets": [
+        "Destruction (4pc)",
+        "Valor (2pc)"
+      ],
       "neckMain": "SPD",
       "ringMain": "ATK%"
     },
     {
       "label": "Late survival",
-      "sets": ["Destruction (4pc)", "Barrier (2pc)"],
+      "sets": [
+        "Destruction (4pc)",
+        "Barrier (2pc)"
+      ],
       "neckMain": "SPD",
       "ringMain": "ATK%",
       "notes": "The tab also shows a defensive two-piece fallback for sturdier bruiser play."
     }
   ],
-  "subStats": ["SPD", "Crit DMG", "ATK%", "HP%", "Crit Rate"],
+  "subStats": [
+    "SPD",
+    "Crit DMG",
+    "ATK%",
+    "HP%",
+    "Crit Rate"
+  ],
   "skillLevels": {
     "budget": "3 / 4 / 6",
     "endgame": "7 / 8 / 8",
-    "progression": ["3 / 4 / 6", "7 / 8 / 8"]
+    "progression": [
+      "3 / 4 / 6",
+      "7 / 8 / 8"
+    ]
   },
-  "arcana": ["Crit-damage Strength Arcana", "HP Bruiser Arcana"],
+  "arcana": [
+    "Crit-damage Strength Arcana",
+    "HP Bruiser Arcana"
+  ],
   "notes": [
     "Roberta’s source row is one of the few that visibly mixes damage with survival pairings.",
     "The build keeps SPD neck plus ATK% ring while letting the two-piece set carry the defensive adjustment."
-  ]
+  ],
+  "status": "needs-review"
 }
