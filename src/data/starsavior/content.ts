@@ -197,7 +197,7 @@ const guideEntries: GuideMeta[] = [
     summary:
       "A cleaner English reroll route built from the published guide sheet, focused on realistic targets and what actually matters on a fresh global account.",
     updatedAt: "2026-03-30",
-    status: "needs-review",
+    status: "published",
     category: "starter",
     routeGroup: "guides",
     sourceTabs: ["Reroll Guide"],
@@ -214,7 +214,7 @@ const guideEntries: GuideMeta[] = [
     summary:
       "A clean first-week route through the starter tab, covering mileage, selectors, early task order, and the account decisions that are easiest to get wrong.",
     updatedAt: "2026-03-30",
-    status: "needs-review",
+    status: "published",
     category: "starter",
     routeGroup: "guides",
     sourceTabs: ["Starter's Guide"],
@@ -232,7 +232,7 @@ const guideEntries: GuideMeta[] = [
     summary:
       "The launch translation of the team-building tab, cleaned into role rules, attribute shells, and early-game roster limits that are easier to act on.",
     updatedAt: "2026-03-30",
-    status: "needs-review",
+    status: "published",
     category: "combat",
     routeGroup: "guides",
     sourceTabs: ["Team Building"],
@@ -250,7 +250,7 @@ const guideEntries: GuideMeta[] = [
     summary:
       "A cleaned English version of the gear tab, focused on what to farm, what to enhance, and which set families matter for early and mid-game accounts.",
     updatedAt: "2026-03-30",
-    status: "needs-review",
+    status: "published",
     category: "systems",
     routeGroup: "guides",
     sourceTabs: ["Gear Guide (ENG)"],
@@ -268,7 +268,7 @@ const guideEntries: GuideMeta[] = [
     summary:
       "A cleaned progression page based on the CP tab, focused on which upgrades give the biggest returns and which ones are mostly marginal.",
     updatedAt: "2026-03-30",
-    status: "needs-review",
+    status: "published",
     category: "progression",
     routeGroup: "guides",
     sourceTabs: ["How to increase CP (ENG)"],
@@ -285,7 +285,7 @@ const guideEntries: GuideMeta[] = [
     summary:
       "The main English Journey: Hard tab, rewritten into practical checkpoints for resonance, training, shop routing, hunt execution, and condition management.",
     updatedAt: "2026-03-30",
-    status: "needs-review",
+    status: "published",
     category: "journey",
     routeGroup: "journey",
     sourceTabs: ["Journey(Hard) Guide"],
@@ -303,7 +303,7 @@ const guideEntries: GuideMeta[] = [
     summary:
       "The dense strategy tab translated into a cleaner reference for special potential crafting, charm reward choices, and character-specific Journey planning.",
     updatedAt: "2026-03-30",
-    status: "needs-review",
+    status: "published",
     category: "journey",
     routeGroup: "journey",
     sourceTabs: ["Journey(Hard) Strategy Guide"],
