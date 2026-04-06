@@ -13,7 +13,7 @@ const heroPanels = {
 
 const sectionCards = [
   {
-    name: "StarSavior",
+    name: "Star Savior",
     href: `${base}starsavior/`,
     description: "Builds, tier lists, and progression guides sourced from Bullet's strategy sheet.",
     image: withBase("/assets/home/starsavior-card.jpg"),
@@ -32,6 +32,14 @@ const sectionCards = [
     description: "Great Rift build packs, screenshot lineups, and event score breakdowns.",
     image: heroPanels.chaoszero,
     theme: "chaos",
+  },
+  {
+    name: "Epic Seven",
+    href: `${base}epicseven/`,
+    description: "Tools, guides, and database information for Epic Seven — coming soon.",
+    image: "",
+    theme: "orange",
+    comingSoon: true,
   },
 ];
 ---
@@ -96,21 +104,33 @@ const sectionCards = [
 
         <div class="landing-cards">
           {sectionCards.map((card) => (
-            <a class:list={["feature-card", `feature-card--${card.theme}`]} href={card.href}>
-              <div
-                class="feature-card__media"
-                style={`background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(3, 8, 18, 0.18)), url('${card.image}')`}
-                aria-hidden="true"
-              ></div>
+            <a
+              class:list={[
+                "feature-card",
+                `feature-card--${card.theme}`,
+                card.comingSoon && "feature-card--coming-soon"
+              ]}
+              href={card.href}
+            >
+              {card.image && (
+                <div
+                  class="feature-card__media"
+                  style={`background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(3, 8, 18, 0.18)), url('${card.image}')`}
+                  aria-hidden="true"
+                ></div>
+              )}
               <div class="feature-card__haze" aria-hidden="true"></div>
               <div class="feature-card__veil" aria-hidden="true"></div>
 
               <div class="feature-card__content">
-                <span class="feature-card__status">Active</span>
+                {card.comingSoon
+                  ? <span class="feature-card__status feature-card__status--coming-soon">Coming Soon</span>
+                  : <span class="feature-card__status">Active</span>
+                }
                 <h2>{card.name}</h2>
                 <p>{card.description}</p>
                 <span class="feature-card__button">
-                  Explore
+                  {card.comingSoon ? "Stay Tuned" : "Explore"}
                   <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M3 8h10" />
                     <path d="m9 4 4 4-4 4" />
@@ -396,6 +416,27 @@ const sectionCards = [
     --border-color: rgba(224, 92, 166, 0.28);
     --card-glow: rgba(232, 65, 144, 0.24);
     --card-shadow: rgba(255, 108, 67, 0.12);
+  }
+
+  .feature-card--orange {
+    --button-start: #f97316;
+    --button-end: #ea580c;
+    --status-bg: rgba(249, 115, 22, 0.14);
+    --status-border: rgba(251, 146, 60, 0.22);
+    --status-text: #fdba74;
+    --border-color: rgba(249, 115, 22, 0.28);
+    --card-glow: rgba(249, 115, 22, 0.2);
+    --card-shadow: rgba(234, 88, 12, 0.1);
+  }
+
+  .feature-card--coming-soon {
+    opacity: 0.75;
+  }
+
+  .feature-card__status--coming-soon {
+    --status-bg: rgba(249, 115, 22, 0.14);
+    --status-border: rgba(251, 146, 60, 0.22);
+    --status-text: #fdba74;
   }
 
   .feature-card__media,

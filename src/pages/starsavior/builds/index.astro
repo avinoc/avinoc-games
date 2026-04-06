@@ -7,7 +7,7 @@ const sortedBuilds = [...builds].sort((a, b) => a.name.localeCompare(b.name));
 const roles = [...new Set(sortedBuilds.map((entry) => entry.role))].sort((a, b) => a.localeCompare(b));
 ---
 
-<GameLayout title="Builds | StarSavior Atlas" description="Curated Savior build cards with set recommendations, skill breakpoints, and Journey notes." game="starsavior">
+<GameLayout title="Builds | Star Savior Atlas" description="Curated Savior build cards with set recommendations, skill breakpoints, and Journey notes." game="starsavior">
   <section class="container stack">
     <div class="panel" style="padding: 1.4rem;">
       <div class="filter-bar sticky-filter-bar">

@@ -15,7 +15,7 @@ export interface GameEntry {
 export const games: GameEntry[] = [
   {
     id: "starsavior",
-    name: "StarSavior",
+    name: "Star Savior",
     slug: "starsavior",
     description: "Builds, tier lists, and progression guides sourced from Bullet's strategy sheet",
     status: "active",
@@ -50,7 +50,20 @@ export const games: GameEntry[] = [
     icon: "/assets/chaoszero/icon.png",
     routes: [
       { label: "Event Scores", href: "/chaoszero/event-scores/" },
+      { label: "Full Scale Offensive", href: "/chaoszero/full-scale-offensive/" },
+      { label: "Builds", href: "/chaoszero/builds/" },
+      { label: "Card Overlap", href: "/chaoszero/card-overlap/" },
     ],
+  },
+  {
+    id: "epicseven",
+    name: "Epic Seven",
+    slug: "epicseven",
+    description: "Tools, guides, and database information for Epic Seven",
+    status: "coming-soon",
+    accentColor: "orange",
+    icon: "/assets/epicseven/icon.png",
+    routes: [],
   },
 ];
 

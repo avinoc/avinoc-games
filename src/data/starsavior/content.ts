@@ -182,10 +182,10 @@ function filterPublished<T extends { status: ContentStatus }>(entries: T[]): T[]
 }
 
 export const sourceMeta = {
-  name: "Bullet StarSavior Complete Guide",
+  name: "Bullet Star Savior Complete Guide",
   sheetUrl: "https://docs.google.com/spreadsheets/d/1W1nl3zfBdrgNCjLCVt7lBn0UzuwPLVnF2JkC4iamRic/htmlview",
   lastReviewed: "2026-03-30",
-  citationText: "Source sheet: [Bullet] StarSavior Complete Guide by Bullet (published Google Sheet).",
+  citationText: "Source sheet: [Bullet] Star Savior Complete Guide by Bullet (published Google Sheet).",
   permissionNote:
     "If you plan to include content from this Google Sheet in another guide, you must obtain permission through Discord and clearly cite the source."
 } as const;

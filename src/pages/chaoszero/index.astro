@@ -98,6 +98,16 @@ function formatScore(score: number): string {
     <div class="cz-noise" aria-hidden="true"></div>
 
     <section class="container cz-stage">
+      <a class="cz-fso-banner" href={`${base}chaoszero/full-scale-offensive/`}>
+        <span class="cz-fso-banner__tag">New Game Mode</span>
+        <strong>Full Scale Offensive launches April 29</strong>
+        <span>3 teams, 3 bosses, score-based ranking across 6-week seasons. Plus Persona Cards in Season 3.</span>
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M5 12h14" />
+          <path d="m12 5 7 7-7 7" />
+        </svg>
+      </a>
+
       <p class="cz-kicker">Nightmare build pack</p>
       <h1 class="cz-title">{currentEvent.headline}</h1>
 
@@ -146,6 +156,13 @@ function formatScore(score: number): string {
         </article>
 
         <aside class="cz-sidebar">
+          <a class="cz-side-card" href={`${base}chaoszero/full-scale-offensive/`}>
+            <span class="cz-side-card__label" style="color: var(--accent);">New Mode</span>
+            <strong>Full Scale Offensive</strong>
+            <p>6-week cyclical mode with 3 teams, 3 bosses, and score-based ranking.</p>
+            <div class="cz-side-card__value" style="background: linear-gradient(135deg, rgba(168, 85, 247, 0.15), rgba(192, 132, 252, 0.1)); border: 1px solid rgba(168, 85, 247, 0.25); padding: 0.35rem 0.85rem; border-radius: 999px; font-size: 0.85rem; color: var(--accent); font-weight: 700; width: fit-content;">Launching Apr 29</div>
+          </a>
+
           <a class="cz-side-card" href={`${base}chaoszero/event-scores/`}>
             <span class="cz-side-card__label">Leaderboards</span>
             <strong>Build archive</strong>
@@ -559,6 +576,69 @@ function formatScore(score: number): string {
 
   .cz-side-card--static:hover {
     transform: none;
+  }
+
+  .cz-fso-banner {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.85rem 1.2rem;
+    border-radius: 1rem;
+    background: linear-gradient(135deg, rgba(168, 85, 247, 0.1), rgba(192, 132, 252, 0.06));
+    border: 1px solid rgba(168, 85, 247, 0.25);
+    text-decoration: none;
+    color: inherit;
+    margin-bottom: 1.5rem;
+    transition: border-color 200ms ease, box-shadow 200ms ease;
+    flex-wrap: wrap;
+  }
+
+  .cz-fso-banner:hover {
+    border-color: rgba(168, 85, 247, 0.4);
+    box-shadow: 0 0 0 1px rgba(168, 85, 247, 0.15);
+  }
+
+  .cz-fso-banner__tag {
+    display: inline-flex;
+    padding: 0.2rem 0.6rem;
+    border-radius: 999px;
+    background: rgba(168, 85, 247, 0.15);
+    border: 1px solid rgba(168, 85, 247, 0.3);
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--accent);
+    font-weight: 600;
+    white-space: nowrap;
+  }
+
+  .cz-fso-banner strong {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #f7fbff;
+  }
+
+  .cz-fso-banner span {
+    font-size: 0.82rem;
+    color: rgba(211, 226, 244, 0.7);
+  }
+
+  .cz-fso-banner svg {
+    color: var(--accent);
+    flex-shrink: 0;
+    margin-left: auto;
+  }
+
+  @media (max-width: 768px) {
+    .cz-fso-banner {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.4rem;
+    }
+
+    .cz-fso-banner svg {
+      margin-left: 0;
+    }
   }
 
   .cz-side-card strong,

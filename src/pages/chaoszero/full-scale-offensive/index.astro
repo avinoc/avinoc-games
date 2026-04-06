@@ -1,0 +1,184 @@
+---
+import GameLayout from "../../../layouts/GameLayout.astro";
+import Hero from "../../../components/starsavior/Hero.astro";
+const base = import.meta.env.BASE_URL;
+---
+
+<GameLayout
+  title="Full Scale Offensive | Chaos Zero"
+  description="Full Scale Offensive is a new 6-week cyclical game mode in Chaos Zero Nightmare featuring 3 past Great Rift bosses."
+  game="chaoszero"
+>
+  <Hero
+    title="Full Scale Offensive"
+    summary="A new cyclical game mode launching in the Death Note pre-season. Form 3 teams to tackle 3 past Great Rift bosses across 6-week seasons."
+  />
+
+  <section class="container stack">
+    <div class="panel" style="padding: 1.4rem;">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">New Game Mode</p>
+          <h2>What is Full Scale Offensive?</h2>
+        </div>
+      </div>
+      <article class="prose">
+        <p>
+          Full Scale Offensive is a brand-new game mode introduced in the Death Note pre-season.
+          Unlike the current Great Rift (which uses cumulative damage scoring), FSO uses a
+          <strong>score-based system</strong> where you form 3 separate teams — one for each boss.
+        </p>
+        <p>
+          Each season runs for <strong>6 weeks</strong> and features <strong>3 past Great Rift bosses</strong>.
+          You'll use 9 combatants total (3 per team), and each boss has unique bonus mechanics
+          you can exploit for extra points.
+        </p>
+      </article>
+    </div>
+
+    <div class="panel" style="padding: 1.4rem;">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Key Features</p>
+          <h2>How it works</h2>
+        </div>
+      </div>
+
+      <div class="card-grid">
+        <article class="content-card">
+          <h3>3 Teams, 3 Bosses</h3>
+          <p>
+            Form one team per boss. Each team uses 3 combatants, for a total of 9 per run.
+            No overlap restrictions — build your best roster for each boss individually.
+          </p>
+        </article>
+
+        <article class="content-card">
+          <h3>Score-Based Scoring</h3>
+          <p>
+            Unlike Great Rift's cumulative damage model, FSO uses a point system.
+            Each boss has bonus mechanics that reward specific strategies for extra points.
+          </p>
+        </article>
+
+        <article class="content-card">
+          <h3>6-Week Seasons</h3>
+          <p>
+            Each FSO season runs for 6 weeks. Bosses rotate between seasons,
+            featuring past Great Rift bosses that have already been cleared.
+          </p>
+        </article>
+
+        <article class="content-card">
+          <h3>Save Data Carryover</h3>
+          <p>
+            Preseason save data carries into the new season. Old season save data
+            will also become usable in Great Rift (future update). Every deck you build
+            remains permanently meaningful.
+          </p>
+        </article>
+      </div>
+    </div>
+
+    <div class="panel" style="padding: 1.4rem;">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Persona Cards</p>
+          <h2>Season 3 Persona Card System</h2>
+        </div>
+      </div>
+      <article class="prose">
+        <p>
+          Launching alongside Season 3 (April 29, 2026), the Persona Card system adds
+          a new progression layer to Full Scale Offensive:
+        </p>
+        <ul>
+          <li>Each combatant gets <strong>one special Persona Card</strong> through engravings</li>
+          <li>Cards grow stronger with enhancement effects from bets and exploration</li>
+          <li>Engraved equipment is found at waypoints and unidentified areas</li>
+          <li>The pre-season lets you preview Persona Cards and carry over save data</li>
+        </ul>
+        <p>
+          This system makes every deck you build permanently meaningful — your investment
+          in a combatant's Persona Card carries forward across seasons.
+        </p>
+      </article>
+    </div>
+
+    <div class="panel" style="padding: 1.4rem;">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Release Timeline</p>
+          <h2>Important dates</h2>
+        </div>
+      </div>
+
+      <table class="event-table">
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Event</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>April 8, 2026</strong></td>
+            <td>Partner system overhaul goes live — partner stats now fully apply to memory fragment percentages, enhanced growth impact, boosted passive stats</td>
+          </tr>
+          <tr>
+            <td><strong>April 29, 2026</strong></td>
+            <td>Season 3 / Half Anniversary — Full Scale Offensive launches with Persona Card system</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="panel" style="padding: 1.4rem;">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Balance Changes</p>
+          <h2>Combat adjustments</h2>
+        </div>
+      </div>
+      <article class="prose">
+        <p>
+          Alongside the new mode, several balance changes are coming:
+        </p>
+        <ul>
+          <li><strong>Yuki</strong> — Another buff incoming (ego manifestation effects adjusted)</li>
+          <li><strong>Underperforming combatants</strong> — Usability improvements across the roster</li>
+          <li><strong>General roster buffs</strong> — Similar to previous balance passes, expect broader adjustments</li>
+        </ul>
+        <p>
+          Source: <a href="https://www.youtube.com/watch?v=ZcPmYT8bJc8" target="_blank" rel="noopener">WG: CZN — "CRAZY PATCH INCOMING"</a>
+        </p>
+      </article>
+    </div>
+  </section>
+</GameLayout>
+
+<style>
+  .event-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+  }
+
+  .event-table th,
+  .event-table td {
+    padding: 0.75rem 1rem;
+    text-align: left;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .event-table th {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--text-soft);
+  }
+
+  .event-table tbody tr:hover {
+    background: var(--surface-3);
+  }
+</style>

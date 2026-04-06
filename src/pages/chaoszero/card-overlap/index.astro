@@ -1,0 +1,43 @@
+---
+import GameLayout from "../../../layouts/GameLayout.astro";
+import Hero from "../../../components/starsavior/Hero.astro";
+const base = import.meta.env.BASE_URL;
+---
+
+<GameLayout
+  title="Card Overlap | Chaos Zero"
+  description="Compare card overlap between builds to optimize shared resources."
+  game="chaoszero"
+>
+  <Hero
+    title="Card Overlap Analysis"
+    summary="See which cards are shared across your teams so you can optimize resource allocation and avoid conflicts."
+  />
+
+  <section class="container stack">
+    <div class="panel" style="padding: 1.4rem;">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Coming Soon</p>
+          <h2>Card overlap tool is under construction</h2>
+        </div>
+      </div>
+      <article class="prose">
+        <p>
+          The card overlap tool will let you compare builds side-by-side and see which cards
+          are used across multiple teams. This helps you prioritize which cards to upgrade first
+          and identify resource conflicts.
+        </p>
+        <p>
+          <strong>What's planned:</strong>
+        </p>
+        <ul>
+          <li>Side-by-side build comparison</li>
+          <li>Shared card highlight matrix</li>
+          <li>Priority recommendations based on overlap</li>
+          <li>Resource conflict warnings</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+</GameLayout>

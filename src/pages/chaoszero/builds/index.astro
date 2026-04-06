@@ -1,0 +1,46 @@
+---
+import GameLayout from "../../../layouts/GameLayout.astro";
+import Hero from "../../../components/starsavior/Hero.astro";
+const base = import.meta.env.BASE_URL;
+---
+
+<GameLayout
+  title="Builds | Chaos Zero"
+  description="Character build database for Chaos Zero with team assignments and card counts."
+  game="chaoszero"
+>
+  <Hero
+    title="Build Database"
+    summary="Community-sourced character builds imported from in-game screenshots. Browse by team or search for specific characters."
+  />
+
+  <section class="container stack">
+    <div class="panel" style="padding: 1.4rem;">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Coming Soon</p>
+          <h2>Build database is under construction</h2>
+        </div>
+      </div>
+      <article class="prose">
+        <p>
+          The full character build database is being populated with community-sourced data.
+          Each build will include team assignments, card counts, equipment details, and score breakdowns.
+        </p>
+        <p>
+          <strong>What's planned:</strong>
+        </p>
+        <ul>
+          <li>Character build cards with full card/equipment details</li>
+          <li>Team composition templates for different event types</li>
+          <li>Import your own builds from screenshots</li>
+          <li>Historical build archive for trend tracking</li>
+        </ul>
+        <p>
+          In the meantime, check out the <a href={`${base}chaoszero/event-scores/`}>Event Scores</a> page
+          for current event data.
+        </p>
+      </article>
+    </div>
+  </section>
+</GameLayout>

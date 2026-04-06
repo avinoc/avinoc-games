@@ -188,6 +188,32 @@
   --hero-border: rgba(217, 70, 168, 0.2);
 }
 
+[data-game="epicseven"] {
+  --bg: #0a0705;
+  --bg-alt: #140e08;
+  --panel: rgba(18, 12, 8, 0.9);
+  --panel-strong: rgba(18, 12, 8, 0.96);
+  --surface-1: rgba(22, 14, 10, 0.94);
+  --surface-2: rgba(28, 18, 12, 0.96);
+  --surface-3: rgba(34, 22, 14, 0.98);
+  --surface-glass: rgba(22, 14, 10, 0.78);
+  --field-bg: rgba(27, 16, 10, 0.92);
+  --accent: #f97316;
+  --accent-strong: #ea580c;
+  --accent-ice: #fb923c;
+  --accent-glow: rgba(249, 115, 22, 0.24);
+  --button-start: #f97316;
+  --button-end: #ea580c;
+  --line: rgba(251, 146, 60, 0.18);
+  --body-spot-cool: rgba(34, 211, 238, 0.12);
+  --body-spot-warm: rgba(249, 115, 22, 0.12);
+  --body-start: #050403;
+  --body-end: #0a0705;
+  --header-bg: rgba(10, 7, 5, 0.84);
+  --nav-hover-bg: rgba(249, 115, 22, 0.12);
+  --hero-border: rgba(249, 115, 22, 0.2);
+}
+
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
 

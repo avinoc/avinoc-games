@@ -1,0 +1,77 @@
+---
+import GameLayout from "../../layouts/GameLayout.astro";
+const base = import.meta.env.BASE_URL;
+---
+
+<GameLayout
+  title="Epic Seven"
+  description="Tools, guides, and database information for Epic Seven."
+  game="epicseven"
+>
+  <section class="hero">
+    <div class="container">
+      <div class="hero-wrap">
+        <p class="eyebrow">Epic Seven</p>
+        <h1>Epic Seven resources are coming soon.</h1>
+        <p>
+          This section is currently under construction. I'm building out guides, tools, and a database
+          for Epic Seven — including hero builds, artifact guides, and hunt recommendations.
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href={`${base}`}>Back to Home</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container stack">
+    <div class="panel" style="padding: 1.4rem;">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Planned Content</p>
+          <h2>What's coming</h2>
+        </div>
+      </div>
+
+      <div class="card-grid">
+        <article class="content-card coming-soon-card">
+          <h3>Hero Builds</h3>
+          <p>Gear sets, artifact recommendations, and stat targets for key heroes.</p>
+          <span class="tag coming-soon-tag">Planned</span>
+        </article>
+
+        <article class="content-card coming-soon-card">
+          <h3>Hunt Guide</h3>
+          <p>Banshee, Wyvern, Golem, and Labyrinth hunt strategies with team recommendations.</p>
+          <span class="tag coming-soon-tag">Planned</span>
+        </article>
+
+        <article class="content-card coming-soon-card">
+          <h3>Hero Database</h3>
+          <p>Searchable hero reference with stats, skills, and build links.</p>
+          <span class="tag coming-soon-tag">Planned</span>
+        </article>
+
+        <article class="content-card coming-soon-card">
+          <h3>Artifact Guide</h3>
+          <p>Artifact tier lists, set bonuses, and which ones to prioritize.</p>
+          <span class="tag coming-soon-tag">Planned</span>
+        </article>
+      </div>
+    </div>
+  </section>
+</GameLayout>
+
+<style>
+  .coming-soon-card {
+    position: relative;
+    opacity: 0.7;
+  }
+
+  .coming-soon-tag {
+    margin-top: 0.5rem;
+    background: rgba(240, 160, 59, 0.15);
+    color: var(--accent);
+    border: 1px solid rgba(240, 160, 59, 0.3);
+  }
+</style>
