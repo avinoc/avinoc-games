@@ -192,6 +192,26 @@ export const sourceMeta = {
 
 const guideEntries: GuideMeta[] = [
   {
+    title: "Bullet's Push Teams",
+    slug: "bullet-push-teams",
+    summary:
+      "The actual deck setups Bullet used to push Normal 30–35, clear all Hard mode, and reach Floor 292 of Infinite Corridor. Attribute-specific team comps and break skill recommendations.",
+    updatedAt: "2026-04-06",
+    status: "published",
+    category: "combat",
+    routeGroup: "guides",
+    sourceTabs: ["Bullet YouTube — Push Teams Guide"],
+    sections: [
+      { id: "main-push-deck", title: "Main push deck" },
+      { id: "break-skill-picks", title: "Break skill picks" },
+      { id: "sun-attribute-team", title: "Sun attribute team" },
+      { id: "moon-attribute-team", title: "Moon attribute team" },
+      { id: "star-attribute-team", title: "Star attribute team" },
+      { id: "order-attribute-team", title: "Order attribute team" },
+      { id: "chaos-attribute-team", title: "Chaos attribute team" }
+    ]
+  },
+  {
     title: "Reroll Guide",
     slug: "reroll",
     summary:
