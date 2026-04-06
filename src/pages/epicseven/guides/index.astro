@@ -1,0 +1,30 @@
+---
+import GameLayout from "../../layouts/GameLayout.astro";
+import { guides } from "../../data/epicseven/content";
+const base = import.meta.env.BASE_URL;
+---
+
+<GameLayout
+  title="Guides | Epic Seven"
+  description="Guides and resources for Epic Seven."
+  game="epicseven"
+>
+  <section class="container stack">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow">Epic Seven Guides</p>
+        <h2>Guides and resources</h2>
+      </div>
+    </div>
+
+    <div class="card-grid">
+      {guides.map((guide) => (
+        <a class="content-card" href={`${base}epicseven/guides/${guide.slug}/`}>
+          <h3>{guide.title}</h3>
+          <p>{guide.summary}</p>
+          <span class="tag">Updated {guide.updatedAt}</span>
+        </a>
+      ))}
+    </div>
+  </section>
+</GameLayout>

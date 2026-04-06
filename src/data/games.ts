@@ -63,7 +63,11 @@ export const games: GameEntry[] = [
     status: "coming-soon",
     accentColor: "orange",
     icon: "/assets/epicseven/icon.png",
-    routes: [],
+    routes: [
+      { label: "Guides", href: "/epicseven/guides/" },
+      { label: "Hero Builds", href: "/epicseven/builds/" },
+      { label: "Hunt Guide", href: "/epicseven/hunts/" },
+    ],
   },
 ];
 

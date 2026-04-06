@@ -1,0 +1,59 @@
+---
+import GameLayout from "../../../layouts/GameLayout.astro";
+import Hero from "../../../components/starsavior/Hero.astro";
+import { guides } from "../../../data/epicseven/content";
+import { getRelatedBuildsForGuide } from "../../../data/epicseven/relations";
+import AncientInheritancePrimer from "../../../content/epicseven/guides/ancient-inheritance-primer.mdx";
+
+const guideComponents = {
+  "ancient-inheritance-primer": AncientInheritancePrimer,
+};
+
+export async function getStaticPaths() {
+  return guides.map((guide) => ({
+    params: { slug: guide.slug },
+    props: { guide }
+  }));
+}
+
+const { guide } = Astro.props;
+const Content = guideComponents[guide.slug as keyof typeof guideComponents];
+const base = import.meta.env.BASE_URL;
+const relatedBuilds = getRelatedBuildsForGuide(guide.slug);
+---
+
+<GameLayout
+  title={`${guide.title} | Epic Seven`}
+  description={guide.summary}
+  game="epicseven"
+>
+  <Hero
+    title={guide.title}
+    summary={guide.summary}
+  />
+
+  <section class="container stack">
+    <div class="panel" style="padding: 1.4rem;">
+      <Content />
+    </div>
+
+    {relatedBuilds.length > 0 && (
+      <div class="panel" style="padding: 1.4rem;">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Related Builds</p>
+            <h2>Suggested builds for this guide</h2>
+          </div>
+        </div>
+        <div class="card-grid">
+          {relatedBuilds.map((build) => (
+            <a class="content-card" href={`${base}epicseven/builds/${build.slug}/`}>
+              <h3>{build.name}</h3>
+              <p>{build.role}</p>
+            </a>
+          ))}
+        </div>
+      </div>
+    )}
+  </section>
+</GameLayout>
